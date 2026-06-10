@@ -1,0 +1,55 @@
+{
+  "experiment_name": "phi_universality_robustness_sweep",
+  "date_executed": "2026-06-10T12:34:11.333911+00:00",
+  "num_fields": 200,
+  "results": {
+    "Phi-decay": {
+      "means": {
+        "phi": 1.0,
+        "equal": 0.9692,
+        "random": 0.9595,
+        "partition": 0.696
+      },
+      "rates": {
+        "phi_best_or_tied": 100.0,
+        "partition_below_phi": 100.0
+      }
+    },
+    "Flat": {
+      "means": {
+        "phi": 0.9692,
+        "equal": 1.0,
+        "random": 0.9875,
+        "partition": 0.6561
+      },
+      "rates": {
+        "phi_best_or_tied": 0.0,
+        "partition_below_phi": 100.0
+      }
+    },
+    "Random": {
+      "means": {
+        "phi": 0.9592,
+        "equal": 0.9873,
+        "random": 0.9762,
+        "partition": 0.6542
+      },
+      "rates": {
+        "phi_best_or_tied": 5.0,
+        "partition_below_phi": 100.0
+      }
+    },
+    "Zipf": {
+      "means": {
+        "phi": 0.9982,
+        "equal": 0.9643,
+        "random": 0.957,
+        "partition": 0.696
+      },
+      "rates": {
+        "phi_best_or_tied": 100.0,
+        "partition_below_phi": 100.0
+      }
+    }
+  }
+}
