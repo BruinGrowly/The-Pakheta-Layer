@@ -1,0 +1,123 @@
+{
+  "framework_version": "8.6.2",
+  "date_executed": "2026-06-10T10:31:22.353350+00:00",
+  "execution_duration_sec": 0.00052,
+  "experiments": {
+    "exp_1_toy_anchor_coherence": {
+      "single_crystal": 0.958,
+      "false_partition": 0.624,
+      "complementary_anchors": 0.87
+    },
+    "exp_2_context_order_path_sensitivity": {
+      "grave_visit_backyard_walk_gap": 0.035,
+      "grave_visit_shared_remembrance_gap": 0.022,
+      "backyard_walk_theory_reflection_gap": 0.032,
+      "shared_remembrance_theory_reflection_gap": 0.036
+    },
+    "exp_3_relational_distance": {
+      "correlation": -0.069,
+      "nodes": {
+        "grave": {
+          "d_space": 0.0,
+          "d_field": 0.0
+        },
+        "ordinary_stone_near_grave": {
+          "d_space": 0.032,
+          "d_field": 0.45
+        },
+        "backyard_fur_burial": {
+          "d_space": 0.826,
+          "d_field": 0.124
+        },
+        "old_photo_far_away": {
+          "d_space": 1.359,
+          "d_field": 0.162
+        }
+      }
+    },
+    "exp_4_ljpw_operators": [
+      {
+        "step": "0. Initial Damaged State",
+        "L": 0.3,
+        "J": 0.1,
+        "P": 0.9,
+        "W": 0.0,
+        "harmony": 0.5421227571312619,
+        "coherence": 0.335
+      },
+      {
+        "step": "1. Love Gather",
+        "L": 0.45,
+        "J": 0.1,
+        "P": 0.85,
+        "W": 0.15,
+        "harmony": 0.6013897037077242,
+        "coherence": 0.376
+      },
+      {
+        "step": "2. Justice Repair",
+        "L": 0.45,
+        "J": 0.4,
+        "P": 0.6,
+        "W": 0.55,
+        "harmony": 0.7994647390853372,
+        "coherence": 0.55
+      },
+      {
+        "step": "3. Wisdom Context Select",
+        "L": 0.48,
+        "J": 0.414,
+        "P": 0.5,
+        "W": 0.693,
+        "harmony": 0.7947456394464574,
+        "coherence": 0.55
+      },
+      {
+        "step": "4. Power Actualize",
+        "L": 0.618,
+        "J": 0.414,
+        "P": 0.718,
+        "W": 0.693,
+        "harmony": 0.9996156305410625,
+        "coherence": 0.65
+      }
+    ],
+    "exp_5_generated_field_sweep": {
+      "num_fields": 200,
+      "seed": 613,
+      "strategies": {
+        "phi_weighted": {
+          "min": 0.9910023878315263,
+          "mean": 0.995,
+          "max": 0.9979826537933632
+        },
+        "equal_weighted": {
+          "min": 0.9910447051698266,
+          "mean": 0.994,
+          "max": 0.9979790906194255
+        },
+        "random_weighted": {
+          "min": 0.9810320671556009,
+          "mean": 0.993,
+          "max": 0.9969168549988974
+        },
+        "single_core": {
+          "min": 0.9860019072026754,
+          "mean": 0.992,
+          "max": 0.9959411504607325
+        },
+        "false_partition": {
+          "min": 0.6741817617147091,
+          "mean": 0.684,
+          "max": 0.6928832407509112
+        }
+      },
+      "rates": {
+        "phi_best_or_tied_rate": 97.5,
+        "false_below_phi_rate": 100.0,
+        "far_related_beats_decoy_rate": 100.0,
+        "justice_strongest_repair_rate": 100.0
+      }
+    }
+  }
+}
