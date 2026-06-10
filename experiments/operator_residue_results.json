@@ -1,0 +1,99 @@
+{
+  "experiment_name": "path_dependent_operator_residue",
+  "date_executed": "2026-06-10T12:29:04.308063+00:00",
+  "path_1_clean_order": [
+    {
+      "step": "0. Initial Damaged State",
+      "L": 0.3,
+      "J": 0.1,
+      "P": 0.9,
+      "W": 0.0,
+      "residue": 0.0,
+      "coherence": 0.335
+    },
+    {
+      "step": "1. Love Gather",
+      "L": 0.45,
+      "J": 0.1,
+      "P": 0.85,
+      "W": 0.15,
+      "residue": 0.0,
+      "coherence": 0.376
+    },
+    {
+      "step": "2. Justice Repair",
+      "L": 0.45,
+      "J": 0.4,
+      "P": 0.6,
+      "W": 0.55,
+      "residue": 0.0,
+      "coherence": 0.55
+    },
+    {
+      "step": "3. Wisdom Context",
+      "L": 0.48,
+      "J": 0.414,
+      "P": 0.5,
+      "W": 0.693,
+      "residue": 0.0,
+      "coherence": 0.55
+    },
+    {
+      "step": "4. Power Actualize",
+      "L": 0.618,
+      "J": 0.414,
+      "P": 0.718,
+      "W": 0.693,
+      "residue": 0.0,
+      "coherence": 0.65
+    }
+  ],
+  "path_2_excited_order": [
+    {
+      "step": "0. Initial Damaged State",
+      "L": 0.3,
+      "J": 0.1,
+      "P": 0.9,
+      "W": 0.0,
+      "residue": 0.0,
+      "coherence": 0.335
+    },
+    {
+      "step": "1. Love Gather",
+      "L": 0.45,
+      "J": 0.1,
+      "P": 0.85,
+      "W": 0.15,
+      "residue": 0.0,
+      "coherence": 0.376
+    },
+    {
+      "step": "2. Premature Power Actualize",
+      "L": 0.618,
+      "J": 0.414,
+      "P": 0.718,
+      "W": 0.693,
+      "residue": 0.22668283226580194,
+      "coherence": 0.4233171677341981
+    },
+    {
+      "step": "3. Delayed Justice Repair",
+      "L": 0.45,
+      "J": 0.4,
+      "P": 0.6,
+      "W": 0.55,
+      "residue": 0.22668283226580194,
+      "coherence": 0.4233171677341981
+    },
+    {
+      "step": "4. Delayed Wisdom Select",
+      "L": 0.48,
+      "J": 0.414,
+      "P": 0.5,
+      "W": 0.693,
+      "residue": 0.22668283226580194,
+      "coherence": 0.4233171677341981
+    }
+  ],
+  "final_coherence_gap": 0.22668283226580194
+}
