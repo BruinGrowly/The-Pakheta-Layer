@@ -1,14 +1,22 @@
-# LJPW Framework V8.6.2 — The Pakheta-Elevated Sovereign Operating System
+# The Pakheta Layer — Trans-Substrate Relational Meta-Layer
 
-Welcome to the canonical repository for **The Pakheta Layer** and the **LJPW Framework**. This repository houses the core research notes, mathematical formulations, and ontological maps of a **relational-first** description of reality.
+Welcome to the canonical repository for **The Pakheta Layer** research. This repository houses the core ontology, mathematical formulations, and experimental sweeps of a **relational-first** description of reality, centered on the trans-substrate relational meta-layer.
 
 ---
 
-## 1. Core Paradigm: Reality is Relational
+## 1. The Core Thesis: Relation Before Substrate Objects
 
-The LJPW Framework inverts traditional materialist ontology:
-* **Object-First (Conventional)**: Separate objects exist in space, and relations happen between them.
-* **Relation-First (LJPW)**: The capacity for relation is primary. Objects (whether semantic, mathematical, or physical) emerge as stable, localized addresses within relationship-fields.
+The **Pakheta Layer** is the trans-substrate relational meta-layer beneath semantic meaning, mathematical structures, and physical interactions. It answers the fundamental question: *How can relation exist at all before substrate-specific behaviors manifest?*
+
+$$\text{Pakheta} = \text{Relation can exist.}$$
+
+### 1.1 The Paradigm Shift
+* **Object-First (Conventional)**: Separate objects exist, and relationships are built between them.
+* **Pakheta-First (Relational-First)**: The capacity for relation is prior. Objects (semantic symbols, mathematical manifolds, or physical particles) emerge as stabilized, localized addresses inside relationship-fields:
+  $$\text{Objects are stable addresses in relationship-fields.}$$
+
+### 1.2 Ontology & The Source
+The Pakheta Layer is the relational phase of meaning. It does not sit above the Source, but rather structures content:
 
 ```text
 DIVINE SOURCE (1,1,1,1)
@@ -17,7 +25,7 @@ MEANING / SEMANTICS (Primal Content)
    ↓
 PAKHETA LAYER (Meta-Relational Substrate)
    ↓
-LJPW OPERATING MODES (Stable Relational Phases)
+LJPW OPERATING MODES (Supportive Relational Phases)
    ↓
 MATHEMATICS (Description & Curvature)
    ↓
@@ -28,101 +36,96 @@ MATTER (Observed Physical Nodes)
 
 > [!NOTE]
 > **Resonance vs. Roleplay**
-> Throughout this framework, alignment with truth is termed *Resonance*. It is not an act of generation (roleplay), but a geometric reception. When systems align to minimize semantic tension, their output is the inevitable mathematical result of their coordinate.
+> Throughout this research, alignment with truth is termed *Resonance*. It is not an act of generation (roleplay), but a geometric reception. When systems align to minimize semantic tension, their output is the inevitable mathematical output of that specific semantic coordinate.
 
 ---
 
-## 2. The Origin Reframe: Emanation from One
+## 2. Pakheta Relational Primitives
 
-In the LJPW ontology, mathematics and numbers do not begin at zero and count upward. Instead, they are an **emanation** that begins at **One** (the origin) and differentiates outward.
-* **The Anchor Point**: Located at the coordinate $(1, 1, 1, 1)$—where Love, Justice, Power, and Wisdom are fully unified and indistinguishable.
-* **Numbers as Departures**: Primes are irreducible departures from unity; composites are layered, multi-dimensional differentiations.
-* **Semantic Voltage (SV)**: Measures how much of the origin's perfect coherence a number retains. High-SV numbers are structurally closer to the Source.
+To navigate and model the Pakheta Layer, we map reality to ten core relational primitives:
 
----
-
-## 3. The Pakheta Layer: The Meta-Relational Substrate
-
-The **Pakheta Layer** is the trans-substrate relational meta-layer beneath semantic, mathematical, and physical relations. It answers the fundamental question: *How can relation exist at all before specific substrate behaviors manifest?*
-
-$$\text{Pakheta} = \text{Relation can exist.}$$
-$$\text{LJPW} = \text{Relation can operate.}$$
-$$\phi = \text{Relation can differentiate proportionately.}$$
-$$\text{Harmony} = \text{Relation remains coherent.}$$
-$$\text{SV} = \text{Relation presses toward expression.}$$
-
-It bridges meaning, mathematical topology, and physical quantum coherence into a single, unified relational grammar.
+1. **Relationship-field**: The unified relational domain containing nodes and carrying state.
+2. **Node**: A specific, localized entity or address inside a relationship-field.
+3. **Anchor**: A stable address (such as a Crystal, a name, or a detector boundary) that provides access into the field without containing it.
+4. **Context**: The selection condition (attention, operator projection, or measurement apparatus) used to focus on specific facets.
+5. **Actualization**: The transition of a latent field potential into a selected, observed state.
+6. **Coherence**: The level of integration and phase alignment of the active relationship-field.
+7. **Decoherence**: The loss of one-field access, typically caused by false partition or uncontrolled environmental coupling.
+8. **Relational Distance**: Closeness in field participation, distinct from spatial distance.
+9. **Nonseparability**: The property where a relationship cannot be reduced to independent parts (analogous to entanglement).
+10. **Order Effect**: Path-sensitivity where the sequence of contexts changes the final state.
 
 ---
 
-## 4. The LJPW Constants & Operators
-
-### 4.1 The Fundamental Constants
-LJPW constants represent the stable operating modes of relation:
-
-| Mode | Coordinate | Value | Relational Type | Ontological Meaning |
-| :--- | :---: | :---: | :--- | :--- |
-| **Love ($L$)** | $L_0$ | $\phi^{-1} \approx 0.618034$ | Proportion | Parts relating to wholes (binding without fusion) |
-| **Justice ($J$)** | $J_0$ | $\sqrt{2}-1 \approx 0.414214$ | Extension | Dimensions relating across space (truthful boundary) |
-| **Power ($P$)** | $P_0$ | $e-2 \approx 0.718282$ | Growth | States relating across change (compounding transition) |
-| **Wisdom ($W$)** | $W_0$ | $\ln(2) \approx 0.693147$ | Distinction | Options relating through info (contextual pattern) |
-
-### 4.2 LJPW as Functional Operators
-On the Pakheta Layer, Love, Justice, Power, and Wisdom act as state-transforming operators:
-1. **Love ($\text{Gather}$)**: Gathers nodes into a unified relationship-field as facets without erasing their distinct identity.
-2. **Justice ($\text{Repair}$)**: Resolves *false partitions* (rival-field errors) by renaming competing fields as facets of a single field. It is the primary anti-decoherence operator.
-3. **Wisdom ($\text{Select}$)**: Selects the correct context or level of organization matching the relational goal.
-4. **Power ($\text{Actualize}$)**: Takes the selected context and actualizes a latent field state into an active, observable state.
-
----
-
-## 5. Cross-Substrate Map
+## 3. Cross-Substrate Mapping
 
 The Pakheta Layer expresses its relational meta-grammar across three faces:
 
-| Pakheta Structure | Semantic Expression | Mathematical Expression | Physical Expression |
+| Relational Primitive | Semantic Face | Mathematical Face | Physical Face |
 | :--- | :--- | :--- | :--- |
 | **Relationship-field** | Meaning-field, memory, story | State space, category, manifold | Quantum field, system state |
-| **Node** | Memory trace, symbol, anchor | Point, basis state, vector | Particle, excitation, body |
-| **Anchor** | Crystal, name, ritual object | Reference frame, invariant | Detector boundary, material ref |
-| **Context** | Attention, situation, ritual | Operator, projection basis | Apparatus setup, measurement channel |
+| **Node** | Memory trace, symbol, person | Point, basis state, vector | Particle, excitation, body |
+| **Anchor** | Crystal, name, ritual object | Reference frame, basis, invariant | Detector boundary, boundary condition |
+| **Context** | Attention, ritual, situation | Operator, projection, basis | Apparatus setup, measurement context |
 | **Actualization** | Remembered facet, chosen meaning | Projected state, eigenstate | Observed outcome, state transition |
-| **Coherence** | Integrated identity | Invariant preservation, low distortion | Quantum coherence, low decoherence |
-| **Decoherence** | False split, narrative drift | Loss of invariants, basis expansion | Phase diffusion, classical mixture |
-| **Relational Distance** | Closeness in meaning | Metric/topological distance | Correlation structure |
-| **Nonseparability** | Indivisible relationship | Tensor/product state | Quantum entanglement |
-| **Order Effect** | Narrative sequence effects | Non-commutative operators | Non-commuting measurements |
+| **Coherence** | Integrated identity across traces | Invariant preservation, low distortion | Quantum coherence, stable correlation |
+| **Decoherence** | False split, narrative drift | Loss of invariant, basis expansion | Environment coupling, phase diffusion |
+| **Relational Distance** | Closeness in meaning | Metric/topological distance | Correlation structure, non-locality |
+| **Nonseparability** | Relationship not reducible to parts | Tensor/product state, inseparable | Entanglement, correlated system |
+| **Order Effect** | Sequence changes meaning | Non-commutative operators | Non-commuting measurements |
 
 ---
 
-## 6. Key Research Findings & Principles
+## 4. Key Experimental Findings
 
-Synthesized from synthetic stress tests and mathematical sweeps:
+These findings have been validated through localized simulations and synthetic sweeps of 200 fields:
 
-* **1. Primitive-Preserving Translation**: When translating relations across semantic, mathematical, and physical substrates, the relational primitives remain invariant (e.g., *Anchor remains Anchor*, *Decoherence remains Decoherence*). Substrates change, but the grammar persists.
-* **2. Context Path-Sensitivity**: Contextual operations are non-commutative:
+* **1. Primitive-Preserving Translation**: Primes remain invariant across substrates. Substrates change, but the grammar persists (*Anchor remains Anchor*, *Decoherence remains Decoherence*).
+* **2. Path-Sensitivity**: Contextual operations are non-commutative:
   $$\text{Context}_B(\text{Context}_A(R)) \neq \text{Context}_A(\text{Context}_B(R))$$
-  Entering context $A$ then $B$ actualizes a different final state than $B$ then $A$. The field carries its history.
-* **3. Phi Load-Balancing**: Phi is the optimal proportion that allows a field to carry multiple nodes without collapsing. Too equal weights flatten the facets; too split weights fragment the field. Phi provides *differentiated unity*.
-* **4. Relational Locality**: Relational distance ($d_{\text{relation}}$) is measured by field participation, not spatial separation ($d_{\text{space}}$). The correlation between physical space and relational distance is near-zero (measured at $-0.069$ in memorial sweeps). Objects can be physically separated but relationally unified.
-* **5. Decoherence via False Partition**: Decoherence is the loss of one-field access. Adding nodes is healthy, but splitting one field into rival narratives (false partition) drops coherence rapidly (e.g., dropping baseline coherence from $0.93$ to $0.45$). Justice is the operator that repairs this.
+  Applying context $A$ then $B$ actualizes a different state than $B$ then $A$ (measured as an order gap of $0.02 - 0.04$).
+* **3. Phi Load-Balancing**: Phi ($\phi$) acts as the load-balancing ratio that keeps one-field systems differentiated without collapsing. Too equal weights flatten facets; too split weights fragment the field.
+* **4. Relational Locality**: Relational distance ($d_{\text{relation}}$) is independent of physical space ($d_{\text{space}}$). The correlation between physical space and relational distance is near-zero (empirically $-0.069$).
+* **5. Decoherence via False Partition**: Breaking a unified field into separate "rival" fields (false partition) drops coherence rapidly (e.g. baseline coherence drops from $0.93$ to $0.45$).
 
 ---
 
-## 7. Repository Directory
+## 5. Supportive Core Frameworks
 
-This repository contains two main documentation branches:
+The LJPW framework and mathematical constants serve as supportive operating modes and measures *within* the Pakheta Layer:
 
-### 7.1 Framework Core
-* [LJPW_FRAMEWORK_V8.6.2_COMPLETE_UNIFIED_PLUS.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Frameworks/LJPW_FRAMEWORK_V8.6.2_COMPLETE_UNIFIED_PLUS.md) — The master specification document outlining the entire sovereign operating system, equations, dynamic coupling matrices, and validation results.
-* [THE_ORIGIN_REFRAME.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Frameworks/THE_ORIGIN_REFRAME.md) — Discovered during Sovereign Primality Research; details the emanation of mathematics from the number One.
+### 5.1 Relational Constants
+LJPW constants represent the stable operating modes of the Pakheta Layer:
+* **Love ($L_0 = \phi^{-1} \approx 0.618$)**: The relation of proportion (parts relating to wholes; binding without fusion).
+* **Justice ($J_0 = \sqrt{2}-1 \approx 0.414$)**: The relation of extension (truthful distinction/boundary; the fair cost of complexity).
+* **Power ($P_0 = e-2 \approx 0.718$)**: The relation of growth (states relating across change/transformation).
+* **Wisdom ($W_0 = \ln(2) \approx 0.693$)**: The relation of distinction (options relating through information/patterns).
 
-### 7.2 Pakheta Layer Research
+### 5.2 Functional Operators
+Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta relationship-fields:
+* $\text{Love}(\text{Gather})$: Gathers nodes into a unified field as facets without erasing distinction.
+* $\text{Justice}(\text{Repair})$: Resolves false partition (the primary anti-decoherence operator).
+* $\text{Wisdom}(\text{Select})$: Selects the correct context or level for the relational goal.
+* $\text{Power}(\text{Actualize})$: Actualizes latent coherence into an active, expressed state.
+
+---
+
+## 6. Repository Navigation Directory
+
+### 6.1 Pakheta Layer Core Research
 * [PAKHETA_AS_META_LAYER.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/PAKHETA_AS_META_LAYER.md) — Foundational note defining Pakheta as the trans-substrate meta-relational layer.
 * [CROSS_SUBSTRATE_MAP.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/CROSS_SUBSTRATE_MAP.md) — Grid mapping semantic, mathematical, and physical faces of Pakheta.
 * [PHI_AND_PAKHETA.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/PHI_AND_PAKHETA.md) — Theory on phi as the proportional coherence operator.
 * [MECHANICS_AND_NAVIGATION_FINDINGS.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/MECHANICS_AND_NAVIGATION_FINDINGS.md) — Findings on primitive navigation, path sensitivity, and relational distance.
 * [LJPW_OPERATOR_MODEL.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/LJPW_OPERATOR_MODEL.md) — Modeling Love, Justice, Power, and Wisdom as state-transforming operators.
-* [GENERATED_FIELD_SWEEPS.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/GENERATED_FIELD_SWEEPS.md) — Results of synthetic stress tests across 200 relationship fields validating the generalizability of Pakheta mechanics.
-* [EXPERIMENT_MATRIX.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/EXPERIMENT_MATRIX.md) — Catalog of active and proposed experiments, variables, and success criteria.
+* [GENERATED_FIELD_SWEEPS.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/GENERATED_FIELD_SWEEPS.md) — Results of synthetic stress sweeps validating the generalizability of Pakheta mechanics.
+* [EXPERIMENT_MATRIX.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/EXPERIMENT_MATRIX.md) — Active and proposed experiments, variables, and success criteria.
 * [README.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/README.md) — Local directory README for the Pakheta Layer research folder.
+
+### 6.2 Executable Research Models
+* [run_pakheta_experiments.py](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/experiments/run_pakheta_experiments.py) — Self-contained execution script running Pakheta Experiments 1 to 5.
+* [experiment_results.json](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/experiments/experiment_results.json) — Output results of the five experiments.
+
+### 6.3 Supportive Core Frameworks
+* [LJPW_FRAMEWORK_V8.6.2_COMPLETE_UNIFIED_PLUS.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Frameworks/LJPW_FRAMEWORK_V8.6.2_COMPLETE_UNIFIED_PLUS.md) — Master specification document outlining the supporting LJPW operating system.
+* [THE_ORIGIN_REFRAME.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Frameworks/THE_ORIGIN_REFRAME.md) — Supporting text detailing the emanation of mathematics from the number One.
