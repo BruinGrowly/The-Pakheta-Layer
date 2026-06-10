@@ -1,0 +1,197 @@
+{
+  "experiment_name": "prime_coherence_decay",
+  "date_executed": "2026-06-10T10:58:32.463489+00:00",
+  "small_numbers_detail": [
+    {
+      "n": 1,
+      "is_prime": false,
+      "distance_from_1": 0.0,
+      "divisors_count": 1,
+      "distinct_factors": 0,
+      "partition_penalty": 0.0,
+      "coherence": 1.0,
+      "L": 1.0,
+      "semantic_voltage": 7.8459
+    },
+    {
+      "n": 2,
+      "is_prime": true,
+      "distance_from_1": 0.6931,
+      "divisors_count": 2,
+      "distinct_factors": 1,
+      "partition_penalty": 0.0,
+      "coherence": 0.9475,
+      "L": 0.6473,
+      "semantic_voltage": 2.9771
+    },
+    {
+      "n": 3,
+      "is_prime": true,
+      "distance_from_1": 1.0986,
+      "divisors_count": 2,
+      "distinct_factors": 1,
+      "partition_penalty": 0.0,
+      "coherence": 0.9192,
+      "L": 0.6359,
+      "semantic_voltage": 2.8371
+    },
+    {
+      "n": 4,
+      "is_prime": false,
+      "distance_from_1": 1.3863,
+      "divisors_count": 3,
+      "distinct_factors": 1,
+      "partition_penalty": 0.04,
+      "coherence": 0.8642,
+      "L": 0.578,
+      "semantic_voltage": 1.4547
+    },
+    {
+      "n": 5,
+      "is_prime": true,
+      "distance_from_1": 1.6094,
+      "divisors_count": 2,
+      "distinct_factors": 1,
+      "partition_penalty": 0.0,
+      "coherence": 0.8859,
+      "L": 0.622,
+      "semantic_voltage": 2.6749
+    },
+    {
+      "n": 6,
+      "is_prime": false,
+      "distance_from_1": 1.7918,
+      "divisors_count": 4,
+      "distinct_factors": 2,
+      "partition_penalty": 0.16,
+      "coherence": 0.7347,
+      "L": 0.5672,
+      "semantic_voltage": 1.2137
+    },
+    {
+      "n": 7,
+      "is_prime": true,
+      "distance_from_1": 1.9459,
+      "divisors_count": 2,
+      "distinct_factors": 1,
+      "partition_penalty": 0.0,
+      "coherence": 0.8653,
+      "L": 0.6132,
+      "semantic_voltage": 2.5757
+    },
+    {
+      "n": 8,
+      "is_prime": false,
+      "distance_from_1": 2.0794,
+      "divisors_count": 4,
+      "distinct_factors": 1,
+      "partition_penalty": 0.08,
+      "coherence": 0.7888,
+      "L": 0.5598,
+      "semantic_voltage": 1.2861
+    },
+    {
+      "n": 9,
+      "is_prime": false,
+      "distance_from_1": 2.1972,
+      "divisors_count": 3,
+      "distinct_factors": 1,
+      "partition_penalty": 0.04,
+      "coherence": 0.8165,
+      "L": 0.5569,
+      "semantic_voltage": 1.3242
+    },
+    {
+      "n": 10,
+      "is_prime": false,
+      "distance_from_1": 2.3026,
+      "divisors_count": 4,
+      "distinct_factors": 2,
+      "partition_penalty": 0.16,
+      "coherence": 0.7093,
+      "L": 0.5542,
+      "semantic_voltage": 1.145
+    },
+    {
+      "n": 11,
+      "is_prime": true,
+      "distance_from_1": 2.3979,
+      "divisors_count": 2,
+      "distinct_factors": 1,
+      "partition_penalty": 0.0,
+      "coherence": 0.839,
+      "L": 0.6019,
+      "semantic_voltage": 2.4513
+    },
+    {
+      "n": 12,
+      "is_prime": false,
+      "distance_from_1": 2.4849,
+      "divisors_count": 6,
+      "distinct_factors": 2,
+      "partition_penalty": 0.2,
+      "coherence": 0.6673,
+      "L": 0.5497,
+      "semantic_voltage": 1.0685
+    },
+    {
+      "n": 13,
+      "is_prime": true,
+      "distance_from_1": 2.5649,
+      "divisors_count": 2,
+      "distinct_factors": 1,
+      "partition_penalty": 0.0,
+      "coherence": 0.8297,
+      "L": 0.5978,
+      "semantic_voltage": 2.4077
+    },
+    {
+      "n": 14,
+      "is_prime": false,
+      "distance_from_1": 2.6391,
+      "divisors_count": 4,
+      "distinct_factors": 2,
+      "partition_penalty": 0.16,
+      "coherence": 0.6936,
+      "L": 0.546,
+      "semantic_voltage": 1.1029
+    },
+    {
+      "n": 15,
+      "is_prime": false,
+      "distance_from_1": 2.7081,
+      "divisors_count": 4,
+      "distinct_factors": 2,
+      "partition_penalty": 0.16,
+      "coherence": 0.6904,
+      "L": 0.5443,
+      "semantic_voltage": 1.0946
+    }
+  ],
+  "band_summaries": [
+    {
+      "range": "10-100",
+      "avg_primes_sv": 2.1407,
+      "avg_composites_sv": 0.9242,
+      "delta": 1.2164
+    },
+    {
+      "range": "100-300",
+      "avg_primes_sv": 1.85,
+      "avg_composites_sv": 0.7631,
+      "delta": 1.0869
+    },
+    {
+      "range": "300-600",
+      "avg_primes_sv": 1.7108,
+      "avg_composites_sv": 0.6888,
+      "delta": 1.022
+    },
+    {
+      "range": "600-1000",
+      "avg_primes_sv": 1.6261,
+      "avg_composites_sv": 0.6423,
+      "delta": 0.9838
+    }
+  ]
+}
