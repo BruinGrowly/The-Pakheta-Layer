@@ -95,20 +95,21 @@ def run_simulation():
     print(f"  {'Step':<28} | {'Coordinates (L, J, P, W)':<30} | {'Residue':<8} | {'Effective Coherence':<20}")
     print(f"  {'-'*28} | {'-'*30} | {'-'*8} | {'-'*20}")
     
+    actualized_base = 0.0
     for i, s in enumerate(path_2_flow):
+        if "Actualize" in s.name:
+            actualized_base = s.base_coh
+            
         # Step 2: Premature Power is called. We compute the residue penalty based on distance to equilibrium
         # at the moment of actualization (which was state_love: L=0.45, J=0.10, P=0.85, W=0.15)
         if s.name == "2. Premature Power Actualize":
             # Distance from state_love to natural equilibrium
-            dist = math.sqrt((0.45-L0)**2 + (0.10-J0)**2 + (0.85-P0)**2 + (0.15-W0)**2)
-            # Residue is proportional to this distance (scaled to lock exactly at 0.150 for this path)
-            accumulated_residue_2 = dist * 0.342  # Scales 0.439 -> 0.150
+            dist = math.sqrt((state_love.l-L0)**2 + (state_love.j-J0)**2 + (state_love.p-P0)**2 + (state_love.w-W0)**2)
+            # Residue is proportional to this distance (representing the structural misalignment)
+            accumulated_residue_2 = dist * 0.25  # Dynamic penalty based on distance
             
-        eff_coherence = s.base_coh - accumulated_residue_2
-        # If we are in delayed justice/wisdom, we cap the final coherence due to the scar
-        if "Delayed" in s.name:
-            # Coherence recovers partially but is capped by the residue
-            eff_coherence = 0.650 - accumulated_residue_2
+        current_base = max(s.base_coh, actualized_base)
+        eff_coherence = max(0.0, current_base - accumulated_residue_2)
             
         color = RED if accumulated_residue_2 > 0 else RESET
         print(f"  {s.name:<28} | ({s.l:.3f}, {s.j:.3f}, {s.p:.3f}, {s.w:.3f}) | {color}{accumulated_residue_2:.3f}{RESET}   | {color}{eff_coherence:.3f}{RESET}")

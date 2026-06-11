@@ -1,39 +1,31 @@
 {
   "framework_version": "8.6.2",
-  "date_executed": "2026-06-10T10:31:22.353350+00:00",
-  "execution_duration_sec": 0.00052,
+  "date_executed": "2026-06-11T13:38:35.883184+00:00",
+  "execution_duration_sec": 0.002227,
   "experiments": {
     "exp_1_toy_anchor_coherence": {
-      "single_crystal": 0.958,
-      "false_partition": 0.624,
-      "complementary_anchors": 0.87
+      "single_crystal": 0.9579999999999999,
+      "false_partition": 0.42105066850528194,
+      "complementary_anchors": 0.8699999999999999
     },
     "exp_2_context_order_path_sensitivity": {
-      "grave_visit_backyard_walk_gap": 0.035,
-      "grave_visit_shared_remembrance_gap": 0.022,
-      "backyard_walk_theory_reflection_gap": 0.032,
-      "shared_remembrance_theory_reflection_gap": 0.036
+      "grave_visit_backyard_walk_gap": 0.08465091822995034,
+      "grave_visit_shared_remembrance_gap": 0.045422452318928414,
+      "backyard_walk_theory_reflection_gap": 0.10045799208891162,
+      "shared_remembrance_theory_reflection_gap": 0.05517024491618507
     },
     "exp_3_relational_distance": {
-      "correlation": -0.069,
-      "nodes": {
-        "grave": {
-          "d_space": 0.0,
-          "d_field": 0.0
-        },
-        "ordinary_stone_near_grave": {
-          "d_space": 0.032,
-          "d_field": 0.45
-        },
-        "backyard_fur_burial": {
-          "d_space": 0.826,
-          "d_field": 0.124
-        },
-        "old_photo_far_away": {
-          "d_space": 1.359,
-          "d_field": 0.162
-        }
-      }
+      "correlation": -0.8966279969135285,
+      "nodes_space": {
+        "ordinary_stone_near_grave": 0.032,
+        "backyard_fur_burial": 0.826,
+        "old_photo_far_away": 1.359
+      },
+      "field_distances": [
+        0.993744941016748,
+        0.060759337081369144,
+        0.11129229221696998
+      ]
     },
     "exp_4_ljpw_operators": [
       {
@@ -43,7 +35,7 @@
         "P": 0.9,
         "W": 0.0,
         "harmony": 0.5421227571312619,
-        "coherence": 0.335
+        "coherence": 0.4065920678484464
       },
       {
         "step": "1. Love Gather",
@@ -52,7 +44,7 @@
         "P": 0.85,
         "W": 0.15,
         "harmony": 0.6013897037077242,
-        "coherence": 0.376
+        "coherence": 0.4510422777807931
       },
       {
         "step": "2. Justice Repair",
@@ -61,7 +53,7 @@
         "P": 0.6,
         "W": 0.55,
         "harmony": 0.7994647390853372,
-        "coherence": 0.55
+        "coherence": 0.7994647390853372
       },
       {
         "step": "3. Wisdom Context Select",
@@ -70,7 +62,7 @@
         "P": 0.5,
         "W": 0.693,
         "harmony": 0.7947456394464574,
-        "coherence": 0.55
+        "coherence": 0.7947456394464574
       },
       {
         "step": "4. Power Actualize",
@@ -79,7 +71,7 @@
         "P": 0.718,
         "W": 0.693,
         "harmony": 0.9996156305410625,
-        "coherence": 0.65
+        "coherence": 0.9996156305410625
       }
     ],
     "exp_5_generated_field_sweep": {
@@ -87,36 +79,34 @@
       "seed": 613,
       "strategies": {
         "phi_weighted": {
-          "min": 0.9910023878315263,
-          "mean": 0.995,
-          "max": 0.9979826537933632
+          "min": 0.4150751568945655,
+          "mean": 0.719881877380653,
+          "max": 0.9688549454961306
         },
         "equal_weighted": {
-          "min": 0.9910447051698266,
-          "mean": 0.994,
-          "max": 0.9979790906194255
+          "min": 0.8069764428157011,
+          "mean": 0.9171103616030257,
+          "max": 0.9873346529802345
         },
         "random_weighted": {
-          "min": 0.9810320671556009,
-          "mean": 0.993,
-          "max": 0.9969168549988974
+          "min": 0.5316847032531947,
+          "mean": 0.8381205384491156,
+          "max": 0.9844720846822219
         },
         "single_core": {
-          "min": 0.9860019072026754,
-          "mean": 0.992,
-          "max": 0.9959411504607325
+          "min": 0.9999999999999997,
+          "mean": 1.0,
+          "max": 1.0000000000000002
         },
         "false_partition": {
-          "min": 0.6741817617147091,
-          "mean": 0.684,
-          "max": 0.6928832407509112
+          "min": 0.20197319476051753,
+          "mean": 0.47436370362791325,
+          "max": 0.661436003115315
         }
       },
       "rates": {
-        "phi_best_or_tied_rate": 97.5,
-        "false_below_phi_rate": 100.0,
-        "far_related_beats_decoy_rate": 100.0,
-        "justice_strongest_repair_rate": 100.0
+        "phi_best_or_tied_rate": 4.5,
+        "false_below_phi_rate": 100.0
       }
     }
   }

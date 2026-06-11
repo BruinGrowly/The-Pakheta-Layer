@@ -1,14 +1,14 @@
 {
   "experiment_name": "phi_universality_robustness_sweep",
-  "date_executed": "2026-06-10T12:34:11.333911+00:00",
+  "date_executed": "2026-06-11T13:38:57.066145+00:00",
   "num_fields": 200,
   "results": {
     "Phi-decay": {
       "means": {
         "phi": 1.0,
-        "equal": 0.9692,
-        "random": 0.9595,
-        "partition": 0.696
+        "equal": 0.7947,
+        "random": 0.7298,
+        "partition": 0.6813
       },
       "rates": {
         "phi_best_or_tied": 100.0,
@@ -17,10 +17,10 @@
     },
     "Flat": {
       "means": {
-        "phi": 0.9692,
+        "phi": 0.7947,
         "equal": 1.0,
-        "random": 0.9875,
-        "partition": 0.6561
+        "random": 0.9167,
+        "partition": 0.495
       },
       "rates": {
         "phi_best_or_tied": 0.0,
@@ -29,10 +29,10 @@
     },
     "Random": {
       "means": {
-        "phi": 0.9592,
-        "equal": 0.9873,
-        "random": 0.9762,
-        "partition": 0.6542
+        "phi": 0.7281,
+        "equal": 0.9155,
+        "random": 0.8412,
+        "partition": 0.4861
       },
       "rates": {
         "phi_best_or_tied": 5.0,
@@ -41,10 +41,10 @@
     },
     "Zipf": {
       "means": {
-        "phi": 0.9982,
-        "equal": 0.9643,
-        "random": 0.957,
-        "partition": 0.696
+        "phi": 0.9878,
+        "equal": 0.762,
+        "random": 0.7133,
+        "partition": 0.6812
       },
       "rates": {
         "phi_best_or_tied": 100.0,

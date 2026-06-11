@@ -1,0 +1,34 @@
+{
+  "experiment_name": "bartkiewicz_tomography_bridge",
+  "date_executed": "2026-06-11T13:38:28.165787+00:00",
+  "source_data_path": "C:\\Users\\Well\\Crush\\Projects\\LJPW_Blueprints\\Technology_Research\\Quantum_Mechanics\\data\\tomography\\bartkiewicz_srep19610_all_optimal_tomography_2026-05-29.json",
+  "audit_results": {
+    "bartkiewicz_rhoO07_optimal": {
+      "published_classification": "separable",
+      "prepared_state": "psi_7 = |HV>",
+      "trace": 0.9999,
+      "ppt_negativity": 0.048,
+      "concurrence": 0.0849,
+      "target_overlap": 0.9818,
+      "contradicts_separability": false
+    },
+    "bartkiewicz_rhoO13_optimal": {
+      "published_classification": "separable",
+      "prepared_state": "psi_13 = |e_1a e_1b>",
+      "trace": 0.9999,
+      "ppt_negativity": 0.4797,
+      "concurrence": 0.9722,
+      "target_overlap": 0.4495,
+      "contradicts_separability": true
+    },
+    "bartkiewicz_rhoO14_optimal": {
+      "published_classification": "separable",
+      "prepared_state": "psi_14 = |e_2a e_2b>",
+      "trace": 1.0,
+      "ppt_negativity": 0.0377,
+      "concurrence": 0.0312,
+      "target_overlap": 0.003,
+      "contradicts_separability": false
+    }
+  }
+}

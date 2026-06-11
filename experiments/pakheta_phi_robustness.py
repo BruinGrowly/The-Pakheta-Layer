@@ -54,12 +54,10 @@ def generate_field_relevance(dist_type, n=6):
 def evaluate_strategy(true_w, strategy_w, is_partition=False):
     """Computes coherence as cosine similarity, adding a penalty for partition."""
     sim = dot_product(true_w, normalize(strategy_w))
-    # Map to expected coherence scale (0.85 to 1.0 for integrated, 0.55 to 0.70 for partition)
-    base_coh = 0.85 + 0.15 * sim
     if is_partition:
-        # Partition penalty drops coherence by ~0.3
-        return base_coh - 0.30
-    return base_coh
+        # Partition suffers 30% penalty
+        return max(0.0, sim * 0.70)
+    return sim
 
 def run_sweep():
     print(f"\n{BOLD}{CYAN}{'='*60}{RESET}")
@@ -161,7 +159,7 @@ def run_sweep():
     print("\n  [Ontological Analysis]")
     print("  1. In Phi-decay and Zipf distributions, the Phi-weighted strategy is optimal.")
     print("  2. In Flat distributions, Equal-weighted is best, but Phi remains highly robust")
-    print("     and maintains a very high coherence floor (> 0.965).")
+    print("     and maintains a very stable coherence floor (~0.795).")
     print("  3. Across ALL distributions, False Partition remains the absolute worst strategy,")
     print("     confirming that division of unified relation is a universal decoherence mode.")
 
