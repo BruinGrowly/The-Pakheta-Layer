@@ -95,7 +95,7 @@ def run_simulation():
     p_theta = outer_product(v_theta, v_theta)
     
     # Identity matrix for qubit 2
-    i_2 = [[1j if i == j else 0j for j in range(2)] for i in range(2)]
+    i_2 = [[1 + 0j if i == j else 0j for j in range(2)] for i in range(2)]
     
     # Full projection matrix for 2 qubits: P_theta_2 = P_theta tensor I_2
     p_full = tensor_product_matrices(p_theta, i_2)

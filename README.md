@@ -113,19 +113,21 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 ## 6. Repository Navigation Directory
 
 ### 6.1 Pakheta Layer Core Research
-* [PAKHETA_AS_META_LAYER.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/PAKHETA_AS_META_LAYER.md) — Foundational note defining Pakheta as the trans-substrate meta-relational layer.
-* [CROSS_SUBSTRATE_MAP.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/CROSS_SUBSTRATE_MAP.md) — Grid mapping semantic, mathematical, and physical faces of Pakheta.
-* [PHI_AND_PAKHETA.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/PHI_AND_PAKHETA.md) — Theory on phi as the proportional coherence operator.
-* [MECHANICS_AND_NAVIGATION_FINDINGS.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/MECHANICS_AND_NAVIGATION_FINDINGS.md) — Findings on primitive navigation, path sensitivity, and relational distance.
-* [LJPW_OPERATOR_MODEL.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/LJPW_OPERATOR_MODEL.md) — Modeling Love, Justice, Power, and Wisdom as state-transforming operators.
-* [GENERATED_FIELD_SWEEPS.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/GENERATED_FIELD_SWEEPS.md) — Results of synthetic stress sweeps validating the generalizability of Pakheta mechanics.
-* [EXPERIMENT_MATRIX.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/EXPERIMENT_MATRIX.md) — Active and proposed experiments, variables, and success criteria.
-* [README.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Pakheta_Layer/README.md) — Local directory README for the Pakheta Layer research folder.
+* [PAKHETA_AS_META_LAYER.md](./docs/Pakheta_Layer/PAKHETA_AS_META_LAYER.md) — Foundational note defining Pakheta as the trans-substrate meta-relational layer.
+* [CROSS_SUBSTRATE_MAP.md](./docs/Pakheta_Layer/CROSS_SUBSTRATE_MAP.md) — Grid mapping semantic, mathematical, and physical faces of Pakheta.
+* [PHI_AND_PAKHETA.md](./docs/Pakheta_Layer/PHI_AND_PAKHETA.md) — Theory on phi as the proportional coherence operator.
+* [MECHANICS_AND_NAVIGATION_FINDINGS.md](./docs/Pakheta_Layer/MECHANICS_AND_NAVIGATION_FINDINGS.md) — Findings on primitive navigation, path sensitivity, and relational distance.
+* [LJPW_OPERATOR_MODEL.md](./docs/Pakheta_Layer/LJPW_OPERATOR_MODEL.md) — Modeling Love, Justice, Power, and Wisdom as state-transforming operators.
+* [GENERATED_FIELD_SWEEPS.md](./docs/Pakheta_Layer/GENERATED_FIELD_SWEEPS.md) — Results of synthetic stress sweeps validating the generalizability of Pakheta mechanics.
+* [EXPERIMENT_MATRIX.md](./docs/Pakheta_Layer/EXPERIMENT_MATRIX.md) — Active and proposed experiments, variables, and success criteria.
+* [README.md](./docs/Pakheta_Layer/README.md) — Local directory README for the Pakheta Layer research folder.
 
 ### 6.2 Executable Research Models
-* [run_pakheta_experiments.py](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/experiments/run_pakheta_experiments.py) — Self-contained execution script running Pakheta Experiments 1 to 5.
-* [experiment_results.json](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/experiments/experiment_results.json) — Output results of the five experiments.
+* [run_pakheta_experiments.py](./experiments/run_pakheta_experiments.py) — Self-contained execution script running Pakheta Experiments 1 to 5.
+* [experiment_results.json](./experiments/experiment_results.json) — Output results of the five experiments.
+
+All experiment scripts run on the Python standard library alone, except `pakheta_bartkiewicz_bridge.py`, which requires `numpy` (see [experiments/requirements.txt](./experiments/requirements.txt)).
 
 ### 6.3 Supportive Core Frameworks
-* [LJPW_FRAMEWORK_V8.6.2_COMPLETE_UNIFIED_PLUS.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Frameworks/LJPW_FRAMEWORK_V8.6.2_COMPLETE_UNIFIED_PLUS.md) — Master specification document outlining the supporting LJPW operating system.
-* [THE_ORIGIN_REFRAME.md](file:///c:/Users/Well/Crush/Projects/The-Pakheta-Layer/docs/Frameworks/THE_ORIGIN_REFRAME.md) — Supporting text detailing the emanation of mathematics from the number One.
+* [LJPW_FRAMEWORK_V8.6.2_COMPLETE_UNIFIED_PLUS.md](./docs/Frameworks/LJPW_FRAMEWORK_V8.6.2_COMPLETE_UNIFIED_PLUS.md) — Master specification document outlining the supporting LJPW operating system.
+* [THE_ORIGIN_REFRAME.md](./docs/Frameworks/THE_ORIGIN_REFRAME.md) — Supporting text detailing the emanation of mathematics from the number One.

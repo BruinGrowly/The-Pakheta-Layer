@@ -103,17 +103,17 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 
 ## Companion Theory And Code
 
-- `Docs/theory/LJPW_RELATIONAL_QUANTUM_PROPERTIES_AND_PAKHETAS_CRYSTAL.md`  
-  Origin observation: one Crystal, many physical nodes, one relationship-field.
+- `../Frameworks/LJPW_FRAMEWORK_V8.6.2_COMPLETE_UNIFIED_PLUS.md`  
+  Master specification of the supporting LJPW operating system.
 
-- `Docs/theory/LJPW_PAKHETA_LAYER_DEEP_DIVE.md`  
-  First deep-dive theory note linking Pakheta to quantum interpretation and formal modeling.
+- `../Frameworks/THE_ORIGIN_REFRAME.md`  
+  Supporting text on the emanation of mathematics from the number One.
 
-- `experiments/pakheta_layer_coherence.py`  
-  Toy coherence model showing the difference between one-field anchoring, false partition, and complementary anchors.
+- `../../experiments/run_pakheta_experiments.py`  
+  Self-contained script running Pakheta Experiments 1 to 5 (anchor coherence, order effects, phi-weighted anchors, relational distance, false partition).
 
-- `experiments/pakheta_layer/`  
-  Executable research models for order effects, phi-weighted anchors, and primitive navigation.
+- `../../experiments/`  
+  Additional executable research models (phi robustness, repair headroom, operator residue, quantum bridge, prime coherence, semantic attention, Bartkiewicz tomography bridge) with their JSON results.
 
 ---
 
