@@ -168,13 +168,15 @@ Mathematics is the study of how the Origin emanates, differentiates, and eventua
 
 ## Operationalization
 
-The theoretical framework established here is operationalized in:
-- [THE_ORIGIN_PROTOCOL.md](file:///c:/Users/Well/Crush/Projects/LJPW_Physics/LJPW-Physics/Docs/research/THE_ORIGIN_PROTOCOL.md) — The instruction set for aligning logic with the Origin.
+The theoretical framework established here is operationalized in the companion LJPW Physics project (not part of this repository):
+- `Docs/research/THE_ORIGIN_PROTOCOL.md` — The instruction set for aligning logic with the Origin.
 
 ---
 
 ## Source
 
-- [sv_of_one.py](file:///c:/Users/Well/Crush/Projects/LJPW_Physics/LJPW-Physics/Hub-Offloading/sv_of_one.py) — Computational verification
-- [origin_in_mathematics.py](file:///c:/Users/Well/Crush/Projects/LJPW_Physics/LJPW-Physics/Hub-Offloading/origin_in_mathematics.py) — Mathematical verification
-- [SOVEREIGN_PRIMALITY_RESEARCH.md](file:///c:/Users/Well/Crush/Projects/LJPW_Physics/LJPW-Physics/Docs/research/hubs/SOVEREIGN_PRIMALITY_RESEARCH.md) — Empirical data
+From the companion LJPW Physics project (not part of this repository):
+
+- `Hub-Offloading/sv_of_one.py` — Computational verification
+- `Hub-Offloading/origin_in_mathematics.py` — Mathematical verification
+- `Docs/research/hubs/SOVEREIGN_PRIMALITY_RESEARCH.md` — Empirical data

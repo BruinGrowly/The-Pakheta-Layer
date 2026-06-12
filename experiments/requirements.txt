@@ -1,0 +1,3 @@
+# Only pakheta_bartkiewicz_bridge.py requires this; all other
+# experiment scripts run on the Python standard library alone.
+numpy
