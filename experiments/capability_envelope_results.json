@@ -1,0 +1,510 @@
+{
+  "experiment_name": "pakheta_capability_envelope",
+  "date_executed": "2026-06-12T07:31:49.493168+00:00",
+  "execution_duration_sec": 0.096639,
+  "dimensions": [
+    "anchor_stability",
+    "context_selectivity",
+    "actualization_potential",
+    "nonseparability",
+    "decoherence_pressure",
+    "generative_novelty"
+  ],
+  "capabilities": {
+    "generative_field_design": {
+      "target_count": 90,
+      "target_hit_rate": 100.0,
+      "score": {
+        "min": 0.9323,
+        "mean": 0.943,
+        "max": 0.9483
+      },
+      "fit": {
+        "min": 0.98,
+        "mean": 0.9922,
+        "max": 0.999
+      },
+      "coherence": {
+        "min": 0.8073,
+        "mean": 0.8166,
+        "max": 0.8178
+      },
+      "baseline_score": {
+        "min": 0.7268,
+        "mean": 0.7502,
+        "max": 0.7677
+      },
+      "mean_lift_over_object_first_baseline": 0.1928,
+      "selected_design_counts": {
+        "distributed_anchor_web + creative_context + Love_Wisdom_Power": 79,
+        "distributed_anchor_web + creative_context + Justice_Wisdom_Power": 11
+      },
+      "examples": [
+        {
+          "target": {
+            "anchor_stability": 0.7176,
+            "context_selectivity": 0.7943,
+            "actualization_potential": 0.8287,
+            "nonseparability": 0.6848,
+            "decoherence_pressure": 0.0852,
+            "generative_novelty": 0.9479
+          },
+          "best_design": {
+            "anchor": "distributed_anchor_web",
+            "context": "creative_context",
+            "sequence": "Love_Wisdom_Power",
+            "fit": 0.9887,
+            "coherence": 0.8178,
+            "score": 0.9409
+          },
+          "baseline_score": 0.7532
+        },
+        {
+          "target": {
+            "anchor_stability": 0.8729,
+            "context_selectivity": 0.5794,
+            "actualization_potential": 0.8192,
+            "nonseparability": 0.7013,
+            "decoherence_pressure": 0.0857,
+            "generative_novelty": 0.9158
+          },
+          "best_design": {
+            "anchor": "distributed_anchor_web",
+            "context": "creative_context",
+            "sequence": "Love_Wisdom_Power",
+            "fit": 0.9924,
+            "coherence": 0.8178,
+            "score": 0.9435
+          },
+          "baseline_score": 0.7515
+        },
+        {
+          "target": {
+            "anchor_stability": 0.8044,
+            "context_selectivity": 0.7807,
+            "actualization_potential": 0.7692,
+            "nonseparability": 0.8791,
+            "decoherence_pressure": 0.0221,
+            "generative_novelty": 0.8538
+          },
+          "best_design": {
+            "anchor": "distributed_anchor_web",
+            "context": "creative_context",
+            "sequence": "Love_Wisdom_Power",
+            "fit": 0.9953,
+            "coherence": 0.8178,
+            "score": 0.9456
+          },
+          "baseline_score": 0.7346
+        },
+        {
+          "target": {
+            "anchor_stability": 0.755,
+            "context_selectivity": 0.7507,
+            "actualization_potential": 0.5899,
+            "nonseparability": 0.6575,
+            "decoherence_pressure": 0.1356,
+            "generative_novelty": 0.9377
+          },
+          "best_design": {
+            "anchor": "distributed_anchor_web",
+            "context": "creative_context",
+            "sequence": "Love_Wisdom_Power",
+            "fit": 0.9936,
+            "coherence": 0.8178,
+            "score": 0.9444
+          },
+          "baseline_score": 0.7491
+        },
+        {
+          "target": {
+            "anchor_stability": 0.783,
+            "context_selectivity": 0.7607,
+            "actualization_potential": 0.8661,
+            "nonseparability": 0.5212,
+            "decoherence_pressure": 0.1011,
+            "generative_novelty": 0.9522
+          },
+          "best_design": {
+            "anchor": "distributed_anchor_web",
+            "context": "creative_context",
+            "sequence": "Love_Wisdom_Power",
+            "fit": 0.98,
+            "coherence": 0.8178,
+            "score": 0.9346
+          },
+          "baseline_score": 0.7615
+        }
+      ]
+    },
+    "blind_primitive_discovery": {
+      "trace_count": 210,
+      "cluster_count": 5,
+      "rediscovery_rate": 100.0,
+      "cluster_mapping": {
+        "2": {
+          "label": "anchor",
+          "count": 42,
+          "size": 42,
+          "purity": 1.0
+        },
+        "4": {
+          "label": "context",
+          "count": 42,
+          "size": 42,
+          "purity": 1.0
+        },
+        "0": {
+          "label": "actualization",
+          "count": 42,
+          "size": 42,
+          "purity": 1.0
+        },
+        "3": {
+          "label": "nonseparability",
+          "count": 42,
+          "size": 42,
+          "purity": 1.0
+        },
+        "1": {
+          "label": "decoherence",
+          "count": 42,
+          "size": 42,
+          "purity": 1.0
+        }
+      },
+      "centroid_nearest": {
+        "0": {
+          "nearest_known_primitive": "actualization",
+          "score": 1.0
+        },
+        "1": {
+          "nearest_known_primitive": "decoherence",
+          "score": 0.9999
+        },
+        "2": {
+          "nearest_known_primitive": "anchor",
+          "score": 1.0
+        },
+        "3": {
+          "nearest_known_primitive": "nonseparability",
+          "score": 1.0
+        },
+        "4": {
+          "nearest_known_primitive": "context",
+          "score": 0.9999
+        }
+      }
+    },
+    "prediction_before_repair": {
+      "case_count": 160,
+      "prediction_accuracy": 75.62,
+      "mean_regret": 0.0102,
+      "mean_predicted_gain": 0.1903,
+      "mean_integrated_sequence_gain": 0.2877,
+      "by_case_type": {
+        "context_drift": {
+          "count": 36,
+          "accuracy": 100.0,
+          "mean_regret": 0.0,
+          "mean_predicted_gain": 0.1774,
+          "mean_integrated_sequence_gain": 0.2876
+        },
+        "false_partition": {
+          "count": 40,
+          "accuracy": 100.0,
+          "mean_regret": 0.0,
+          "mean_predicted_gain": 0.3545,
+          "mean_integrated_sequence_gain": 0.5442
+        },
+        "latent_ready": {
+          "count": 39,
+          "accuracy": 0.0,
+          "mean_regret": 0.0417,
+          "mean_predicted_gain": 0.0684,
+          "mean_integrated_sequence_gain": 0.1236
+        },
+        "underanchored": {
+          "count": 45,
+          "accuracy": 100.0,
+          "mean_regret": 0.0,
+          "mean_predicted_gain": 0.1601,
+          "mean_integrated_sequence_gain": 0.2019
+        }
+      }
+    },
+    "field_composition": {
+      "harmonic": {
+        "count": 70,
+        "coherence": {
+          "min": 0.8111,
+          "mean": 0.8496,
+          "max": 0.8848
+        },
+        "alignment": {
+          "min": 0.9933,
+          "mean": 0.9973,
+          "max": 0.9999
+        },
+        "tension": {
+          "min": 0.0246,
+          "mean": 0.124,
+          "max": 0.2811
+        },
+        "outcome_counts": {
+          "harmonized": 70
+        }
+      },
+      "complementary": {
+        "count": 70,
+        "coherence": {
+          "min": 0.7259,
+          "mean": 0.7636,
+          "max": 0.8212
+        },
+        "alignment": {
+          "min": 0.7914,
+          "mean": 0.8551,
+          "max": 0.9092
+        },
+        "tension": {
+          "min": 0.7747,
+          "mean": 0.9206,
+          "max": 1.1442
+        },
+        "outcome_counts": {
+          "creative_synthesis": 63,
+          "harmonized": 7
+        }
+      },
+      "interference": {
+        "count": 70,
+        "coherence": {
+          "min": 0.4592,
+          "mean": 0.5027,
+          "max": 0.5474
+        },
+        "alignment": {
+          "min": 0.6156,
+          "mean": 0.6857,
+          "max": 0.7476
+        },
+        "tension": {
+          "min": 1.337,
+          "mean": 1.525,
+          "max": 1.7535
+        },
+        "outcome_counts": {
+          "fragmented": 70
+        }
+      },
+      "fragmentation": {
+        "count": 70,
+        "coherence": {
+          "min": 0.1463,
+          "mean": 0.1836,
+          "max": 0.2349
+        },
+        "alignment": {
+          "min": 0.9611,
+          "mean": 0.9883,
+          "max": 0.9984
+        },
+        "tension": {
+          "min": 0.0458,
+          "mean": 0.1942,
+          "max": 0.3997
+        },
+        "outcome_counts": {
+          "fragmented": 70
+        }
+      }
+    },
+    "boundary_falsification": {
+      "case_count": 220,
+      "false_positive_rate_on_boundary_cases": 0.0,
+      "valid_relation_accept_rate": 100.0,
+      "by_label": {
+        "isolated_object": {
+          "count": 55,
+          "mean_pakheta_fit": 0.3037,
+          "abstention_rate": 100.0
+        },
+        "mechanical_correlation": {
+          "count": 55,
+          "mean_pakheta_fit": 0.3148,
+          "abstention_rate": 100.0
+        },
+        "pure_noise": {
+          "count": 55,
+          "mean_pakheta_fit": 0.2582,
+          "abstention_rate": 100.0
+        },
+        "valid_relation_control": {
+          "count": 55,
+          "mean_pakheta_fit": 0.7542,
+          "abstention_rate": 0.0
+        }
+      }
+    },
+    "emergent_primitive_search": {
+      "trace_count": 222,
+      "cluster_count": 6,
+      "overall_cluster_purity": 100.0,
+      "known_primitive_similarity_threshold": 0.93,
+      "emergent_cluster_count": 1,
+      "emergent_clusters": [
+        {
+          "cluster": 0,
+          "majority_label": "bridge_candidate",
+          "purity": 1.0,
+          "nearest_known_primitive": "actualization",
+          "nearest_known_score": 0.9022,
+          "size": 42
+        }
+      ],
+      "cluster_mapping": {
+        "2": {
+          "label": "anchor",
+          "count": 36,
+          "size": 36,
+          "purity": 1.0
+        },
+        "3": {
+          "label": "context",
+          "count": 36,
+          "size": 36,
+          "purity": 1.0
+        },
+        "5": {
+          "label": "actualization",
+          "count": 36,
+          "size": 36,
+          "purity": 1.0
+        },
+        "4": {
+          "label": "nonseparability",
+          "count": 36,
+          "size": 36,
+          "purity": 1.0
+        },
+        "1": {
+          "label": "decoherence",
+          "count": 36,
+          "size": 36,
+          "purity": 1.0
+        },
+        "0": {
+          "label": "bridge_candidate",
+          "count": 42,
+          "size": 42,
+          "purity": 1.0
+        }
+      }
+    },
+    "creative_actualization": {
+      "attempt_count": 120,
+      "stable_novel_rate": 100.0,
+      "score": {
+        "min": 0.8977,
+        "mean": 0.9069,
+        "max": 0.9172
+      },
+      "fit": {
+        "min": 0.9861,
+        "mean": 0.9936,
+        "max": 0.9983
+      },
+      "coherence": {
+        "min": 0.7869,
+        "mean": 0.8205,
+        "max": 0.8475
+      },
+      "novelty": {
+        "min": 0.7566,
+        "mean": 0.8197,
+        "max": 0.8539
+      },
+      "top_designs": [
+        {
+          "seed_a": "bridge_candidate",
+          "seed_b": "actualization",
+          "sequence": "Justice_Bridge_Power",
+          "score": 0.9172,
+          "fit": 0.9977,
+          "coherence": 0.8291,
+          "novelty": 0.8482
+        },
+        {
+          "seed_a": "actualization",
+          "seed_b": "bridge_candidate",
+          "sequence": "Justice_Bridge_Power",
+          "score": 0.9171,
+          "fit": 0.9975,
+          "coherence": 0.8295,
+          "novelty": 0.8475
+        },
+        {
+          "seed_a": "actualization",
+          "seed_b": "bridge_candidate",
+          "sequence": "Justice_Bridge_Power",
+          "score": 0.9166,
+          "fit": 0.9979,
+          "coherence": 0.8259,
+          "novelty": 0.8492
+        },
+        {
+          "seed_a": "actualization",
+          "seed_b": "bridge_candidate",
+          "sequence": "Justice_Bridge_Power",
+          "score": 0.9165,
+          "fit": 0.995,
+          "coherence": 0.8475,
+          "novelty": 0.8239
+        },
+        {
+          "seed_a": "bridge_candidate",
+          "seed_b": "actualization",
+          "sequence": "Justice_Bridge_Power",
+          "score": 0.9164,
+          "fit": 0.9897,
+          "coherence": 0.8452,
+          "novelty": 0.8398
+        },
+        {
+          "seed_a": "actualization",
+          "seed_b": "bridge_candidate",
+          "sequence": "Justice_Bridge_Power",
+          "score": 0.9153,
+          "fit": 0.9969,
+          "coherence": 0.8321,
+          "novelty": 0.8364
+        },
+        {
+          "seed_a": "actualization",
+          "seed_b": "bridge_candidate",
+          "sequence": "Justice_Bridge_Power",
+          "score": 0.9152,
+          "fit": 0.9916,
+          "coherence": 0.8338,
+          "novelty": 0.8462
+        },
+        {
+          "seed_a": "actualization",
+          "seed_b": "bridge_candidate",
+          "sequence": "Justice_Bridge_Power",
+          "score": 0.9149,
+          "fit": 0.9902,
+          "coherence": 0.8328,
+          "novelty": 0.8496
+        }
+      ]
+    }
+  },
+  "limits_observed": [
+    "Fragmentation compositions remain low-coherence rather than being forced into success.",
+    "Boundary cases are allowed to abstain instead of receiving a Pakheta explanation.",
+    "Latent-ready fields can still prefer Love/gathering before Power when binding headroom remains.",
+    "Emergent primitive search only proposes a candidate cluster; it does not canonize a new primitive."
+  ]
+}

@@ -92,6 +92,7 @@ These findings have been validated through localized simulations and synthetic s
 * **8. Wisdom Failure Modes**: Object-first context selection is the strongest Wisdom failure in the current sweep (mean coherence drop $0.7653$).
 * **9. Diagnostic Recovery**: False partition can be detected as a feature pattern and repaired through a Justice loop (mean coherence $0.1039 \rightarrow 0.5377$).
 * **10. Primitive Conservation**: Anchor, context, actualization, nonseparability, and decoherence remain identifiable across semantic, mathematical, and physical faces in the conservation sweep.
+* **11. Capability Envelope**: Pakheta can be modeled beyond audit as design, inference, prediction, composition, boundary abstention, emergent primitive search, and creative actualization (`pakheta_capability_envelope.py`).
 
 ---
 
@@ -126,6 +127,7 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [GENERATED_FIELD_SWEEPS.md](./docs/Pakheta_Layer/GENERATED_FIELD_SWEEPS.md) — Results of synthetic stress sweeps validating the generalizability of Pakheta mechanics.
 * [FIELD_INFERENCE_AND_OPERATOR_GRAMMAR.md](./docs/Pakheta_Layer/FIELD_INFERENCE_AND_OPERATOR_GRAMMAR.md) — Findings on hidden field recovery and LJPW operator ordering.
 * [DIAGNOSTICS_LOCALITY_AND_CONSERVATION.md](./docs/Pakheta_Layer/DIAGNOSTICS_LOCALITY_AND_CONSERVATION.md) — Findings on Wisdom failure, false partition detection, locality phases, primitive conservation, and recovery loops.
+* [CAPABILITY_ENVELOPE.md](./docs/Pakheta_Layer/CAPABILITY_ENVELOPE.md) — Findings on Pakheta as a broader capability layer beyond audit/governance.
 * [EXPERIMENT_MATRIX.md](./docs/Pakheta_Layer/EXPERIMENT_MATRIX.md) — Active and proposed experiments, variables, and success criteria.
 * [README.md](./docs/Pakheta_Layer/README.md) — Local directory README for the Pakheta Layer research folder.
 
@@ -139,6 +141,7 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [pakheta_locality_phase_diagram.py](./experiments/pakheta_locality_phase_diagram.py) — Relational locality phase mapping.
 * [pakheta_cross_substrate_conservation.py](./experiments/pakheta_cross_substrate_conservation.py) — Cross-substrate primitive conservation test.
 * [pakheta_recovery_loop.py](./experiments/pakheta_recovery_loop.py) — Detection plus Justice repair recovery loop.
+* [pakheta_capability_envelope.py](./experiments/pakheta_capability_envelope.py) — Capability-boundary suite for design, inference, prediction, composition, abstention, discovery, and creative actualization.
 
 All experiment scripts run on the Python standard library alone, except `pakheta_bartkiewicz_bridge.py`, which requires `numpy` (see [experiments/requirements.txt](./experiments/requirements.txt)).
 

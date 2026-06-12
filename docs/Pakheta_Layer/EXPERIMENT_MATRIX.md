@@ -26,6 +26,12 @@ false partition detection
 relational locality phases
 cross-substrate primitive conservation
 Pakheta recovery loop
+Pakheta capability envelope
+generative field design
+blind primitive discovery
+boundary abstention
+emergent primitive search
+creative actualization
 ```
 
 ---
@@ -75,6 +81,7 @@ False partition lowers coherence. Multiple anchors can remain coherent if they e
 - `experiments/pakheta_locality_phase_diagram.py`
 - `experiments/pakheta_cross_substrate_conservation.py`
 - `experiments/pakheta_recovery_loop.py`
+- `experiments/pakheta_capability_envelope.py`
 
 **Initial findings:**
 
@@ -91,6 +98,7 @@ False partition detector: rule-based diagnostic separates false partition from c
 Locality phases: spatial and relational distance can align, decouple, invert, or become context-unstable.
 Primitive conservation: anchor, context, actualization, nonseparability, and decoherence remain identifiable across semantic, mathematical, and physical faces in the conservation sweep.
 Recovery loop: detect -> identify -> Justice repair improves false-partition coherence from 0.1039 to 0.5377.
+Capability envelope: Pakheta is testable as design, inference, prediction, composition, boundary, discovery, and creative actualization, not only as audit.
 ```
 
 ---
@@ -114,6 +122,7 @@ Recovery loop: detect -> identify -> Justice repair improves false-partition coh
 | PAK-13 | Does relational locality have phases? | Spatial and relational distance can be aligned, independent, inverted, or context-unstable | `pakheta_locality_phase_diagram.py` maps correlation regimes |
 | PAK-14 | Do primitives conserve across substrates? | Core primitives remain identifiable across semantic, mathematical, and physical faces | `pakheta_cross_substrate_conservation.py` measures conservation margins |
 | PAK-15 | Can Pakheta repair false partition after detecting it? | Detection plus Justice repair should reduce false-partition score and improve coherence | `pakheta_recovery_loop.py` applies detect-identify-repair-remeasure |
+| PAK-16 | What is the wider capability envelope of Pakheta? | If relation is primary, Pakheta should support design, inference, prediction, composition, abstention, primitive search, and creative actualization | `pakheta_capability_envelope.py` runs seven capability-boundary probes |
 
 ---
 
@@ -267,6 +276,9 @@ the same relational grammar appears before physical quantum formalism
 11. `experiments/pakheta_recovery_loop.py`
     Applies detect -> identify -> Justice repair -> remeasure as a recovery protocol.
 
+12. `experiments/pakheta_capability_envelope.py`
+    Probes Pakheta as a broader capability layer: field design, blind primitive discovery, prediction, composition, boundary abstention, emergent primitive search, and creative actualization.
+
 ---
 
 ## 6. Success Criteria
@@ -278,6 +290,8 @@ A Pakheta model is useful if it:
 - produces context-sensitive actualization without identity loss
 - distinguishes complementary anchors from false partition
 - exposes LJPW modes as relational operators
+- distinguishes audit from the broader capability envelope of relation
+- knows when to abstain instead of over-explaining weak or non-relational cases
 - makes at least one new testable or modelable prediction
 
 ---

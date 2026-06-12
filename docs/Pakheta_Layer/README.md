@@ -80,6 +80,9 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 8. **Diagnostics, Locality, And Conservation**
    Can Wisdom failure, false partition, locality phase behavior, primitive conservation, and recovery loops be modeled as measurable Pakheta mechanics?
 
+9. **Capability Envelope And Boundaries**
+   Is Pakheta larger than audit/governance: can it design, infer, predict, compose, abstain, discover, and creatively actualize relationship-fields?
+
 ---
 
 ## Documents In This Folder
@@ -108,6 +111,9 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 - `DIAGNOSTICS_LOCALITY_AND_CONSERVATION.md`
   Completion pass for Wisdom failure modes, false partition detection, relational locality phases, primitive conservation, and recovery loops.
 
+- `CAPABILITY_ENVELOPE.md`
+  Broader capability-boundary pass showing Pakheta as design, inference, prediction, composition, boundary, discovery, and creative actualization.
+
 - `EXPERIMENT_MATRIX.md`  
   Research questions, modelable hypotheses, and proposed experiments.
 
@@ -125,7 +131,7 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
   Self-contained script running Pakheta Experiments 1 to 5 (anchor coherence, order effects, phi-weighted anchors, relational distance, false partition).
 
 - `../../experiments/`  
-  Additional executable research models (Wisdom failure modes, false partition detection, locality phase diagrams, cross-substrate conservation, recovery loops, field inference, operator permutation grammar, phi robustness, repair headroom, operator residue, quantum bridge, prime coherence, semantic attention, Bartkiewicz tomography bridge) with their JSON results.
+  Additional executable research models (Wisdom failure modes, false partition detection, locality phase diagrams, cross-substrate conservation, recovery loops, capability envelope, field inference, operator permutation grammar, phi robustness, repair headroom, operator residue, quantum bridge, prime coherence, semantic attention, Bartkiewicz tomography bridge) with their JSON results.
 
 ---
 
