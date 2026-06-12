@@ -1,0 +1,17 @@
+{
+  "experiment_name": "cosmological_bridges_hierarchy_scale",
+  "date_executed": "2026-06-12T12:08:43.012982+00:00",
+  "constants": {
+    "fine_structure_constant_alpha": 0.007297352573756914,
+    "gravitational_coupling_constant_alpha_G": 5.906e-39,
+    "true_hierarchy_ratio": 1.235582894303575e+36
+  },
+  "ljpw_relationship": {
+    "ljpw_sum": 2.44367656014198,
+    "prime_product": 30.0,
+    "calculated_ratio": 1.2475727106749504e+36,
+    "derived_alpha_G": 5.8492402978331956e-39,
+    "ratio_error_percent": 0.97037733580258,
+    "alpha_G_absolute_error": 5.675970216680461e-41
+  }
+}
