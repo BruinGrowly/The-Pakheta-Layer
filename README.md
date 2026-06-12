@@ -146,6 +146,7 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [DIAGNOSTICS_LOCALITY_AND_CONSERVATION.md](./docs/Pakheta_Layer/DIAGNOSTICS_LOCALITY_AND_CONSERVATION.md) — Findings on Wisdom failure, false partition detection, locality phases, primitive conservation, and recovery loops.
 * [CAPABILITY_ENVELOPE.md](./docs/Pakheta_Layer/CAPABILITY_ENVELOPE.md) — Findings on Pakheta as a broader capability layer beyond audit/governance.
 * [RELATIONAL_MATHEMATICAL_BRIDGES.md](./docs/Pakheta_Layer/RELATIONAL_MATHEMATICAL_BRIDGES.md) — Findings on relational math bridges and non-destructive synthesis.
+* [TRANSCENDENTAL_PHYSICAL_BRIDGES.md](./docs/Pakheta_Layer/TRANSCENDENTAL_PHYSICAL_BRIDGES.md) — Findings on Riemann critical line, and pi, e, 1/alpha, mu decompositions.
 * [EXPERIMENT_MATRIX.md](./docs/Pakheta_Layer/EXPERIMENT_MATRIX.md) — Active and proposed experiments, variables, and success criteria.
 * [README.md](./docs/Pakheta_Layer/README.md) — Local directory README for the Pakheta Layer research folder.
 
@@ -162,6 +163,8 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [pakheta_capability_envelope.py](./experiments/pakheta_capability_envelope.py) — Capability-boundary suite for design, inference, prediction, composition, abstention, discovery, and creative actualization.
 * [pakheta_mathematical_bridge.py](./experiments/pakheta_mathematical_bridge.py) — Relational mathematical bridge coordinates.
 * [mathematical_bridge_results.json](./experiments/mathematical_bridge_results.json) — Output results of the relational mathematical bridge experiments.
+* [pakheta_transcendental_bridges.py](./experiments/pakheta_transcendental_bridges.py) — Transcendental and physical constants relational bridges.
+* [transcendental_bridges_results.json](./experiments/transcendental_bridges_results.json) — Output results of the transcendental and physical bridges sweep.
 
 All experiment scripts run on the Python standard library alone, except `pakheta_bartkiewicz_bridge.py`, which requires `numpy` (see [experiments/requirements.txt](./experiments/requirements.txt)).
 
