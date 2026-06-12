@@ -1,0 +1,213 @@
+{
+  "experiment_name": "hidden_relationship_field_inference",
+  "date_executed": "2026-06-12T06:47:35.625744+00:00",
+  "execution_duration_sec": 0.03059,
+  "node_labels": [
+    "crystal_anchor",
+    "grave_memory",
+    "backyard_burial",
+    "old_photo_far",
+    "spoken_name",
+    "ordinary_stone_near"
+  ],
+  "canonical_case": {
+    "true_field": {
+      "crystal_anchor": 0.25,
+      "grave_memory": 0.2,
+      "backyard_burial": 0.18,
+      "old_photo_far": 0.16,
+      "spoken_name": 0.17,
+      "ordinary_stone_near": 0.04
+    },
+    "inferred_field": {
+      "crystal_anchor": 0.22485120532762595,
+      "grave_memory": 0.19993300455305452,
+      "backyard_burial": 0.18838733682100992,
+      "old_photo_far": 0.16417555154177557,
+      "spoken_name": 0.167197173158845,
+      "ordinary_stone_near": 0.055455728597689005
+    },
+    "observations": [
+      {
+        "name": "anchor.whole_field",
+        "family": "anchor",
+        "observed": 0.1839
+      },
+      {
+        "name": "anchor.grave",
+        "family": "anchor",
+        "observed": 0.1859
+      },
+      {
+        "name": "anchor.backyard",
+        "family": "anchor",
+        "observed": 0.1706
+      },
+      {
+        "name": "anchor.photo",
+        "family": "anchor",
+        "observed": 0.1666
+      },
+      {
+        "name": "anchor.name",
+        "family": "anchor",
+        "observed": 0.1706
+      },
+      {
+        "name": "context.remembrance",
+        "family": "context",
+        "observed": 0.1887
+      },
+      {
+        "name": "context.repair",
+        "family": "context",
+        "observed": 0.176
+      },
+      {
+        "name": "context.theory",
+        "family": "context",
+        "observed": 0.1882
+      },
+      {
+        "name": "context.physical_nearness",
+        "family": "context",
+        "observed": 0.1419
+      },
+      {
+        "name": "sequence.grief_then_gratitude",
+        "family": "order",
+        "observed": 0.1795
+      },
+      {
+        "name": "sequence.gratitude_then_grief",
+        "family": "order",
+        "observed": 0.1684
+      },
+      {
+        "name": "partition.grave_only",
+        "family": "false_partition",
+        "observed": 0.1293
+      },
+      {
+        "name": "partition.location_ledger",
+        "family": "false_partition",
+        "observed": 0.0739
+      }
+    ],
+    "comparisons": {
+      "inferred_from_traces": {
+        "cosine_similarity": 0.9976,
+        "mean_absolute_error": 0.0093,
+        "top_3_overlap": 1.0
+      },
+      "equal_baseline": {
+        "cosine_similarity": 0.9341,
+        "mean_absolute_error": 0.0444,
+        "top_3_overlap": 1.0
+      },
+      "phi_prior": {
+        "cosine_similarity": 0.9162,
+        "mean_absolute_error": 0.0682,
+        "top_3_overlap": 1.0
+      },
+      "physical_nearness_prior": {
+        "cosine_similarity": 0.607,
+        "mean_absolute_error": 0.1367,
+        "top_3_overlap": 0.6667
+      }
+    }
+  },
+  "sweep": {
+    "fields_per_profile": 80,
+    "profiles": {
+      "phi_decay": {
+        "inferred_from_traces": {
+          "mean_cosine_similarity": 0.9711,
+          "mean_absolute_error": 0.0447,
+          "mean_top_3_overlap": 0.9792
+        },
+        "equal_baseline": {
+          "mean_cosine_similarity": 0.7781,
+          "mean_absolute_error": 0.1121,
+          "mean_top_3_overlap": 1.0
+        },
+        "phi_prior": {
+          "mean_cosine_similarity": 0.9987,
+          "mean_absolute_error": 0.0089,
+          "mean_top_3_overlap": 1.0
+        },
+        "physical_nearness_prior": {
+          "mean_cosine_similarity": 0.5527,
+          "mean_absolute_error": 0.1454,
+          "mean_top_3_overlap": 0.6667
+        }
+      },
+      "balanced": {
+        "inferred_from_traces": {
+          "mean_cosine_similarity": 0.997,
+          "mean_absolute_error": 0.0109,
+          "mean_top_3_overlap": 0.7917
+        },
+        "equal_baseline": {
+          "mean_cosine_similarity": 0.9626,
+          "mean_absolute_error": 0.0341,
+          "mean_top_3_overlap": 0.6292
+        },
+        "phi_prior": {
+          "mean_cosine_similarity": 0.8375,
+          "mean_absolute_error": 0.094,
+          "mean_top_3_overlap": 0.6292
+        },
+        "physical_nearness_prior": {
+          "mean_cosine_similarity": 0.6299,
+          "mean_absolute_error": 0.1326,
+          "mean_top_3_overlap": 0.4
+        }
+      },
+      "random": {
+        "inferred_from_traces": {
+          "mean_cosine_similarity": 0.9927,
+          "mean_absolute_error": 0.0192,
+          "mean_top_3_overlap": 0.9583
+        },
+        "equal_baseline": {
+          "mean_cosine_similarity": 0.8969,
+          "mean_absolute_error": 0.0703,
+          "mean_top_3_overlap": 0.6
+        },
+        "phi_prior": {
+          "mean_cosine_similarity": 0.7718,
+          "mean_absolute_error": 0.1087,
+          "mean_top_3_overlap": 0.6
+        },
+        "physical_nearness_prior": {
+          "mean_cosine_similarity": 0.616,
+          "mean_absolute_error": 0.1387,
+          "mean_top_3_overlap": 0.425
+        }
+      },
+      "split_pressure": {
+        "inferred_from_traces": {
+          "mean_cosine_similarity": 0.9902,
+          "mean_absolute_error": 0.0223,
+          "mean_top_3_overlap": 0.8792
+        },
+        "equal_baseline": {
+          "mean_cosine_similarity": 0.915,
+          "mean_absolute_error": 0.0593,
+          "mean_top_3_overlap": 0.9417
+        },
+        "phi_prior": {
+          "mean_cosine_similarity": 0.9225,
+          "mean_absolute_error": 0.0665,
+          "mean_top_3_overlap": 0.9417
+        },
+        "physical_nearness_prior": {
+          "mean_cosine_similarity": 0.5887,
+          "mean_absolute_error": 0.1345,
+          "mean_top_3_overlap": 0.6542
+        }
+      }
+    }
+  }
+}

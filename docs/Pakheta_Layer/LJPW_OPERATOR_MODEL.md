@@ -2,7 +2,7 @@
 
 **Date:** May 28, 2026  
 **Status:** Initial operator model  
-**Script:** `experiments/pakheta_operator_residue.py` for ordering/residue, plus `experiments/run_pakheta_experiments.py` Experiment 4 for the consolidated operator sequence.
+**Script:** `experiments/pakheta_operator_residue.py` for ordering/residue, `experiments/pakheta_operator_permutation_sweep.py` for all LJPW permutations, plus `experiments/run_pakheta_experiments.py` Experiment 4 for the consolidated operator sequence.
 
 ---
 
@@ -238,6 +238,36 @@ Power before Justice can actualize confusion.
 Justice before Power actualizes truthfully distinguished relation.
 ```
 
+### 5.1 Full Permutation Sweep
+
+The permutation sweep runs all 24 LJPW orderings over 160 generated damaged fields.
+
+Best sequence:
+
+```text
+Justice -> Love -> Wisdom -> Power
+mean coherence: 0.8530
+mean residue:   0.0000
+stable rate:    100.0%
+```
+
+Worst sequence:
+
+```text
+Power -> Wisdom -> Love -> Justice
+mean coherence: 0.5932
+mean residue:   0.1586
+stable rate:    0.0%
+```
+
+The stronger rule is not merely one fixed ordering. It is:
+
+```text
+Repair false partition and select context before Power actualizes the field.
+```
+
+Power is an amplifier. If it enters after Justice and Wisdom, it actualizes a clean field. If it enters before repair or context selection, it actualizes the damaged field and leaves residue.
+
 ---
 
 ## 6. New Operator Stack
@@ -260,12 +290,12 @@ This may become the practical navigation protocol for the Pakheta Layer.
 
 ## 7. Next Model Improvements
 
-1. Add persistent residue when Power actualizes before Justice repair.
-2. Add explicit Love-overfusion failure mode.
-3. Add Justice-overpartition failure mode.
-4. Add Wisdom-misclassification failure mode.
-5. Add Power-overactualization failure mode.
-6. Run generated-field sweeps to test whether Justice remains the strongest anti-decoherence operator.
+1. Add explicit Love-overfusion failure mode.
+2. Add Justice-overpartition failure mode.
+3. Add Wisdom-misclassification failure mode.
+4. Add Power-overactualization failure mode.
+5. Test operator grammar under noisy inferred fields rather than known generated states.
+6. Run cross-substrate operator permutations over semantic, mathematical, and quantum-style state models.
 
 ---
 

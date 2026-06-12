@@ -1,0 +1,835 @@
+{
+  "experiment_name": "ljpw_operator_permutation_grammar",
+  "date_executed": "2026-06-12T06:47:35.730701+00:00",
+  "execution_duration_sec": 0.054103,
+  "field_count": 160,
+  "initial_coherence": {
+    "min": 0.291,
+    "mean": 0.3378,
+    "max": 0.4013
+  },
+  "ranked_sequences": [
+    {
+      "sequence": [
+        "Justice",
+        "Love",
+        "Wisdom",
+        "Power"
+      ],
+      "sequence_label": "Justice -> Love -> Wisdom -> Power",
+      "classification": "clean_actualization",
+      "grammar_flags": {
+        "justice_before_power": true,
+        "wisdom_before_power": true,
+        "love_before_justice": false,
+        "power_last": true
+      },
+      "final_coherence": {
+        "min": 0.8201,
+        "mean": 0.853,
+        "max": 0.8908
+      },
+      "repair_gain": {
+        "min": 0.4747,
+        "mean": 0.5151,
+        "max": 0.5515
+      },
+      "final_residue_mean": 0.0,
+      "final_partition_mean": 0.0373,
+      "final_context_fit_mean": 0.7987,
+      "stable_rate": 100.0
+    },
+    {
+      "sequence": [
+        "Justice",
+        "Wisdom",
+        "Love",
+        "Power"
+      ],
+      "sequence_label": "Justice -> Wisdom -> Love -> Power",
+      "classification": "clean_actualization",
+      "grammar_flags": {
+        "justice_before_power": true,
+        "wisdom_before_power": true,
+        "love_before_justice": false,
+        "power_last": true
+      },
+      "final_coherence": {
+        "min": 0.817,
+        "mean": 0.8495,
+        "max": 0.8875
+      },
+      "repair_gain": {
+        "min": 0.4713,
+        "mean": 0.5117,
+        "max": 0.5482
+      },
+      "final_residue_mean": 0.0,
+      "final_partition_mean": 0.0373,
+      "final_context_fit_mean": 0.7853,
+      "stable_rate": 100.0
+    },
+    {
+      "sequence": [
+        "Justice",
+        "Wisdom",
+        "Power",
+        "Love"
+      ],
+      "sequence_label": "Justice -> Wisdom -> Power -> Love",
+      "classification": "partial_repair",
+      "grammar_flags": {
+        "justice_before_power": true,
+        "wisdom_before_power": true,
+        "love_before_justice": false,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.817,
+        "mean": 0.8495,
+        "max": 0.8875
+      },
+      "repair_gain": {
+        "min": 0.4713,
+        "mean": 0.5117,
+        "max": 0.5482
+      },
+      "final_residue_mean": 0.0,
+      "final_partition_mean": 0.0373,
+      "final_context_fit_mean": 0.7853,
+      "stable_rate": 100.0
+    },
+    {
+      "sequence": [
+        "Love",
+        "Justice",
+        "Wisdom",
+        "Power"
+      ],
+      "sequence_label": "Love -> Justice -> Wisdom -> Power",
+      "classification": "clean_actualization",
+      "grammar_flags": {
+        "justice_before_power": true,
+        "wisdom_before_power": true,
+        "love_before_justice": true,
+        "power_last": true
+      },
+      "final_coherence": {
+        "min": 0.774,
+        "mean": 0.8111,
+        "max": 0.8558
+      },
+      "repair_gain": {
+        "min": 0.4408,
+        "mean": 0.4732,
+        "max": 0.5042
+      },
+      "final_residue_mean": 0.0077,
+      "final_partition_mean": 0.0912,
+      "final_context_fit_mean": 0.7884,
+      "stable_rate": 100.0
+    },
+    {
+      "sequence": [
+        "Wisdom",
+        "Justice",
+        "Love",
+        "Power"
+      ],
+      "sequence_label": "Wisdom -> Justice -> Love -> Power",
+      "classification": "clean_actualization",
+      "grammar_flags": {
+        "justice_before_power": true,
+        "wisdom_before_power": true,
+        "love_before_justice": false,
+        "power_last": true
+      },
+      "final_coherence": {
+        "min": 0.6938,
+        "mean": 0.7776,
+        "max": 0.8675
+      },
+      "repair_gain": {
+        "min": 0.3739,
+        "mean": 0.4398,
+        "max": 0.5094
+      },
+      "final_residue_mean": 0.0357,
+      "final_partition_mean": 0.0373,
+      "final_context_fit_mean": 0.717,
+      "stable_rate": 95.62
+    },
+    {
+      "sequence": [
+        "Wisdom",
+        "Justice",
+        "Power",
+        "Love"
+      ],
+      "sequence_label": "Wisdom -> Justice -> Power -> Love",
+      "classification": "partial_repair",
+      "grammar_flags": {
+        "justice_before_power": true,
+        "wisdom_before_power": true,
+        "love_before_justice": false,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.6765,
+        "mean": 0.7685,
+        "max": 0.8675
+      },
+      "repair_gain": {
+        "min": 0.3566,
+        "mean": 0.4307,
+        "max": 0.5094
+      },
+      "final_residue_mean": 0.0441,
+      "final_partition_mean": 0.0373,
+      "final_context_fit_mean": 0.717,
+      "stable_rate": 86.25
+    },
+    {
+      "sequence": [
+        "Love",
+        "Wisdom",
+        "Justice",
+        "Power"
+      ],
+      "sequence_label": "Love -> Wisdom -> Justice -> Power",
+      "classification": "clean_actualization",
+      "grammar_flags": {
+        "justice_before_power": true,
+        "wisdom_before_power": true,
+        "love_before_justice": true,
+        "power_last": true
+      },
+      "final_coherence": {
+        "min": 0.643,
+        "mean": 0.7585,
+        "max": 0.8453
+      },
+      "repair_gain": {
+        "min": 0.3338,
+        "mean": 0.4206,
+        "max": 0.4749
+      },
+      "final_residue_mean": 0.0343,
+      "final_partition_mean": 0.0912,
+      "final_context_fit_mean": 0.7303,
+      "stable_rate": 72.5
+    },
+    {
+      "sequence": [
+        "Wisdom",
+        "Love",
+        "Justice",
+        "Power"
+      ],
+      "sequence_label": "Wisdom -> Love -> Justice -> Power",
+      "classification": "clean_actualization",
+      "grammar_flags": {
+        "justice_before_power": true,
+        "wisdom_before_power": true,
+        "love_before_justice": true,
+        "power_last": true
+      },
+      "final_coherence": {
+        "min": 0.6373,
+        "mean": 0.7319,
+        "max": 0.8354
+      },
+      "repair_gain": {
+        "min": 0.3276,
+        "mean": 0.394,
+        "max": 0.4651
+      },
+      "final_residue_mean": 0.0499,
+      "final_partition_mean": 0.0912,
+      "final_context_fit_mean": 0.717,
+      "stable_rate": 58.13
+    },
+    {
+      "sequence": [
+        "Justice",
+        "Love",
+        "Power",
+        "Wisdom"
+      ],
+      "sequence_label": "Justice -> Love -> Power -> Wisdom",
+      "classification": "power_before_context",
+      "grammar_flags": {
+        "justice_before_power": true,
+        "wisdom_before_power": false,
+        "love_before_justice": false,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.6546,
+        "mean": 0.7023,
+        "max": 0.753
+      },
+      "repair_gain": {
+        "min": 0.3209,
+        "mean": 0.3645,
+        "max": 0.3979
+      },
+      "final_residue_mean": 0.0992,
+      "final_partition_mean": 0.0373,
+      "final_context_fit_mean": 0.7987,
+      "stable_rate": 54.37
+    },
+    {
+      "sequence": [
+        "Justice",
+        "Power",
+        "Love",
+        "Wisdom"
+      ],
+      "sequence_label": "Justice -> Power -> Love -> Wisdom",
+      "classification": "power_before_context",
+      "grammar_flags": {
+        "justice_before_power": true,
+        "wisdom_before_power": false,
+        "love_before_justice": false,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.6381,
+        "mean": 0.6856,
+        "max": 0.7361
+      },
+      "repair_gain": {
+        "min": 0.3043,
+        "mean": 0.3478,
+        "max": 0.3811
+      },
+      "final_residue_mean": 0.1153,
+      "final_partition_mean": 0.0373,
+      "final_context_fit_mean": 0.7987,
+      "stable_rate": 23.12
+    },
+    {
+      "sequence": [
+        "Justice",
+        "Power",
+        "Wisdom",
+        "Love"
+      ],
+      "sequence_label": "Justice -> Power -> Wisdom -> Love",
+      "classification": "power_before_context",
+      "grammar_flags": {
+        "justice_before_power": true,
+        "wisdom_before_power": false,
+        "love_before_justice": false,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.6354,
+        "mean": 0.6832,
+        "max": 0.7338
+      },
+      "repair_gain": {
+        "min": 0.3015,
+        "mean": 0.3453,
+        "max": 0.3788
+      },
+      "final_residue_mean": 0.1153,
+      "final_partition_mean": 0.0373,
+      "final_context_fit_mean": 0.7853,
+      "stable_rate": 19.38
+    },
+    {
+      "sequence": [
+        "Wisdom",
+        "Power",
+        "Justice",
+        "Love"
+      ],
+      "sequence_label": "Wisdom -> Power -> Justice -> Love",
+      "classification": "power_before_repair",
+      "grammar_flags": {
+        "justice_before_power": false,
+        "wisdom_before_power": true,
+        "love_before_justice": false,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.6164,
+        "mean": 0.6735,
+        "max": 0.736
+      },
+      "repair_gain": {
+        "min": 0.3124,
+        "mean": 0.3357,
+        "max": 0.3589
+      },
+      "final_residue_mean": 0.1142,
+      "final_partition_mean": 0.0373,
+      "final_context_fit_mean": 0.717,
+      "stable_rate": 16.25
+    },
+    {
+      "sequence": [
+        "Power",
+        "Justice",
+        "Love",
+        "Wisdom"
+      ],
+      "sequence_label": "Power -> Justice -> Love -> Wisdom",
+      "classification": "premature_actualization",
+      "grammar_flags": {
+        "justice_before_power": false,
+        "wisdom_before_power": false,
+        "love_before_justice": false,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.6052,
+        "mean": 0.6552,
+        "max": 0.7141
+      },
+      "repair_gain": {
+        "min": 0.2918,
+        "mean": 0.3174,
+        "max": 0.3447
+      },
+      "final_residue_mean": 0.1425,
+      "final_partition_mean": 0.0373,
+      "final_context_fit_mean": 0.7987,
+      "stable_rate": 3.12
+    },
+    {
+      "sequence": [
+        "Love",
+        "Wisdom",
+        "Power",
+        "Justice"
+      ],
+      "sequence_label": "Love -> Wisdom -> Power -> Justice",
+      "classification": "power_before_repair",
+      "grammar_flags": {
+        "justice_before_power": false,
+        "wisdom_before_power": true,
+        "love_before_justice": true,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.591,
+        "mean": 0.6534,
+        "max": 0.7272
+      },
+      "repair_gain": {
+        "min": 0.2873,
+        "mean": 0.3156,
+        "max": 0.3474
+      },
+      "final_residue_mean": 0.1071,
+      "final_partition_mean": 0.0912,
+      "final_context_fit_mean": 0.7303,
+      "stable_rate": 8.75
+    },
+    {
+      "sequence": [
+        "Power",
+        "Justice",
+        "Wisdom",
+        "Love"
+      ],
+      "sequence_label": "Power -> Justice -> Wisdom -> Love",
+      "classification": "premature_actualization",
+      "grammar_flags": {
+        "justice_before_power": false,
+        "wisdom_before_power": false,
+        "love_before_justice": false,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.6028,
+        "mean": 0.6528,
+        "max": 0.7118
+      },
+      "repair_gain": {
+        "min": 0.289,
+        "mean": 0.3149,
+        "max": 0.3425
+      },
+      "final_residue_mean": 0.1425,
+      "final_partition_mean": 0.0373,
+      "final_context_fit_mean": 0.7853,
+      "stable_rate": 2.5
+    },
+    {
+      "sequence": [
+        "Love",
+        "Justice",
+        "Power",
+        "Wisdom"
+      ],
+      "sequence_label": "Love -> Justice -> Power -> Wisdom",
+      "classification": "power_before_context",
+      "grammar_flags": {
+        "justice_before_power": true,
+        "wisdom_before_power": false,
+        "love_before_justice": true,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.5962,
+        "mean": 0.6483,
+        "max": 0.7057
+      },
+      "repair_gain": {
+        "min": 0.2751,
+        "mean": 0.3105,
+        "max": 0.3385
+      },
+      "final_residue_mean": 0.1193,
+      "final_partition_mean": 0.0912,
+      "final_context_fit_mean": 0.7884,
+      "stable_rate": 1.25
+    },
+    {
+      "sequence": [
+        "Wisdom",
+        "Love",
+        "Power",
+        "Justice"
+      ],
+      "sequence_label": "Wisdom -> Love -> Power -> Justice",
+      "classification": "power_before_repair",
+      "grammar_flags": {
+        "justice_before_power": false,
+        "wisdom_before_power": true,
+        "love_before_justice": true,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.586,
+        "mean": 0.6477,
+        "max": 0.7168
+      },
+      "repair_gain": {
+        "min": 0.2819,
+        "mean": 0.3098,
+        "max": 0.3369
+      },
+      "final_residue_mean": 0.1103,
+      "final_partition_mean": 0.0912,
+      "final_context_fit_mean": 0.717,
+      "stable_rate": 5.0
+    },
+    {
+      "sequence": [
+        "Wisdom",
+        "Power",
+        "Love",
+        "Justice"
+      ],
+      "sequence_label": "Wisdom -> Power -> Love -> Justice",
+      "classification": "power_before_repair",
+      "grammar_flags": {
+        "justice_before_power": false,
+        "wisdom_before_power": true,
+        "love_before_justice": true,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.5732,
+        "mean": 0.6348,
+        "max": 0.7039
+      },
+      "repair_gain": {
+        "min": 0.2691,
+        "mean": 0.297,
+        "max": 0.324
+      },
+      "final_residue_mean": 0.1219,
+      "final_partition_mean": 0.0912,
+      "final_context_fit_mean": 0.717,
+      "stable_rate": 0.62
+    },
+    {
+      "sequence": [
+        "Power",
+        "Wisdom",
+        "Justice",
+        "Love"
+      ],
+      "sequence_label": "Power -> Wisdom -> Justice -> Love",
+      "classification": "premature_actualization",
+      "grammar_flags": {
+        "justice_before_power": false,
+        "wisdom_before_power": false,
+        "love_before_justice": false,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.5776,
+        "mean": 0.6319,
+        "max": 0.6955
+      },
+      "repair_gain": {
+        "min": 0.2689,
+        "mean": 0.2941,
+        "max": 0.3229
+      },
+      "final_residue_mean": 0.1509,
+      "final_partition_mean": 0.0373,
+      "final_context_fit_mean": 0.717,
+      "stable_rate": 0.0
+    },
+    {
+      "sequence": [
+        "Love",
+        "Power",
+        "Justice",
+        "Wisdom"
+      ],
+      "sequence_label": "Love -> Power -> Justice -> Wisdom",
+      "classification": "premature_actualization",
+      "grammar_flags": {
+        "justice_before_power": false,
+        "wisdom_before_power": false,
+        "love_before_justice": true,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.5717,
+        "mean": 0.6263,
+        "max": 0.6921
+      },
+      "repair_gain": {
+        "min": 0.2628,
+        "mean": 0.2885,
+        "max": 0.3119
+      },
+      "final_residue_mean": 0.1386,
+      "final_partition_mean": 0.0912,
+      "final_context_fit_mean": 0.7884,
+      "stable_rate": 0.0
+    },
+    {
+      "sequence": [
+        "Power",
+        "Love",
+        "Justice",
+        "Wisdom"
+      ],
+      "sequence_label": "Power -> Love -> Justice -> Wisdom",
+      "classification": "premature_actualization",
+      "grammar_flags": {
+        "justice_before_power": false,
+        "wisdom_before_power": false,
+        "love_before_justice": true,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.5595,
+        "mean": 0.6141,
+        "max": 0.6798
+      },
+      "repair_gain": {
+        "min": 0.2507,
+        "mean": 0.2763,
+        "max": 0.2996
+      },
+      "final_residue_mean": 0.1502,
+      "final_partition_mean": 0.0912,
+      "final_context_fit_mean": 0.7884,
+      "stable_rate": 0.0
+    },
+    {
+      "sequence": [
+        "Love",
+        "Power",
+        "Wisdom",
+        "Justice"
+      ],
+      "sequence_label": "Love -> Power -> Wisdom -> Justice",
+      "classification": "premature_actualization",
+      "grammar_flags": {
+        "justice_before_power": false,
+        "wisdom_before_power": false,
+        "love_before_justice": true,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.5501,
+        "mean": 0.6096,
+        "max": 0.6847
+      },
+      "repair_gain": {
+        "min": 0.2417,
+        "mean": 0.2718,
+        "max": 0.3044
+      },
+      "final_residue_mean": 0.1451,
+      "final_partition_mean": 0.0912,
+      "final_context_fit_mean": 0.7303,
+      "stable_rate": 0.0
+    },
+    {
+      "sequence": [
+        "Power",
+        "Love",
+        "Wisdom",
+        "Justice"
+      ],
+      "sequence_label": "Power -> Love -> Wisdom -> Justice",
+      "classification": "premature_actualization",
+      "grammar_flags": {
+        "justice_before_power": false,
+        "wisdom_before_power": false,
+        "love_before_justice": true,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.5379,
+        "mean": 0.5974,
+        "max": 0.6724
+      },
+      "repair_gain": {
+        "min": 0.2296,
+        "mean": 0.2596,
+        "max": 0.2921
+      },
+      "final_residue_mean": 0.1567,
+      "final_partition_mean": 0.0912,
+      "final_context_fit_mean": 0.7303,
+      "stable_rate": 0.0
+    },
+    {
+      "sequence": [
+        "Power",
+        "Wisdom",
+        "Love",
+        "Justice"
+      ],
+      "sequence_label": "Power -> Wisdom -> Love -> Justice",
+      "classification": "premature_actualization",
+      "grammar_flags": {
+        "justice_before_power": false,
+        "wisdom_before_power": false,
+        "love_before_justice": true,
+        "power_last": false
+      },
+      "final_coherence": {
+        "min": 0.5342,
+        "mean": 0.5932,
+        "max": 0.6634
+      },
+      "repair_gain": {
+        "min": 0.2259,
+        "mean": 0.2554,
+        "max": 0.283
+      },
+      "final_residue_mean": 0.1586,
+      "final_partition_mean": 0.0912,
+      "final_context_fit_mean": 0.717,
+      "stable_rate": 0.0
+    }
+  ],
+  "classification_summary": {
+    "clean_actualization": {
+      "count": 6,
+      "mean_final_coherence": 0.7969,
+      "mean_residue": 0.0213,
+      "mean_stable_rate": 87.71
+    },
+    "partial_repair": {
+      "count": 2,
+      "mean_final_coherence": 0.809,
+      "mean_residue": 0.0221,
+      "mean_stable_rate": 93.12
+    },
+    "power_before_context": {
+      "count": 4,
+      "mean_final_coherence": 0.6799,
+      "mean_residue": 0.1123,
+      "mean_stable_rate": 24.53
+    },
+    "power_before_repair": {
+      "count": 4,
+      "mean_final_coherence": 0.6523,
+      "mean_residue": 0.1134,
+      "mean_stable_rate": 7.66
+    },
+    "premature_actualization": {
+      "count": 8,
+      "mean_final_coherence": 0.6226,
+      "mean_residue": 0.1481,
+      "mean_stable_rate": 0.7
+    }
+  },
+  "example_traces": {
+    "Justice -> Love -> Wisdom -> Power": [
+      {
+        "operator": "Justice",
+        "coherence": 0.5068,
+        "partition": 0.1051,
+        "context_fit": 0.4312,
+        "residue": 0.0,
+        "actualization_lift": 0.0
+      },
+      {
+        "operator": "Love",
+        "coherence": 0.576,
+        "partition": 0.0351,
+        "context_fit": 0.4312,
+        "residue": 0.0,
+        "actualization_lift": 0.0
+      },
+      {
+        "operator": "Wisdom",
+        "coherence": 0.736,
+        "partition": 0.0351,
+        "context_fit": 0.8235,
+        "residue": 0.0,
+        "actualization_lift": 0.0
+      },
+      {
+        "operator": "Power",
+        "coherence": 0.8516,
+        "partition": 0.0351,
+        "context_fit": 0.8235,
+        "residue": 0.0,
+        "actualization_lift": 0.0618
+      }
+    ],
+    "Power -> Wisdom -> Love -> Justice": [
+      {
+        "operator": "Power",
+        "coherence": 0.1719,
+        "partition": 0.4572,
+        "context_fit": 0.4312,
+        "residue": 0.1848,
+        "actualization_lift": 0.0059
+      },
+      {
+        "operator": "Wisdom",
+        "coherence": 0.2601,
+        "partition": 0.4572,
+        "context_fit": 0.7529,
+        "residue": 0.1962,
+        "actualization_lift": 0.0059
+      },
+      {
+        "operator": "Love",
+        "coherence": 0.3182,
+        "partition": 0.3872,
+        "context_fit": 0.7529,
+        "residue": 0.2142,
+        "actualization_lift": 0.0059
+      },
+      {
+        "operator": "Justice",
+        "coherence": 0.5978,
+        "partition": 0.089,
+        "context_fit": 0.7529,
+        "residue": 0.1542,
+        "actualization_lift": 0.0059
+      }
+    ]
+  }
+}

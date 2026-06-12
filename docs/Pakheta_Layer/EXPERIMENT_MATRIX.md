@@ -19,6 +19,8 @@ contextual actualization
 relational distance
 order effects
 phi-normalized differentiation
+hidden field recoverability
+LJPW operator grammar
 ```
 
 ---
@@ -61,6 +63,8 @@ False partition lowers coherence. Multiple anchors can remain coherent if they e
 - `experiments/pakheta_semantic_attention.py`
 - `experiments/pakheta_prime_coherence.py`
 - `experiments/pakheta_repair_headroom.py`
+- `experiments/pakheta_field_inference.py`
+- `experiments/pakheta_operator_permutation_sweep.py`
 
 **Initial findings:**
 
@@ -70,6 +74,8 @@ Phi weights: phi-weighting is conditionally strong for Phi-decay and Zipf target
 Relational distance: the current three-node toy setup produces a strong negative physical-vs-field correlation (-0.897), because the near decoy is field-far and farther nodes are field-near.
 LJPW operators: the consolidated operator sequence rises from 0.407 to 1.000; the residue script shows premature Power leaves a 0.166 coherence ceiling.
 Generated sweeps: current random-target sweep has phi best-or-tied rate 4.5%; false partition remains below phi 100.0%.
+Field inference: hidden field traces recover the canonical latent field with cosine 0.9976, outperforming equal, phi, and physical-nearness baselines in that case.
+Operator grammar: the strongest generated-field sequence is Justice -> Love -> Wisdom -> Power (mean coherence 0.8530), while premature Power sequences leave the largest residue.
 ```
 
 ---
@@ -86,6 +92,8 @@ Generated sweeps: current random-target sweep has phi best-or-tied rate 4.5%; fa
 | PAK-06 | Does phi-normalized weighting improve coherence? | Phi-balanced weights are conditionally strongest for phi-like or Zipf-like relevance, not universally dominant | Robustness sweep compares Phi-decay, Flat, Random, and Zipf fields |
 | PAK-07 | Can LJPW be represented as cross-substrate relation operators? | LJPW modes remain stable across semantic, mathematical, and physical examples | Initial generated sweep: Justice strongest repair in 100.0% of fields |
 | PAK-08 | Can quantum interpretation concepts be compressed through Pakheta grammar? | Superposition, measurement, entanglement, contextuality, and decoherence map to one grammar | Formal comparative note plus toy state-space model |
+| PAK-09 | Can a hidden relationship-field be recovered from traces? | Anchor, context, order, and false-partition traces contain enough signal to infer latent field weights | `pakheta_field_inference.py` reconstructs canonical hidden weights with cosine 0.9976 |
+| PAK-10 | Does LJPW have a measurable operator grammar? | Repair and context selection before Power produce higher coherence and less residue than premature actualization | `pakheta_operator_permutation_sweep.py` ranks all 24 LJPW orderings |
 
 ---
 
@@ -217,6 +225,12 @@ the same relational grammar appears before physical quantum formalism
 
 4. `experiments/pakheta_operator_residue.py`
    Models the persistent residue caused by Power actualization before Justice repair.
+
+5. `experiments/pakheta_field_inference.py`
+   Tests whether hidden relationship-field weights can be recovered from anchor, context, order, and false-partition traces.
+
+6. `experiments/pakheta_operator_permutation_sweep.py`
+   Runs all 24 LJPW operator orderings across generated damaged fields to expose repair and residue grammar.
 
 ---
 

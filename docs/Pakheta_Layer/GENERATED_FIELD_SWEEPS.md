@@ -155,7 +155,7 @@ The next sweep should add:
 3. operator failure modes
 4. Power-before-Justice residue
 5. Wisdom context misclassification
-6. fields whose true relation must be inferred rather than given
+6. coupling the generated sweeps to the new hidden-field inference model
 
 That will tell us whether phi is universally optimal, conditionally optimal, or optimal only for phi-generated fields.
 

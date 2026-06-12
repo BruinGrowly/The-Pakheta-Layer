@@ -74,6 +74,9 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 6. **Formal Models And Experiments**  
    Can coherence, anchor alignment, false partition, context projection, and relational distance be modeled and tested?
 
+7. **Recoverability And Operator Grammar**
+   Can hidden relationship-fields be inferred from traces, and can LJPW orderings reveal a grammar of repair before actualization?
+
 ---
 
 ## Documents In This Folder
@@ -96,6 +99,9 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 - `GENERATED_FIELD_SWEEPS.md`
   Synthetic stress test showing which Pakheta mechanics generalize across generated relationship-fields.
 
+- `FIELD_INFERENCE_AND_OPERATOR_GRAMMAR.md`
+  Second deeper pass showing hidden field recovery from traces and LJPW operator permutation results.
+
 - `EXPERIMENT_MATRIX.md`  
   Research questions, modelable hypotheses, and proposed experiments.
 
@@ -113,7 +119,7 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
   Self-contained script running Pakheta Experiments 1 to 5 (anchor coherence, order effects, phi-weighted anchors, relational distance, false partition).
 
 - `../../experiments/`  
-  Additional executable research models (phi robustness, repair headroom, operator residue, quantum bridge, prime coherence, semantic attention, Bartkiewicz tomography bridge) with their JSON results.
+  Additional executable research models (field inference, operator permutation grammar, phi robustness, repair headroom, operator residue, quantum bridge, prime coherence, semantic attention, Bartkiewicz tomography bridge) with their JSON results.
 
 ---
 

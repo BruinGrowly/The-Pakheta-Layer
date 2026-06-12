@@ -87,6 +87,8 @@ These findings have been validated through localized simulations and synthetic s
 * **3. Phi Load-Balancing**: Phi ($\phi$) acts as the load-balancing ratio that keeps one-field systems differentiated without collapsing. Too equal weights flatten facets; too split weights fragment the field.
 * **4. Relational Locality**: Relational distance ($d_{\text{relation}}$) is independent of physical space ($d_{\text{space}}$). In the current three-node toy setup, the correlation is strongly negative (empirically about $-0.897$) because the near spatial decoy is field-far while farther nodes are field-near.
 * **5. Decoherence via False Partition**: Breaking a unified field into separate "rival" fields (false partition) drops coherence rapidly (e.g. baseline coherence drops from $0.93$ to $0.45$).
+* **6. Recoverable Field Signatures**: Hidden relationship-fields can be reconstructed from anchor, context, order, and false-partition traces (canonical inference cosine $0.9976$).
+* **7. Operator Grammar**: LJPW ordering is path-sensitive. The strongest generated-field sequence repairs and contextualizes before actualization (`Justice -> Love -> Wisdom -> Power`, mean coherence $0.8530$).
 
 ---
 
@@ -119,12 +121,15 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [MECHANICS_AND_NAVIGATION_FINDINGS.md](./docs/Pakheta_Layer/MECHANICS_AND_NAVIGATION_FINDINGS.md) — Findings on primitive navigation, path sensitivity, and relational distance.
 * [LJPW_OPERATOR_MODEL.md](./docs/Pakheta_Layer/LJPW_OPERATOR_MODEL.md) — Modeling Love, Justice, Power, and Wisdom as state-transforming operators.
 * [GENERATED_FIELD_SWEEPS.md](./docs/Pakheta_Layer/GENERATED_FIELD_SWEEPS.md) — Results of synthetic stress sweeps validating the generalizability of Pakheta mechanics.
+* [FIELD_INFERENCE_AND_OPERATOR_GRAMMAR.md](./docs/Pakheta_Layer/FIELD_INFERENCE_AND_OPERATOR_GRAMMAR.md) — Findings on hidden field recovery and LJPW operator ordering.
 * [EXPERIMENT_MATRIX.md](./docs/Pakheta_Layer/EXPERIMENT_MATRIX.md) — Active and proposed experiments, variables, and success criteria.
 * [README.md](./docs/Pakheta_Layer/README.md) — Local directory README for the Pakheta Layer research folder.
 
 ### 6.2 Executable Research Models
 * [run_pakheta_experiments.py](./experiments/run_pakheta_experiments.py) — Self-contained execution script running Pakheta Experiments 1 to 5.
 * [experiment_results.json](./experiments/experiment_results.json) — Output results of the five experiments.
+* [pakheta_field_inference.py](./experiments/pakheta_field_inference.py) — Hidden relationship-field recovery from observable traces.
+* [pakheta_operator_permutation_sweep.py](./experiments/pakheta_operator_permutation_sweep.py) — Full LJPW operator ordering sweep across generated damaged fields.
 
 All experiment scripts run on the Python standard library alone, except `pakheta_bartkiewicz_bridge.py`, which requires `numpy` (see [experiments/requirements.txt](./experiments/requirements.txt)).
 
