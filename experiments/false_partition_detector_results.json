@@ -1,0 +1,214 @@
+{
+  "experiment_name": "false_partition_detector",
+  "date_executed": "2026-06-12T07:09:05.193029+00:00",
+  "execution_duration_sec": 0.00139,
+  "feature_names": [
+    "anchor_agreement",
+    "facet_coverage",
+    "context_consistency",
+    "identity_continuity",
+    "rival_claims",
+    "ledger_split",
+    "location_overweight",
+    "coherence_drop"
+  ],
+  "threshold": 0.55,
+  "dataset_size": 280,
+  "counts": {
+    "true_positive": 70,
+    "true_negative": 210,
+    "false_positive": 0,
+    "false_negative": 0
+  },
+  "precision": 1.0,
+  "recall": 1.0,
+  "accuracy": 1.0,
+  "label_summary": {
+    "environment_noise": {
+      "count": 70,
+      "mean_score": 0.332,
+      "detected_rate": 0.0,
+      "mean_coherence": 0.597
+    },
+    "false_partition": {
+      "count": 70,
+      "mean_score": 0.7323,
+      "detected_rate": 100.0,
+      "mean_coherence": 0.1066
+    },
+    "complementary_anchors": {
+      "count": 70,
+      "mean_score": 0.2197,
+      "detected_rate": 0.0,
+      "mean_coherence": 0.7546
+    },
+    "integrated_one_field": {
+      "count": 70,
+      "mean_score": 0.1127,
+      "detected_rate": 0.0,
+      "mean_coherence": 0.8934
+    }
+  },
+  "scored_examples": [
+    {
+      "label": "false_partition",
+      "features": {
+        "anchor_agreement": 0.34234521683286323,
+        "facet_coverage": 0.34535756228362063,
+        "context_consistency": 0.3351976647708889,
+        "identity_continuity": 0.39596550131725167,
+        "rival_claims": 0.8536643087345446,
+        "ledger_split": 0.8260896240172074,
+        "location_overweight": 0.6394600198510845,
+        "coherence_drop": 0.7588443570820924
+      },
+      "coherence": 0.022621610073120246,
+      "detection": {
+        "score": 0.7942,
+        "detected_false_partition": true,
+        "dominant_error": "rival_field_claim",
+        "predicted_label": "false_partition"
+      }
+    },
+    {
+      "label": "false_partition",
+      "features": {
+        "anchor_agreement": 0.27019193250057616,
+        "facet_coverage": 0.33825972306158375,
+        "context_consistency": 0.289555924014045,
+        "identity_continuity": 0.4782380274230228,
+        "rival_claims": 0.8622012505587275,
+        "ledger_split": 0.7021028379239792,
+        "location_overweight": 0.65943007049206,
+        "coherence_drop": 0.7164355807665865
+      },
+      "coherence": 0.02586693102853177,
+      "detection": {
+        "score": 0.7899,
+        "detected_false_partition": true,
+        "dominant_error": "rival_field_claim",
+        "predicted_label": "false_partition"
+      }
+    },
+    {
+      "label": "false_partition",
+      "features": {
+        "anchor_agreement": 0.4589979677715173,
+        "facet_coverage": 0.36174856508824627,
+        "context_consistency": 0.34821864040582856,
+        "identity_continuity": 0.3414111549534243,
+        "rival_claims": 0.8911001121846459,
+        "ledger_split": 0.8058955250840666,
+        "location_overweight": 0.831886090380132,
+        "coherence_drop": 0.6496225903709862
+      },
+      "coherence": 0.03950804989361645,
+      "detection": {
+        "score": 0.785,
+        "detected_false_partition": true,
+        "dominant_error": "rival_field_claim",
+        "predicted_label": "false_partition"
+      }
+    },
+    {
+      "label": "false_partition",
+      "features": {
+        "anchor_agreement": 0.3350592829598317,
+        "facet_coverage": 0.3258287040889313,
+        "context_consistency": 0.3489263380145028,
+        "identity_continuity": 0.5137948725748855,
+        "rival_claims": 0.8849962599475539,
+        "ledger_split": 0.8390578418716255,
+        "location_overweight": 0.7474997911118636,
+        "coherence_drop": 0.5206042506984494
+      },
+      "coherence": 0.041270572595735355,
+      "detection": {
+        "score": 0.7845,
+        "detected_false_partition": true,
+        "dominant_error": "rival_field_claim",
+        "predicted_label": "false_partition"
+      }
+    },
+    {
+      "label": "false_partition",
+      "features": {
+        "anchor_agreement": 0.32293941570336415,
+        "facet_coverage": 0.5127140012931366,
+        "context_consistency": 0.3772958189940708,
+        "identity_continuity": 0.5672558545691345,
+        "rival_claims": 0.9060934253617656,
+        "ledger_split": 0.877211922292793,
+        "location_overweight": 0.8181014513064233,
+        "coherence_drop": 0.7824324136842677
+      },
+      "coherence": 0.05240073321178462,
+      "detection": {
+        "score": 0.7814,
+        "detected_false_partition": true,
+        "dominant_error": "rival_field_claim",
+        "predicted_label": "false_partition"
+      }
+    },
+    {
+      "label": "false_partition",
+      "features": {
+        "anchor_agreement": 0.2449287920295952,
+        "facet_coverage": 0.45294863937617413,
+        "context_consistency": 0.2852070185047118,
+        "identity_continuity": 0.4980586446336051,
+        "rival_claims": 0.8233299406455636,
+        "ledger_split": 0.8082949744426259,
+        "location_overweight": 0.7638306119419171,
+        "coherence_drop": 0.5418031162497133
+      },
+      "coherence": 0.047291226018786214,
+      "detection": {
+        "score": 0.7754,
+        "detected_false_partition": true,
+        "dominant_error": "rival_field_claim",
+        "predicted_label": "false_partition"
+      }
+    },
+    {
+      "label": "false_partition",
+      "features": {
+        "anchor_agreement": 0.29589569718987274,
+        "facet_coverage": 0.3294448941459877,
+        "context_consistency": 0.34258882785654,
+        "identity_continuity": 0.4073936138056577,
+        "rival_claims": 0.6926281657916141,
+        "ledger_split": 0.7433882392456325,
+        "location_overweight": 0.8446738579454804,
+        "coherence_drop": 0.7119442690687934
+      },
+      "coherence": 0.04178440957640017,
+      "detection": {
+        "score": 0.7752,
+        "detected_false_partition": true,
+        "dominant_error": "object_first_location_bias",
+        "predicted_label": "false_partition"
+      }
+    },
+    {
+      "label": "false_partition",
+      "features": {
+        "anchor_agreement": 0.3499936250667869,
+        "facet_coverage": 0.33219703503355186,
+        "context_consistency": 0.30069815831684543,
+        "identity_continuity": 0.47136604622604766,
+        "rival_claims": 0.8329116864161783,
+        "ledger_split": 0.7575194566372371,
+        "location_overweight": 0.7183359549722433,
+        "coherence_drop": 0.6007155672703232
+      },
+      "coherence": 0.05092090302217872,
+      "detection": {
+        "score": 0.7723,
+        "detected_false_partition": true,
+        "dominant_error": "rival_field_claim",
+        "predicted_label": "false_partition"
+      }
+    }
+  ]
+}

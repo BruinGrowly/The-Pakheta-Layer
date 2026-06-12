@@ -1,0 +1,227 @@
+{
+  "experiment_name": "cross_substrate_primitive_conservation",
+  "date_executed": "2026-06-12T07:09:05.139513+00:00",
+  "execution_duration_sec": 0.027476,
+  "trials_per_primitive": 90,
+  "dimension_labels": {
+    "semantic": [
+      "memory_stability",
+      "attention_selectivity",
+      "meaning_actualization",
+      "relationship_inseparability",
+      "narrative_drift",
+      "anchor_boundary"
+    ],
+    "mathematical": [
+      "invariant_strength",
+      "projection_selectivity",
+      "eigen_transition",
+      "tensor_coupling",
+      "basis_loss",
+      "reference_boundary"
+    ],
+    "physical": [
+      "boundary_condition",
+      "apparatus_context",
+      "observed_outcome",
+      "entanglement_correlation",
+      "phase_loss",
+      "detector_boundary"
+    ]
+  },
+  "summary": {
+    "anchor": {
+      "trials": 90,
+      "conservation_rate": 100.0,
+      "mean_margin_by_substrate": {
+        "semantic": 0.3807,
+        "mathematical": 0.3888,
+        "physical": 0.4053
+      }
+    },
+    "context": {
+      "trials": 90,
+      "conservation_rate": 100.0,
+      "mean_margin_by_substrate": {
+        "semantic": 0.1913,
+        "mathematical": 0.1972,
+        "physical": 0.194
+      }
+    },
+    "actualization": {
+      "trials": 90,
+      "conservation_rate": 100.0,
+      "mean_margin_by_substrate": {
+        "semantic": 0.1968,
+        "mathematical": 0.1976,
+        "physical": 0.2001
+      }
+    },
+    "nonseparability": {
+      "trials": 90,
+      "conservation_rate": 100.0,
+      "mean_margin_by_substrate": {
+        "semantic": 0.332,
+        "mathematical": 0.3377,
+        "physical": 0.3398
+      }
+    },
+    "decoherence": {
+      "trials": 90,
+      "conservation_rate": 100.0,
+      "mean_margin_by_substrate": {
+        "semantic": 0.3938,
+        "mathematical": 0.3942,
+        "physical": 0.3999
+      }
+    }
+  },
+  "substrate_accuracy": {
+    "semantic": 100.0,
+    "mathematical": 100.0,
+    "physical": 100.0
+  },
+  "overall_conservation_rate": 100.0,
+  "example_rows": [
+    {
+      "primitive": "anchor",
+      "conserved": true,
+      "predictions": {
+        "semantic": "anchor",
+        "mathematical": "anchor",
+        "physical": "anchor"
+      },
+      "margins": {
+        "semantic": 0.3295,
+        "mathematical": 0.3936,
+        "physical": 0.4412
+      }
+    },
+    {
+      "primitive": "anchor",
+      "conserved": true,
+      "predictions": {
+        "semantic": "anchor",
+        "mathematical": "anchor",
+        "physical": "anchor"
+      },
+      "margins": {
+        "semantic": 0.3274,
+        "mathematical": 0.369,
+        "physical": 0.3547
+      }
+    },
+    {
+      "primitive": "anchor",
+      "conserved": true,
+      "predictions": {
+        "semantic": "anchor",
+        "mathematical": "anchor",
+        "physical": "anchor"
+      },
+      "margins": {
+        "semantic": 0.3995,
+        "mathematical": 0.3846,
+        "physical": 0.399
+      }
+    },
+    {
+      "primitive": "anchor",
+      "conserved": true,
+      "predictions": {
+        "semantic": "anchor",
+        "mathematical": "anchor",
+        "physical": "anchor"
+      },
+      "margins": {
+        "semantic": 0.3814,
+        "mathematical": 0.3573,
+        "physical": 0.3935
+      }
+    },
+    {
+      "primitive": "anchor",
+      "conserved": true,
+      "predictions": {
+        "semantic": "anchor",
+        "mathematical": "anchor",
+        "physical": "anchor"
+      },
+      "margins": {
+        "semantic": 0.4329,
+        "mathematical": 0.3988,
+        "physical": 0.4462
+      }
+    },
+    {
+      "primitive": "anchor",
+      "conserved": true,
+      "predictions": {
+        "semantic": "anchor",
+        "mathematical": "anchor",
+        "physical": "anchor"
+      },
+      "margins": {
+        "semantic": 0.409,
+        "mathematical": 0.4108,
+        "physical": 0.4355
+      }
+    },
+    {
+      "primitive": "anchor",
+      "conserved": true,
+      "predictions": {
+        "semantic": "anchor",
+        "mathematical": "anchor",
+        "physical": "anchor"
+      },
+      "margins": {
+        "semantic": 0.4051,
+        "mathematical": 0.3839,
+        "physical": 0.3954
+      }
+    },
+    {
+      "primitive": "anchor",
+      "conserved": true,
+      "predictions": {
+        "semantic": "anchor",
+        "mathematical": "anchor",
+        "physical": "anchor"
+      },
+      "margins": {
+        "semantic": 0.3629,
+        "mathematical": 0.4205,
+        "physical": 0.4047
+      }
+    },
+    {
+      "primitive": "anchor",
+      "conserved": true,
+      "predictions": {
+        "semantic": "anchor",
+        "mathematical": "anchor",
+        "physical": "anchor"
+      },
+      "margins": {
+        "semantic": 0.396,
+        "mathematical": 0.3442,
+        "physical": 0.4074
+      }
+    },
+    {
+      "primitive": "anchor",
+      "conserved": true,
+      "predictions": {
+        "semantic": "anchor",
+        "mathematical": "anchor",
+        "physical": "anchor"
+      },
+      "margins": {
+        "semantic": 0.36,
+        "mathematical": 0.3946,
+        "physical": 0.4782
+      }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "experiment_name": "relational_locality_phase_diagram",
+  "date_executed": "2026-06-12T07:09:05.339449+00:00",
+  "execution_duration_sec": 0.01465,
+  "fields_per_phase": 90,
+  "contexts": [
+    "physical_context",
+    "memory_context",
+    "repair_context"
+  ],
+  "phase_summary": {
+    "aligned": {
+      "count": 90,
+      "context_mean_correlations": {
+        "physical_context": 0.9655,
+        "memory_context": 0.9632,
+        "repair_context": 0.9627
+      },
+      "mean_context_span": 0.0234,
+      "classification_rate": 100.0
+    },
+    "independent": {
+      "count": 90,
+      "context_mean_correlations": {
+        "physical_context": -0.0097,
+        "memory_context": -0.0096,
+        "repair_context": 0.0051
+      },
+      "mean_context_span": 0.3321,
+      "classification_rate": 98.89
+    },
+    "inverted": {
+      "count": 90,
+      "context_mean_correlations": {
+        "physical_context": -0.9629,
+        "memory_context": -0.9642,
+        "repair_context": -0.9628
+      },
+      "mean_context_span": 0.0231,
+      "classification_rate": 100.0
+    },
+    "unstable_under_context": {
+      "count": 90,
+      "context_mean_correlations": {
+        "physical_context": 0.9519,
+        "memory_context": -0.9538,
+        "repair_context": 0.6071
+      },
+      "mean_context_span": 1.9057,
+      "classification_rate": 100.0
+    }
+  },
+  "example_rows": {
+    "aligned": {
+      "correlations": {
+        "physical_context": 0.9534,
+        "memory_context": 0.977,
+        "repair_context": 0.9758
+      },
+      "predicted_phase": "aligned"
+    },
+    "independent": {
+      "correlations": {
+        "physical_context": -0.055,
+        "memory_context": 0.0731,
+        "repair_context": -0.2015
+      },
+      "predicted_phase": "independent"
+    },
+    "inverted": {
+      "correlations": {
+        "physical_context": -0.953,
+        "memory_context": -0.9553,
+        "repair_context": -0.973
+      },
+      "predicted_phase": "inverted"
+    },
+    "unstable_under_context": {
+      "correlations": {
+        "physical_context": 0.9586,
+        "memory_context": -0.9638,
+        "repair_context": 0.6307
+      },
+      "predicted_phase": "unstable_under_context"
+    }
+  }
+}

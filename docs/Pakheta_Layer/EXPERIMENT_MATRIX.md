@@ -21,6 +21,11 @@ order effects
 phi-normalized differentiation
 hidden field recoverability
 LJPW operator grammar
+Wisdom failure modes
+false partition detection
+relational locality phases
+cross-substrate primitive conservation
+Pakheta recovery loop
 ```
 
 ---
@@ -65,6 +70,11 @@ False partition lowers coherence. Multiple anchors can remain coherent if they e
 - `experiments/pakheta_repair_headroom.py`
 - `experiments/pakheta_field_inference.py`
 - `experiments/pakheta_operator_permutation_sweep.py`
+- `experiments/pakheta_wisdom_failure_modes.py`
+- `experiments/pakheta_false_partition_detector.py`
+- `experiments/pakheta_locality_phase_diagram.py`
+- `experiments/pakheta_cross_substrate_conservation.py`
+- `experiments/pakheta_recovery_loop.py`
 
 **Initial findings:**
 
@@ -76,6 +86,11 @@ LJPW operators: the consolidated operator sequence rises from 0.407 to 1.000; th
 Generated sweeps: current random-target sweep has phi best-or-tied rate 4.5%; false partition remains below phi 100.0%.
 Field inference: hidden field traces recover the canonical latent field with cosine 0.9976, outperforming equal, phi, and physical-nearness baselines in that case.
 Operator grammar: the strongest generated-field sequence is Justice -> Love -> Wisdom -> Power (mean coherence 0.8530), while premature Power sequences leave the largest residue.
+Wisdom failures: object-first context selection causes the largest coherence loss (mean drop 0.7653), while adjacent context errors are milder.
+False partition detector: rule-based diagnostic separates false partition from complementary anchors and environmental noise with 1.0000 precision and recall on the synthetic set.
+Locality phases: spatial and relational distance can align, decouple, invert, or become context-unstable.
+Primitive conservation: anchor, context, actualization, nonseparability, and decoherence remain identifiable across semantic, mathematical, and physical faces in the conservation sweep.
+Recovery loop: detect -> identify -> Justice repair improves false-partition coherence from 0.1039 to 0.5377.
 ```
 
 ---
@@ -94,6 +109,11 @@ Operator grammar: the strongest generated-field sequence is Justice -> Love -> W
 | PAK-08 | Can quantum interpretation concepts be compressed through Pakheta grammar? | Superposition, measurement, entanglement, contextuality, and decoherence map to one grammar | Formal comparative note plus toy state-space model |
 | PAK-09 | Can a hidden relationship-field be recovered from traces? | Anchor, context, order, and false-partition traces contain enough signal to infer latent field weights | `pakheta_field_inference.py` reconstructs canonical hidden weights with cosine 0.9976 |
 | PAK-10 | Does LJPW have a measurable operator grammar? | Repair and context selection before Power produce higher coherence and less residue than premature actualization | `pakheta_operator_permutation_sweep.py` ranks all 24 LJPW orderings |
+| PAK-11 | What happens when Wisdom selects the wrong level? | Object-first and overabstracted contexts reduce coherence more than adjacent context mistakes | `pakheta_wisdom_failure_modes.py` compares four Wisdom modes |
+| PAK-12 | Can false partition be detected directly? | Rival claims, ledger splits, anchor disagreement, and location overweight form a diagnostic signature | `pakheta_false_partition_detector.py` classifies synthetic field states |
+| PAK-13 | Does relational locality have phases? | Spatial and relational distance can be aligned, independent, inverted, or context-unstable | `pakheta_locality_phase_diagram.py` maps correlation regimes |
+| PAK-14 | Do primitives conserve across substrates? | Core primitives remain identifiable across semantic, mathematical, and physical faces | `pakheta_cross_substrate_conservation.py` measures conservation margins |
+| PAK-15 | Can Pakheta repair false partition after detecting it? | Detection plus Justice repair should reduce false-partition score and improve coherence | `pakheta_recovery_loop.py` applies detect-identify-repair-remeasure |
 
 ---
 
@@ -231,6 +251,21 @@ the same relational grammar appears before physical quantum formalism
 
 6. `experiments/pakheta_operator_permutation_sweep.py`
    Runs all 24 LJPW operator orderings across generated damaged fields to expose repair and residue grammar.
+
+7. `experiments/pakheta_wisdom_failure_modes.py`
+   Tests correct, adjacent-wrong, object-first, and overabstracted Wisdom context selection.
+
+8. `experiments/pakheta_false_partition_detector.py`
+   Detects false partition as a diagnostic feature pattern.
+
+9. `experiments/pakheta_locality_phase_diagram.py`
+   Maps aligned, independent, inverted, and context-unstable locality regimes.
+
+10. `experiments/pakheta_cross_substrate_conservation.py`
+    Tests primitive conservation across semantic, mathematical, and physical faces.
+
+11. `experiments/pakheta_recovery_loop.py`
+    Applies detect -> identify -> Justice repair -> remeasure as a recovery protocol.
 
 ---
 

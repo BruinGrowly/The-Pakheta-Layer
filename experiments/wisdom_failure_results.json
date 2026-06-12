@@ -1,0 +1,160 @@
+{
+  "experiment_name": "wisdom_failure_modes",
+  "date_executed": "2026-06-12T07:09:05.877834+00:00",
+  "execution_duration_sec": 0.008709,
+  "field_count": 180,
+  "summary": {
+    "correct_context": {
+      "coherence": {
+        "min": 0.9209,
+        "mean": 0.9775,
+        "max": 0.9983
+      },
+      "context_fit": {
+        "min": 0.9769,
+        "mean": 0.9921,
+        "max": 0.999
+      },
+      "level_error": {
+        "min": 0.0027,
+        "mean": 0.0273,
+        "max": 0.0728
+      },
+      "mean_coherence_drop_from_correct": 0.0
+    },
+    "adjacent_wrong_context": {
+      "coherence": {
+        "min": 0.8184,
+        "mean": 0.9364,
+        "max": 0.9883
+      },
+      "context_fit": {
+        "min": 0.853,
+        "mean": 0.9594,
+        "max": 0.997
+      },
+      "level_error": {
+        "min": 0.0053,
+        "mean": 0.0596,
+        "max": 0.1402
+      },
+      "mean_coherence_drop_from_correct": 0.041
+    },
+    "object_first_context": {
+      "coherence": {
+        "min": 0.008,
+        "mean": 0.2122,
+        "max": 0.5087
+      },
+      "context_fit": {
+        "min": 0.2977,
+        "mean": 0.4736,
+        "max": 0.697
+      },
+      "level_error": {
+        "min": 0.3304,
+        "mean": 0.5411,
+        "max": 0.7315
+      },
+      "mean_coherence_drop_from_correct": 0.7653
+    },
+    "overabstracted_context": {
+      "coherence": {
+        "min": 0.7365,
+        "mean": 0.7963,
+        "max": 0.8446
+      },
+      "context_fit": {
+        "min": 0.9794,
+        "mean": 0.9927,
+        "max": 0.9988
+      },
+      "level_error": {
+        "min": 0.004,
+        "mean": 0.0367,
+        "max": 0.0817
+      },
+      "mean_coherence_drop_from_correct": 0.1811
+    }
+  },
+  "example_field": {
+    "goal": {
+      "anchor": 0.18300409606411946,
+      "memory": 0.24105509043986256,
+      "repair": 0.22125292150857118,
+      "actualization": 0.15157506257140613,
+      "relational_distance": 0.14570226550404394,
+      "physical_salience": 0.057410563911996684
+    },
+    "modes": {
+      "correct_context": {
+        "context": {
+          "anchor": 0.20298119289496513,
+          "memory": 0.24911666582469086,
+          "repair": 0.2377506355891585,
+          "actualization": 0.13136221917199753,
+          "relational_distance": 0.10716471505121099,
+          "physical_salience": 0.07162457146797697
+        },
+        "metrics": {
+          "context_fit": 0.9927,
+          "actualization_overlap": 1.0074,
+          "identity_preservation": 0.9687,
+          "level_error": 0.0354,
+          "coherence": 0.9783
+        }
+      },
+      "adjacent_wrong_context": {
+        "context": {
+          "anchor": 0.1666243031207546,
+          "memory": 0.22189000963801442,
+          "repair": 0.0531764434010122,
+          "actualization": 0.14095716428836236,
+          "relational_distance": 0.31028945414969944,
+          "physical_salience": 0.10706262540215698
+        },
+        "metrics": {
+          "context_fit": 0.853,
+          "actualization_overlap": 0.8959,
+          "identity_preservation": 0.8908,
+          "level_error": 0.1402,
+          "coherence": 0.8184
+        }
+      },
+      "object_first_context": {
+        "context": {
+          "anchor": 0.0830432059303748,
+          "memory": 0.1833312631424252,
+          "repair": 0.12039819320695293,
+          "actualization": 0.08342723796147458,
+          "relational_distance": 0.08318385371616886,
+          "physical_salience": 0.44661624604260364
+        },
+        "metrics": {
+          "context_fit": 0.6073,
+          "actualization_overlap": 0.7255,
+          "identity_preservation": 0.1437,
+          "level_error": 0.4236,
+          "coherence": 0.3844
+        }
+      },
+      "overabstracted_context": {
+        "context": {
+          "anchor": 0.1679827593065476,
+          "memory": 0.2458267422683732,
+          "repair": 0.23203514923638419,
+          "actualization": 0.16984696357902748,
+          "relational_distance": 0.11955728787306613,
+          "physical_salience": 0.0647510977366014
+        },
+        "metrics": {
+          "context_fit": 0.9962,
+          "actualization_overlap": 1.0009,
+          "identity_preservation": 0.9839,
+          "level_error": 0.0217,
+          "coherence": 0.8229
+        }
+      }
+    }
+  }
+}

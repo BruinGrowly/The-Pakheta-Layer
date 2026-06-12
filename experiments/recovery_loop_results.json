@@ -1,0 +1,143 @@
+{
+  "experiment_name": "pakheta_recovery_loop",
+  "date_executed": "2026-06-12T07:09:05.713180+00:00",
+  "execution_duration_sec": 0.002457,
+  "dataset_size": 320,
+  "repaired_count": 80,
+  "false_partition_count": 80,
+  "false_partition_recovery_rate": 100.0,
+  "unnecessary_repair_count": 0,
+  "unnecessary_repair_rate": 0.0,
+  "false_partition_score": {
+    "before": {
+      "min": 0.6666,
+      "mean": 0.7347,
+      "max": 0.7911
+    },
+    "after": {
+      "min": 0.354,
+      "mean": 0.3882,
+      "max": 0.4233
+    }
+  },
+  "false_partition_coherence": {
+    "before": {
+      "min": 0.0237,
+      "mean": 0.1039,
+      "max": 0.1887
+    },
+    "after": {
+      "min": 0.4882,
+      "mean": 0.5377,
+      "max": 0.5811
+    },
+    "gain": {
+      "min": 0.3917,
+      "mean": 0.4338,
+      "max": 0.4645
+    }
+  },
+  "primitive_error_counts": {
+    "rival_field_claim": 40,
+    "location_ledger_split": 32,
+    "object_first_location_bias": 8
+  },
+  "sample_recoveries": [
+    {
+      "label": "false_partition",
+      "action": "justice_repair",
+      "dominant_error": "location_ledger_split",
+      "before_score": 0.7911,
+      "after_score": 0.4233,
+      "before_coherence": 0.0237,
+      "after_coherence": 0.4882,
+      "coherence_gain": 0.4645,
+      "still_detected": false,
+      "recovered": true
+    },
+    {
+      "label": "false_partition",
+      "action": "justice_repair",
+      "dominant_error": "rival_field_claim",
+      "before_score": 0.7834,
+      "after_score": 0.4144,
+      "before_coherence": 0.0406,
+      "after_coherence": 0.5034,
+      "coherence_gain": 0.4628,
+      "still_detected": false,
+      "recovered": true
+    },
+    {
+      "label": "false_partition",
+      "action": "justice_repair",
+      "dominant_error": "rival_field_claim",
+      "before_score": 0.7855,
+      "after_score": 0.4148,
+      "before_coherence": 0.0425,
+      "after_coherence": 0.5049,
+      "coherence_gain": 0.4625,
+      "still_detected": false,
+      "recovered": true
+    },
+    {
+      "label": "false_partition",
+      "action": "justice_repair",
+      "dominant_error": "rival_field_claim",
+      "before_score": 0.7777,
+      "after_score": 0.4126,
+      "before_coherence": 0.0422,
+      "after_coherence": 0.5025,
+      "coherence_gain": 0.4603,
+      "still_detected": false,
+      "recovered": true
+    },
+    {
+      "label": "false_partition",
+      "action": "justice_repair",
+      "dominant_error": "rival_field_claim",
+      "before_score": 0.776,
+      "after_score": 0.4114,
+      "before_coherence": 0.0424,
+      "after_coherence": 0.5026,
+      "coherence_gain": 0.4602,
+      "still_detected": false,
+      "recovered": true
+    },
+    {
+      "label": "false_partition",
+      "action": "justice_repair",
+      "dominant_error": "location_ledger_split",
+      "before_score": 0.777,
+      "after_score": 0.4121,
+      "before_coherence": 0.0445,
+      "after_coherence": 0.5042,
+      "coherence_gain": 0.4597,
+      "still_detected": false,
+      "recovered": true
+    },
+    {
+      "label": "false_partition",
+      "action": "justice_repair",
+      "dominant_error": "rival_field_claim",
+      "before_score": 0.7792,
+      "after_score": 0.4121,
+      "before_coherence": 0.0485,
+      "after_coherence": 0.5073,
+      "coherence_gain": 0.4588,
+      "still_detected": false,
+      "recovered": true
+    },
+    {
+      "label": "false_partition",
+      "action": "justice_repair",
+      "dominant_error": "rival_field_claim",
+      "before_score": 0.7693,
+      "after_score": 0.4054,
+      "before_coherence": 0.0601,
+      "after_coherence": 0.5155,
+      "coherence_gain": 0.4554,
+      "still_detected": false,
+      "recovered": true
+    }
+  ]
+}

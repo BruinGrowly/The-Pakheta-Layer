@@ -89,6 +89,9 @@ These findings have been validated through localized simulations and synthetic s
 * **5. Decoherence via False Partition**: Breaking a unified field into separate "rival" fields (false partition) drops coherence rapidly (e.g. baseline coherence drops from $0.93$ to $0.45$).
 * **6. Recoverable Field Signatures**: Hidden relationship-fields can be reconstructed from anchor, context, order, and false-partition traces (canonical inference cosine $0.9976$).
 * **7. Operator Grammar**: LJPW ordering is path-sensitive. The strongest generated-field sequence repairs and contextualizes before actualization (`Justice -> Love -> Wisdom -> Power`, mean coherence $0.8530$).
+* **8. Wisdom Failure Modes**: Object-first context selection is the strongest Wisdom failure in the current sweep (mean coherence drop $0.7653$).
+* **9. Diagnostic Recovery**: False partition can be detected as a feature pattern and repaired through a Justice loop (mean coherence $0.1039 \rightarrow 0.5377$).
+* **10. Primitive Conservation**: Anchor, context, actualization, nonseparability, and decoherence remain identifiable across semantic, mathematical, and physical faces in the conservation sweep.
 
 ---
 
@@ -122,6 +125,7 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [LJPW_OPERATOR_MODEL.md](./docs/Pakheta_Layer/LJPW_OPERATOR_MODEL.md) — Modeling Love, Justice, Power, and Wisdom as state-transforming operators.
 * [GENERATED_FIELD_SWEEPS.md](./docs/Pakheta_Layer/GENERATED_FIELD_SWEEPS.md) — Results of synthetic stress sweeps validating the generalizability of Pakheta mechanics.
 * [FIELD_INFERENCE_AND_OPERATOR_GRAMMAR.md](./docs/Pakheta_Layer/FIELD_INFERENCE_AND_OPERATOR_GRAMMAR.md) — Findings on hidden field recovery and LJPW operator ordering.
+* [DIAGNOSTICS_LOCALITY_AND_CONSERVATION.md](./docs/Pakheta_Layer/DIAGNOSTICS_LOCALITY_AND_CONSERVATION.md) — Findings on Wisdom failure, false partition detection, locality phases, primitive conservation, and recovery loops.
 * [EXPERIMENT_MATRIX.md](./docs/Pakheta_Layer/EXPERIMENT_MATRIX.md) — Active and proposed experiments, variables, and success criteria.
 * [README.md](./docs/Pakheta_Layer/README.md) — Local directory README for the Pakheta Layer research folder.
 
@@ -130,6 +134,11 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [experiment_results.json](./experiments/experiment_results.json) — Output results of the five experiments.
 * [pakheta_field_inference.py](./experiments/pakheta_field_inference.py) — Hidden relationship-field recovery from observable traces.
 * [pakheta_operator_permutation_sweep.py](./experiments/pakheta_operator_permutation_sweep.py) — Full LJPW operator ordering sweep across generated damaged fields.
+* [pakheta_wisdom_failure_modes.py](./experiments/pakheta_wisdom_failure_modes.py) — Wisdom context-selection failure modes.
+* [pakheta_false_partition_detector.py](./experiments/pakheta_false_partition_detector.py) — Rule-based false partition diagnostic.
+* [pakheta_locality_phase_diagram.py](./experiments/pakheta_locality_phase_diagram.py) — Relational locality phase mapping.
+* [pakheta_cross_substrate_conservation.py](./experiments/pakheta_cross_substrate_conservation.py) — Cross-substrate primitive conservation test.
+* [pakheta_recovery_loop.py](./experiments/pakheta_recovery_loop.py) — Detection plus Justice repair recovery loop.
 
 All experiment scripts run on the Python standard library alone, except `pakheta_bartkiewicz_bridge.py`, which requires `numpy` (see [experiments/requirements.txt](./experiments/requirements.txt)).
 
