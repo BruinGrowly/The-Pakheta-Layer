@@ -57,11 +57,52 @@ def tensor_product_matrices(a, b):
 def calculate_concurrence(rho):
     """
     Calculates the concurrence of a 2-qubit state represented by density matrix rho.
-    For pure states rho = |v><v|, concurrence is 2 * |v0*v3 - v1*v2|.
-    For simplicity, we estimate the coherence of the Bell terms as a measure of nonseparability.
+    This experiment only generates pure states and Bell-diagonal X states, so those
+    exact closed-form paths keep the script dependency-free.
     """
-    # Coherence coefficient between |00> and |11>
-    return 2.0 * abs(rho[0][3])
+    def clamp_concurrence(value):
+        return max(0.0, min(1.0, value))
+
+    def matrix_square_trace(matrix):
+        squared = matrix_multiply(matrix, matrix)
+        return trace(squared).real
+
+    def extract_pure_state(matrix):
+        diag = [max(0.0, matrix[i][i].real) for i in range(4)]
+        anchor = max(range(4), key=lambda i: diag[i])
+        if diag[anchor] <= 1e-12:
+            return [0j, 0j, 0j, 0j]
+
+        anchor_amp = math.sqrt(diag[anchor]) + 0j
+        state = [matrix[i][anchor] / anchor_amp.conjugate() for i in range(4)]
+        norm = math.sqrt(sum(abs(x) ** 2 for x in state))
+        if norm == 0:
+            return state
+        return [x / norm for x in state]
+
+    def pure_state_concurrence(state):
+        return clamp_concurrence(2.0 * abs(state[0] * state[3] - state[1] * state[2]))
+
+    def is_x_state(matrix):
+        allowed = {
+            (0, 0), (1, 1), (2, 2), (3, 3),
+            (0, 3), (3, 0), (1, 2), (2, 1),
+        }
+        for i in range(4):
+            for j in range(4):
+                if (i, j) not in allowed and abs(matrix[i][j]) > 1e-10:
+                    return False
+        return True
+
+    if abs(matrix_square_trace(rho) - 1.0) <= 1e-9:
+        return pure_state_concurrence(extract_pure_state(rho))
+
+    if is_x_state(rho):
+        term_1 = abs(rho[0][3]) - math.sqrt(max(0.0, rho[1][1].real * rho[2][2].real))
+        term_2 = abs(rho[1][2]) - math.sqrt(max(0.0, rho[0][0].real * rho[3][3].real))
+        return clamp_concurrence(2.0 * max(0.0, term_1, term_2))
+
+    raise ValueError("Concurrence is implemented for pure states and X states in this model.")
 
 # --- Main Simulation ---
 def run_simulation():
@@ -113,7 +154,7 @@ def run_simulation():
     for row in rho_projected:
         row_str = " ".join(f"{val.real:5.2f} + {val.imag:5.2f}j" for val in row)
         print(f"    [ {row_str} ]")
-    print(f"  Concurrence (Nonseparability after actualization): {RED}{concurrence_proj:.3f}{RESET} (State Collapsed/Actualized)")
+    print(f"  Concurrence (Nonseparability after actualization): {RED}{concurrence_proj:.3f}{RESET} (Product state after selected outcome)")
     
     # 3. Phase Decoherence (Phase Damping Channel Sweep)
     # Phase damping collapses the off-diagonal terms.

@@ -1,6 +1,6 @@
 {
   "experiment_name": "quantum_formalism_bridge",
-  "date_executed": "2026-06-11T13:38:27.838101+00:00",
+  "date_executed": "2026-06-12T05:44:21.593632+00:00",
   "initial_bell_state": {
     "rho": [
       [
@@ -76,7 +76,7 @@
         }
       ]
     ],
-    "concurrence": 0.9999999999999998
+    "concurrence": 1.0
   },
   "projected_state_45deg": {
     "rho": [
@@ -153,13 +153,13 @@
         }
       ]
     ],
-    "concurrence": 0.5
+    "concurrence": 0.0
   },
   "phase_decoherence_sweep": [
     {
       "damping_p": 0.0,
       "off_diagonal_coherence": 0.4999999999999999,
-      "concurrence": 0.9999999999999998
+      "concurrence": 1.0
     },
     {
       "damping_p": 0.25,

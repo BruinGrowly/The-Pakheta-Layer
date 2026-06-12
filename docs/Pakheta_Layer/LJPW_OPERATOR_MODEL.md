@@ -2,7 +2,7 @@
 
 **Date:** May 28, 2026  
 **Status:** Initial operator model  
-**Script:** `experiments/pakheta_layer/pakheta_layer_ljpw_operators.py`
+**Script:** `experiments/pakheta_operator_residue.py` for ordering/residue, plus `experiments/run_pakheta_experiments.py` Experiment 4 for the consolidated operator sequence.
 
 ---
 
@@ -214,21 +214,22 @@ become facets rather than rival fields when gathered through Love and discipline
 
 ## 5. Operator Ordering
 
-The current model compared:
+The current residue model compares:
 
 ```text
 Power before Justice repair
 Justice before Power actualization
 ```
 
-Both paths converged to similar coherence after repair:
+The clean path retains full final coherence, while premature actualization leaves residue:
 
 ```text
-coherence gap: 0.000
-active facet gap: 0.003
+clean path final coherence:    0.650
+excited path final coherence:  0.484
+residue / coherence gap:       0.166
 ```
 
-This suggests the simple model is currently too forgiving after Justice repair. The next version should make early actualization leave more path-dependent residue so order effects become stronger.
+This supports the updated residue hypothesis: early Power actualization can leave a path-dependent ceiling even after delayed Justice repair.
 
 The theoretical expectation remains:
 

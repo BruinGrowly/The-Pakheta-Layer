@@ -2,7 +2,7 @@
 
 **Date:** May 28, 2026  
 **Status:** Synthetic stress test  
-**Script:** `experiments/pakheta_layer/pakheta_layer_generated_sweeps.py`
+**Script:** `experiments/run_pakheta_experiments.py` (Experiment 5), with distribution-specific follow-up in `experiments/pakheta_phi_robustness.py`
 
 ---
 
@@ -31,15 +31,14 @@ fixed seed: 613
 
 Each generated field has:
 
-- a hidden true relationship-field
-- phi-weighted node relevance
-- equal, random, single-core, and false-partition anchor strategies
+- a hidden true relationship-field, generated as a random target in the consolidated sweep
+- phi, equal, random, single-core, and false-partition anchor strategies
 - spatial positions independent from field membership
 - a near physical decoy that is not field-related
 - a far related node that is field-near
 - damaged false-partition states for operator repair tests
 
-The hidden phi weighting is intentional. This tests whether phi-weighted anchoring can recover a field whose generating structure is one-field-many-node with differentiated relevance.
+The consolidated sweep now tests a random target field rather than assuming hidden phi weighting. The standalone robustness sweep (`pakheta_phi_robustness.py`) separately tests Phi-decay, Flat, Random, and Zipf target distributions.
 
 ---
 
@@ -48,21 +47,21 @@ The hidden phi weighting is intentional. This tests whether phi-weighted anchori
 ### 3.1 Anchor Strategy Coherence
 
 ```text
-phi_weighted       min=0.991 mean=0.995 max=0.998
-equal_weighted     min=0.991 mean=0.994 max=0.998
-random_weighted    min=0.981 mean=0.993 max=0.997
-single_core        min=0.986 mean=0.992 max=0.996
-false_partition    min=0.674 mean=0.684 max=0.693
+phi_weighted       min=0.415 mean=0.720 max=0.969
+equal_weighted     min=0.807 mean=0.917 max=0.987
+random_weighted    min=0.532 mean=0.838 max=0.985
+single_core        min=1.000 mean=1.000 max=1.000
+false_partition    min=0.202 mean=0.474 max=0.661
 
-phi best-or-tied rate: 97.5%
+phi best-or-tied rate: 4.5%
 false below phi rate:  100.0%
 ```
 
 Interpretation:
 
 ```text
-Phi weighting is not infinitely better than equal weighting in highly coherent generated fields.
-But it is consistently best or tied when the underlying field has phi-differentiated node relevance.
+Phi weighting is not universally better than equal weighting across random target fields.
+It is conditionally strongest when the underlying field has phi-differentiated or Zipf-like node relevance, as shown by the robustness sweep.
 ```
 
 False partition is the main failure mode. It is much worse than any integrated anchor strategy.
@@ -137,7 +136,7 @@ It is a general Pakheta decoherence mode.
 
 The current sweep is still limited:
 
-- Generated fields are built with hidden phi relevance, so phi success is expected.
+- The consolidated generated fields are random targets, while the robustness sweep explicitly separates Phi-decay, Flat, Random, and Zipf targets.
 - The relation-distance test includes explicit near-decoy and far-related controls.
 - Power actualization is still too simple; it does not yet model persistent residue.
 - Wisdom is not separately tested in this sweep.
@@ -151,8 +150,8 @@ These are not failures. They define the next research improvements.
 
 The next sweep should add:
 
-1. non-phi generated fields
-2. noisy mixed-relevance fields
+1. noisy mixed-relevance fields
+2. structured non-random target distributions beyond the current robustness set
 3. operator failure modes
 4. Power-before-Justice residue
 5. Wisdom context misclassification

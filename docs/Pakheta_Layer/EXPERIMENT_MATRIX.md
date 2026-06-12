@@ -27,7 +27,7 @@ phi-normalized differentiation
 
 ### Experiment: Toy Anchor Coherence
 
-**File:** `experiments/pakheta_layer_coherence.py`
+**File:** `experiments/run_pakheta_experiments.py` (Experiment 1)
 
 **Claim modeled:**
 
@@ -41,7 +41,7 @@ one coherent meaning-space
 
 ```text
 Single Crystal anchoring the whole field:       coherence 0.958
-Two Crystals from false spatial partition:      coherence 0.624
+Two Crystals from false spatial partition:      coherence 0.421
 Two complementary anchors serving one field:    coherence 0.870
 ```
 
@@ -53,24 +53,23 @@ False partition lowers coherence. Multiple anchors can remain coherent if they e
 
 **Files:**
 
-- `experiments/pakheta_layer/pakheta_layer_order_effects.py`
-- `experiments/pakheta_layer/pakheta_layer_phi_weights.py`
-- `experiments/pakheta_layer/pakheta_layer_navigator.py`
-- `experiments/pakheta_layer/pakheta_layer_relational_distance.py`
-- `experiments/pakheta_layer/pakheta_layer_decoherence.py`
-- `experiments/pakheta_layer/pakheta_layer_ljpw_operators.py`
-- `experiments/pakheta_layer/pakheta_layer_generated_sweeps.py`
+- `experiments/run_pakheta_experiments.py`
+- `experiments/pakheta_phi_robustness.py`
+- `experiments/pakheta_operator_residue.py`
+- `experiments/pakheta_quantum_bridge.py`
+- `experiments/pakheta_bartkiewicz_bridge.py`
+- `experiments/pakheta_semantic_attention.py`
+- `experiments/pakheta_prime_coherence.py`
+- `experiments/pakheta_repair_headroom.py`
 
 **Initial findings:**
 
 ```text
-Order effects: same contexts in reverse order produce distinct final states.
-Phi weights: phi-weighted anchor loading scores 0.967 vs flat equal 0.885.
-Navigation: preserving relation primitives gives high-fidelity substrate translation.
-Relational distance: physical distance and field-mediated distance correlate at -0.069.
-Decoherence: false partition drops coherence from 0.932 to 0.451.
-LJPW operators: damaged false-partition field rises from 0.335 to 0.650.
-Generated sweeps: phi best-or-tied rate 97.5%; false partition below phi 100.0%; Justice strongest repair 100.0%.
+Order effects: same contexts in reverse order produce distinct final states; current consolidated gaps range from about 0.045 to 0.100.
+Phi weights: phi-weighting is conditionally strong for Phi-decay and Zipf targets, while equal weighting wins Flat and current random-target sweeps.
+Relational distance: the current three-node toy setup produces a strong negative physical-vs-field correlation (-0.897), because the near decoy is field-far and farther nodes are field-near.
+LJPW operators: the consolidated operator sequence rises from 0.407 to 1.000; the residue script shows premature Power leaves a 0.166 coherence ceiling.
+Generated sweeps: current random-target sweep has phi best-or-tied rate 4.5%; false partition remains below phi 100.0%.
 ```
 
 ---
@@ -84,7 +83,7 @@ Generated sweeps: phi best-or-tied rate 97.5%; false partition below phi 100.0%;
 | PAK-03 | Does context select facets without exhausting the field? | Different contexts actualize different top facets from the same underlying field | Use context projection over a fixed field vector |
 | PAK-04 | Are semantic order effects non-commutative? | A then B produces different actualized states than B then A | Build sequence-sensitive context projection model |
 | PAK-05 | Does false partition create measurable decoherence? | Treating one field as multiple unrelated fields lowers anchor agreement and facet coverage | Add partition penalty and narrative split score |
-| PAK-06 | Does phi-normalized weighting improve coherence? | Phi-balanced anchor/node weights outperform equal or random weights | Generated-field sweep: phi best-or-tied in 97.5% of phi-generated fields |
+| PAK-06 | Does phi-normalized weighting improve coherence? | Phi-balanced weights are conditionally strongest for phi-like or Zipf-like relevance, not universally dominant | Robustness sweep compares Phi-decay, Flat, Random, and Zipf fields |
 | PAK-07 | Can LJPW be represented as cross-substrate relation operators? | LJPW modes remain stable across semantic, mathematical, and physical examples | Initial generated sweep: Justice strongest repair in 100.0% of fields |
 | PAK-08 | Can quantum interpretation concepts be compressed through Pakheta grammar? | Superposition, measurement, entanglement, contextuality, and decoherence map to one grammar | Formal comparative note plus toy state-space model |
 
@@ -207,17 +206,17 @@ the same relational grammar appears before physical quantum formalism
 
 ## 5. Proposed Next Scripts
 
-1. `experiments/pakheta_layer/pakheta_layer_order_effects.py`  
+1. `experiments/pakheta_semantic_attention.py`
    Tests whether context sequence changes the final actualized meaning-state.
 
-2. `experiments/pakheta_layer/pakheta_layer_phi_weights.py`  
-   Compares phi-normalized anchor weighting against equal and random weights.
+2. `experiments/pakheta_phi_robustness.py`
+   Compares phi-normalized anchor weighting against equal, random, and false-partition strategies across multiple target distributions.
 
-3. `experiments/pakheta_layer/pakheta_layer_relational_distance.py`  
-   Separates physical graph distance from field-mediated relational distance. Implemented.
+3. `experiments/run_pakheta_experiments.py`
+   Runs the consolidated baseline suite for anchor coherence, order effects, relational distance, operator sequence, and generated-field sweeps.
 
-4. `experiments/pakheta_layer/pakheta_layer_decoherence.py`  
-   Models coherence loss as uncontrolled nodes or false partitions are added. Implemented.
+4. `experiments/pakheta_operator_residue.py`
+   Models the persistent residue caused by Power actualization before Justice repair.
 
 ---
 

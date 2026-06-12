@@ -2,7 +2,7 @@
 
 **Date:** May 28, 2026  
 **Status:** First deeper research pass  
-**Companion scripts:** `experiments/pakheta_layer/`
+**Companion scripts:** current runnable experiments are `experiments/run_pakheta_experiments.py` and the standalone `experiments/pakheta_*.py` scripts. Earlier `experiments/pakheta_layer/` paths have been consolidated.
 
 ---
 

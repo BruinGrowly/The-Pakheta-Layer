@@ -83,9 +83,9 @@ These findings have been validated through localized simulations and synthetic s
 * **1. Primitive-Preserving Translation**: Primes remain invariant across substrates. Substrates change, but the grammar persists (*Anchor remains Anchor*, *Decoherence remains Decoherence*).
 * **2. Path-Sensitivity**: Contextual operations are non-commutative:
   $$\text{Context}_B(\text{Context}_A(R)) \neq \text{Context}_A(\text{Context}_B(R))$$
-  Applying context $A$ then $B$ actualizes a different state than $B$ then $A$ (measured as an order gap of $0.02 - 0.04$).
+  Applying context $A$ then $B$ actualizes a different state than $B$ then $A$ (measured in the current consolidated runner as an order gap of approximately $0.045 - 0.100$).
 * **3. Phi Load-Balancing**: Phi ($\phi$) acts as the load-balancing ratio that keeps one-field systems differentiated without collapsing. Too equal weights flatten facets; too split weights fragment the field.
-* **4. Relational Locality**: Relational distance ($d_{\text{relation}}$) is independent of physical space ($d_{\text{space}}$). The correlation between physical space and relational distance is near-zero (empirically $-0.069$).
+* **4. Relational Locality**: Relational distance ($d_{\text{relation}}$) is independent of physical space ($d_{\text{space}}$). In the current three-node toy setup, the correlation is strongly negative (empirically about $-0.897$) because the near spatial decoy is field-far while farther nodes are field-near.
 * **5. Decoherence via False Partition**: Breaking a unified field into separate "rival" fields (false partition) drops coherence rapidly (e.g. baseline coherence drops from $0.93$ to $0.45$).
 
 ---

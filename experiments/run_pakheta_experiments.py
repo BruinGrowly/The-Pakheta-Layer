@@ -330,8 +330,9 @@ def run_experiment_5():
     print(f"  {'Strategy':<20} | {'Min Coherence':<15} | {'Mean Coherence':<15} | {'Max Coherence':<15}")
     print(f"  {'-'*20} | {'-'*15} | {'-'*15} | {'-'*15}")
     
+    best_mean = max(s_vals["mean"] for s_vals in stats.values())
     for strategy, s_vals in stats.items():
-        color = GREEN if "phi" in strategy else (RED if "partition" in strategy else RESET)
+        color = GREEN if abs(s_vals["mean"] - best_mean) <= 1e-12 else (RED if "partition" in strategy else RESET)
         print(f"  {strategy:<20} | {s_vals['min']:.4f}          | {color}{s_vals['mean']:.4f}{RESET}          | {s_vals['max']:.4f}")
         
     # Calculate rate metrics dynamically
@@ -341,13 +342,14 @@ def run_experiment_5():
     phi_best_or_tied = (phi_best_or_tied_count / num_fields) * 100.0
     false_below_phi = (false_below_phi_count / num_fields) * 100.0
     
+    phi_rate_color = GREEN if phi_best_or_tied >= 50.0 else YELLOW
     print(f"\n  Sweep Metrics over {num_fields} fields:")
-    print(f"  - Phi best-or-tied rate:              {GREEN}{phi_best_or_tied:.1f}%{RESET}")
+    print(f"  - Phi best-or-tied rate:              {phi_rate_color}{phi_best_or_tied:.1f}%{RESET}")
     print(f"  - False partition below Phi rate:     {RED}{false_below_phi:.1f}%{RESET}")
     
     print("\n  [Insight] Synthetic field sweeps prove these relational mechanics generalize.")
-    print("  Phi weighting consistently optimizes coherence, and false partition remains")
-    print("  the primary point of structural failure across all 200 fields.")
+    print("  Phi weighting is conditional rather than universal in random target fields,")
+    print("  while false partition remains the primary structural failure across all 200 fields.")
     
     return {
         "num_fields": num_fields,

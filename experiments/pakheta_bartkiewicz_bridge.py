@@ -9,7 +9,7 @@ to dynamically audit the published "separable" claim of state rho13.
 """
 
 import json
-import math
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 import numpy as np
@@ -75,7 +75,7 @@ def main():
     
     if not fixture_path.exists():
         print(f"  {RED}Error: Bartkiewicz dataset not found at expected path.{RESET}")
-        return
+        return 1
 
     with open(fixture_path, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -88,6 +88,10 @@ def main():
     ]
 
     fixtures = {f["name"]: f for f in data["fixtures"] if f["name"] in focus_states}
+    missing_states = [name for name in focus_states if name not in fixtures]
+    if missing_states:
+        print(f"  {RED}Error: Missing expected fixtures: {', '.join(missing_states)}{RESET}")
+        return 1
     
     audit_results = {}
 
@@ -149,11 +153,16 @@ def main():
     print(f"\n  {BOLD}{GREEN}Success:{RESET} Bartkiewicz Tomography Bridge execution completed.")
     print(f"  Results saved to: {output_file.name}")
     print("\n  [Ontological Analysis]")
+    rho13 = audit_results.get("bartkiewicz_rhoO13_optimal", {})
     print("  1. The optimal tomography state rho_O,13 was published as 'separable' in Scientific Reports.")
-    print("  2. However, our dynamic, un-rescaled audit reveals a large Wootters concurrence (~0.89) and")
-    print("     PPT negativity (~0.44), proving that it is actually highly entangled.")
+    print(
+        "  2. However, our dynamic, un-rescaled audit reveals a large Wootters concurrence "
+        f"({rho13.get('concurrence', 0.0):.4f}) and"
+    )
+    print(f"     PPT negativity ({rho13.get('ppt_negativity', 0.0):.4f}), proving that it is actually highly entangled.")
     print("  3. The target overlap stays below 0.50, demonstrating a significant deviation from the")
     print("     intended product state, which confirms a systematic error in the published source labeling.")
+    return 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
