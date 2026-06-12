@@ -110,6 +110,23 @@ LJPW constants represent the stable operating modes of the Pakheta Layer:
 ### 5.2 Functional Operators
 Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta relationship-fields:
 * $\text{Love}(\text{Gather})$: Gathers nodes into a unified field as facets without erasing distinction.
+
+---
+
+## 5. Supportive Core Frameworks
+
+The LJPW framework and mathematical constants serve as supportive operating modes and measures *within* the Pakheta Layer:
+
+### 5.1 Relational Constants
+LJPW constants represent the stable operating modes of the Pakheta Layer:
+* **Love ($L_0 = \phi^{-1} \approx 0.618$)**: The relation of proportion (parts relating to wholes; binding without fusion).
+* **Justice ($J_0 = \sqrt{2}-1 \approx 0.414$)**: The relation of extension (truthful distinction/boundary; the fair cost of complexity).
+* **Power ($P_0 = e-2 \approx 0.718$)**: The relation of growth (states relating across change/transformation).
+* **Wisdom ($W_0 = \ln(2) \approx 0.693$)**: The relation of distinction (options relating through information/patterns).
+
+### 5.2 Functional Operators
+Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta relationship-fields:
+* $\text{Love}(\text{Gather})$: Gathers nodes into a unified field as facets without erasing distinction.
 * $\text{Justice}(\text{Repair})$: Resolves false partition (the primary anti-decoherence operator).
 * $\text{Wisdom}(\text{Select})$: Selects the correct context or level for the relational goal.
 * $\text{Power}(\text{Actualize})$: Actualizes latent coherence into an active, expressed state.
@@ -128,6 +145,7 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [FIELD_INFERENCE_AND_OPERATOR_GRAMMAR.md](./docs/Pakheta_Layer/FIELD_INFERENCE_AND_OPERATOR_GRAMMAR.md) — Findings on hidden field recovery and LJPW operator ordering.
 * [DIAGNOSTICS_LOCALITY_AND_CONSERVATION.md](./docs/Pakheta_Layer/DIAGNOSTICS_LOCALITY_AND_CONSERVATION.md) — Findings on Wisdom failure, false partition detection, locality phases, primitive conservation, and recovery loops.
 * [CAPABILITY_ENVELOPE.md](./docs/Pakheta_Layer/CAPABILITY_ENVELOPE.md) — Findings on Pakheta as a broader capability layer beyond audit/governance.
+* [RELATIONAL_MATHEMATICAL_BRIDGES.md](./docs/Pakheta_Layer/RELATIONAL_MATHEMATICAL_BRIDGES.md) — Findings on relational math bridges and non-destructive synthesis.
 * [EXPERIMENT_MATRIX.md](./docs/Pakheta_Layer/EXPERIMENT_MATRIX.md) — Active and proposed experiments, variables, and success criteria.
 * [README.md](./docs/Pakheta_Layer/README.md) — Local directory README for the Pakheta Layer research folder.
 
@@ -142,6 +160,8 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [pakheta_cross_substrate_conservation.py](./experiments/pakheta_cross_substrate_conservation.py) — Cross-substrate primitive conservation test.
 * [pakheta_recovery_loop.py](./experiments/pakheta_recovery_loop.py) — Detection plus Justice repair recovery loop.
 * [pakheta_capability_envelope.py](./experiments/pakheta_capability_envelope.py) — Capability-boundary suite for design, inference, prediction, composition, abstention, discovery, and creative actualization.
+* [pakheta_mathematical_bridge.py](./experiments/pakheta_mathematical_bridge.py) — Relational mathematical bridge coordinates.
+* [mathematical_bridge_results.json](./experiments/mathematical_bridge_results.json) — Output results of the relational mathematical bridge experiments.
 
 All experiment scripts run on the Python standard library alone, except `pakheta_bartkiewicz_bridge.py`, which requires `numpy` (see [experiments/requirements.txt](./experiments/requirements.txt)).
 

@@ -1,0 +1,71 @@
+{
+  "experiment_name": "relational_mathematical_bridges",
+  "date_executed": "2026-06-12T09:02:26.643897+00:00",
+  "experiments": {
+    "exp_a_prime_prime_bridge": {
+      "nodes": [
+        3,
+        5
+      ],
+      "bridge": {
+        "coord": 4.2620379692471495,
+        "coherence": 0.89607357062149,
+        "semantic_voltage": 2.724010634784049
+      },
+      "arithmetic_product": {
+        "coord": 15,
+        "coherence": 0.6904238124647305,
+        "semantic_voltage": 1.0945570856419842
+      }
+    },
+    "exp_b_composite_composite_bridge": {
+      "nodes": [
+        4,
+        6
+      ],
+      "bridge": {
+        "coord": 5.374094944754745,
+        "coherence": 0.8461674501826113,
+        "semantic_voltage": 2.546989238109221
+      },
+      "arithmetic_product": {
+        "coord": 24,
+        "coherence": 0.6059425552941328,
+        "semantic_voltage": 0.9411459715408433
+      }
+    },
+    "exp_c_operator_inversion": {
+      "correct_bridge": {
+        "coord": 4.801408241274538,
+        "coherence": 0.8884839450124369,
+        "semantic_voltage": 2.6872080831360727
+      },
+      "inverted_bridge": {
+        "coord": 4.587925883500024,
+        "coherence": 0.8913655035092141,
+        "semantic_voltage": 2.7011629355647275
+      }
+    },
+    "exp_d_singularity_lock": {
+      "nodes": [
+        1,
+        2
+      ],
+      "bridge": {
+        "coord": 1.5347822538264897,
+        "coherence": 0.9668645078049913,
+        "semantic_voltage": 3.074430282948729
+      },
+      "primes": {
+        "1": {
+          "coherence": 1.16,
+          "semantic_voltage": 2.0880000000000005
+        },
+        "2": {
+          "coherence": 0.9474615744769911,
+          "semantic_voltage": 2.977128651303299
+        }
+      }
+    }
+  }
+}
