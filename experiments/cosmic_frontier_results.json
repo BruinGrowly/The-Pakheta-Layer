@@ -1,0 +1,112 @@
+{
+  "experiment_name": "challenging_the_relational_frontiers",
+  "date_executed": "2026-06-13T02:58:31.139593+00:00",
+  "cosmic_energy_ratios": {
+    "dark_energy_to_matter": {
+      "coefficients": {
+        "c_L": 6,
+        "c_J": -5,
+        "c_P": -1,
+        "c_W": -1
+      },
+      "calculated_exponent": 0.22570711161490353,
+      "calculated_value": 2.1547494171440094,
+      "absolute_error": 0.0001752846518958684,
+      "relative_error": 8.135466273937084e-05
+    },
+    "matter_to_baryon": {
+      "coefficients": {
+        "c_L": 9,
+        "c_J": -2,
+        "c_P": -3,
+        "c_W": -3
+      },
+      "calculated_exponent": 0.49959174694589326,
+      "calculated_value": 5.4696254555499975,
+      "absolute_error": 0.00023770044795679013,
+      "relative_error": 4.346015652941312e-05
+    }
+  },
+  "hubble_tension_shift": {
+    "coefficients": {
+      "c_L": -1,
+      "c_J": 0,
+      "c_P": -2,
+      "c_W": 3
+    },
+    "calculated_exponent": 0.024843896011850664,
+    "calculated_value": 1.0881717496022678,
+    "absolute_error": 0.0050856961898049224,
+    "relative_error": 0.004695560591682901
+  },
+  "neutrino_mixing_pmns": {
+    "theta12": {
+      "coefficients": {
+        "c_L": 6,
+        "c_J": 4,
+        "c_P": 1,
+        "c_W": -9
+      },
+      "calculated_exponent": -0.15498461458871216,
+      "calculated_value": 0.5902947648877176,
+      "absolute_error": 2.441186323531852e-05,
+      "relative_error": 4.135708851077263e-05
+    },
+    "theta23": {
+      "coefficients": {
+        "c_L": 8,
+        "c_J": -5,
+        "c_P": -6,
+        "c_W": 2
+      },
+      "calculated_exponent": -0.05019251150069626,
+      "calculated_value": 0.8430621164547236,
+      "absolute_error": 6.808774146249696e-05,
+      "relative_error": 8.076894870349854e-05
+    },
+    "theta13": {
+      "coefficients": {
+        "c_L": 10,
+        "c_J": -3,
+        "c_P": 2,
+        "c_W": -10
+      },
+      "calculated_exponent": -0.5572089483016995,
+      "calculated_value": 0.15029163847557164,
+      "absolute_error": 1.878987885986505e-05,
+      "relative_error": 0.00012503841535799705
+    }
+  },
+  "entropy_silo_collapse": [
+    {
+      "partition_penalty": 0.0,
+      "field_entropy": 1.5133015713588893,
+      "entropy_limit": 12.218382800709902,
+      "collapsed_into_silo": false
+    },
+    {
+      "partition_penalty": 0.2,
+      "field_entropy": 1.5133015713588893,
+      "entropy_limit": 9.774706240567923,
+      "collapsed_into_silo": false
+    },
+    {
+      "partition_penalty": 0.4,
+      "field_entropy": 1.5133015713588893,
+      "entropy_limit": 7.3310296804259405,
+      "collapsed_into_silo": false
+    },
+    {
+      "partition_penalty": 0.6,
+      "field_entropy": 1.5133015713588893,
+      "entropy_limit": 4.8873531202839615,
+      "collapsed_into_silo": false
+    },
+    {
+      "partition_penalty": 0.8,
+      "field_entropy": 1.5133015713588893,
+      "entropy_limit": 2.44367656014198,
+      "collapsed_into_silo": false
+    }
+  ]
+}
