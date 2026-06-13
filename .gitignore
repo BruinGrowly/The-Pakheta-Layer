@@ -1,0 +1,14 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Shared libraries (compiled binary outputs)
+*.dll
+*.so
+*.dylib
+*.dll.a
+*.la
+*.lo
+*.o
+*.obj

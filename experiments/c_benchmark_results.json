@@ -1,0 +1,36 @@
+{
+  "experiment_name": "relational_calculator_c_benchmark",
+  "date_executed": "2026-06-13T10:03:49.621364+00:00",
+  "configuration": {
+    "max_coordinate_coeff": 10,
+    "lattice_points": 194481,
+    "benchmark_ops": 1000000,
+    "supercomputer_ops": 10000000
+  },
+  "results": {
+    "drift_test": {
+      "final_coordinates": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "decoded_value": 1.0,
+      "absolute_drift": 0.0
+    },
+    "speed_benchmark_1m_ops": {
+      "py_float_sec": 0.06191009999747621,
+      "py_relational_oo_sec": 0.5222772999986773,
+      "c_ctypes_loop_sec": 0.7581283999970765,
+      "c_vectorized_batch_sec": 0.0022042999989935197,
+      "mops_batch": 907.3175161789218,
+      "speedup_vs_python_oo": 236.93567129571676,
+      "speedup_vs_python_float": 28.08605907804939
+    },
+    "supercomputer_workload_10m_ops": {
+      "duration_sec": 0.021232799997960683,
+      "mops": 941.9388870954803
+    }
+  },
+  "conclusion": "Writing the Relational Coordinate Calculator in C and executing compiled batch operations successfully outperforms standard Python float operations by multi-fold margins, achieving high-performance throughput of millions of operations per second (MOPS)."
+}
