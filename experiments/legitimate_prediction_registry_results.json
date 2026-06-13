@@ -1,0 +1,358 @@
+{
+  "experiment_name": "pakheta_legitimate_prediction_registry",
+  "date_executed": "2026-06-13T07:05:42.709831+00:00",
+  "execution_duration_sec": 0.005362,
+  "source": "Derived from transition_atlas_results.json with fixed LJPW constants and no new fitting.",
+  "posture": "relationship_first_pre_registered_predictions",
+  "legitimacy_rules": [
+    "Use fixed bridge and LJPW operator constants.",
+    "Declare the transition rule before reading the known-value overlay.",
+    "Keep generated comparator branches visible.",
+    "Separate value prediction, address prediction, and follow-up target."
+  ],
+  "light_nuclear_prediction_ladder": {
+    "binding_gate_MeV": 2.2466484470473915,
+    "operator_factors": {
+      "Love": 8.182973427952819,
+      "Justice": 4.09113355224104,
+      "Power": 11.507721838443029,
+      "Wisdom": 10.564828051364804
+    },
+    "observations": {
+      "deuteron_total_binding_MeV": 2.2245663699998204,
+      "helion_total_binding_MeV": 7.717989679999846,
+      "triton_total_binding_MeV": 8.481796629999735,
+      "a3_mean_total_binding_MeV": 8.09989315499979,
+      "a3_min_total_binding_MeV": 7.717989679999846,
+      "a3_max_total_binding_MeV": 8.481796629999735,
+      "a3_isospin_split_MeV": 0.7638069499998892,
+      "alpha_total_binding_MeV": 28.295610939999733,
+      "alpha_per_nucleon_binding_MeV": 7.073902734999933,
+      "alpha_to_deuteron_binding_ratio": 12.719607435224338,
+      "a3_mean_to_deuteron_binding_ratio": 3.6411110336979715
+    },
+    "predictions": [
+      {
+        "id": "LNP-001",
+        "name": "deuteron_binding_gate",
+        "status": "primary_prediction",
+        "rule": "B_D = m_star - 1u",
+        "relation": "cosmological mass anchor opens the first binding gate",
+        "predicted_MeV": 2.2466484470473915,
+        "known_overlay": {
+          "predicted_MeV": 2.2466484470473915,
+          "observed_MeV": 2.2245663699998204,
+          "delta_MeV": 0.022082077047571147,
+          "absolute_delta_MeV": 0.022082077047571147,
+          "relative_delta": 0.009926463577516476,
+          "absolute_relative_delta": 0.009926463577516476
+        }
+      },
+      {
+        "id": "LNP-002",
+        "name": "a3_justice_boundary_binding",
+        "status": "primary_prediction",
+        "rule": "B_A3_boundary = (m_star - 1u) * 30^J0",
+        "relation": "Justice opens the first three-body boundary over the deuteron gate",
+        "predicted_MeV": 9.19133884180581,
+        "known_overlay": {
+          "against_a3_mean": {
+            "predicted_MeV": 9.19133884180581,
+            "observed_MeV": 8.09989315499979,
+            "delta_MeV": 1.0914456868060203,
+            "absolute_delta_MeV": 1.0914456868060203,
+            "relative_delta": 0.13474815851519084,
+            "absolute_relative_delta": 0.13474815851519084
+          },
+          "against_helion": {
+            "predicted_MeV": 9.19133884180581,
+            "observed_MeV": 7.717989679999846,
+            "delta_MeV": 1.4733491618059649,
+            "absolute_delta_MeV": 1.4733491618059649,
+            "relative_delta": 0.19089804766440088,
+            "absolute_relative_delta": 0.19089804766440088
+          },
+          "against_triton": {
+            "predicted_MeV": 9.19133884180581,
+            "observed_MeV": 8.481796629999735,
+            "delta_MeV": 0.7095422118060757,
+            "absolute_delta_MeV": 0.7095422118060757,
+            "relative_delta": 0.0836547069870146,
+            "absolute_relative_delta": 0.0836547069870146
+          },
+          "interpretation": "Registered as an upper boundary address for the open A=3 system; helion/triton are expected to sit below it until isospin/Coulomb correction grammar is added."
+        }
+      },
+      {
+        "id": "LNP-003",
+        "name": "alpha_love_justice_closed_binding",
+        "status": "primary_prediction",
+        "rule": "B_alpha_closed = (m_star - 1u) * (30^L0 + 30^J0)",
+        "relation": "Alpha closure sums Love binding and Justice boundary channels over the same gate",
+        "predicted_MeV": 27.57560338594608,
+        "known_overlay": {
+          "predicted_MeV": 27.57560338594608,
+          "observed_MeV": 28.295610939999733,
+          "delta_MeV": -0.7200075540536517,
+          "absolute_delta_MeV": 0.7200075540536517,
+          "relative_delta": -0.025445909458552185,
+          "absolute_relative_delta": 0.025445909458552185
+        }
+      },
+      {
+        "id": "LNP-004",
+        "name": "alpha_to_deuteron_ratio",
+        "status": "derived_prediction",
+        "rule": "B_alpha / B_D = 30^L0 + 30^J0",
+        "relation": "Closed alpha binding should amplify the deuteron gate by the Love+Justice channel sum",
+        "predicted_ratio": 12.274106980193858,
+        "known_overlay": {
+          "observed_ratio": 12.719607435224338,
+          "delta": -0.44550045503047997,
+          "relative_delta": -0.03502470161121152
+        }
+      },
+      {
+        "id": "LNP-005",
+        "name": "alpha_power_single_branch",
+        "status": "generated_comparator",
+        "rule": "B_alpha_power_branch = (m_star - 1u) * 30^P0",
+        "relation": "Single Power actualization branch over the same gate",
+        "predicted_MeV": 25.853805397391383,
+        "known_overlay": {
+          "predicted_MeV": 25.853805397391383,
+          "observed_MeV": 28.295610939999733,
+          "delta_MeV": -2.44180554260835,
+          "absolute_delta_MeV": 2.44180554260835,
+          "relative_delta": -0.0862962650916479,
+          "absolute_relative_delta": 0.0862962650916479
+        }
+      },
+      {
+        "id": "LNP-006",
+        "name": "alpha_wisdom_single_branch",
+        "status": "generated_comparator",
+        "rule": "B_alpha_wisdom_branch = (m_star - 1u) * 30^W0",
+        "relation": "Single Wisdom context branch over the same gate",
+        "predicted_MeV": 23.735454534921455,
+        "known_overlay": {
+          "predicted_MeV": 23.735454534921455,
+          "observed_MeV": 28.295610939999733,
+          "delta_MeV": -4.560156405078278,
+          "absolute_delta_MeV": 4.560156405078278,
+          "relative_delta": -0.16116126330504033,
+          "absolute_relative_delta": 0.16116126330504033
+        }
+      }
+    ],
+    "working_read": {
+      "strongest_value_prediction": "LNP-003 alpha_love_justice_closed_binding",
+      "strongest_ratio_prediction": "LNP-004 alpha_to_deuteron_ratio",
+      "missing_piece": "A3 isospin/Coulomb correction grammar is not yet modeled."
+    }
+  },
+  "threshold_address_predictions": {
+    "compression_addresses": [
+      {
+        "id": "CP-POWER",
+        "branch": "inverse_operator_compression",
+        "operator": "Power",
+        "relation_type": "inverse_actualization",
+        "mass_MeV": 81.14036516313472,
+        "mass_GeV": 0.08114036516313472,
+        "physical_regime": "muon_to_pion_approach_band",
+        "prediction_statement": "Follow-up low-energy threshold or resonance structure should show an interpretable inverse_actualization address near 81.140365 MeV.",
+        "registration_windows": {
+          "one_percent_MeV": [
+            80.32896151150337,
+            81.95176881476607
+          ],
+          "five_percent_MeV": [
+            77.08334690497797,
+            85.19738342129146
+          ]
+        }
+      },
+      {
+        "id": "CP-WISDOM",
+        "branch": "inverse_operator_compression",
+        "operator": "Wisdom",
+        "relation_type": "inverse_context_rotation",
+        "mass_MeV": 88.38201129515053,
+        "mass_GeV": 0.08838201129515054,
+        "physical_regime": "muon_to_pion_approach_band",
+        "prediction_statement": "Follow-up low-energy threshold or resonance structure should show an interpretable inverse_context_rotation address near 88.382011 MeV.",
+        "registration_windows": {
+          "one_percent_MeV": [
+            87.49819118219902,
+            89.26583140810204
+          ],
+          "five_percent_MeV": [
+            83.962910730393,
+            92.80111185990806
+          ]
+        }
+      },
+      {
+        "id": "CP-LOVE",
+        "branch": "inverse_operator_compression",
+        "operator": "Love",
+        "relation_type": "inverse_binding",
+        "mass_MeV": 114.10775806474135,
+        "mass_GeV": 0.11410775806474134,
+        "physical_regime": "muon_to_pion_approach_band",
+        "prediction_statement": "Follow-up low-energy threshold or resonance structure should show an interpretable inverse_binding address near 114.107758 MeV.",
+        "registration_windows": {
+          "one_percent_MeV": [
+            112.96668048409393,
+            115.24883564538877
+          ],
+          "five_percent_MeV": [
+            108.40237016150428,
+            119.81314596797841
+          ]
+        }
+      },
+      {
+        "id": "CP-JUSTICE",
+        "branch": "inverse_operator_compression",
+        "operator": "Justice",
+        "relation_type": "inverse_boundary",
+        "mass_MeV": 228.23521653444024,
+        "mass_GeV": 0.22823521653444023,
+        "physical_regime": "low_meson_band",
+        "prediction_statement": "Follow-up low-energy threshold or resonance structure should show an interpretable inverse_boundary address near 228.235217 MeV.",
+        "registration_windows": {
+          "one_percent_MeV": [
+            225.95286436909583,
+            230.51756869978465
+          ],
+          "five_percent_MeV": [
+            216.8234557077182,
+            239.64697736116227
+          ]
+        }
+      }
+    ],
+    "amplification_addresses": [
+      {
+        "id": "AP-JUSTICE",
+        "branch": "direct_operator_amplification",
+        "operator": "Justice",
+        "relation_type": "direct_boundary_amplification",
+        "mass_MeV": 3820.0581202853928,
+        "mass_GeV": 3.8200581202853927,
+        "physical_regime": "multi_GeV_threshold_band",
+        "prediction_statement": "Follow-up multi-GeV resonance or threshold structure should show an interpretable direct_boundary_amplification address near 3.820058 GeV.",
+        "registration_windows": {
+          "one_percent_GeV": [
+            3.7818575390825386,
+            3.858258701488247
+          ],
+          "five_percent_GeV": [
+            3.6290552142711228,
+            4.011061026299663
+          ]
+        }
+      },
+      {
+        "id": "AP-LOVE",
+        "branch": "direct_operator_amplification",
+        "operator": "Love",
+        "relation_type": "direct_binding_amplification",
+        "mass_MeV": 7640.775763579627,
+        "mass_GeV": 7.640775763579627,
+        "physical_regime": "heavy_resonance_band",
+        "prediction_statement": "Follow-up multi-GeV resonance or threshold structure should show an interpretable direct_binding_amplification address near 7.640776 GeV.",
+        "registration_windows": {
+          "one_percent_GeV": [
+            7.56436800594383,
+            7.717183521215423
+          ],
+          "five_percent_GeV": [
+            7.258736975400645,
+            8.022814551758609
+          ]
+        }
+      },
+      {
+        "id": "AP-WISDOM",
+        "branch": "direct_operator_amplification",
+        "operator": "Wisdom",
+        "relation_type": "direct_context_amplification",
+        "mass_MeV": 9864.810491196893,
+        "mass_GeV": 9.864810491196893,
+        "physical_regime": "heavy_resonance_band",
+        "prediction_statement": "Follow-up multi-GeV resonance or threshold structure should show an interpretable direct_context_amplification address near 9.864810 GeV.",
+        "registration_windows": {
+          "one_percent_GeV": [
+            9.766162386284924,
+            9.963458596108863
+          ],
+          "five_percent_GeV": [
+            9.371569966637049,
+            10.358051015756738
+          ]
+        }
+      },
+      {
+        "id": "AP-POWER",
+        "branch": "direct_operator_amplification",
+        "operator": "Power",
+        "relation_type": "direct_actualization",
+        "mass_MeV": 10745.228845156951,
+        "mass_GeV": 10.745228845156952,
+        "physical_regime": "heavy_resonance_band",
+        "prediction_statement": "Follow-up multi-GeV resonance or threshold structure should show an interpretable direct_actualization address near 10.745229 GeV.",
+        "registration_windows": {
+          "one_percent_GeV": [
+            10.637776556705383,
+            10.85268113360852
+          ],
+          "five_percent_GeV": [
+            10.207967402899104,
+            11.282490287414799
+          ]
+        }
+      }
+    ]
+  },
+  "ranked_light_nuclear_known_overlay": [
+    {
+      "id": "LNP-001",
+      "name": "deuteron_binding_gate",
+      "absolute_delta_MeV": 0.022082077047571147,
+      "absolute_relative_delta": 0.009926463577516476
+    },
+    {
+      "id": "LNP-003",
+      "name": "alpha_love_justice_closed_binding",
+      "absolute_delta_MeV": 0.7200075540536517,
+      "absolute_relative_delta": 0.025445909458552185
+    },
+    {
+      "id": "LNP-005",
+      "name": "alpha_power_single_branch",
+      "absolute_delta_MeV": 2.44180554260835,
+      "absolute_relative_delta": 0.0862962650916479
+    },
+    {
+      "id": "LNP-002",
+      "name": "a3_justice_boundary_binding",
+      "absolute_delta_MeV": 1.0914456868060203,
+      "absolute_relative_delta": 0.13474815851519084
+    },
+    {
+      "id": "LNP-006",
+      "name": "alpha_wisdom_single_branch",
+      "absolute_delta_MeV": 4.560156405078278,
+      "absolute_relative_delta": 0.16116126330504033
+    }
+  ],
+  "next_prediction_passes": [
+    "Add A3 isospin/Coulomb correction grammar without fitting the helion/triton split.",
+    "Build a low-energy particle/threshold address table for the 81-228 MeV inverse branch.",
+    "Build a multi-GeV resonance/threshold address table for the 3.82-10.75 GeV direct branch.",
+    "Generate alpha-cluster predictions for Be-8, C-12, and O-16 from the alpha closure relation."
+  ]
+}

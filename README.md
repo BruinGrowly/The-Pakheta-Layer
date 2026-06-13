@@ -153,6 +153,8 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [THE_ONTOLOGICAL_COMPILER.md](./docs/Pakheta_Layer/THE_ONTOLOGICAL_COMPILER.md) — Synthesis note framing Pakheta as the compiler from meaning into mathematics and physics.
 * [PREDICTION_ATLAS.md](./docs/Pakheta_Layer/PREDICTION_ATLAS.md) — Relationship-first atlas generated from the fixed Cosmological Bridge mass anchor and one-step LJPW transition fields.
 * [TRANSITION_ATLAS.md](./docs/Pakheta_Layer/TRANSITION_ATLAS.md) — Relationship-first transition atlas organizing generated bridge outputs into binding, compression, amplification, PMNS, electroweak, and cosmic phase follow threads.
+* [PREDICTION_REGISTRY.md](./docs/Pakheta_Layer/PREDICTION_REGISTRY.md) — Fixed-grammar legitimate prediction registry for the deuteron gate, A=3 Justice boundary, alpha Love+Justice closure, and threshold address follow-ups.
+* [ALPHA_CLUSTER_PREDICTIONS.md](./docs/Pakheta_Layer/ALPHA_CLUSTER_PREDICTIONS.md) — Fixed-grammar alpha-cluster prediction pass extending the deuteron gate and alpha closure through Ca-40, with a single post-O16 boundary-curvature correction.
 * [EXPERIMENT_MATRIX.md](./docs/Pakheta_Layer/EXPERIMENT_MATRIX.md) — Active and proposed experiments, variables, and success criteria.
 * [README.md](./docs/Pakheta_Layer/README.md) — Local directory README for the Pakheta Layer research folder.
 

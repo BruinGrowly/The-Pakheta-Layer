@@ -129,6 +129,12 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 - `TRANSITION_ATLAS.md`
   Relationship-first transition atlas organizing the generated bridge outputs into binding, compression, amplification, PMNS, electroweak, and cosmic phase follow threads.
 
+- `PREDICTION_REGISTRY.md`
+  Fixed-grammar legitimate prediction registry for the deuteron gate, A=3 Justice boundary, alpha Love+Justice closure, and threshold address follow-ups.
+
+- `ALPHA_CLUSTER_PREDICTIONS.md`
+  Fixed-grammar alpha-cluster prediction pass extending the deuteron gate and alpha closure through Ca-40, with a single post-O16 boundary-curvature correction.
+
 - `EXPERIMENT_MATRIX.md`  
   Research questions, modelable hypotheses, and proposed experiments.
 

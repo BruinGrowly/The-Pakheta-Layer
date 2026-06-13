@@ -1,0 +1,657 @@
+{
+  "experiment_name": "pakheta_alpha_cluster_predictions",
+  "date_executed": "2026-06-13T07:05:42.656631+00:00",
+  "execution_duration_sec": 0.000953,
+  "source": "Derived from legitimate_prediction_registry_results.json. Known overlays use neutral atomic masses and CODATA atomic mass unit conversion.",
+  "posture": "fixed_grammar_alpha_cluster_predictions",
+  "grammar": {
+    "alpha_unit": "B_alpha = B_gate * (30^L0 + 30^J0)",
+    "two_alpha_gap": "gap_2alpha = B_gate / (2 * (30^L0 + 30^J0))",
+    "cluster_ladder": "For n >= 3 alpha clusters: B_n = n * B_alpha + (n - 2) * B_Justice_boundary",
+    "continuation_test": "Carry the same n-2 Justice-boundary rule through Ne-20, Mg-24, Si-28, S-32, Ar-36, and Ca-40 without retuning.",
+    "v2_boundary_curvature": "For n > 4: B_V2 = B_V1 - gap_2alpha * 30^J0 * T(n - 4)"
+  },
+  "constants": {
+    "base": 30.0,
+    "L0": 0.6180339887498949,
+    "J0": 0.41421356237309515,
+    "P0": 0.7182818284590451,
+    "W0": 0.6931471805599453,
+    "atomic_mass_unit_MeV": 931.49410372,
+    "hydrogen_atom_mass_u": 1.00782503223,
+    "neutron_mass_u": 1.00866491595
+  },
+  "known_overlay": {
+    "He4": {
+      "label": "helium-4 alpha particle",
+      "alpha_clusters": 1,
+      "Z": 2,
+      "N": 2,
+      "atomic_mass_u": 4.00260325413,
+      "observed_total_binding_MeV": 28.295663128057186,
+      "observed_binding_per_nucleon_MeV": 7.073915782014296
+    },
+    "Be8": {
+      "label": "beryllium-8 two-alpha resonance",
+      "alpha_clusters": 2,
+      "Z": 4,
+      "N": 4,
+      "atomic_mass_u": 8.0053051,
+      "observed_total_binding_MeV": 56.49948863163008,
+      "observed_binding_per_nucleon_MeV": 7.06243607895376,
+      "observed_two_alpha_gap_MeV": 0.09183762448429178
+    },
+    "C12": {
+      "label": "carbon-12 triple-alpha closure",
+      "alpha_clusters": 3,
+      "Z": 6,
+      "N": 6,
+      "atomic_mass_u": 12.0,
+      "observed_total_binding_MeV": 92.16173700191158,
+      "observed_binding_per_nucleon_MeV": 7.680144750159298,
+      "observed_excess_over_alpha_clusters_MeV": 7.274747617740019
+    },
+    "O16": {
+      "label": "oxygen-16 four-alpha closure",
+      "alpha_clusters": 4,
+      "Z": 8,
+      "N": 8,
+      "atomic_mass_u": 15.99491461957,
+      "observed_total_binding_MeV": 127.6193178882666,
+      "observed_binding_per_nucleon_MeV": 7.976207368016662,
+      "observed_excess_over_alpha_clusters_MeV": 14.436665376037851
+    },
+    "Ne20": {
+      "label": "neon-20 five-alpha closure",
+      "alpha_clusters": 5,
+      "Z": 10,
+      "N": 10,
+      "atomic_mass_u": 19.9924401762,
+      "observed_total_binding_MeV": 160.6448262980459,
+      "observed_binding_per_nucleon_MeV": 8.032241314902295,
+      "observed_excess_over_alpha_clusters_MeV": 19.16651065775997
+    },
+    "Mg24": {
+      "label": "magnesium-24 six-alpha closure",
+      "alpha_clusters": 6,
+      "Z": 12,
+      "N": 12,
+      "atomic_mass_u": 23.985041697,
+      "observed_total_binding_MeV": 198.25704504998055,
+      "observed_binding_per_nucleon_MeV": 8.260710210415857,
+      "observed_excess_over_alpha_clusters_MeV": 28.483066281637434
+    },
+    "Si28": {
+      "label": "silicon-28 seven-alpha closure",
+      "alpha_clusters": 7,
+      "Z": 14,
+      "N": 14,
+      "atomic_mass_u": 27.97692653465,
+      "observed_total_binding_MeV": 236.5368499303685,
+      "observed_binding_per_nucleon_MeV": 8.447744640370304,
+      "observed_excess_over_alpha_clusters_MeV": 38.467208033968205
+    },
+    "S32": {
+      "label": "sulfur-32 eight-alpha closure",
+      "alpha_clusters": 8,
+      "Z": 16,
+      "N": 16,
+      "atomic_mass_u": 31.9720711744,
+      "observed_total_binding_MeV": 271.7801683753218,
+      "observed_binding_per_nucleon_MeV": 8.493130261728806,
+      "observed_excess_over_alpha_clusters_MeV": 45.41486335086432
+    },
+    "Ar36": {
+      "label": "argon-36 nine-alpha closure",
+      "alpha_clusters": 9,
+      "Z": 18,
+      "N": 18,
+      "atomic_mass_u": 35.967545105,
+      "observed_total_binding_MeV": 306.7167543350838,
+      "observed_binding_per_nucleon_MeV": 8.519909842641217,
+      "observed_excess_over_alpha_clusters_MeV": 52.055786182569136
+    },
+    "Ca40": {
+      "label": "calcium-40 ten-alpha closure",
+      "alpha_clusters": 10,
+      "Z": 20,
+      "N": 20,
+      "atomic_mass_u": 39.962590863,
+      "observed_total_binding_MeV": 342.05218054711656,
+      "observed_binding_per_nucleon_MeV": 8.551304513677914,
+      "observed_excess_over_alpha_clusters_MeV": 59.09554926654471
+    }
+  },
+  "alpha_cluster_prediction_ladder": {
+    "binding_gate_MeV": 2.2466484470473915,
+    "alpha_closed_binding_MeV": 27.57560338594608,
+    "justice_boundary_MeV": 9.19133884180581,
+    "two_alpha_gap_MeV": 0.09151983320141746,
+    "post_o16_boundary_curvature_unit_MeV": 0.37441986030582247,
+    "predictions": [
+      {
+        "id": "ACP-001",
+        "name": "alpha_closure_unit",
+        "rule": "B_alpha = B_gate * (30^L0 + 30^J0)",
+        "relation": "The alpha particle is the first closed light-nuclear Love+Justice binding relation.",
+        "alpha_clusters": 1,
+        "predicted_total_binding_MeV": 27.57560338594608,
+        "known_overlay": {
+          "predicted_MeV": 27.57560338594608,
+          "observed_MeV": 28.295663128057186,
+          "delta_MeV": -0.7200597421111041,
+          "absolute_delta_MeV": 0.7200597421111041,
+          "relative_delta": -0.02544770691014886,
+          "absolute_relative_delta": 0.02544770691014886
+        }
+      },
+      {
+        "id": "ACP-002",
+        "name": "be8_two_alpha_gap",
+        "rule": "gap_2alpha = B_gate / (2 * (30^L0 + 30^J0))",
+        "relation": "Two alpha closures leave a small unresolved relation gap.",
+        "predicted_gap_MeV": 0.09151983320141746,
+        "known_overlay": {
+          "predicted_MeV": 0.09151983320141746,
+          "observed_MeV": 0.09183762448429178,
+          "delta_MeV": -0.000317791282874319,
+          "absolute_delta_MeV": 0.000317791282874319,
+          "relative_delta": -0.0034603604422355216,
+          "absolute_relative_delta": 0.0034603604422355216
+        }
+      },
+      {
+        "id": "ACP-003",
+        "name": "be8_two_alpha_resonance_binding",
+        "rule": "B_Be8 = 2 * B_alpha - gap_2alpha",
+        "relation": "Be-8 is registered as two alpha closures minus the unresolved two-alpha gap.",
+        "alpha_clusters": 2,
+        "predicted_total_binding_MeV": 55.059686938690746,
+        "known_overlay": {
+          "predicted_MeV": 55.059686938690746,
+          "observed_MeV": 56.49948863163008,
+          "delta_MeV": -1.4398016929393336,
+          "absolute_delta_MeV": 1.4398016929393336,
+          "relative_delta": -0.0254834464489877,
+          "absolute_relative_delta": 0.0254834464489877
+        }
+      },
+      {
+        "id": "ACP-004",
+        "name": "c12_triple_alpha_closure_binding",
+        "nuclide": "C12",
+        "rule": "B_C12 = 3 * B_alpha + 1 * B_Justice_boundary",
+        "relation": "carbon-12 triple-alpha closure is read as 3 alpha closures with 1 global Justice boundaries.",
+        "alpha_clusters": 3,
+        "justice_boundaries": 1,
+        "predicted_total_binding_MeV": 91.91814899964406,
+        "predicted_binding_per_nucleon_MeV": 7.659845749970338,
+        "v2_correction_rule": "B_V2 = B_V1 - gap_2alpha * 30^J0 * T(n_alpha - 4)",
+        "v2_boundary_curvature_correction_MeV": 0.0,
+        "v2_predicted_total_binding_MeV": 91.91814899964406,
+        "v2_predicted_binding_per_nucleon_MeV": 7.659845749970338,
+        "known_overlay": {
+          "predicted_MeV": 91.91814899964406,
+          "observed_MeV": 92.16173700191158,
+          "delta_MeV": -0.24358800226751498,
+          "absolute_delta_MeV": 0.24358800226751498,
+          "relative_delta": -0.0026430491676004975,
+          "absolute_relative_delta": 0.0026430491676004975
+        },
+        "v2_known_overlay": {
+          "predicted_MeV": 91.91814899964406,
+          "observed_MeV": 92.16173700191158,
+          "delta_MeV": -0.24358800226751498,
+          "absolute_delta_MeV": 0.24358800226751498,
+          "relative_delta": -0.0026430491676004975,
+          "absolute_relative_delta": 0.0026430491676004975
+        }
+      },
+      {
+        "id": "ACP-005",
+        "name": "o16_four_alpha_closure_binding",
+        "nuclide": "O16",
+        "rule": "B_O16 = 4 * B_alpha + 2 * B_Justice_boundary",
+        "relation": "oxygen-16 four-alpha closure is read as 4 alpha closures with 2 global Justice boundaries.",
+        "alpha_clusters": 4,
+        "justice_boundaries": 2,
+        "predicted_total_binding_MeV": 128.68509122739596,
+        "predicted_binding_per_nucleon_MeV": 8.042818201712247,
+        "v2_correction_rule": "B_V2 = B_V1 - gap_2alpha * 30^J0 * T(n_alpha - 4)",
+        "v2_boundary_curvature_correction_MeV": 0.0,
+        "v2_predicted_total_binding_MeV": 128.68509122739596,
+        "v2_predicted_binding_per_nucleon_MeV": 8.042818201712247,
+        "known_overlay": {
+          "predicted_MeV": 128.68509122739596,
+          "observed_MeV": 127.6193178882666,
+          "delta_MeV": 1.0657733391293647,
+          "absolute_delta_MeV": 1.0657733391293647,
+          "relative_delta": 0.008351191314644568,
+          "absolute_relative_delta": 0.008351191314644568
+        },
+        "v2_known_overlay": {
+          "predicted_MeV": 128.68509122739596,
+          "observed_MeV": 127.6193178882666,
+          "delta_MeV": 1.0657733391293647,
+          "absolute_delta_MeV": 1.0657733391293647,
+          "relative_delta": 0.008351191314644568,
+          "absolute_relative_delta": 0.008351191314644568
+        }
+      },
+      {
+        "id": "ACP-006",
+        "name": "ne20_5_alpha_closure_binding",
+        "nuclide": "Ne20",
+        "rule": "B_Ne20 = 5 * B_alpha + 3 * B_Justice_boundary",
+        "relation": "neon-20 five-alpha closure is read as 5 alpha closures with 3 global Justice boundaries.",
+        "alpha_clusters": 5,
+        "justice_boundaries": 3,
+        "predicted_total_binding_MeV": 165.45203345514784,
+        "predicted_binding_per_nucleon_MeV": 8.272601672757393,
+        "v2_correction_rule": "B_V2 = B_V1 - gap_2alpha * 30^J0 * T(n_alpha - 4)",
+        "v2_boundary_curvature_correction_MeV": 0.37441986030582247,
+        "v2_predicted_total_binding_MeV": 165.077613594842,
+        "v2_predicted_binding_per_nucleon_MeV": 8.2538806797421,
+        "known_overlay": {
+          "predicted_MeV": 165.45203345514784,
+          "observed_MeV": 160.6448262980459,
+          "delta_MeV": 4.807207157101942,
+          "absolute_delta_MeV": 4.807207157101942,
+          "relative_delta": 0.029924444302881437,
+          "absolute_relative_delta": 0.029924444302881437
+        },
+        "v2_known_overlay": {
+          "predicted_MeV": 165.077613594842,
+          "observed_MeV": 160.6448262980459,
+          "delta_MeV": 4.432787296796107,
+          "absolute_delta_MeV": 4.432787296796107,
+          "relative_delta": 0.027593713404575615,
+          "absolute_relative_delta": 0.027593713404575615
+        }
+      },
+      {
+        "id": "ACP-007",
+        "name": "mg24_6_alpha_closure_binding",
+        "nuclide": "Mg24",
+        "rule": "B_Mg24 = 6 * B_alpha + 4 * B_Justice_boundary",
+        "relation": "magnesium-24 six-alpha closure is read as 6 alpha closures with 4 global Justice boundaries.",
+        "alpha_clusters": 6,
+        "justice_boundaries": 4,
+        "predicted_total_binding_MeV": 202.21897568289972,
+        "predicted_binding_per_nucleon_MeV": 8.425790653454156,
+        "v2_correction_rule": "B_V2 = B_V1 - gap_2alpha * 30^J0 * T(n_alpha - 4)",
+        "v2_boundary_curvature_correction_MeV": 1.1232595809174675,
+        "v2_predicted_total_binding_MeV": 201.09571610198225,
+        "v2_predicted_binding_per_nucleon_MeV": 8.378988170915926,
+        "known_overlay": {
+          "predicted_MeV": 202.21897568289972,
+          "observed_MeV": 198.25704504998055,
+          "delta_MeV": 3.9619306329191772,
+          "absolute_delta_MeV": 3.9619306329191772,
+          "relative_delta": 0.019983807546008592,
+          "absolute_relative_delta": 0.019983807546008592
+        },
+        "v2_known_overlay": {
+          "predicted_MeV": 201.09571610198225,
+          "observed_MeV": 198.25704504998055,
+          "delta_MeV": 2.8386710520017004,
+          "absolute_delta_MeV": 2.8386710520017004,
+          "relative_delta": 0.014318134577694597,
+          "absolute_relative_delta": 0.014318134577694597
+        }
+      },
+      {
+        "id": "ACP-008",
+        "name": "si28_7_alpha_closure_binding",
+        "nuclide": "Si28",
+        "rule": "B_Si28 = 7 * B_alpha + 5 * B_Justice_boundary",
+        "relation": "silicon-28 seven-alpha closure is read as 7 alpha closures with 5 global Justice boundaries.",
+        "alpha_clusters": 7,
+        "justice_boundaries": 5,
+        "predicted_total_binding_MeV": 238.98591791065164,
+        "predicted_binding_per_nucleon_MeV": 8.535211353951844,
+        "v2_correction_rule": "B_V2 = B_V1 - gap_2alpha * 30^J0 * T(n_alpha - 4)",
+        "v2_boundary_curvature_correction_MeV": 2.246519161834935,
+        "v2_predicted_total_binding_MeV": 236.7393987488167,
+        "v2_predicted_binding_per_nucleon_MeV": 8.454978526743455,
+        "known_overlay": {
+          "predicted_MeV": 238.98591791065164,
+          "observed_MeV": 236.5368499303685,
+          "delta_MeV": 2.4490679802831323,
+          "absolute_delta_MeV": 2.4490679802831323,
+          "relative_delta": 0.010353853875216812,
+          "absolute_relative_delta": 0.010353853875216812
+        },
+        "v2_known_overlay": {
+          "predicted_MeV": 236.7393987488167,
+          "observed_MeV": 236.5368499303685,
+          "delta_MeV": 0.20254881844820716,
+          "absolute_delta_MeV": 0.20254881844820716,
+          "relative_delta": 0.0008563097822087418,
+          "absolute_relative_delta": 0.0008563097822087418
+        }
+      },
+      {
+        "id": "ACP-009",
+        "name": "s32_8_alpha_closure_binding",
+        "nuclide": "S32",
+        "rule": "B_S32 = 8 * B_alpha + 6 * B_Justice_boundary",
+        "relation": "sulfur-32 eight-alpha closure is read as 8 alpha closures with 6 global Justice boundaries.",
+        "alpha_clusters": 8,
+        "justice_boundaries": 6,
+        "predicted_total_binding_MeV": 275.75286013840355,
+        "predicted_binding_per_nucleon_MeV": 8.61727687932511,
+        "v2_correction_rule": "B_V2 = B_V1 - gap_2alpha * 30^J0 * T(n_alpha - 4)",
+        "v2_boundary_curvature_correction_MeV": 3.7441986030582246,
+        "v2_predicted_total_binding_MeV": 272.0086615353453,
+        "v2_predicted_binding_per_nucleon_MeV": 8.500270672979541,
+        "known_overlay": {
+          "predicted_MeV": 275.75286013840355,
+          "observed_MeV": 271.7801683753218,
+          "delta_MeV": 3.972691763081741,
+          "absolute_delta_MeV": 3.972691763081741,
+          "relative_delta": 0.014617298189305572,
+          "absolute_relative_delta": 0.014617298189305572
+        },
+        "v2_known_overlay": {
+          "predicted_MeV": 272.0086615353453,
+          "observed_MeV": 271.7801683753218,
+          "delta_MeV": 0.22849316002350406,
+          "absolute_delta_MeV": 0.22849316002350406,
+          "relative_delta": 0.000840727862483126,
+          "absolute_relative_delta": 0.000840727862483126
+        }
+      },
+      {
+        "id": "ACP-010",
+        "name": "ar36_9_alpha_closure_binding",
+        "nuclide": "Ar36",
+        "rule": "B_Ar36 = 9 * B_alpha + 7 * B_Justice_boundary",
+        "relation": "argon-36 nine-alpha closure is read as 9 alpha closures with 7 global Justice boundaries.",
+        "alpha_clusters": 9,
+        "justice_boundaries": 7,
+        "predicted_total_binding_MeV": 312.5198023661554,
+        "predicted_binding_per_nucleon_MeV": 8.681105621282093,
+        "v2_correction_rule": "B_V2 = B_V1 - gap_2alpha * 30^J0 * T(n_alpha - 4)",
+        "v2_boundary_curvature_correction_MeV": 5.616297904587337,
+        "v2_predicted_total_binding_MeV": 306.90350446156805,
+        "v2_predicted_binding_per_nucleon_MeV": 8.525097346154668,
+        "known_overlay": {
+          "predicted_MeV": 312.5198023661554,
+          "observed_MeV": 306.7167543350838,
+          "delta_MeV": 5.803048031071569,
+          "absolute_delta_MeV": 5.803048031071569,
+          "relative_delta": 0.01891989253619908,
+          "absolute_relative_delta": 0.01891989253619908
+        },
+        "v2_known_overlay": {
+          "predicted_MeV": 306.90350446156805,
+          "observed_MeV": 306.7167543350838,
+          "delta_MeV": 0.18675012648424172,
+          "absolute_delta_MeV": 0.18675012648424172,
+          "relative_delta": 0.0006088683576777054,
+          "absolute_relative_delta": 0.0006088683576777054
+        }
+      },
+      {
+        "id": "ACP-011",
+        "name": "ca40_10_alpha_closure_binding",
+        "nuclide": "Ca40",
+        "rule": "B_Ca40 = 10 * B_alpha + 8 * B_Justice_boundary",
+        "relation": "calcium-40 ten-alpha closure is read as 10 alpha closures with 8 global Justice boundaries.",
+        "alpha_clusters": 10,
+        "justice_boundaries": 8,
+        "predicted_total_binding_MeV": 349.28674459390726,
+        "predicted_binding_per_nucleon_MeV": 8.732168614847682,
+        "v2_correction_rule": "B_V2 = B_V1 - gap_2alpha * 30^J0 * T(n_alpha - 4)",
+        "v2_boundary_curvature_correction_MeV": 7.862817066422272,
+        "v2_predicted_total_binding_MeV": 341.423927527485,
+        "v2_predicted_binding_per_nucleon_MeV": 8.535598188187125,
+        "known_overlay": {
+          "predicted_MeV": 349.28674459390726,
+          "observed_MeV": 342.05218054711656,
+          "delta_MeV": 7.234564046790695,
+          "absolute_delta_MeV": 7.234564046790695,
+          "relative_delta": 0.021150469016800066,
+          "absolute_relative_delta": 0.021150469016800066
+        },
+        "v2_known_overlay": {
+          "predicted_MeV": 341.423927527485,
+          "observed_MeV": 342.05218054711656,
+          "delta_MeV": -0.6282530196315861,
+          "absolute_delta_MeV": 0.6282530196315861,
+          "relative_delta": -0.0018367168968976832,
+          "absolute_relative_delta": 0.0018367168968976832
+        }
+      }
+    ]
+  },
+  "ranked_predictions": [
+    {
+      "id": "ACP-004",
+      "name": "c12_triple_alpha_closure_binding",
+      "absolute_delta_MeV": 0.24358800226751498,
+      "absolute_relative_delta": 0.0026430491676004975
+    },
+    {
+      "id": "ACP-002",
+      "name": "be8_two_alpha_gap",
+      "absolute_delta_MeV": 0.000317791282874319,
+      "absolute_relative_delta": 0.0034603604422355216
+    },
+    {
+      "id": "ACP-005",
+      "name": "o16_four_alpha_closure_binding",
+      "absolute_delta_MeV": 1.0657733391293647,
+      "absolute_relative_delta": 0.008351191314644568
+    },
+    {
+      "id": "ACP-008",
+      "name": "si28_7_alpha_closure_binding",
+      "absolute_delta_MeV": 2.4490679802831323,
+      "absolute_relative_delta": 0.010353853875216812
+    },
+    {
+      "id": "ACP-009",
+      "name": "s32_8_alpha_closure_binding",
+      "absolute_delta_MeV": 3.972691763081741,
+      "absolute_relative_delta": 0.014617298189305572
+    },
+    {
+      "id": "ACP-010",
+      "name": "ar36_9_alpha_closure_binding",
+      "absolute_delta_MeV": 5.803048031071569,
+      "absolute_relative_delta": 0.01891989253619908
+    },
+    {
+      "id": "ACP-007",
+      "name": "mg24_6_alpha_closure_binding",
+      "absolute_delta_MeV": 3.9619306329191772,
+      "absolute_relative_delta": 0.019983807546008592
+    },
+    {
+      "id": "ACP-011",
+      "name": "ca40_10_alpha_closure_binding",
+      "absolute_delta_MeV": 7.234564046790695,
+      "absolute_relative_delta": 0.021150469016800066
+    },
+    {
+      "id": "ACP-001",
+      "name": "alpha_closure_unit",
+      "absolute_delta_MeV": 0.7200597421111041,
+      "absolute_relative_delta": 0.02544770691014886
+    },
+    {
+      "id": "ACP-003",
+      "name": "be8_two_alpha_resonance_binding",
+      "absolute_delta_MeV": 1.4398016929393336,
+      "absolute_relative_delta": 0.0254834464489877
+    },
+    {
+      "id": "ACP-006",
+      "name": "ne20_5_alpha_closure_binding",
+      "absolute_delta_MeV": 4.807207157101942,
+      "absolute_relative_delta": 0.029924444302881437
+    }
+  ],
+  "continuation_drift": [
+    {
+      "id": "ACP-004",
+      "name": "c12_triple_alpha_closure_binding",
+      "nuclide": "C12",
+      "alpha_clusters": 3,
+      "justice_boundaries": 1,
+      "v1_delta_MeV": -0.24358800226751498,
+      "v1_delta_per_alpha_MeV": -0.08119600075583833,
+      "v1_relative_delta": -0.0026430491676004975,
+      "v1_predicted_binding_per_nucleon_MeV": 7.659845749970338,
+      "observed_binding_per_nucleon_MeV": 7.680144750159298,
+      "v2_boundary_curvature_correction_MeV": 0.0,
+      "v2_delta_MeV": -0.24358800226751498,
+      "v2_delta_per_alpha_MeV": -0.08119600075583833,
+      "v2_relative_delta": -0.0026430491676004975,
+      "v2_predicted_binding_per_nucleon_MeV": 7.659845749970338
+    },
+    {
+      "id": "ACP-005",
+      "name": "o16_four_alpha_closure_binding",
+      "nuclide": "O16",
+      "alpha_clusters": 4,
+      "justice_boundaries": 2,
+      "v1_delta_MeV": 1.0657733391293647,
+      "v1_delta_per_alpha_MeV": 0.26644333478234117,
+      "v1_relative_delta": 0.008351191314644568,
+      "v1_predicted_binding_per_nucleon_MeV": 8.042818201712247,
+      "observed_binding_per_nucleon_MeV": 7.976207368016662,
+      "v2_boundary_curvature_correction_MeV": 0.0,
+      "v2_delta_MeV": 1.0657733391293647,
+      "v2_delta_per_alpha_MeV": 0.26644333478234117,
+      "v2_relative_delta": 0.008351191314644568,
+      "v2_predicted_binding_per_nucleon_MeV": 8.042818201712247
+    },
+    {
+      "id": "ACP-006",
+      "name": "ne20_5_alpha_closure_binding",
+      "nuclide": "Ne20",
+      "alpha_clusters": 5,
+      "justice_boundaries": 3,
+      "v1_delta_MeV": 4.807207157101942,
+      "v1_delta_per_alpha_MeV": 0.9614414314203884,
+      "v1_relative_delta": 0.029924444302881437,
+      "v1_predicted_binding_per_nucleon_MeV": 8.272601672757393,
+      "observed_binding_per_nucleon_MeV": 8.032241314902295,
+      "v2_boundary_curvature_correction_MeV": 0.37441986030582247,
+      "v2_delta_MeV": 4.432787296796107,
+      "v2_delta_per_alpha_MeV": 0.8865574593592214,
+      "v2_relative_delta": 0.027593713404575615,
+      "v2_predicted_binding_per_nucleon_MeV": 8.2538806797421
+    },
+    {
+      "id": "ACP-007",
+      "name": "mg24_6_alpha_closure_binding",
+      "nuclide": "Mg24",
+      "alpha_clusters": 6,
+      "justice_boundaries": 4,
+      "v1_delta_MeV": 3.9619306329191772,
+      "v1_delta_per_alpha_MeV": 0.6603217721531962,
+      "v1_relative_delta": 0.019983807546008592,
+      "v1_predicted_binding_per_nucleon_MeV": 8.425790653454156,
+      "observed_binding_per_nucleon_MeV": 8.260710210415857,
+      "v2_boundary_curvature_correction_MeV": 1.1232595809174675,
+      "v2_delta_MeV": 2.8386710520017004,
+      "v2_delta_per_alpha_MeV": 0.4731118420002834,
+      "v2_relative_delta": 0.014318134577694597,
+      "v2_predicted_binding_per_nucleon_MeV": 8.378988170915926
+    },
+    {
+      "id": "ACP-008",
+      "name": "si28_7_alpha_closure_binding",
+      "nuclide": "Si28",
+      "alpha_clusters": 7,
+      "justice_boundaries": 5,
+      "v1_delta_MeV": 2.4490679802831323,
+      "v1_delta_per_alpha_MeV": 0.34986685432616177,
+      "v1_relative_delta": 0.010353853875216812,
+      "v1_predicted_binding_per_nucleon_MeV": 8.535211353951844,
+      "observed_binding_per_nucleon_MeV": 8.447744640370304,
+      "v2_boundary_curvature_correction_MeV": 2.246519161834935,
+      "v2_delta_MeV": 0.20254881844820716,
+      "v2_delta_per_alpha_MeV": 0.028935545492601022,
+      "v2_relative_delta": 0.0008563097822087418,
+      "v2_predicted_binding_per_nucleon_MeV": 8.454978526743455
+    },
+    {
+      "id": "ACP-009",
+      "name": "s32_8_alpha_closure_binding",
+      "nuclide": "S32",
+      "alpha_clusters": 8,
+      "justice_boundaries": 6,
+      "v1_delta_MeV": 3.972691763081741,
+      "v1_delta_per_alpha_MeV": 0.49658647038521764,
+      "v1_relative_delta": 0.014617298189305572,
+      "v1_predicted_binding_per_nucleon_MeV": 8.61727687932511,
+      "observed_binding_per_nucleon_MeV": 8.493130261728806,
+      "v2_boundary_curvature_correction_MeV": 3.7441986030582246,
+      "v2_delta_MeV": 0.22849316002350406,
+      "v2_delta_per_alpha_MeV": 0.028561645002938008,
+      "v2_relative_delta": 0.000840727862483126,
+      "v2_predicted_binding_per_nucleon_MeV": 8.500270672979541
+    },
+    {
+      "id": "ACP-010",
+      "name": "ar36_9_alpha_closure_binding",
+      "nuclide": "Ar36",
+      "alpha_clusters": 9,
+      "justice_boundaries": 7,
+      "v1_delta_MeV": 5.803048031071569,
+      "v1_delta_per_alpha_MeV": 0.6447831145635077,
+      "v1_relative_delta": 0.01891989253619908,
+      "v1_predicted_binding_per_nucleon_MeV": 8.681105621282093,
+      "observed_binding_per_nucleon_MeV": 8.519909842641217,
+      "v2_boundary_curvature_correction_MeV": 5.616297904587337,
+      "v2_delta_MeV": 0.18675012648424172,
+      "v2_delta_per_alpha_MeV": 0.020750014053804635,
+      "v2_relative_delta": 0.0006088683576777054,
+      "v2_predicted_binding_per_nucleon_MeV": 8.525097346154668
+    },
+    {
+      "id": "ACP-011",
+      "name": "ca40_10_alpha_closure_binding",
+      "nuclide": "Ca40",
+      "alpha_clusters": 10,
+      "justice_boundaries": 8,
+      "v1_delta_MeV": 7.234564046790695,
+      "v1_delta_per_alpha_MeV": 0.7234564046790695,
+      "v1_relative_delta": 0.021150469016800066,
+      "v1_predicted_binding_per_nucleon_MeV": 8.732168614847682,
+      "observed_binding_per_nucleon_MeV": 8.551304513677914,
+      "v2_boundary_curvature_correction_MeV": 7.862817066422272,
+      "v2_delta_MeV": -0.6282530196315861,
+      "v2_delta_per_alpha_MeV": -0.06282530196315861,
+      "v2_relative_delta": -0.0018367168968976832,
+      "v2_predicted_binding_per_nucleon_MeV": 8.535598188187125
+    }
+  ],
+  "v2_correction_summary": {
+    "post_o16_nuclides": [
+      "Ne20",
+      "Mg24",
+      "Si28",
+      "S32",
+      "Ar36",
+      "Ca40"
+    ],
+    "v1_mean_absolute_delta_MeV": 4.704751601874709,
+    "v2_mean_absolute_delta_MeV": 1.419583912230891,
+    "v1_max_absolute_delta_MeV": 7.234564046790695,
+    "v2_max_absolute_delta_MeV": 4.432787296796107,
+    "mean_absolute_delta_reduction_fraction": 0.6982659165969087
+  },
+  "working_read": {
+    "strongest_new_total_binding_prediction": "ACP-004 c12_triple_alpha_closure_binding",
+    "most_sensitive_gap_prediction": "ACP-002 be8_two_alpha_gap",
+    "continuation_result": "The fixed n-2 Justice-boundary rule stays in the same band through Ca-40, but it begins to show structured drift after O-16.",
+    "v2_result": "A single post-O16 boundary-curvature correction sharply reduces the Si-28 through Ca-40 residuals while leaving the Be-8, C-12, and O-16 backbone untouched.",
+    "next_pass": "Study why Ne-20 and Mg-24 remain transitional after the post-O16 correction."
+  }
+}
