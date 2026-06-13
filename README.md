@@ -148,6 +148,7 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [RELATIONAL_MATHEMATICAL_BRIDGES.md](./docs/Pakheta_Layer/RELATIONAL_MATHEMATICAL_BRIDGES.md) — Findings on relational math bridges and non-destructive synthesis.
 * [RELATIONAL_COMPATIBILITY_ENGINE.md](./docs/Pakheta_Layer/RELATIONAL_COMPATIBILITY_ENGINE.md) — Initial compatibility grammar comparing directed relations between constants instead of object-value matches.
 * [PURPOSE_FIRST_RELATION_SEARCH.md](./docs/Pakheta_Layer/PURPOSE_FIRST_RELATION_SEARCH.md) - Known-constant purpose-first search showing bridge retrieval, exemplar compatibility, and exact operator closure on root, golden, and pi/tau identities.
+* [PREDICTIVE_RELATION_FAMILIES.md](./docs/Pakheta_Layer/PREDICTIVE_RELATION_FAMILIES.md) — Findings on deriving relational archetypes from known identity families to predict withheld relationships and target/source constants.
 * [RELATIONAL_LUCAS_LEHMER_LAB.md](./docs/Pakheta_Layer/RELATIONAL_LUCAS_LEHMER_LAB.md) — Reverse-engineering note for exact Mersenne cyclic residue calculus and LJPW trajectory features.
 * [TRANSCENDENTAL_PHYSICAL_BRIDGES.md](./docs/Pakheta_Layer/TRANSCENDENTAL_PHYSICAL_BRIDGES.md) — Findings on Riemann critical line, and pi, e, 1/alpha, mu decompositions.
 * [COSMOLOGICAL_BRIDGES.md](./docs/Pakheta_Layer/COSMOLOGICAL_BRIDGES.md) — Findings on the cosmological Hierarchy Scale and gravity's relational origin.
@@ -179,6 +180,8 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [relational_compatibility_results.json](./experiments/relational_compatibility_results.json) — Output results of the first relational compatibility sweep.
 * [pakheta_purpose_relation_search.py](./experiments/pakheta_purpose_relation_search.py) - Purpose-first relation search over well-known constants and identities.
 * [purpose_relation_search_results.json](./experiments/purpose_relation_search_results.json) - Output results of the purpose-first relation search.
+* [pakheta_predictive_relation_families.py](./experiments/pakheta_predictive_relation_families.py) — Predictive relation families experiment to derive archetypes and run leave-one-out predictions.
+* [predictive_relation_families_results.json](./experiments/predictive_relation_families_results.json) — Output results of the predictive relation families experiment.
 * [relational_calculator.c](./experiments/relational_calculator.c) / [relational_calculator.h](./experiments/relational_calculator.h) — C relational coordinate engine with nearest-fit, encode/decode, multiply/divide, batch operations, and benchmark support.
 * [pakheta_mersenne_prime_scout.py](./experiments/pakheta_mersenne_prime_scout.py) — C-backed relational Mersenne exponent scout using bounded LJPW coordinate fits plus small-factor screens.
 * [mersenne_prime_scout_results.json](./experiments/mersenne_prime_scout_results.json) — Output results of the C-backed Mersenne scout.

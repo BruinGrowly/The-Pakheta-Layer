@@ -1,0 +1,1357 @@
+{
+  "experiment_name": "pakheta_predictive_relation_families",
+  "date_executed": "2026-06-13T12:41:34.839230+00:00",
+  "configuration": {
+    "fit_engine_used": "c",
+    "max_coordinate": 10,
+    "constant_count": 16,
+    "relation_count": 240,
+    "top_n": 20
+  },
+  "metrics": {
+    "total_relationships_tested": 16,
+    "relation_retrieved_median_rank": 43.0,
+    "relation_retrieved_mean_rank": 67.375,
+    "target_prediction_median_rank": 5.0,
+    "target_prediction_accuracy_rank_1": 0.0625,
+    "source_prediction_accuracy_rank_1": 0.125
+  },
+  "family_results": {
+    "root_closures": {
+      "name": "Root Closures",
+      "description": "Roots that close exactly on integer values under multiplication.",
+      "relation_predictions": [
+        {
+          "withheld_relation": "one->sqrt2",
+          "score": 0.7116168421902068,
+          "rank": 123,
+          "percentile": 0.5168067226890757,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "phi_squared->five",
+              "score": 0.9799562592340294,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "sqrt3->three",
+              "score": 0.9790623853199452,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            },
+            {
+              "relation_id": "sqrt5->five",
+              "score": 0.9786594423326147,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            },
+            {
+              "relation_id": "three->five",
+              "score": 0.9712921890254375,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            },
+            {
+              "relation_id": "sqrt3->pi",
+              "score": 0.962062163135246,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            }
+          ]
+        },
+        {
+          "withheld_relation": "one->sqrt3",
+          "score": 0.9458758400651502,
+          "rank": 3,
+          "percentile": 0.012605042016806723,
+          "in_top_n": true,
+          "top_retrieved": [
+            {
+              "relation_id": "sqrt3->pi",
+              "score": 0.957674900033536,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            },
+            {
+              "relation_id": "sqrt3->three",
+              "score": 0.9458758400651504,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            },
+            {
+              "relation_id": "one->sqrt3",
+              "score": 0.9458758400651502,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            },
+            {
+              "relation_id": "sqrt3->phi_squared",
+              "score": 0.9431928189763156,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            },
+            {
+              "relation_id": "justice_J0->power_P0",
+              "score": 0.927438624007666,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            }
+          ]
+        },
+        {
+          "withheld_relation": "one->sqrt5",
+          "score": 0.893362905875612,
+          "rank": 18,
+          "percentile": 0.07563025210084033,
+          "in_top_n": true,
+          "top_retrieved": [
+            {
+              "relation_id": "sqrt3->phi_squared",
+              "score": 0.9528549314196864,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            },
+            {
+              "relation_id": "sqrt5->pi",
+              "score": 0.9353508506438497,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            },
+            {
+              "relation_id": "sqrt3->pi",
+              "score": 0.9344113789636599,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            },
+            {
+              "relation_id": "sqrt3->three",
+              "score": 0.9260177837955285,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            },
+            {
+              "relation_id": "sqrt5->phi_squared",
+              "score": 0.923219188424884,
+              "direction": "amplifying",
+              "best_purpose": "context_scaling"
+            }
+          ]
+        }
+      ],
+      "target_predictions": [
+        {
+          "source": "one",
+          "expected_target": "sqrt2",
+          "score": 0.7116168421902068,
+          "rank": 8,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "sqrt3",
+              "score": 0.9790623853199452
+            },
+            {
+              "candidate_target": "sqrt5",
+              "score": 0.9786594423326147
+            },
+            {
+              "candidate_target": "phi",
+              "score": 0.8574071713490705
+            }
+          ]
+        },
+        {
+          "source": "one",
+          "expected_target": "sqrt3",
+          "score": 0.9458758400651502,
+          "rank": 1,
+          "is_first": true,
+          "top_predictions": [
+            {
+              "candidate_target": "sqrt3",
+              "score": 0.9458758400651502
+            },
+            {
+              "candidate_target": "sqrt5",
+              "score": 0.9173833270884462
+            },
+            {
+              "candidate_target": "phi",
+              "score": 0.9145646154250978
+            }
+          ]
+        },
+        {
+          "source": "one",
+          "expected_target": "sqrt5",
+          "score": 0.893362905875612,
+          "rank": 3,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "sqrt3",
+              "score": 0.9260177837955271
+            },
+            {
+              "candidate_target": "phi",
+              "score": 0.9207740855817845
+            },
+            {
+              "candidate_target": "sqrt5",
+              "score": 0.893362905875612
+            }
+          ]
+        }
+      ],
+      "source_predictions": [
+        {
+          "expected_source": "one",
+          "target": "sqrt2",
+          "score": 0.7116168421902068,
+          "rank": 7,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "phi_inverse_L0",
+              "score": 0.8376454159006838
+            },
+            {
+              "candidate_source": "pi",
+              "score": 0.8277063205946856
+            },
+            {
+              "candidate_source": "phi_squared",
+              "score": 0.7869405986008271
+            }
+          ]
+        },
+        {
+          "expected_source": "one",
+          "target": "sqrt3",
+          "score": 0.9458758400651502,
+          "rank": 1,
+          "is_first": true,
+          "top_predictions": [
+            {
+              "candidate_source": "one",
+              "score": 0.9458758400651502
+            },
+            {
+              "candidate_source": "power_P0",
+              "score": 0.8574758239165344
+            },
+            {
+              "candidate_source": "sqrt2",
+              "score": 0.853954684327733
+            }
+          ]
+        },
+        {
+          "expected_source": "one",
+          "target": "sqrt5",
+          "score": 0.893362905875612,
+          "rank": 4,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "sqrt2",
+              "score": 0.9225492836947922
+            },
+            {
+              "candidate_source": "sqrt3",
+              "score": 0.8993872599025403
+            },
+            {
+              "candidate_source": "two",
+              "score": 0.8957870503597369
+            }
+          ]
+        }
+      ]
+    },
+    "circle_scaling": {
+      "name": "Circle Scaling",
+      "description": "Boundary doubling/halving and circle-turn relation shifts.",
+      "relation_predictions": [
+        {
+          "withheld_relation": "pi->tau",
+          "score": 0.7333848045718817,
+          "rank": 43,
+          "percentile": 0.18143459915611815,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "five->two",
+              "score": 0.941999860198428,
+              "direction": "compressing",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "phi->pi",
+              "score": 0.9220015078229018,
+              "direction": "amplifying",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "three->two",
+              "score": 0.9127839526577781,
+              "direction": "compressing",
+              "best_purpose": "binding_gathering"
+            },
+            {
+              "relation_id": "sqrt2->ln2_W0",
+              "score": 0.9111615611392001,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "tau->phi_squared",
+              "score": 0.9101664060086102,
+              "direction": "compressing",
+              "best_purpose": "binding_gathering"
+            }
+          ]
+        },
+        {
+          "withheld_relation": "tau->pi",
+          "score": 0.7333967227284643,
+          "rank": 43,
+          "percentile": 0.18143459915611815,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "two->five",
+              "score": 0.9411767773008111,
+              "direction": "amplifying",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "pi->phi",
+              "score": 0.9233830603409541,
+              "direction": "compressing",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "two->three",
+              "score": 0.9119560200902798,
+              "direction": "amplifying",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "phi_squared->tau",
+              "score": 0.9097687124288417,
+              "direction": "amplifying",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "ln2_W0->sqrt2",
+              "score": 0.9091831401497608,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            }
+          ]
+        },
+        {
+          "withheld_relation": "one->two",
+          "score": 0.7333848045718817,
+          "rank": 43,
+          "percentile": 0.18143459915611815,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "five->two",
+              "score": 0.941999860198428,
+              "direction": "compressing",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "phi->pi",
+              "score": 0.9220015078229018,
+              "direction": "amplifying",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "three->two",
+              "score": 0.9127839526577781,
+              "direction": "compressing",
+              "best_purpose": "binding_gathering"
+            },
+            {
+              "relation_id": "sqrt2->ln2_W0",
+              "score": 0.9111615611392001,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "tau->phi_squared",
+              "score": 0.9101664060086102,
+              "direction": "compressing",
+              "best_purpose": "binding_gathering"
+            }
+          ]
+        },
+        {
+          "withheld_relation": "two->one",
+          "score": 0.7333967227284643,
+          "rank": 43,
+          "percentile": 0.18143459915611815,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "two->five",
+              "score": 0.9411767773008111,
+              "direction": "amplifying",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "pi->phi",
+              "score": 0.9233830603409541,
+              "direction": "compressing",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "two->three",
+              "score": 0.9119560200902798,
+              "direction": "amplifying",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "phi_squared->tau",
+              "score": 0.9097687124288417,
+              "direction": "amplifying",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "ln2_W0->sqrt2",
+              "score": 0.9091831401497608,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            }
+          ]
+        }
+      ],
+      "target_predictions": [
+        {
+          "source": "pi",
+          "expected_target": "tau",
+          "score": 0.7333848045718817,
+          "rank": 6,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "sqrt2",
+              "score": 0.8781817089973148
+            },
+            {
+              "candidate_target": "phi_squared",
+              "score": 0.8325635266044166
+            },
+            {
+              "candidate_target": "phi",
+              "score": 0.7911488215795018
+            }
+          ]
+        },
+        {
+          "source": "tau",
+          "expected_target": "pi",
+          "score": 0.7333967227284643,
+          "rank": 2,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "phi",
+              "score": 0.8533109972080324
+            },
+            {
+              "candidate_target": "pi",
+              "score": 0.7333967227284643
+            },
+            {
+              "candidate_target": "e",
+              "score": 0.6856433570519019
+            }
+          ]
+        },
+        {
+          "source": "one",
+          "expected_target": "two",
+          "score": 0.7333848045718817,
+          "rank": 3,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "power_P0",
+              "score": 0.8418817917687722
+            },
+            {
+              "candidate_target": "phi",
+              "score": 0.7495962430406897
+            },
+            {
+              "candidate_target": "two",
+              "score": 0.7333848045718817
+            }
+          ]
+        },
+        {
+          "source": "two",
+          "expected_target": "one",
+          "score": 0.7333967227284643,
+          "rank": 5,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "five",
+              "score": 0.9411767773008111
+            },
+            {
+              "candidate_target": "three",
+              "score": 0.9119560200902798
+            },
+            {
+              "candidate_target": "phi_inverse_L0",
+              "score": 0.8572366272086038
+            }
+          ]
+        }
+      ],
+      "source_predictions": [
+        {
+          "expected_source": "pi",
+          "target": "tau",
+          "score": 0.7333848045718817,
+          "rank": 2,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "phi",
+              "score": 0.8517598515391306
+            },
+            {
+              "candidate_source": "pi",
+              "score": 0.7333848045718817
+            },
+            {
+              "candidate_source": "e",
+              "score": 0.6809930837998515
+            }
+          ]
+        },
+        {
+          "expected_source": "tau",
+          "target": "pi",
+          "score": 0.7333967227284643,
+          "rank": 6,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "sqrt2",
+              "score": 0.8758800349031792
+            },
+            {
+              "candidate_source": "phi_squared",
+              "score": 0.8318992281975026
+            },
+            {
+              "candidate_source": "phi",
+              "score": 0.7904757171984543
+            }
+          ]
+        },
+        {
+          "expected_source": "one",
+          "target": "two",
+          "score": 0.7333848045718817,
+          "rank": 5,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "five",
+              "score": 0.941999860198428
+            },
+            {
+              "candidate_source": "three",
+              "score": 0.9127839526577781
+            },
+            {
+              "candidate_source": "phi_inverse_L0",
+              "score": 0.8559573794529718
+            }
+          ]
+        },
+        {
+          "expected_source": "two",
+          "target": "one",
+          "score": 0.7333967227284643,
+          "rank": 3,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "power_P0",
+              "score": 0.8399279121984815
+            },
+            {
+              "candidate_source": "phi",
+              "score": 0.7556779448153136
+            },
+            {
+              "candidate_source": "two",
+              "score": 0.7333967227284643
+            }
+          ]
+        }
+      ]
+    },
+    "golden_harmony": {
+      "name": "Golden Harmony",
+      "description": "Proportional coherence, reciprocal repairs, and golden growth.",
+      "relation_predictions": [
+        {
+          "withheld_relation": "one->phi",
+          "score": 0.8311651071938774,
+          "rank": 24,
+          "percentile": 0.1016949152542373,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "phi_squared->phi",
+              "score": 0.8961647592085736,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "pi->two",
+              "score": 0.8841886023453415,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "ln2_W0->justice_J0",
+              "score": 0.8775038024532242,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "phi_squared->sqrt2",
+              "score": 0.8753609095321098,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "one->ln2_W0",
+              "score": 0.8743467865282631,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            }
+          ]
+        },
+        {
+          "withheld_relation": "phi_inverse_L0->one",
+          "score": 0.8311651071938764,
+          "rank": 24,
+          "percentile": 0.1016949152542373,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "phi_squared->phi",
+              "score": 0.8961647592085735,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "pi->two",
+              "score": 0.8841886023453415,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "ln2_W0->justice_J0",
+              "score": 0.8775038024532242,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "phi_squared->sqrt2",
+              "score": 0.8753609095321101,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "one->ln2_W0",
+              "score": 0.8743467865282635,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            }
+          ]
+        },
+        {
+          "withheld_relation": "phi->phi_squared",
+          "score": 0.8311651071938774,
+          "rank": 24,
+          "percentile": 0.1016949152542373,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "phi_squared->phi",
+              "score": 0.8961647592085736,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "pi->two",
+              "score": 0.8841886023453415,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "ln2_W0->justice_J0",
+              "score": 0.8775038024532242,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "phi_squared->sqrt2",
+              "score": 0.8753609095321098,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "one->ln2_W0",
+              "score": 0.8743467865282631,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            }
+          ]
+        },
+        {
+          "withheld_relation": "phi->one",
+          "score": 0.7309381798751997,
+          "rank": 139,
+          "percentile": 0.5889830508474576,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "two->pi",
+              "score": 0.9818764403397301,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "justice_J0->ln2_W0",
+              "score": 0.9719231078648597,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "ln2_W0->one",
+              "score": 0.9717530132938317,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "phi_inverse_L0->power_P0",
+              "score": 0.9468748760190533,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "sqrt2->sqrt5",
+              "score": 0.9295964662797014,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            }
+          ]
+        },
+        {
+          "withheld_relation": "one->phi_inverse_L0",
+          "score": 0.7309381798751992,
+          "rank": 139,
+          "percentile": 0.5889830508474576,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "two->pi",
+              "score": 0.9818764403397301,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "justice_J0->ln2_W0",
+              "score": 0.9719231078648597,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "ln2_W0->one",
+              "score": 0.9717530132938322,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "phi_inverse_L0->power_P0",
+              "score": 0.946874876019054,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "sqrt2->sqrt5",
+              "score": 0.9295964662797019,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            }
+          ]
+        }
+      ],
+      "target_predictions": [
+        {
+          "source": "one",
+          "expected_target": "phi",
+          "score": 0.8311651071938774,
+          "rank": 4,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "phi_inverse_L0",
+              "score": 0.8961647592085736
+            },
+            {
+              "candidate_target": "ln2_W0",
+              "score": 0.8743467865282631
+            },
+            {
+              "candidate_target": "power_P0",
+              "score": 0.8547175500285561
+            }
+          ]
+        },
+        {
+          "source": "phi_inverse_L0",
+          "expected_target": "one",
+          "score": 0.8311651071938764,
+          "rank": 2,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "justice_J0",
+              "score": 0.8393599563137863
+            },
+            {
+              "candidate_target": "one",
+              "score": 0.8311651071938764
+            },
+            {
+              "candidate_target": "power_P0",
+              "score": 0.7837184632932094
+            }
+          ]
+        },
+        {
+          "source": "phi",
+          "expected_target": "phi_squared",
+          "score": 0.8311651071938774,
+          "rank": 2,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "one",
+              "score": 0.8961647592085744
+            },
+            {
+              "candidate_target": "phi_squared",
+              "score": 0.8311651071938774
+            },
+            {
+              "candidate_target": "power_P0",
+              "score": 0.8150195615914743
+            }
+          ]
+        },
+        {
+          "source": "phi",
+          "expected_target": "one",
+          "score": 0.7309381798751997,
+          "rank": 11,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "phi_squared",
+              "score": 0.9963009412967176
+            },
+            {
+              "candidate_target": "sqrt5",
+              "score": 0.8818286635128731
+            },
+            {
+              "candidate_target": "three",
+              "score": 0.8778177621211649
+            }
+          ]
+        },
+        {
+          "source": "one",
+          "expected_target": "phi_inverse_L0",
+          "score": 0.7309381798751992,
+          "rank": 8,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "phi",
+              "score": 0.9963009412967182
+            },
+            {
+              "candidate_target": "power_P0",
+              "score": 0.8829965869271121
+            },
+            {
+              "candidate_target": "sqrt3",
+              "score": 0.8759524208076166
+            }
+          ]
+        }
+      ],
+      "source_predictions": [
+        {
+          "expected_source": "one",
+          "target": "phi",
+          "score": 0.8311651071938774,
+          "rank": 6,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "phi_squared",
+              "score": 0.8961647592085736
+            },
+            {
+              "candidate_source": "two",
+              "score": 0.8579606501392254
+            },
+            {
+              "candidate_source": "sqrt5",
+              "score": 0.8578144176991054
+            }
+          ]
+        },
+        {
+          "expected_source": "phi_inverse_L0",
+          "target": "one",
+          "score": 0.8311651071938764,
+          "rank": 3,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "phi",
+              "score": 0.8961647592085749
+            },
+            {
+              "candidate_source": "sqrt2",
+              "score": 0.832101501161213
+            },
+            {
+              "candidate_source": "phi_inverse_L0",
+              "score": 0.8311651071938764
+            }
+          ]
+        },
+        {
+          "expected_source": "phi",
+          "target": "phi_squared",
+          "score": 0.8311651071938774,
+          "rank": 2,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "three",
+              "score": 0.8380454537959856
+            },
+            {
+              "candidate_source": "phi",
+              "score": 0.8311651071938774
+            },
+            {
+              "candidate_source": "five",
+              "score": 0.8268590894269855
+            }
+          ]
+        },
+        {
+          "expected_source": "phi",
+          "target": "one",
+          "score": 0.7309381798751997,
+          "rank": 13,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "phi_inverse_L0",
+              "score": 0.996300941296717
+            },
+            {
+              "candidate_source": "ln2_W0",
+              "score": 0.9717530132938317
+            },
+            {
+              "candidate_source": "three",
+              "score": 0.8438807201514102
+            }
+          ]
+        },
+        {
+          "expected_source": "one",
+          "target": "phi_inverse_L0",
+          "score": 0.7309381798751992,
+          "rank": 9,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "phi",
+              "score": 0.8271846409257784
+            },
+            {
+              "candidate_source": "sqrt3",
+              "score": 0.7751261827334498
+            },
+            {
+              "candidate_source": "sqrt5",
+              "score": 0.7649093031374923
+            }
+          ]
+        }
+      ]
+    },
+    "natural_growth": {
+      "name": "Natural Growth",
+      "description": "Logarithmic and exponential growth shifts.",
+      "relation_predictions": [
+        {
+          "withheld_relation": "one->e",
+          "score": 0.7353514181891565,
+          "rank": 142,
+          "percentile": 0.5991561181434599,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "pi->sqrt2",
+              "score": 0.9765859226257014,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "two->power_P0",
+              "score": 0.9480670575507516,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "five->two",
+              "score": 0.9413367038664574,
+              "direction": "compressing",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "phi_squared->sqrt2",
+              "score": 0.9359704383033339,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "tau->phi_squared",
+              "score": 0.9326912334579273,
+              "direction": "compressing",
+              "best_purpose": "binding_gathering"
+            }
+          ]
+        },
+        {
+          "withheld_relation": "e->one",
+          "score": 0.7481955245806391,
+          "rank": 130,
+          "percentile": 0.5485232067510548,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "one->phi",
+              "score": 0.9103946954772667,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "phi->phi_squared",
+              "score": 0.9103946954772667,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "phi_inverse_L0->one",
+              "score": 0.9103946954772655,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "power_P0->phi",
+              "score": 0.9055593139399544,
+              "direction": "amplifying",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "two->pi",
+              "score": 0.9016018758010487,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            }
+          ]
+        },
+        {
+          "withheld_relation": "sqrt2->e",
+          "score": 0.7973882488096669,
+          "rank": 82,
+          "percentile": 0.3459915611814346,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "pi->sqrt2",
+              "score": 0.9789857484600619,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "two->power_P0",
+              "score": 0.9731918293773236,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "five->two",
+              "score": 0.9641273669443517,
+              "direction": "compressing",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "phi->phi_inverse_L0",
+              "score": 0.9434937823364001,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "phi_squared->one",
+              "score": 0.9434937823364001,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            }
+          ]
+        },
+        {
+          "withheld_relation": "sqrt2->ln2_W0",
+          "score": 0.8086485559166301,
+          "rank": 58,
+          "percentile": 0.24472573839662448,
+          "in_top_n": false,
+          "top_retrieved": [
+            {
+              "relation_id": "power_P0->phi",
+              "score": 0.9207279348383449,
+              "direction": "amplifying",
+              "best_purpose": "bridge_harmony"
+            },
+            {
+              "relation_id": "phi->sqrt5",
+              "score": 0.9101248872328673,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "phi->sqrt3",
+              "score": 0.9055563304303094,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "e->five",
+              "score": 0.9035966395162209,
+              "direction": "amplifying",
+              "best_purpose": "integrated_relation"
+            },
+            {
+              "relation_id": "sqrt2->phi_inverse_L0",
+              "score": 0.8963138124735376,
+              "direction": "compressing",
+              "best_purpose": "integrated_relation"
+            }
+          ]
+        }
+      ],
+      "target_predictions": [
+        {
+          "source": "one",
+          "expected_target": "e",
+          "score": 0.7353514181891565,
+          "rank": 8,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "power_P0",
+              "score": 0.9238986151451654
+            },
+            {
+              "candidate_target": "phi",
+              "score": 0.8581720236595478
+            },
+            {
+              "candidate_target": "sqrt5",
+              "score": 0.8565636860494008
+            }
+          ]
+        },
+        {
+          "source": "e",
+          "expected_target": "one",
+          "score": 0.7481955245806391,
+          "rank": 5,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "tau",
+              "score": 0.8402846051918931
+            },
+            {
+              "candidate_target": "five",
+              "score": 0.8390640057402515
+            },
+            {
+              "candidate_target": "ln2_W0",
+              "score": 0.7775904392354026
+            }
+          ]
+        },
+        {
+          "source": "sqrt2",
+          "expected_target": "e",
+          "score": 0.7973882488096669,
+          "rank": 6,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "ln2_W0",
+              "score": 0.9644441364007648
+            },
+            {
+              "candidate_target": "justice_J0",
+              "score": 0.8998945506967604
+            },
+            {
+              "candidate_target": "phi_inverse_L0",
+              "score": 0.8373138178305681
+            }
+          ]
+        },
+        {
+          "source": "sqrt2",
+          "expected_target": "ln2_W0",
+          "score": 0.8086485559166301,
+          "rank": 6,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_target": "e",
+              "score": 0.9618413896704843
+            },
+            {
+              "candidate_target": "phi_inverse_L0",
+              "score": 0.8963138124735376
+            },
+            {
+              "candidate_target": "pi",
+              "score": 0.8782589459013251
+            }
+          ]
+        }
+      ],
+      "source_predictions": [
+        {
+          "expected_source": "one",
+          "target": "e",
+          "score": 0.7353514181891565,
+          "rank": 8,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "sqrt2",
+              "score": 0.8275061520027851
+            },
+            {
+              "candidate_source": "pi",
+              "score": 0.8153006984145442
+            },
+            {
+              "candidate_source": "five",
+              "score": 0.8139903068609586
+            }
+          ]
+        },
+        {
+          "expected_source": "e",
+          "target": "one",
+          "score": 0.7481955245806391,
+          "rank": 11,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "phi_inverse_L0",
+              "score": 0.9103946954772655
+            },
+            {
+              "candidate_source": "ln2_W0",
+              "score": 0.8875785734914241
+            },
+            {
+              "candidate_source": "three",
+              "score": 0.8036327891432913
+            }
+          ]
+        },
+        {
+          "expected_source": "sqrt2",
+          "target": "e",
+          "score": 0.7973882488096669,
+          "rank": 3,
+          "is_first": false,
+          "top_predictions": [
+            {
+              "candidate_source": "pi",
+              "score": 0.8337903152679892
+            },
+            {
+              "candidate_source": "five",
+              "score": 0.829393272600191
+            },
+            {
+              "candidate_source": "sqrt2",
+              "score": 0.7973882488096669
+            }
+          ]
+        },
+        {
+          "expected_source": "sqrt2",
+          "target": "ln2_W0",
+          "score": 0.8086485559166301,
+          "rank": 1,
+          "is_first": true,
+          "top_predictions": [
+            {
+              "candidate_source": "sqrt2",
+              "score": 0.8086485559166301
+            },
+            {
+              "candidate_source": "justice_J0",
+              "score": 0.8003777764628586
+            },
+            {
+              "candidate_source": "two",
+              "score": 0.7969619882055237
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
