@@ -1,0 +1,4324 @@
+{
+  "experiment_name": "pakheta_prediction_atlas",
+  "date_executed": "2026-06-13T05:40:30.377473+00:00",
+  "execution_duration_sec": 0.000442,
+  "source": "NIST CODATA 2022 values reused from existing cosmological bridge prediction scripts.",
+  "base": 30.0,
+  "ljpw_constants": {
+    "L0": 0.6180339887498949,
+    "J0": 0.41421356237309515,
+    "P0": 0.7182818284590451,
+    "W0": 0.6931471805599453,
+    "sum": 2.4436765601419803
+  },
+  "core_bridge_anchor": {
+    "hierarchy_ratio": 1.2475727106749654e+36,
+    "mass_anchor_kg": 1.6645440835603873e-27,
+    "mass_anchor_MeV": 933.7407521670474,
+    "mass_anchor_u": 1.002411876188491,
+    "nuclear_binding_gate": {
+      "prediction": "deuteron_binding_total ~= m_star - 1u",
+      "predicted_deuteron_binding_MeV": 2.2466484470473915,
+      "observed_deuteron_binding_MeV": 2.2245663699998204,
+      "binding_delta_MeV": 0.022082077047571147,
+      "predicted_deuteron_mass_MeV": 1875.5908629229525,
+      "observed_deuteron_mass_MeV": 1875.612945,
+      "deuteron_mass_delta_MeV": -0.022082077047571147
+    },
+    "mass_position": {
+      "delta_from_1u_MeV": 2.2466484470473915,
+      "delta_from_alpha_per_nucleon_MeV": 1.895899217047372,
+      "delta_from_free_proton_MeV": -4.531337262952661,
+      "delta_from_free_nucleon_mean_MeV": -5.178003517952561,
+      "free_nucleon_headroom_MeV": 5.178003517952561
+    }
+  },
+  "mass_anchor_one_step_neighbors": [
+    {
+      "operator": "Power",
+      "direction": "inverse",
+      "relation_type": "inverse_actualization",
+      "relational_role": "Compresses the mass anchor toward a low mediator threshold.",
+      "thread": "sub_hadronic_inverse_branch",
+      "factor": 0.08689817272601871,
+      "mass_MeV": 81.14036516313472,
+      "mass_GeV": 0.08114036516313472,
+      "physical_regime": "muon_to_pion_approach_band",
+      "nearest_landmarks": [
+        {
+          "name": "muon",
+          "landmark_MeV": 105.6583755,
+          "delta_MeV": -24.518010336865288,
+          "absolute_delta_MeV": 24.518010336865288
+        },
+        {
+          "name": "electron",
+          "landmark_MeV": 0.51099895069,
+          "delta_MeV": 80.62936621244472,
+          "absolute_delta_MeV": 80.62936621244472
+        },
+        {
+          "name": "atomic_mass_constant_1u",
+          "landmark_MeV": 931.49410372,
+          "delta_MeV": -850.3537385568653,
+          "absolute_delta_MeV": 850.3537385568653
+        }
+      ]
+    },
+    {
+      "operator": "Wisdom",
+      "direction": "inverse",
+      "relation_type": "inverse_context_rotation",
+      "relational_role": "Compresses the mass anchor toward a context/oscillation threshold.",
+      "thread": "sub_hadronic_inverse_branch",
+      "factor": 0.09465369385456456,
+      "mass_MeV": 88.38201129515053,
+      "mass_GeV": 0.08838201129515054,
+      "physical_regime": "muon_to_pion_approach_band",
+      "nearest_landmarks": [
+        {
+          "name": "muon",
+          "landmark_MeV": 105.6583755,
+          "delta_MeV": -17.27636420484947,
+          "absolute_delta_MeV": 17.27636420484947
+        },
+        {
+          "name": "electron",
+          "landmark_MeV": 0.51099895069,
+          "delta_MeV": 87.87101234446054,
+          "absolute_delta_MeV": 87.87101234446054
+        },
+        {
+          "name": "atomic_mass_constant_1u",
+          "landmark_MeV": 931.49410372,
+          "delta_MeV": -843.1120924248495,
+          "absolute_delta_MeV": 843.1120924248495
+        }
+      ]
+    },
+    {
+      "operator": "Love",
+      "direction": "inverse",
+      "relation_type": "inverse_binding",
+      "relational_role": "Compresses the mass anchor through the binding operator into the muon-to-pion approach band.",
+      "thread": "sub_hadronic_inverse_branch",
+      "factor": 0.1222049672780345,
+      "mass_MeV": 114.10775806474135,
+      "mass_GeV": 0.11410775806474134,
+      "physical_regime": "muon_to_pion_approach_band",
+      "nearest_landmarks": [
+        {
+          "name": "muon",
+          "landmark_MeV": 105.6583755,
+          "delta_MeV": 8.449382564741342,
+          "absolute_delta_MeV": 8.449382564741342
+        },
+        {
+          "name": "electron",
+          "landmark_MeV": 0.51099895069,
+          "delta_MeV": 113.59675911405135,
+          "absolute_delta_MeV": 113.59675911405135
+        },
+        {
+          "name": "atomic_mass_constant_1u",
+          "landmark_MeV": 931.49410372,
+          "delta_MeV": -817.3863456552587,
+          "absolute_delta_MeV": 817.3863456552587
+        }
+      ]
+    },
+    {
+      "operator": "Justice",
+      "direction": "inverse",
+      "relation_type": "inverse_boundary",
+      "relational_role": "Compresses the mass anchor through boundary/distinction into the low meson band.",
+      "thread": "sub_hadronic_inverse_branch",
+      "factor": 0.24443103292294635,
+      "mass_MeV": 228.23521653444024,
+      "mass_GeV": 0.22823521653444023,
+      "physical_regime": "low_meson_band",
+      "nearest_landmarks": [
+        {
+          "name": "muon",
+          "landmark_MeV": 105.6583755,
+          "delta_MeV": 122.57684103444024,
+          "absolute_delta_MeV": 122.57684103444024
+        },
+        {
+          "name": "electron",
+          "landmark_MeV": 0.51099895069,
+          "delta_MeV": 227.72421758375023,
+          "absolute_delta_MeV": 227.72421758375023
+        },
+        {
+          "name": "atomic_mass_constant_1u",
+          "landmark_MeV": 931.49410372,
+          "delta_MeV": -703.2588871855597,
+          "absolute_delta_MeV": 703.2588871855597
+        }
+      ]
+    },
+    {
+      "operator": "Justice",
+      "direction": "direct",
+      "relation_type": "direct_boundary_amplification",
+      "relational_role": "Amplifies the mass anchor into a multi-GeV boundary/resonance threshold.",
+      "thread": "multi_gev_resonance_branch",
+      "factor": 4.09113355224104,
+      "mass_MeV": 3820.0581202853928,
+      "mass_GeV": 3.8200581202853927,
+      "physical_regime": "multi_GeV_threshold_band",
+      "nearest_landmarks": [
+        {
+          "name": "neutron",
+          "landmark_MeV": 939.56542194,
+          "delta_MeV": 2880.492698345393,
+          "absolute_delta_MeV": 2880.492698345393
+        },
+        {
+          "name": "proton",
+          "landmark_MeV": 938.27208943,
+          "delta_MeV": 2881.7860308553927,
+          "absolute_delta_MeV": 2881.7860308553927
+        },
+        {
+          "name": "deuteron_per_nucleon",
+          "landmark_MeV": 937.8064725,
+          "delta_MeV": 2882.251647785393,
+          "absolute_delta_MeV": 2882.251647785393
+        }
+      ]
+    },
+    {
+      "operator": "Love",
+      "direction": "direct",
+      "relation_type": "direct_binding_amplification",
+      "relational_role": "Amplifies the mass anchor into a high binding/resonance scale.",
+      "thread": "multi_gev_resonance_branch",
+      "factor": 8.182973427952819,
+      "mass_MeV": 7640.775763579627,
+      "mass_GeV": 7.640775763579627,
+      "physical_regime": "heavy_resonance_band",
+      "nearest_landmarks": [
+        {
+          "name": "neutron",
+          "landmark_MeV": 939.56542194,
+          "delta_MeV": 6701.210341639627,
+          "absolute_delta_MeV": 6701.210341639627
+        },
+        {
+          "name": "proton",
+          "landmark_MeV": 938.27208943,
+          "delta_MeV": 6702.503674149627,
+          "absolute_delta_MeV": 6702.503674149627
+        },
+        {
+          "name": "deuteron_per_nucleon",
+          "landmark_MeV": 937.8064725,
+          "delta_MeV": 6702.969291079627,
+          "absolute_delta_MeV": 6702.969291079627
+        }
+      ]
+    },
+    {
+      "operator": "Wisdom",
+      "direction": "direct",
+      "relation_type": "direct_context_amplification",
+      "relational_role": "Amplifies the mass anchor toward a high context/resonance scale.",
+      "thread": "multi_gev_resonance_branch",
+      "factor": 10.564828051364804,
+      "mass_MeV": 9864.810491196893,
+      "mass_GeV": 9.864810491196893,
+      "physical_regime": "heavy_resonance_band",
+      "nearest_landmarks": [
+        {
+          "name": "neutron",
+          "landmark_MeV": 939.56542194,
+          "delta_MeV": 8925.245069256893,
+          "absolute_delta_MeV": 8925.245069256893
+        },
+        {
+          "name": "proton",
+          "landmark_MeV": 938.27208943,
+          "delta_MeV": 8926.538401766893,
+          "absolute_delta_MeV": 8926.538401766893
+        },
+        {
+          "name": "deuteron_per_nucleon",
+          "landmark_MeV": 937.8064725,
+          "delta_MeV": 8927.004018696893,
+          "absolute_delta_MeV": 8927.004018696893
+        }
+      ]
+    },
+    {
+      "operator": "Power",
+      "direction": "direct",
+      "relation_type": "direct_actualization",
+      "relational_role": "Amplifies the mass anchor into a high actualization/resonance scale.",
+      "thread": "multi_gev_resonance_branch",
+      "factor": 11.507721838443029,
+      "mass_MeV": 10745.228845156951,
+      "mass_GeV": 10.745228845156952,
+      "physical_regime": "heavy_resonance_band",
+      "nearest_landmarks": [
+        {
+          "name": "neutron",
+          "landmark_MeV": 939.56542194,
+          "delta_MeV": 9805.66342321695,
+          "absolute_delta_MeV": 9805.66342321695
+        },
+        {
+          "name": "proton",
+          "landmark_MeV": 938.27208943,
+          "delta_MeV": 9806.956755726951,
+          "absolute_delta_MeV": 9806.956755726951
+        },
+        {
+          "name": "deuteron_per_nucleon",
+          "landmark_MeV": 937.8064725,
+          "delta_MeV": 9807.42237265695,
+          "absolute_delta_MeV": 9807.42237265695
+        }
+      ]
+    }
+  ],
+  "coordinate_anchor_neighbors": {
+    "cosmological_constant": {
+      "kind": "planck_lambda",
+      "coefficients": {
+        "c_L": -30,
+        "c_J": -37,
+        "c_P": -32,
+        "c_W": -37
+      },
+      "exponent": -82.49838566170878,
+      "raw_value": 1.3800062681755125e-122,
+      "interpreted_value": {
+        "lambda_planck_units": 1.3800062681755125e-122,
+        "log10_lambda": -121.86011894096988
+      },
+      "one_step_neighbors": [
+        {
+          "operator": "Love",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -31,
+            "c_J": -37,
+            "c_P": -32,
+            "c_W": -37
+          },
+          "raw_value": 1.6864362084586796e-123,
+          "interpreted_value": {
+            "lambda_planck_units": 1.6864362084586796e-123,
+            "log10_lambda": -122.77303008189153
+          }
+        },
+        {
+          "operator": "Love",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -29,
+            "c_J": -37,
+            "c_P": -32,
+            "c_W": -37
+          },
+          "raw_value": 1.1292554622888752e-121,
+          "interpreted_value": {
+            "lambda_planck_units": 1.1292554622888752e-121,
+            "log10_lambda": -120.94720780004823
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -30,
+            "c_J": -38,
+            "c_P": -32,
+            "c_W": -37
+          },
+          "raw_value": 3.373163575702843e-123,
+          "interpreted_value": {
+            "lambda_planck_units": 3.373163575702843e-123,
+            "log10_lambda": -122.47196259794433
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -30,
+            "c_J": -36,
+            "c_P": -32,
+            "c_W": -37
+          },
+          "raw_value": 5.645789946035729e-122,
+          "interpreted_value": {
+            "lambda_planck_units": 5.645789946035729e-122,
+            "log10_lambda": -121.24827528399544
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -30,
+            "c_J": -37,
+            "c_P": -33,
+            "c_W": -37
+          },
+          "raw_value": 1.1992002305490582e-123,
+          "interpreted_value": {
+            "lambda_planck_units": 1.1992002305490582e-123,
+            "log10_lambda": -122.92110829666564
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -30,
+            "c_J": -37,
+            "c_P": -31,
+            "c_W": -37
+          },
+          "raw_value": 1.5880728269471394e-121,
+          "interpreted_value": {
+            "lambda_planck_units": 1.5880728269471394e-121,
+            "log10_lambda": -120.79912958527413
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -30,
+            "c_J": -37,
+            "c_P": -32,
+            "c_W": -38
+          },
+          "raw_value": 1.3062269082526424e-123,
+          "interpreted_value": {
+            "lambda_planck_units": 1.3062269082526424e-123,
+            "log10_lambda": -122.88398137402399
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -30,
+            "c_J": -37,
+            "c_P": -32,
+            "c_W": -36
+          },
+          "raw_value": 1.4579528933080006e-121,
+          "interpreted_value": {
+            "lambda_planck_units": 1.4579528933080006e-121,
+            "log10_lambda": -120.83625650791578
+          }
+        }
+      ]
+    },
+    "higgs_to_proton_mass": {
+      "kind": "mass_ratio_to_proton",
+      "coefficients": {
+        "c_L": -5,
+        "c_J": -3,
+        "c_P": 9,
+        "c_W": -1
+      },
+      "exponent": 1.4385786447026998,
+      "raw_value": 133.3383549262981,
+      "interpreted_value": {
+        "ratio_to_proton": 133.3383549262981,
+        "mass_MeV": 125107.65687785667,
+        "mass_GeV": 125.10765687785667,
+        "nearest_landmarks": [
+          {
+            "name": "higgs",
+            "landmark_MeV": 125100.0,
+            "delta_MeV": 7.656877856672509,
+            "absolute_delta_MeV": 7.656877856672509
+          },
+          {
+            "name": "z_boson",
+            "landmark_MeV": 91187.6,
+            "delta_MeV": 33920.05687785667,
+            "absolute_delta_MeV": 33920.05687785667
+          },
+          {
+            "name": "w_boson",
+            "landmark_MeV": 80377.0,
+            "delta_MeV": 44730.65687785667,
+            "absolute_delta_MeV": 44730.65687785667
+          }
+        ]
+      },
+      "one_step_neighbors": [
+        {
+          "operator": "Love",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -6,
+            "c_J": -3,
+            "c_P": 9,
+            "c_W": -1
+          },
+          "raw_value": 16.294609300675216,
+          "interpreted_value": {
+            "ratio_to_proton": 16.294609300675216,
+            "mass_MeV": 15288.777114990047,
+            "mass_GeV": 15.288777114990047,
+            "nearest_landmarks": [
+              {
+                "name": "neutron",
+                "landmark_MeV": 939.56542194,
+                "delta_MeV": 14349.211693050047,
+                "absolute_delta_MeV": 14349.211693050047
+              },
+              {
+                "name": "proton",
+                "landmark_MeV": 938.27208943,
+                "delta_MeV": 14350.505025560047,
+                "absolute_delta_MeV": 14350.505025560047
+              },
+              {
+                "name": "deuteron_per_nucleon",
+                "landmark_MeV": 937.8064725,
+                "delta_MeV": 14350.970642490047,
+                "absolute_delta_MeV": 14350.970642490047
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Love",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -4,
+            "c_J": -3,
+            "c_P": 9,
+            "c_W": -1
+          },
+          "raw_value": 1091.104215288839,
+          "interpreted_value": {
+            "ratio_to_proton": 1091.104215288839,
+            "mass_MeV": 1023752.6318649396,
+            "mass_GeV": 1023.7526318649395,
+            "nearest_landmarks": [
+              {
+                "name": "higgs",
+                "landmark_MeV": 125100.0,
+                "delta_MeV": 898652.6318649396,
+                "absolute_delta_MeV": 898652.6318649396
+              },
+              {
+                "name": "z_boson",
+                "landmark_MeV": 91187.6,
+                "delta_MeV": 932565.0318649396,
+                "absolute_delta_MeV": 932565.0318649396
+              },
+              {
+                "name": "w_boson",
+                "landmark_MeV": 80377.0,
+                "delta_MeV": 943375.6318649396,
+                "absolute_delta_MeV": 943375.6318649396
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -5,
+            "c_J": -4,
+            "c_P": 9,
+            "c_W": -1
+          },
+          "raw_value": 32.5920318228815,
+          "interpreted_value": {
+            "ratio_to_proton": 32.5920318228815,
+            "mass_MeV": 30580.19379722408,
+            "mass_GeV": 30.58019379722408,
+            "nearest_landmarks": [
+              {
+                "name": "neutron",
+                "landmark_MeV": 939.56542194,
+                "delta_MeV": 29640.628375284083,
+                "absolute_delta_MeV": 29640.628375284083
+              },
+              {
+                "name": "proton",
+                "landmark_MeV": 938.27208943,
+                "delta_MeV": 29641.92170779408,
+                "absolute_delta_MeV": 29641.92170779408
+              },
+              {
+                "name": "deuteron_per_nucleon",
+                "landmark_MeV": 937.8064725,
+                "delta_MeV": 29642.38732472408,
+                "absolute_delta_MeV": 29642.38732472408
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -5,
+            "c_J": -2,
+            "c_P": 9,
+            "c_W": -1
+          },
+          "raw_value": 545.5050176396028,
+          "interpreted_value": {
+            "ratio_to_proton": 545.5050176396028,
+            "mass_MeV": 511832.1326952591,
+            "mass_GeV": 511.83213269525913,
+            "nearest_landmarks": [
+              {
+                "name": "higgs",
+                "landmark_MeV": 125100.0,
+                "delta_MeV": 386732.1326952591,
+                "absolute_delta_MeV": 386732.1326952591
+              },
+              {
+                "name": "z_boson",
+                "landmark_MeV": 91187.6,
+                "delta_MeV": 420644.5326952591,
+                "absolute_delta_MeV": 420644.5326952591
+              },
+              {
+                "name": "w_boson",
+                "landmark_MeV": 80377.0,
+                "delta_MeV": 431455.1326952591,
+                "absolute_delta_MeV": 431455.1326952591
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -5,
+            "c_J": -3,
+            "c_P": 8,
+            "c_W": -1
+          },
+          "raw_value": 11.586859397388663,
+          "interpreted_value": {
+            "ratio_to_proton": 11.586859397388663,
+            "mass_MeV": 10871.626776719491,
+            "mass_GeV": 10.871626776719491,
+            "nearest_landmarks": [
+              {
+                "name": "neutron",
+                "landmark_MeV": 939.56542194,
+                "delta_MeV": 9932.061354779491,
+                "absolute_delta_MeV": 9932.061354779491
+              },
+              {
+                "name": "proton",
+                "landmark_MeV": 938.27208943,
+                "delta_MeV": 9933.354687289491,
+                "absolute_delta_MeV": 9933.354687289491
+              },
+              {
+                "name": "deuteron_per_nucleon",
+                "landmark_MeV": 937.8064725,
+                "delta_MeV": 9933.820304219491,
+                "absolute_delta_MeV": 9933.820304219491
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -5,
+            "c_J": -3,
+            "c_P": 10,
+            "c_W": -1
+          },
+          "raw_value": 1534.4206988874305,
+          "interpreted_value": {
+            "ratio_to_proton": 1534.4206988874305,
+            "mass_MeV": 1439704.1152097504,
+            "mass_GeV": 1439.7041152097504,
+            "nearest_landmarks": [
+              {
+                "name": "higgs",
+                "landmark_MeV": 125100.0,
+                "delta_MeV": 1314604.1152097504,
+                "absolute_delta_MeV": 1314604.1152097504
+              },
+              {
+                "name": "z_boson",
+                "landmark_MeV": 91187.6,
+                "delta_MeV": 1348516.5152097503,
+                "absolute_delta_MeV": 1348516.5152097503
+              },
+              {
+                "name": "w_boson",
+                "landmark_MeV": 80377.0,
+                "delta_MeV": 1359327.1152097504,
+                "absolute_delta_MeV": 1359327.1152097504
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -5,
+            "c_J": -3,
+            "c_P": 9,
+            "c_W": -2
+          },
+          "raw_value": 12.620967826265096,
+          "interpreted_value": {
+            "ratio_to_proton": 12.620967826265096,
+            "mass_MeV": 11841.901852978557,
+            "mass_GeV": 11.841901852978557,
+            "nearest_landmarks": [
+              {
+                "name": "neutron",
+                "landmark_MeV": 939.56542194,
+                "delta_MeV": 10902.336431038557,
+                "absolute_delta_MeV": 10902.336431038557
+              },
+              {
+                "name": "proton",
+                "landmark_MeV": 938.27208943,
+                "delta_MeV": 10903.629763548557,
+                "absolute_delta_MeV": 10903.629763548557
+              },
+              {
+                "name": "deuteron_per_nucleon",
+                "landmark_MeV": 937.8064725,
+                "delta_MeV": 10904.095380478557,
+                "absolute_delta_MeV": 10904.095380478557
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -5,
+            "c_J": -3,
+            "c_P": 9,
+            "c_W": 0
+          },
+          "raw_value": 1408.696792448191,
+          "interpreted_value": {
+            "ratio_to_proton": 1408.696792448191,
+            "mass_MeV": 1321740.8828237033,
+            "mass_GeV": 1321.7408828237033,
+            "nearest_landmarks": [
+              {
+                "name": "higgs",
+                "landmark_MeV": 125100.0,
+                "delta_MeV": 1196640.8828237033,
+                "absolute_delta_MeV": 1196640.8828237033
+              },
+              {
+                "name": "z_boson",
+                "landmark_MeV": 91187.6,
+                "delta_MeV": 1230553.2828237033,
+                "absolute_delta_MeV": 1230553.2828237033
+              },
+              {
+                "name": "w_boson",
+                "landmark_MeV": 80377.0,
+                "delta_MeV": 1241363.8828237033,
+                "absolute_delta_MeV": 1241363.8828237033
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "w_to_proton_mass": {
+      "kind": "mass_ratio_to_proton",
+      "coefficients": {
+        "c_L": -4,
+        "c_J": 8,
+        "c_P": -9,
+        "c_W": 10
+      },
+      "exponent": 1.3085078934532293,
+      "raw_value": 85.66922170198858,
+      "interpreted_value": {
+        "ratio_to_proton": 85.66922170198858,
+        "mass_MeV": 80381.03964616673,
+        "mass_GeV": 80.38103964616673,
+        "nearest_landmarks": [
+          {
+            "name": "w_boson",
+            "landmark_MeV": 80377.0,
+            "delta_MeV": 4.0396461667260155,
+            "absolute_delta_MeV": 4.0396461667260155
+          },
+          {
+            "name": "z_boson",
+            "landmark_MeV": 91187.6,
+            "delta_MeV": -10806.56035383328,
+            "absolute_delta_MeV": 10806.56035383328
+          },
+          {
+            "name": "higgs",
+            "landmark_MeV": 125100.0,
+            "delta_MeV": -44718.960353833274,
+            "absolute_delta_MeV": 44718.960353833274
+          }
+        ]
+      },
+      "one_step_neighbors": [
+        {
+          "operator": "Love",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -5,
+            "c_J": 8,
+            "c_P": -9,
+            "c_W": 10
+          },
+          "raw_value": 10.469204434826198,
+          "interpreted_value": {
+            "ratio_to_proton": 10.469204434826198,
+            "mass_MeV": 9822.962319734199,
+            "mass_GeV": 9.822962319734199,
+            "nearest_landmarks": [
+              {
+                "name": "neutron",
+                "landmark_MeV": 939.56542194,
+                "delta_MeV": 8883.396897794199,
+                "absolute_delta_MeV": 8883.396897794199
+              },
+              {
+                "name": "proton",
+                "landmark_MeV": 938.27208943,
+                "delta_MeV": 8884.690230304199,
+                "absolute_delta_MeV": 8884.690230304199
+              },
+              {
+                "name": "deuteron_per_nucleon",
+                "landmark_MeV": 937.8064725,
+                "delta_MeV": 8885.155847234199,
+                "absolute_delta_MeV": 8885.155847234199
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Love",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -3,
+            "c_J": 8,
+            "c_P": -9,
+            "c_W": 10
+          },
+          "raw_value": 701.0289647807714,
+          "interpreted_value": {
+            "ratio_to_proton": 701.0289647807714,
+            "mass_MeV": 657755.9115358043,
+            "mass_GeV": 657.7559115358043,
+            "nearest_landmarks": [
+              {
+                "name": "higgs",
+                "landmark_MeV": 125100.0,
+                "delta_MeV": 532655.9115358043,
+                "absolute_delta_MeV": 532655.9115358043
+              },
+              {
+                "name": "z_boson",
+                "landmark_MeV": 91187.6,
+                "delta_MeV": 566568.3115358043,
+                "absolute_delta_MeV": 566568.3115358043
+              },
+              {
+                "name": "w_boson",
+                "landmark_MeV": 80377.0,
+                "delta_MeV": 577378.9115358043,
+                "absolute_delta_MeV": 577378.9115358043
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -4,
+            "c_J": 7,
+            "c_P": -9,
+            "c_W": 10
+          },
+          "raw_value": 20.940216350321975,
+          "interpreted_value": {
+            "ratio_to_proton": 20.940216350321975,
+            "mass_MeV": 19647.62054813285,
+            "mass_GeV": 19.64762054813285,
+            "nearest_landmarks": [
+              {
+                "name": "neutron",
+                "landmark_MeV": 939.56542194,
+                "delta_MeV": 18708.055126192852,
+                "absolute_delta_MeV": 18708.055126192852
+              },
+              {
+                "name": "proton",
+                "landmark_MeV": 938.27208943,
+                "delta_MeV": 18709.34845870285,
+                "absolute_delta_MeV": 18709.34845870285
+              },
+              {
+                "name": "deuteron_per_nucleon",
+                "landmark_MeV": 937.8064725,
+                "delta_MeV": 18709.81407563285,
+                "absolute_delta_MeV": 18709.81407563285
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -4,
+            "c_J": 9,
+            "c_P": -9,
+            "c_W": 10
+          },
+          "raw_value": 350.48422729938136,
+          "interpreted_value": {
+            "ratio_to_proton": 350.48422729938136,
+            "mass_MeV": 328849.5682604496,
+            "mass_GeV": 328.84956826044964,
+            "nearest_landmarks": [
+              {
+                "name": "higgs",
+                "landmark_MeV": 125100.0,
+                "delta_MeV": 203749.56826044963,
+                "absolute_delta_MeV": 203749.56826044963
+              },
+              {
+                "name": "z_boson",
+                "landmark_MeV": 91187.6,
+                "delta_MeV": 237661.96826044962,
+                "absolute_delta_MeV": 237661.96826044962
+              },
+              {
+                "name": "w_boson",
+                "landmark_MeV": 80377.0,
+                "delta_MeV": 248472.56826044963,
+                "absolute_delta_MeV": 248472.56826044963
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -4,
+            "c_J": 8,
+            "c_P": -10,
+            "c_W": 10
+          },
+          "raw_value": 7.4444988247629835,
+          "interpreted_value": {
+            "ratio_to_proton": 7.4444988247629835,
+            "mass_MeV": 6984.9654670695445,
+            "mass_GeV": 6.984965467069545,
+            "nearest_landmarks": [
+              {
+                "name": "neutron",
+                "landmark_MeV": 939.56542194,
+                "delta_MeV": 6045.400045129544,
+                "absolute_delta_MeV": 6045.400045129544
+              },
+              {
+                "name": "proton",
+                "landmark_MeV": 938.27208943,
+                "delta_MeV": 6046.693377639544,
+                "absolute_delta_MeV": 6046.693377639544
+              },
+              {
+                "name": "deuteron_per_nucleon",
+                "landmark_MeV": 937.8064725,
+                "delta_MeV": 6047.158994569544,
+                "absolute_delta_MeV": 6047.158994569544
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -4,
+            "c_J": 8,
+            "c_P": -8,
+            "c_W": 10
+          },
+          "raw_value": 985.8575734623898,
+          "interpreted_value": {
+            "ratio_to_proton": 985.8575734623898,
+            "mass_MeV": 925002.6453329463,
+            "mass_GeV": 925.0026453329464,
+            "nearest_landmarks": [
+              {
+                "name": "higgs",
+                "landmark_MeV": 125100.0,
+                "delta_MeV": 799902.6453329463,
+                "absolute_delta_MeV": 799902.6453329463
+              },
+              {
+                "name": "z_boson",
+                "landmark_MeV": 91187.6,
+                "delta_MeV": 833815.0453329463,
+                "absolute_delta_MeV": 833815.0453329463
+              },
+              {
+                "name": "w_boson",
+                "landmark_MeV": 80377.0,
+                "delta_MeV": 844625.6453329463,
+                "absolute_delta_MeV": 844625.6453329463
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -4,
+            "c_J": 8,
+            "c_P": -9,
+            "c_W": 9
+          },
+          "raw_value": 8.108908283738842,
+          "interpreted_value": {
+            "ratio_to_proton": 8.108908283738842,
+            "mass_MeV": 7608.362318379879,
+            "mass_GeV": 7.608362318379879,
+            "nearest_landmarks": [
+              {
+                "name": "neutron",
+                "landmark_MeV": 939.56542194,
+                "delta_MeV": 6668.796896439879,
+                "absolute_delta_MeV": 6668.796896439879
+              },
+              {
+                "name": "proton",
+                "landmark_MeV": 938.27208943,
+                "delta_MeV": 6670.090228949879,
+                "absolute_delta_MeV": 6670.090228949879
+              },
+              {
+                "name": "deuteron_per_nucleon",
+                "landmark_MeV": 937.8064725,
+                "delta_MeV": 6670.555845879879,
+                "absolute_delta_MeV": 6670.555845879879
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -4,
+            "c_J": 8,
+            "c_P": -9,
+            "c_W": 11
+          },
+          "raw_value": 905.0805965757596,
+          "interpreted_value": {
+            "ratio_to_proton": 905.0805965757596,
+            "mass_MeV": 849211.862451689,
+            "mass_GeV": 849.211862451689,
+            "nearest_landmarks": [
+              {
+                "name": "higgs",
+                "landmark_MeV": 125100.0,
+                "delta_MeV": 724111.862451689,
+                "absolute_delta_MeV": 724111.862451689
+              },
+              {
+                "name": "z_boson",
+                "landmark_MeV": 91187.6,
+                "delta_MeV": 758024.262451689,
+                "absolute_delta_MeV": 758024.262451689
+              },
+              {
+                "name": "w_boson",
+                "landmark_MeV": 80377.0,
+                "delta_MeV": 768834.862451689,
+                "absolute_delta_MeV": 768834.862451689
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "z_to_proton_mass": {
+      "kind": "mass_ratio_to_proton",
+      "coefficients": {
+        "c_L": 4,
+        "c_J": -5,
+        "c_P": 10,
+        "c_W": -9
+      },
+      "exponent": 1.3455618026850473,
+      "raw_value": 97.17575830017141,
+      "interpreted_value": {
+        "ratio_to_proton": 97.17575830017141,
+        "mass_MeV": 91177.3017822465,
+        "mass_GeV": 91.1773017822465,
+        "nearest_landmarks": [
+          {
+            "name": "z_boson",
+            "landmark_MeV": 91187.6,
+            "delta_MeV": -10.298217753501376,
+            "absolute_delta_MeV": 10.298217753501376
+          },
+          {
+            "name": "w_boson",
+            "landmark_MeV": 80377.0,
+            "delta_MeV": 10800.301782246504,
+            "absolute_delta_MeV": 10800.301782246504
+          },
+          {
+            "name": "higgs",
+            "landmark_MeV": 125100.0,
+            "delta_MeV": -33922.698217753496,
+            "absolute_delta_MeV": 33922.698217753496
+          }
+        ]
+      },
+      "one_step_neighbors": [
+        {
+          "operator": "Love",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 3,
+            "c_J": -5,
+            "c_P": 10,
+            "c_W": -9
+          },
+          "raw_value": 11.875360363290637,
+          "interpreted_value": {
+            "ratio_to_proton": 11.875360363290637,
+            "mass_MeV": 11142.319180798911,
+            "mass_GeV": 11.14231918079891,
+            "nearest_landmarks": [
+              {
+                "name": "neutron",
+                "landmark_MeV": 939.56542194,
+                "delta_MeV": 10202.753758858911,
+                "absolute_delta_MeV": 10202.753758858911
+              },
+              {
+                "name": "proton",
+                "landmark_MeV": 938.27208943,
+                "delta_MeV": 10204.047091368911,
+                "absolute_delta_MeV": 10204.047091368911
+              },
+              {
+                "name": "deuteron_per_nucleon",
+                "landmark_MeV": 937.8064725,
+                "delta_MeV": 10204.512708298911,
+                "absolute_delta_MeV": 10204.512708298911
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Love",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 5,
+            "c_J": -5,
+            "c_P": 10,
+            "c_W": -9
+          },
+          "raw_value": 795.1866480114705,
+          "interpreted_value": {
+            "ratio_to_proton": 795.1866480114705,
+            "mass_MeV": 746101.4377165604,
+            "mass_GeV": 746.1014377165604,
+            "nearest_landmarks": [
+              {
+                "name": "higgs",
+                "landmark_MeV": 125100.0,
+                "delta_MeV": 621001.4377165604,
+                "absolute_delta_MeV": 621001.4377165604
+              },
+              {
+                "name": "z_boson",
+                "landmark_MeV": 91187.6,
+                "delta_MeV": 654913.8377165605,
+                "absolute_delta_MeV": 654913.8377165605
+              },
+              {
+                "name": "w_boson",
+                "landmark_MeV": 80377.0,
+                "delta_MeV": 665724.4377165604,
+                "absolute_delta_MeV": 665724.4377165604
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 4,
+            "c_J": -6,
+            "c_P": 10,
+            "c_W": -9
+          },
+          "raw_value": 23.752770976381495,
+          "interpreted_value": {
+            "ratio_to_proton": 23.752770976381495,
+            "mass_MeV": 22286.56205376173,
+            "mass_GeV": 22.286562053761727,
+            "nearest_landmarks": [
+              {
+                "name": "neutron",
+                "landmark_MeV": 939.56542194,
+                "delta_MeV": 21346.99663182173,
+                "absolute_delta_MeV": 21346.99663182173
+              },
+              {
+                "name": "proton",
+                "landmark_MeV": 938.27208943,
+                "delta_MeV": 21348.28996433173,
+                "absolute_delta_MeV": 21348.28996433173
+              },
+              {
+                "name": "deuteron_per_nucleon",
+                "landmark_MeV": 937.8064725,
+                "delta_MeV": 21348.75558126173,
+                "absolute_delta_MeV": 21348.75558126173
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 4,
+            "c_J": -4,
+            "c_P": 10,
+            "c_W": -9
+          },
+          "raw_value": 397.5590052462966,
+          "interpreted_value": {
+            "ratio_to_proton": 397.5590052462966,
+            "mass_MeV": 373018.518524155,
+            "mass_GeV": 373.018518524155,
+            "nearest_landmarks": [
+              {
+                "name": "higgs",
+                "landmark_MeV": 125100.0,
+                "delta_MeV": 247918.51852415502,
+                "absolute_delta_MeV": 247918.51852415502
+              },
+              {
+                "name": "z_boson",
+                "landmark_MeV": 91187.6,
+                "delta_MeV": 281830.91852415504,
+                "absolute_delta_MeV": 281830.91852415504
+              },
+              {
+                "name": "w_boson",
+                "landmark_MeV": 80377.0,
+                "delta_MeV": 292641.518524155,
+                "absolute_delta_MeV": 292641.518524155
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 4,
+            "c_J": -5,
+            "c_P": 9,
+            "c_W": -9
+          },
+          "raw_value": 8.44439582955013,
+          "interpreted_value": {
+            "ratio_to_proton": 8.44439582955013,
+            "mass_MeV": 7923.140918965979,
+            "mass_GeV": 7.923140918965979,
+            "nearest_landmarks": [
+              {
+                "name": "neutron",
+                "landmark_MeV": 939.56542194,
+                "delta_MeV": 6983.575497025979,
+                "absolute_delta_MeV": 6983.575497025979
+              },
+              {
+                "name": "proton",
+                "landmark_MeV": 938.27208943,
+                "delta_MeV": 6984.868829535979,
+                "absolute_delta_MeV": 6984.868829535979
+              },
+              {
+                "name": "deuteron_per_nucleon",
+                "landmark_MeV": 937.8064725,
+                "delta_MeV": 6985.3344464659785,
+                "absolute_delta_MeV": 6985.3344464659785
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 4,
+            "c_J": -5,
+            "c_P": 11,
+            "c_W": -9
+          },
+          "raw_value": 1118.2715959581456,
+          "interpreted_value": {
+            "ratio_to_proton": 1118.2715959581456,
+            "mass_MeV": 1049243.02688987,
+            "mass_GeV": 1049.24302688987,
+            "nearest_landmarks": [
+              {
+                "name": "higgs",
+                "landmark_MeV": 125100.0,
+                "delta_MeV": 924143.02688987,
+                "absolute_delta_MeV": 924143.02688987
+              },
+              {
+                "name": "z_boson",
+                "landmark_MeV": 91187.6,
+                "delta_MeV": 958055.42688987,
+                "absolute_delta_MeV": 958055.42688987
+              },
+              {
+                "name": "w_boson",
+                "landmark_MeV": 80377.0,
+                "delta_MeV": 968866.02688987,
+                "absolute_delta_MeV": 968866.02688987
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 4,
+            "c_J": -5,
+            "c_P": 10,
+            "c_W": -10
+          },
+          "raw_value": 9.198044476229581,
+          "interpreted_value": {
+            "ratio_to_proton": 9.198044476229581,
+            "mass_MeV": 8630.268409381999,
+            "mass_GeV": 8.630268409382,
+            "nearest_landmarks": [
+              {
+                "name": "neutron",
+                "landmark_MeV": 939.56542194,
+                "delta_MeV": 7690.702987441999,
+                "absolute_delta_MeV": 7690.702987441999
+              },
+              {
+                "name": "proton",
+                "landmark_MeV": 938.27208943,
+                "delta_MeV": 7691.996319951999,
+                "absolute_delta_MeV": 7691.996319951999
+              },
+              {
+                "name": "deuteron_per_nucleon",
+                "landmark_MeV": 937.8064725,
+                "delta_MeV": 7692.461936881999,
+                "absolute_delta_MeV": 7692.461936881999
+              }
+            ]
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 4,
+            "c_J": -5,
+            "c_P": 10,
+            "c_W": -8
+          },
+          "raw_value": 1026.6451772022974,
+          "interpreted_value": {
+            "ratio_to_proton": 1026.6451772022974,
+            "mass_MeV": 963272.5155168322,
+            "mass_GeV": 963.2725155168322,
+            "nearest_landmarks": [
+              {
+                "name": "higgs",
+                "landmark_MeV": 125100.0,
+                "delta_MeV": 838172.5155168322,
+                "absolute_delta_MeV": 838172.5155168322
+              },
+              {
+                "name": "z_boson",
+                "landmark_MeV": 91187.6,
+                "delta_MeV": 872084.9155168323,
+                "absolute_delta_MeV": 872084.9155168323
+              },
+              {
+                "name": "w_boson",
+                "landmark_MeV": 80377.0,
+                "delta_MeV": 882895.5155168322,
+                "absolute_delta_MeV": 882895.5155168322
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "dark_energy_to_matter": {
+      "kind": "ratio",
+      "coefficients": {
+        "c_L": 6,
+        "c_J": -5,
+        "c_P": -1,
+        "c_W": -1
+      },
+      "exponent": 0.22570711161490353,
+      "raw_value": 2.1547494171440094,
+      "interpreted_value": {
+        "ratio": 2.1547494171440094
+      },
+      "one_step_neighbors": [
+        {
+          "operator": "Love",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 5,
+            "c_J": -5,
+            "c_P": -1,
+            "c_W": -1
+          },
+          "raw_value": 0.2633210820144476,
+          "interpreted_value": {
+            "ratio": 0.2633210820144476
+          }
+        },
+        {
+          "operator": "Love",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 7,
+            "c_J": -5,
+            "c_P": -1,
+            "c_W": -1
+          },
+          "raw_value": 17.63225722438625,
+          "interpreted_value": {
+            "ratio": 17.63225722438625
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 6,
+            "c_J": -6,
+            "c_P": -1,
+            "c_W": -1
+          },
+          "raw_value": 0.5266876257226265,
+          "interpreted_value": {
+            "ratio": 0.5266876257226265
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 6,
+            "c_J": -4,
+            "c_P": -1,
+            "c_W": -1
+          },
+          "raw_value": 8.815367637149674,
+          "interpreted_value": {
+            "ratio": 8.815367637149674
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 6,
+            "c_J": -5,
+            "c_P": -2,
+            "c_W": -1
+          },
+          "raw_value": 0.1872437870322683,
+          "interpreted_value": {
+            "ratio": 0.1872437870322683
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 6,
+            "c_J": -5,
+            "c_P": 0,
+            "c_W": -1
+          },
+          "raw_value": 24.796256924040506,
+          "interpreted_value": {
+            "ratio": 24.796256924040506
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 6,
+            "c_J": -5,
+            "c_P": -1,
+            "c_W": -2
+          },
+          "raw_value": 0.2039549916636505,
+          "interpreted_value": {
+            "ratio": 0.2039549916636505
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 6,
+            "c_J": -5,
+            "c_P": -1,
+            "c_W": 0
+          },
+          "raw_value": 22.764557085904993,
+          "interpreted_value": {
+            "ratio": 22.764557085904993
+          }
+        }
+      ]
+    },
+    "dark_matter_to_baryon": {
+      "kind": "ratio",
+      "coefficients": {
+        "c_L": 9,
+        "c_J": -2,
+        "c_P": -3,
+        "c_W": -3
+      },
+      "exponent": 0.49959174694589326,
+      "raw_value": 5.4696254555499975,
+      "interpreted_value": {
+        "ratio": 5.4696254555499975
+      },
+      "one_step_neighbors": [
+        {
+          "operator": "Love",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 8,
+            "c_J": -2,
+            "c_P": -3,
+            "c_W": -3
+          },
+          "raw_value": 0.6684153998185921,
+          "interpreted_value": {
+            "ratio": 0.6684153998185921
+          }
+        },
+        {
+          "operator": "Love",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 10,
+            "c_J": -2,
+            "c_P": -3,
+            "c_W": -3
+          },
+          "raw_value": 44.75779976361996,
+          "interpreted_value": {
+            "ratio": 44.75779976361996
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 9,
+            "c_J": -3,
+            "c_P": -3,
+            "c_W": -3
+          },
+          "raw_value": 1.336946199801724,
+          "interpreted_value": {
+            "ratio": 1.336946199801724
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 9,
+            "c_J": -1,
+            "c_P": -3,
+            "c_W": -3
+          },
+          "raw_value": 22.376968219392257,
+          "interpreted_value": {
+            "ratio": 22.376968219392257
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 9,
+            "c_J": -2,
+            "c_P": -4,
+            "c_W": -3
+          },
+          "raw_value": 0.47530045758301254,
+          "interpreted_value": {
+            "ratio": 0.47530045758301254
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 9,
+            "c_J": -2,
+            "c_P": -2,
+            "c_W": -3
+          },
+          "raw_value": 62.94292830293661,
+          "interpreted_value": {
+            "ratio": 62.94292830293661
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 9,
+            "c_J": -2,
+            "c_P": -3,
+            "c_W": -4
+          },
+          "raw_value": 0.5177202533687625,
+          "interpreted_value": {
+            "ratio": 0.5177202533687625
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 9,
+            "c_J": -2,
+            "c_P": -3,
+            "c_W": -2
+          },
+          "raw_value": 57.78565244325359,
+          "interpreted_value": {
+            "ratio": 57.78565244325359
+          }
+        }
+      ]
+    },
+    "hubble_late_to_early": {
+      "kind": "hubble_ratio",
+      "coefficients": {
+        "c_L": -1,
+        "c_J": 0,
+        "c_P": -2,
+        "c_W": 3
+      },
+      "exponent": 0.024843896011850664,
+      "raw_value": 1.0881717496022678,
+      "interpreted_value": {
+        "late_to_early_ratio": 1.0881717496022678,
+        "implied_late_H0_km_s_Mpc": 73.34277592319286
+      },
+      "one_step_neighbors": [
+        {
+          "operator": "Love",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -2,
+            "c_J": 0,
+            "c_P": -2,
+            "c_W": 3
+          },
+          "raw_value": 0.1329799930530267,
+          "interpreted_value": {
+            "late_to_early_ratio": 0.1329799930530267,
+            "implied_late_H0_km_s_Mpc": 8.962851531774001
+          }
+        },
+        {
+          "operator": "Love",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 0,
+            "c_J": 0,
+            "c_P": -2,
+            "c_W": 3
+          },
+          "raw_value": 8.904480512044286,
+          "interpreted_value": {
+            "late_to_early_ratio": 8.904480512044286,
+            "implied_late_H0_km_s_Mpc": 600.1619865117849
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -1,
+            "c_J": -1,
+            "c_P": -2,
+            "c_W": 3
+          },
+          "raw_value": 0.2659829447528523,
+          "interpreted_value": {
+            "late_to_early_ratio": 0.2659829447528523,
+            "implied_late_H0_km_s_Mpc": 17.927250476342245
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -1,
+            "c_J": 1,
+            "c_P": -2,
+            "c_W": 3
+          },
+          "raw_value": 4.451855955398673,
+          "interpreted_value": {
+            "late_to_early_ratio": 4.451855955398673,
+            "implied_late_H0_km_s_Mpc": 300.0550913938706
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -1,
+            "c_J": 0,
+            "c_P": -3,
+            "c_W": 3
+          },
+          "raw_value": 0.09456013665251187,
+          "interpreted_value": {
+            "late_to_early_ratio": 0.09456013665251187,
+            "implied_late_H0_km_s_Mpc": 6.3733532103793005
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -1,
+            "c_J": 0,
+            "c_P": -1,
+            "c_W": 3
+          },
+          "raw_value": 12.522377806874777,
+          "interpreted_value": {
+            "late_to_early_ratio": 12.522377806874777,
+            "implied_late_H0_km_s_Mpc": 844.0082641833601
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": -1,
+            "c_J": 0,
+            "c_P": -2,
+            "c_W": 2
+          },
+          "raw_value": 0.10299947564803899,
+          "interpreted_value": {
+            "late_to_early_ratio": 0.10299947564803899,
+            "implied_late_H0_km_s_Mpc": 6.942164658677829
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": -1,
+            "c_J": 0,
+            "c_P": -2,
+            "c_W": 4
+          },
+          "raw_value": 11.496347424900762,
+          "interpreted_value": {
+            "late_to_early_ratio": 11.496347424900762,
+            "implied_late_H0_km_s_Mpc": 774.8538164383114
+          }
+        }
+      ]
+    },
+    "theta12_pmns": {
+      "kind": "angle_radians",
+      "coefficients": {
+        "c_L": 6,
+        "c_J": 4,
+        "c_P": 1,
+        "c_W": -9
+      },
+      "exponent": -0.15498461458871216,
+      "raw_value": 0.5902947648877176,
+      "interpreted_value": {
+        "angle_radians": 0.5902947648877176,
+        "angle_degrees": 33.82139869673344
+      },
+      "one_step_neighbors": [
+        {
+          "operator": "Love",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 5,
+            "c_J": 4,
+            "c_P": 1,
+            "c_W": -9
+          },
+          "raw_value": 0.0721369524274986,
+          "interpreted_value": {
+            "angle_radians": 0.0721369524274986,
+            "angle_degrees": 4.133142921031668
+          }
+        },
+        {
+          "operator": "Love",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 7,
+            "c_J": 4,
+            "c_P": 1,
+            "c_W": -9
+          },
+          "raw_value": 4.830366375735848,
+          "interpreted_value": {
+            "angle_radians": 4.830366375735848,
+            "angle_degrees": 276.75960683156774
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 6,
+            "c_J": 3,
+            "c_P": 1,
+            "c_W": -9
+          },
+          "raw_value": 0.14428635911051224,
+          "interpreted_value": {
+            "angle_radians": 0.14428635911051224,
+            "angle_degrees": 8.266999418341326
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 6,
+            "c_J": 5,
+            "c_P": 1,
+            "c_W": -9
+          },
+          "raw_value": 2.414974718344368,
+          "interpreted_value": {
+            "angle_radians": 2.414974718344368,
+            "angle_degrees": 138.367858991927
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 6,
+            "c_J": 4,
+            "c_P": 0,
+            "c_W": -9
+          },
+          "raw_value": 0.05129553643847741,
+          "interpreted_value": {
+            "angle_radians": 0.05129553643847741,
+            "angle_degrees": 2.9390177457842817
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 6,
+            "c_J": 4,
+            "c_P": 2,
+            "c_W": -9
+          },
+          "raw_value": 6.7929479570169695,
+          "interpreted_value": {
+            "angle_radians": 6.7929479570169695,
+            "angle_degrees": 389.2072483890873
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 6,
+            "c_J": 4,
+            "c_P": 1,
+            "c_W": -10
+          },
+          "raw_value": 0.05587357995963416,
+          "interpreted_value": {
+            "angle_radians": 0.05587357995963416,
+            "angle_degrees": 3.201320317973774
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 6,
+            "c_J": 4,
+            "c_P": 1,
+            "c_W": -8
+          },
+          "raw_value": 6.236362690659552,
+          "interpreted_value": {
+            "angle_radians": 6.236362690659552,
+            "angle_degrees": 357.31726168764254
+          }
+        }
+      ]
+    },
+    "theta23_pmns": {
+      "kind": "angle_radians",
+      "coefficients": {
+        "c_L": 8,
+        "c_J": -5,
+        "c_P": -6,
+        "c_W": 2
+      },
+      "exponent": -0.05019251150069626,
+      "raw_value": 0.8430621164547236,
+      "interpreted_value": {
+        "angle_radians": 0.8430621164547236,
+        "angle_degrees": 48.30390114022238
+      },
+      "one_step_neighbors": [
+        {
+          "operator": "Love",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 7,
+            "c_J": -5,
+            "c_P": -6,
+            "c_W": 2
+          },
+          "raw_value": 0.10302637835470002,
+          "interpreted_value": {
+            "angle_radians": 0.10302637835470002,
+            "angle_degrees": 5.90297665824229
+          }
+        },
+        {
+          "operator": "Love",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 9,
+            "c_J": -5,
+            "c_P": -6,
+            "c_W": 2
+          },
+          "raw_value": 6.898754897062667,
+          "interpreted_value": {
+            "angle_radians": 6.898754897062667,
+            "angle_degrees": 395.2695394968995
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 8,
+            "c_J": -6,
+            "c_P": -6,
+            "c_W": 2
+          },
+          "raw_value": 0.20607054394323324,
+          "interpreted_value": {
+            "angle_radians": 0.20607054394323324,
+            "angle_degrees": 11.806972449912433
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 8,
+            "c_J": -4,
+            "c_P": -6,
+            "c_W": 2
+          },
+          "raw_value": 3.4490797112512595,
+          "interpreted_value": {
+            "angle_radians": 3.4490797112512595,
+            "angle_degrees": 197.6177106588978
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 8,
+            "c_J": -5,
+            "c_P": -7,
+            "c_W": 2
+          },
+          "raw_value": 0.07326055741444537,
+          "interpreted_value": {
+            "angle_radians": 0.07326055741444537,
+            "angle_degrees": 4.197520744623571
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 8,
+            "c_J": -5,
+            "c_P": -5,
+            "c_W": 2
+          },
+          "raw_value": 9.701724328690021,
+          "interpreted_value": {
+            "angle_radians": 9.701724328690021,
+            "angle_degrees": 555.8678580333301
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 8,
+            "c_J": -5,
+            "c_P": -6,
+            "c_W": 1
+          },
+          "raw_value": 0.07979894347128666,
+          "interpreted_value": {
+            "angle_radians": 0.07979894347128666,
+            "angle_degrees": 4.572142670507761
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 8,
+            "c_J": -5,
+            "c_P": -6,
+            "c_W": 3
+          },
+          "raw_value": 8.906806296963842,
+          "interpreted_value": {
+            "angle_radians": 8.906806296963842,
+            "angle_degrees": 510.3224097565735
+          }
+        }
+      ]
+    },
+    "theta13_pmns": {
+      "kind": "angle_radians",
+      "coefficients": {
+        "c_L": 10,
+        "c_J": -3,
+        "c_P": 2,
+        "c_W": -10
+      },
+      "exponent": -0.5572089483016995,
+      "raw_value": 0.15029163847557164,
+      "interpreted_value": {
+        "angle_radians": 0.15029163847557164,
+        "angle_degrees": 8.611076580756233
+      },
+      "one_step_neighbors": [
+        {
+          "operator": "Love",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 9,
+            "c_J": -3,
+            "c_P": 2,
+            "c_W": -10
+          },
+          "raw_value": 0.018366384762069428,
+          "interpreted_value": {
+            "angle_radians": 0.018366384762069428,
+            "angle_degrees": 1.0523163317799649
+          }
+        },
+        {
+          "operator": "Love",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 11,
+            "c_J": -3,
+            "c_P": 2,
+            "c_W": -10
+          },
+          "raw_value": 1.2298324840890942,
+          "interpreted_value": {
+            "angle_radians": 1.2298324840890942,
+            "angle_degrees": 70.46421084639506
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 10,
+            "c_J": -4,
+            "c_P": 2,
+            "c_W": -10
+          },
+          "raw_value": 0.03673594043226604,
+          "interpreted_value": {
+            "angle_radians": 0.03673594043226604,
+            "angle_degrees": 2.104814343212841
+          }
+        },
+        {
+          "operator": "Justice",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 10,
+            "c_J": -2,
+            "c_P": 2,
+            "c_W": -10
+          },
+          "raw_value": 0.614863164788693,
+          "interpreted_value": {
+            "angle_radians": 0.614863164788693,
+            "angle_degrees": 35.229064320448956
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 10,
+            "c_J": -3,
+            "c_P": 1,
+            "c_W": -10
+          },
+          "raw_value": 0.013060068759526568,
+          "interpreted_value": {
+            "angle_radians": 0.013060068759526568,
+            "angle_degrees": 0.7482868200715288
+          }
+        },
+        {
+          "operator": "Power",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 10,
+            "c_J": -3,
+            "c_P": 3,
+            "c_W": -10
+          },
+          "raw_value": 1.729514370220723,
+          "interpreted_value": {
+            "angle_radians": 1.729514370220723,
+            "angle_degrees": 99.09387402087397
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "minus_one",
+          "coefficients": {
+            "c_L": 10,
+            "c_J": -3,
+            "c_P": 2,
+            "c_W": -11
+          },
+          "raw_value": 0.01422565873716765,
+          "interpreted_value": {
+            "angle_radians": 0.01422565873716765,
+            "angle_degrees": 0.8150702064331108
+          }
+        },
+        {
+          "operator": "Wisdom",
+          "direction": "plus_one",
+          "coefficients": {
+            "c_L": 10,
+            "c_J": -3,
+            "c_P": 2,
+            "c_W": -9
+          },
+          "raw_value": 1.5878053180522977,
+          "interpreted_value": {
+            "angle_radians": 1.5878053180522977,
+            "angle_degrees": 90.974543412824
+          }
+        }
+      ]
+    }
+  },
+  "relational_map": {
+    "posture": "relationship_first",
+    "method": "Read every generated value as an edge in a field before treating it as an object.",
+    "nodes": [
+      {
+        "id": "cosmological_hierarchy_ratio",
+        "kind": "dimensionless_relation",
+        "label": "alpha / alpha_G",
+        "value": 1.2475727106749654e+36
+      },
+      {
+        "id": "mass_anchor_m_star",
+        "kind": "mass_anchor",
+        "label": "m_star",
+        "mass_MeV": 933.7407521670474,
+        "mass_u": 1.002411876188491,
+        "physical_regime": "nuclear_binding_and_nucleon_band"
+      },
+      {
+        "id": "atomic_mass_unit_1u",
+        "kind": "reference_anchor",
+        "label": "1 atomic mass unit",
+        "mass_MeV": 931.49410372
+      },
+      {
+        "id": "deuteron_binding_gate",
+        "kind": "binding_gate",
+        "label": "m_star - 1u",
+        "energy_MeV": 2.2466484470473915
+      },
+      {
+        "id": "observed_deuteron_binding",
+        "kind": "observed_binding",
+        "label": "deuteron binding energy",
+        "energy_MeV": 2.2245663699998204
+      },
+      {
+        "id": "sub_hadronic_inverse_branch",
+        "kind": "generated_regime",
+        "label": "inverse LJPW sub-hadronic branch",
+        "mass_band_MeV": [
+          81.14036516313472,
+          228.23521653444024
+        ]
+      },
+      {
+        "id": "multi_gev_resonance_branch",
+        "kind": "generated_regime",
+        "label": "direct LJPW multi-GeV branch",
+        "mass_band_MeV": [
+          3820.0581202853928,
+          10745.228845156951
+        ]
+      },
+      {
+        "id": "mass_neighbor_power_inverse",
+        "kind": "operator_neighbor",
+        "label": "Power inverse",
+        "mass_MeV": 81.14036516313472,
+        "mass_GeV": 0.08114036516313472,
+        "physical_regime": "muon_to_pion_approach_band",
+        "thread": "sub_hadronic_inverse_branch"
+      },
+      {
+        "id": "mass_neighbor_wisdom_inverse",
+        "kind": "operator_neighbor",
+        "label": "Wisdom inverse",
+        "mass_MeV": 88.38201129515053,
+        "mass_GeV": 0.08838201129515054,
+        "physical_regime": "muon_to_pion_approach_band",
+        "thread": "sub_hadronic_inverse_branch"
+      },
+      {
+        "id": "mass_neighbor_love_inverse",
+        "kind": "operator_neighbor",
+        "label": "Love inverse",
+        "mass_MeV": 114.10775806474135,
+        "mass_GeV": 0.11410775806474134,
+        "physical_regime": "muon_to_pion_approach_band",
+        "thread": "sub_hadronic_inverse_branch"
+      },
+      {
+        "id": "mass_neighbor_justice_inverse",
+        "kind": "operator_neighbor",
+        "label": "Justice inverse",
+        "mass_MeV": 228.23521653444024,
+        "mass_GeV": 0.22823521653444023,
+        "physical_regime": "low_meson_band",
+        "thread": "sub_hadronic_inverse_branch"
+      },
+      {
+        "id": "mass_neighbor_justice_direct",
+        "kind": "operator_neighbor",
+        "label": "Justice direct",
+        "mass_MeV": 3820.0581202853928,
+        "mass_GeV": 3.8200581202853927,
+        "physical_regime": "multi_GeV_threshold_band",
+        "thread": "multi_gev_resonance_branch"
+      },
+      {
+        "id": "mass_neighbor_love_direct",
+        "kind": "operator_neighbor",
+        "label": "Love direct",
+        "mass_MeV": 7640.775763579627,
+        "mass_GeV": 7.640775763579627,
+        "physical_regime": "heavy_resonance_band",
+        "thread": "multi_gev_resonance_branch"
+      },
+      {
+        "id": "mass_neighbor_wisdom_direct",
+        "kind": "operator_neighbor",
+        "label": "Wisdom direct",
+        "mass_MeV": 9864.810491196893,
+        "mass_GeV": 9.864810491196893,
+        "physical_regime": "heavy_resonance_band",
+        "thread": "multi_gev_resonance_branch"
+      },
+      {
+        "id": "mass_neighbor_power_direct",
+        "kind": "operator_neighbor",
+        "label": "Power direct",
+        "mass_MeV": 10745.228845156951,
+        "mass_GeV": 10.745228845156952,
+        "physical_regime": "heavy_resonance_band",
+        "thread": "multi_gev_resonance_branch"
+      },
+      {
+        "id": "coordinate_anchor_cosmological_constant",
+        "kind": "coordinate_anchor",
+        "label": "cosmological_constant",
+        "value_kind": "planck_lambda",
+        "coefficients": {
+          "c_L": -30,
+          "c_J": -37,
+          "c_P": -32,
+          "c_W": -37
+        },
+        "raw_value": 1.3800062681755125e-122,
+        "interpreted_value": {
+          "lambda_planck_units": 1.3800062681755125e-122,
+          "log10_lambda": -121.86011894096988
+        }
+      },
+      {
+        "id": "coordinate_anchor_higgs_to_proton_mass",
+        "kind": "coordinate_anchor",
+        "label": "higgs_to_proton_mass",
+        "value_kind": "mass_ratio_to_proton",
+        "coefficients": {
+          "c_L": -5,
+          "c_J": -3,
+          "c_P": 9,
+          "c_W": -1
+        },
+        "raw_value": 133.3383549262981,
+        "interpreted_value": {
+          "ratio_to_proton": 133.3383549262981,
+          "mass_MeV": 125107.65687785667,
+          "mass_GeV": 125.10765687785667,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 7.656877856672509,
+              "absolute_delta_MeV": 7.656877856672509
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 33920.05687785667,
+              "absolute_delta_MeV": 33920.05687785667
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 44730.65687785667,
+              "absolute_delta_MeV": 44730.65687785667
+            }
+          ]
+        }
+      },
+      {
+        "id": "coordinate_anchor_w_to_proton_mass",
+        "kind": "coordinate_anchor",
+        "label": "w_to_proton_mass",
+        "value_kind": "mass_ratio_to_proton",
+        "coefficients": {
+          "c_L": -4,
+          "c_J": 8,
+          "c_P": -9,
+          "c_W": 10
+        },
+        "raw_value": 85.66922170198858,
+        "interpreted_value": {
+          "ratio_to_proton": 85.66922170198858,
+          "mass_MeV": 80381.03964616673,
+          "mass_GeV": 80.38103964616673,
+          "nearest_landmarks": [
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 4.0396461667260155,
+              "absolute_delta_MeV": 4.0396461667260155
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": -10806.56035383328,
+              "absolute_delta_MeV": 10806.56035383328
+            },
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": -44718.960353833274,
+              "absolute_delta_MeV": 44718.960353833274
+            }
+          ]
+        }
+      },
+      {
+        "id": "coordinate_anchor_z_to_proton_mass",
+        "kind": "coordinate_anchor",
+        "label": "z_to_proton_mass",
+        "value_kind": "mass_ratio_to_proton",
+        "coefficients": {
+          "c_L": 4,
+          "c_J": -5,
+          "c_P": 10,
+          "c_W": -9
+        },
+        "raw_value": 97.17575830017141,
+        "interpreted_value": {
+          "ratio_to_proton": 97.17575830017141,
+          "mass_MeV": 91177.3017822465,
+          "mass_GeV": 91.1773017822465,
+          "nearest_landmarks": [
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": -10.298217753501376,
+              "absolute_delta_MeV": 10.298217753501376
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 10800.301782246504,
+              "absolute_delta_MeV": 10800.301782246504
+            },
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": -33922.698217753496,
+              "absolute_delta_MeV": 33922.698217753496
+            }
+          ]
+        }
+      },
+      {
+        "id": "coordinate_anchor_dark_energy_to_matter",
+        "kind": "coordinate_anchor",
+        "label": "dark_energy_to_matter",
+        "value_kind": "ratio",
+        "coefficients": {
+          "c_L": 6,
+          "c_J": -5,
+          "c_P": -1,
+          "c_W": -1
+        },
+        "raw_value": 2.1547494171440094,
+        "interpreted_value": {
+          "ratio": 2.1547494171440094
+        }
+      },
+      {
+        "id": "coordinate_anchor_dark_matter_to_baryon",
+        "kind": "coordinate_anchor",
+        "label": "dark_matter_to_baryon",
+        "value_kind": "ratio",
+        "coefficients": {
+          "c_L": 9,
+          "c_J": -2,
+          "c_P": -3,
+          "c_W": -3
+        },
+        "raw_value": 5.4696254555499975,
+        "interpreted_value": {
+          "ratio": 5.4696254555499975
+        }
+      },
+      {
+        "id": "coordinate_anchor_hubble_late_to_early",
+        "kind": "coordinate_anchor",
+        "label": "hubble_late_to_early",
+        "value_kind": "hubble_ratio",
+        "coefficients": {
+          "c_L": -1,
+          "c_J": 0,
+          "c_P": -2,
+          "c_W": 3
+        },
+        "raw_value": 1.0881717496022678,
+        "interpreted_value": {
+          "late_to_early_ratio": 1.0881717496022678,
+          "implied_late_H0_km_s_Mpc": 73.34277592319286
+        }
+      },
+      {
+        "id": "coordinate_anchor_theta12_pmns",
+        "kind": "coordinate_anchor",
+        "label": "theta12_pmns",
+        "value_kind": "angle_radians",
+        "coefficients": {
+          "c_L": 6,
+          "c_J": 4,
+          "c_P": 1,
+          "c_W": -9
+        },
+        "raw_value": 0.5902947648877176,
+        "interpreted_value": {
+          "angle_radians": 0.5902947648877176,
+          "angle_degrees": 33.82139869673344
+        }
+      },
+      {
+        "id": "coordinate_anchor_theta23_pmns",
+        "kind": "coordinate_anchor",
+        "label": "theta23_pmns",
+        "value_kind": "angle_radians",
+        "coefficients": {
+          "c_L": 8,
+          "c_J": -5,
+          "c_P": -6,
+          "c_W": 2
+        },
+        "raw_value": 0.8430621164547236,
+        "interpreted_value": {
+          "angle_radians": 0.8430621164547236,
+          "angle_degrees": 48.30390114022238
+        }
+      },
+      {
+        "id": "coordinate_anchor_theta13_pmns",
+        "kind": "coordinate_anchor",
+        "label": "theta13_pmns",
+        "value_kind": "angle_radians",
+        "coefficients": {
+          "c_L": 10,
+          "c_J": -3,
+          "c_P": 2,
+          "c_W": -10
+        },
+        "raw_value": 0.15029163847557164,
+        "interpreted_value": {
+          "angle_radians": 0.15029163847557164,
+          "angle_degrees": 8.611076580756233
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "cosmological_hierarchy_ratio",
+        "target": "mass_anchor_m_star",
+        "relation_type": "compiled_mass_anchor",
+        "operator_path": "30^(10 * sum(LJPW))",
+        "meaning": "The hierarchy relation compiles into a natural mass anchor."
+      },
+      {
+        "source": "atomic_mass_unit_1u",
+        "target": "mass_anchor_m_star",
+        "relation_type": "binding_offset_reference",
+        "meaning": "The mass anchor is read relationally as an offset from 1u, not as an isolated object.",
+        "offset_MeV": 2.2466484470473915
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "deuteron_binding_gate",
+        "relation_type": "nuclear_binding_gate",
+        "meaning": "The offset m_star - 1u opens the deuteron-binding relation.",
+        "energy_MeV": 2.2466484470473915
+      },
+      {
+        "source": "deuteron_binding_gate",
+        "target": "observed_deuteron_binding",
+        "relation_type": "near_lock",
+        "meaning": "The generated binding gate sits close to the observed deuteron binding energy.",
+        "delta_MeV": 0.022082077047571147
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "mass_neighbor_power_inverse",
+        "relation_type": "inverse_actualization",
+        "operator": "Power",
+        "direction": "inverse",
+        "factor": 0.08689817272601871,
+        "meaning": "Compresses the mass anchor toward a low mediator threshold.",
+        "thread": "sub_hadronic_inverse_branch"
+      },
+      {
+        "source": "mass_neighbor_power_inverse",
+        "target": "sub_hadronic_inverse_branch",
+        "relation_type": "opens_regime",
+        "meaning": "This operator move opens the muon_to_pion_approach_band regime."
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "mass_neighbor_wisdom_inverse",
+        "relation_type": "inverse_context_rotation",
+        "operator": "Wisdom",
+        "direction": "inverse",
+        "factor": 0.09465369385456456,
+        "meaning": "Compresses the mass anchor toward a context/oscillation threshold.",
+        "thread": "sub_hadronic_inverse_branch"
+      },
+      {
+        "source": "mass_neighbor_wisdom_inverse",
+        "target": "sub_hadronic_inverse_branch",
+        "relation_type": "opens_regime",
+        "meaning": "This operator move opens the muon_to_pion_approach_band regime."
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "mass_neighbor_love_inverse",
+        "relation_type": "inverse_binding",
+        "operator": "Love",
+        "direction": "inverse",
+        "factor": 0.1222049672780345,
+        "meaning": "Compresses the mass anchor through the binding operator into the muon-to-pion approach band.",
+        "thread": "sub_hadronic_inverse_branch"
+      },
+      {
+        "source": "mass_neighbor_love_inverse",
+        "target": "sub_hadronic_inverse_branch",
+        "relation_type": "opens_regime",
+        "meaning": "This operator move opens the muon_to_pion_approach_band regime."
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "mass_neighbor_justice_inverse",
+        "relation_type": "inverse_boundary",
+        "operator": "Justice",
+        "direction": "inverse",
+        "factor": 0.24443103292294635,
+        "meaning": "Compresses the mass anchor through boundary/distinction into the low meson band.",
+        "thread": "sub_hadronic_inverse_branch"
+      },
+      {
+        "source": "mass_neighbor_justice_inverse",
+        "target": "sub_hadronic_inverse_branch",
+        "relation_type": "opens_regime",
+        "meaning": "This operator move opens the low_meson_band regime."
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "mass_neighbor_justice_direct",
+        "relation_type": "direct_boundary_amplification",
+        "operator": "Justice",
+        "direction": "direct",
+        "factor": 4.09113355224104,
+        "meaning": "Amplifies the mass anchor into a multi-GeV boundary/resonance threshold.",
+        "thread": "multi_gev_resonance_branch"
+      },
+      {
+        "source": "mass_neighbor_justice_direct",
+        "target": "multi_gev_resonance_branch",
+        "relation_type": "opens_regime",
+        "meaning": "This operator move opens the multi_GeV_threshold_band regime."
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "mass_neighbor_love_direct",
+        "relation_type": "direct_binding_amplification",
+        "operator": "Love",
+        "direction": "direct",
+        "factor": 8.182973427952819,
+        "meaning": "Amplifies the mass anchor into a high binding/resonance scale.",
+        "thread": "multi_gev_resonance_branch"
+      },
+      {
+        "source": "mass_neighbor_love_direct",
+        "target": "multi_gev_resonance_branch",
+        "relation_type": "opens_regime",
+        "meaning": "This operator move opens the heavy_resonance_band regime."
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "mass_neighbor_wisdom_direct",
+        "relation_type": "direct_context_amplification",
+        "operator": "Wisdom",
+        "direction": "direct",
+        "factor": 10.564828051364804,
+        "meaning": "Amplifies the mass anchor toward a high context/resonance scale.",
+        "thread": "multi_gev_resonance_branch"
+      },
+      {
+        "source": "mass_neighbor_wisdom_direct",
+        "target": "multi_gev_resonance_branch",
+        "relation_type": "opens_regime",
+        "meaning": "This operator move opens the heavy_resonance_band regime."
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "mass_neighbor_power_direct",
+        "relation_type": "direct_actualization",
+        "operator": "Power",
+        "direction": "direct",
+        "factor": 11.507721838443029,
+        "meaning": "Amplifies the mass anchor into a high actualization/resonance scale.",
+        "thread": "multi_gev_resonance_branch"
+      },
+      {
+        "source": "mass_neighbor_power_direct",
+        "target": "multi_gev_resonance_branch",
+        "relation_type": "opens_regime",
+        "meaning": "This operator move opens the heavy_resonance_band regime."
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "coordinate_anchor_cosmological_constant",
+        "relation_type": "same_lattice_family",
+        "meaning": "This physical coordinate belongs to the same prime-LJPW coordinate family."
+      },
+      {
+        "source": "coordinate_anchor_cosmological_constant",
+        "target": "coordinate_anchor_cosmological_constant_love_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1.6864362084586796e-123,
+        "interpreted_value": {
+          "lambda_planck_units": 1.6864362084586796e-123,
+          "log10_lambda": -122.77303008189153
+        }
+      },
+      {
+        "source": "coordinate_anchor_cosmological_constant",
+        "target": "coordinate_anchor_cosmological_constant_love_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1.1292554622888752e-121,
+        "interpreted_value": {
+          "lambda_planck_units": 1.1292554622888752e-121,
+          "log10_lambda": -120.94720780004823
+        }
+      },
+      {
+        "source": "coordinate_anchor_cosmological_constant",
+        "target": "coordinate_anchor_cosmological_constant_justice_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 3.373163575702843e-123,
+        "interpreted_value": {
+          "lambda_planck_units": 3.373163575702843e-123,
+          "log10_lambda": -122.47196259794433
+        }
+      },
+      {
+        "source": "coordinate_anchor_cosmological_constant",
+        "target": "coordinate_anchor_cosmological_constant_justice_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 5.645789946035729e-122,
+        "interpreted_value": {
+          "lambda_planck_units": 5.645789946035729e-122,
+          "log10_lambda": -121.24827528399544
+        }
+      },
+      {
+        "source": "coordinate_anchor_cosmological_constant",
+        "target": "coordinate_anchor_cosmological_constant_power_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1.1992002305490582e-123,
+        "interpreted_value": {
+          "lambda_planck_units": 1.1992002305490582e-123,
+          "log10_lambda": -122.92110829666564
+        }
+      },
+      {
+        "source": "coordinate_anchor_cosmological_constant",
+        "target": "coordinate_anchor_cosmological_constant_power_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1.5880728269471394e-121,
+        "interpreted_value": {
+          "lambda_planck_units": 1.5880728269471394e-121,
+          "log10_lambda": -120.79912958527413
+        }
+      },
+      {
+        "source": "coordinate_anchor_cosmological_constant",
+        "target": "coordinate_anchor_cosmological_constant_wisdom_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1.3062269082526424e-123,
+        "interpreted_value": {
+          "lambda_planck_units": 1.3062269082526424e-123,
+          "log10_lambda": -122.88398137402399
+        }
+      },
+      {
+        "source": "coordinate_anchor_cosmological_constant",
+        "target": "coordinate_anchor_cosmological_constant_wisdom_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1.4579528933080006e-121,
+        "interpreted_value": {
+          "lambda_planck_units": 1.4579528933080006e-121,
+          "log10_lambda": -120.83625650791578
+        }
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "coordinate_anchor_higgs_to_proton_mass",
+        "relation_type": "same_lattice_family",
+        "meaning": "This physical coordinate belongs to the same prime-LJPW coordinate family."
+      },
+      {
+        "source": "coordinate_anchor_higgs_to_proton_mass",
+        "target": "coordinate_anchor_higgs_to_proton_mass_love_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 16.294609300675216,
+        "interpreted_value": {
+          "ratio_to_proton": 16.294609300675216,
+          "mass_MeV": 15288.777114990047,
+          "mass_GeV": 15.288777114990047,
+          "nearest_landmarks": [
+            {
+              "name": "neutron",
+              "landmark_MeV": 939.56542194,
+              "delta_MeV": 14349.211693050047,
+              "absolute_delta_MeV": 14349.211693050047
+            },
+            {
+              "name": "proton",
+              "landmark_MeV": 938.27208943,
+              "delta_MeV": 14350.505025560047,
+              "absolute_delta_MeV": 14350.505025560047
+            },
+            {
+              "name": "deuteron_per_nucleon",
+              "landmark_MeV": 937.8064725,
+              "delta_MeV": 14350.970642490047,
+              "absolute_delta_MeV": 14350.970642490047
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_higgs_to_proton_mass",
+        "target": "coordinate_anchor_higgs_to_proton_mass_love_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1091.104215288839,
+        "interpreted_value": {
+          "ratio_to_proton": 1091.104215288839,
+          "mass_MeV": 1023752.6318649396,
+          "mass_GeV": 1023.7526318649395,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 898652.6318649396,
+              "absolute_delta_MeV": 898652.6318649396
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 932565.0318649396,
+              "absolute_delta_MeV": 932565.0318649396
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 943375.6318649396,
+              "absolute_delta_MeV": 943375.6318649396
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_higgs_to_proton_mass",
+        "target": "coordinate_anchor_higgs_to_proton_mass_justice_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 32.5920318228815,
+        "interpreted_value": {
+          "ratio_to_proton": 32.5920318228815,
+          "mass_MeV": 30580.19379722408,
+          "mass_GeV": 30.58019379722408,
+          "nearest_landmarks": [
+            {
+              "name": "neutron",
+              "landmark_MeV": 939.56542194,
+              "delta_MeV": 29640.628375284083,
+              "absolute_delta_MeV": 29640.628375284083
+            },
+            {
+              "name": "proton",
+              "landmark_MeV": 938.27208943,
+              "delta_MeV": 29641.92170779408,
+              "absolute_delta_MeV": 29641.92170779408
+            },
+            {
+              "name": "deuteron_per_nucleon",
+              "landmark_MeV": 937.8064725,
+              "delta_MeV": 29642.38732472408,
+              "absolute_delta_MeV": 29642.38732472408
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_higgs_to_proton_mass",
+        "target": "coordinate_anchor_higgs_to_proton_mass_justice_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 545.5050176396028,
+        "interpreted_value": {
+          "ratio_to_proton": 545.5050176396028,
+          "mass_MeV": 511832.1326952591,
+          "mass_GeV": 511.83213269525913,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 386732.1326952591,
+              "absolute_delta_MeV": 386732.1326952591
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 420644.5326952591,
+              "absolute_delta_MeV": 420644.5326952591
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 431455.1326952591,
+              "absolute_delta_MeV": 431455.1326952591
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_higgs_to_proton_mass",
+        "target": "coordinate_anchor_higgs_to_proton_mass_power_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 11.586859397388663,
+        "interpreted_value": {
+          "ratio_to_proton": 11.586859397388663,
+          "mass_MeV": 10871.626776719491,
+          "mass_GeV": 10.871626776719491,
+          "nearest_landmarks": [
+            {
+              "name": "neutron",
+              "landmark_MeV": 939.56542194,
+              "delta_MeV": 9932.061354779491,
+              "absolute_delta_MeV": 9932.061354779491
+            },
+            {
+              "name": "proton",
+              "landmark_MeV": 938.27208943,
+              "delta_MeV": 9933.354687289491,
+              "absolute_delta_MeV": 9933.354687289491
+            },
+            {
+              "name": "deuteron_per_nucleon",
+              "landmark_MeV": 937.8064725,
+              "delta_MeV": 9933.820304219491,
+              "absolute_delta_MeV": 9933.820304219491
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_higgs_to_proton_mass",
+        "target": "coordinate_anchor_higgs_to_proton_mass_power_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1534.4206988874305,
+        "interpreted_value": {
+          "ratio_to_proton": 1534.4206988874305,
+          "mass_MeV": 1439704.1152097504,
+          "mass_GeV": 1439.7041152097504,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 1314604.1152097504,
+              "absolute_delta_MeV": 1314604.1152097504
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 1348516.5152097503,
+              "absolute_delta_MeV": 1348516.5152097503
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 1359327.1152097504,
+              "absolute_delta_MeV": 1359327.1152097504
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_higgs_to_proton_mass",
+        "target": "coordinate_anchor_higgs_to_proton_mass_wisdom_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 12.620967826265096,
+        "interpreted_value": {
+          "ratio_to_proton": 12.620967826265096,
+          "mass_MeV": 11841.901852978557,
+          "mass_GeV": 11.841901852978557,
+          "nearest_landmarks": [
+            {
+              "name": "neutron",
+              "landmark_MeV": 939.56542194,
+              "delta_MeV": 10902.336431038557,
+              "absolute_delta_MeV": 10902.336431038557
+            },
+            {
+              "name": "proton",
+              "landmark_MeV": 938.27208943,
+              "delta_MeV": 10903.629763548557,
+              "absolute_delta_MeV": 10903.629763548557
+            },
+            {
+              "name": "deuteron_per_nucleon",
+              "landmark_MeV": 937.8064725,
+              "delta_MeV": 10904.095380478557,
+              "absolute_delta_MeV": 10904.095380478557
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_higgs_to_proton_mass",
+        "target": "coordinate_anchor_higgs_to_proton_mass_wisdom_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1408.696792448191,
+        "interpreted_value": {
+          "ratio_to_proton": 1408.696792448191,
+          "mass_MeV": 1321740.8828237033,
+          "mass_GeV": 1321.7408828237033,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 1196640.8828237033,
+              "absolute_delta_MeV": 1196640.8828237033
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 1230553.2828237033,
+              "absolute_delta_MeV": 1230553.2828237033
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 1241363.8828237033,
+              "absolute_delta_MeV": 1241363.8828237033
+            }
+          ]
+        }
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "coordinate_anchor_w_to_proton_mass",
+        "relation_type": "same_lattice_family",
+        "meaning": "This physical coordinate belongs to the same prime-LJPW coordinate family."
+      },
+      {
+        "source": "coordinate_anchor_w_to_proton_mass",
+        "target": "coordinate_anchor_w_to_proton_mass_love_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 10.469204434826198,
+        "interpreted_value": {
+          "ratio_to_proton": 10.469204434826198,
+          "mass_MeV": 9822.962319734199,
+          "mass_GeV": 9.822962319734199,
+          "nearest_landmarks": [
+            {
+              "name": "neutron",
+              "landmark_MeV": 939.56542194,
+              "delta_MeV": 8883.396897794199,
+              "absolute_delta_MeV": 8883.396897794199
+            },
+            {
+              "name": "proton",
+              "landmark_MeV": 938.27208943,
+              "delta_MeV": 8884.690230304199,
+              "absolute_delta_MeV": 8884.690230304199
+            },
+            {
+              "name": "deuteron_per_nucleon",
+              "landmark_MeV": 937.8064725,
+              "delta_MeV": 8885.155847234199,
+              "absolute_delta_MeV": 8885.155847234199
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_w_to_proton_mass",
+        "target": "coordinate_anchor_w_to_proton_mass_love_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 701.0289647807714,
+        "interpreted_value": {
+          "ratio_to_proton": 701.0289647807714,
+          "mass_MeV": 657755.9115358043,
+          "mass_GeV": 657.7559115358043,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 532655.9115358043,
+              "absolute_delta_MeV": 532655.9115358043
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 566568.3115358043,
+              "absolute_delta_MeV": 566568.3115358043
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 577378.9115358043,
+              "absolute_delta_MeV": 577378.9115358043
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_w_to_proton_mass",
+        "target": "coordinate_anchor_w_to_proton_mass_justice_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 20.940216350321975,
+        "interpreted_value": {
+          "ratio_to_proton": 20.940216350321975,
+          "mass_MeV": 19647.62054813285,
+          "mass_GeV": 19.64762054813285,
+          "nearest_landmarks": [
+            {
+              "name": "neutron",
+              "landmark_MeV": 939.56542194,
+              "delta_MeV": 18708.055126192852,
+              "absolute_delta_MeV": 18708.055126192852
+            },
+            {
+              "name": "proton",
+              "landmark_MeV": 938.27208943,
+              "delta_MeV": 18709.34845870285,
+              "absolute_delta_MeV": 18709.34845870285
+            },
+            {
+              "name": "deuteron_per_nucleon",
+              "landmark_MeV": 937.8064725,
+              "delta_MeV": 18709.81407563285,
+              "absolute_delta_MeV": 18709.81407563285
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_w_to_proton_mass",
+        "target": "coordinate_anchor_w_to_proton_mass_justice_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 350.48422729938136,
+        "interpreted_value": {
+          "ratio_to_proton": 350.48422729938136,
+          "mass_MeV": 328849.5682604496,
+          "mass_GeV": 328.84956826044964,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 203749.56826044963,
+              "absolute_delta_MeV": 203749.56826044963
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 237661.96826044962,
+              "absolute_delta_MeV": 237661.96826044962
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 248472.56826044963,
+              "absolute_delta_MeV": 248472.56826044963
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_w_to_proton_mass",
+        "target": "coordinate_anchor_w_to_proton_mass_power_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 7.4444988247629835,
+        "interpreted_value": {
+          "ratio_to_proton": 7.4444988247629835,
+          "mass_MeV": 6984.9654670695445,
+          "mass_GeV": 6.984965467069545,
+          "nearest_landmarks": [
+            {
+              "name": "neutron",
+              "landmark_MeV": 939.56542194,
+              "delta_MeV": 6045.400045129544,
+              "absolute_delta_MeV": 6045.400045129544
+            },
+            {
+              "name": "proton",
+              "landmark_MeV": 938.27208943,
+              "delta_MeV": 6046.693377639544,
+              "absolute_delta_MeV": 6046.693377639544
+            },
+            {
+              "name": "deuteron_per_nucleon",
+              "landmark_MeV": 937.8064725,
+              "delta_MeV": 6047.158994569544,
+              "absolute_delta_MeV": 6047.158994569544
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_w_to_proton_mass",
+        "target": "coordinate_anchor_w_to_proton_mass_power_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 985.8575734623898,
+        "interpreted_value": {
+          "ratio_to_proton": 985.8575734623898,
+          "mass_MeV": 925002.6453329463,
+          "mass_GeV": 925.0026453329464,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 799902.6453329463,
+              "absolute_delta_MeV": 799902.6453329463
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 833815.0453329463,
+              "absolute_delta_MeV": 833815.0453329463
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 844625.6453329463,
+              "absolute_delta_MeV": 844625.6453329463
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_w_to_proton_mass",
+        "target": "coordinate_anchor_w_to_proton_mass_wisdom_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 8.108908283738842,
+        "interpreted_value": {
+          "ratio_to_proton": 8.108908283738842,
+          "mass_MeV": 7608.362318379879,
+          "mass_GeV": 7.608362318379879,
+          "nearest_landmarks": [
+            {
+              "name": "neutron",
+              "landmark_MeV": 939.56542194,
+              "delta_MeV": 6668.796896439879,
+              "absolute_delta_MeV": 6668.796896439879
+            },
+            {
+              "name": "proton",
+              "landmark_MeV": 938.27208943,
+              "delta_MeV": 6670.090228949879,
+              "absolute_delta_MeV": 6670.090228949879
+            },
+            {
+              "name": "deuteron_per_nucleon",
+              "landmark_MeV": 937.8064725,
+              "delta_MeV": 6670.555845879879,
+              "absolute_delta_MeV": 6670.555845879879
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_w_to_proton_mass",
+        "target": "coordinate_anchor_w_to_proton_mass_wisdom_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 905.0805965757596,
+        "interpreted_value": {
+          "ratio_to_proton": 905.0805965757596,
+          "mass_MeV": 849211.862451689,
+          "mass_GeV": 849.211862451689,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 724111.862451689,
+              "absolute_delta_MeV": 724111.862451689
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 758024.262451689,
+              "absolute_delta_MeV": 758024.262451689
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 768834.862451689,
+              "absolute_delta_MeV": 768834.862451689
+            }
+          ]
+        }
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "coordinate_anchor_z_to_proton_mass",
+        "relation_type": "same_lattice_family",
+        "meaning": "This physical coordinate belongs to the same prime-LJPW coordinate family."
+      },
+      {
+        "source": "coordinate_anchor_z_to_proton_mass",
+        "target": "coordinate_anchor_z_to_proton_mass_love_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 11.875360363290637,
+        "interpreted_value": {
+          "ratio_to_proton": 11.875360363290637,
+          "mass_MeV": 11142.319180798911,
+          "mass_GeV": 11.14231918079891,
+          "nearest_landmarks": [
+            {
+              "name": "neutron",
+              "landmark_MeV": 939.56542194,
+              "delta_MeV": 10202.753758858911,
+              "absolute_delta_MeV": 10202.753758858911
+            },
+            {
+              "name": "proton",
+              "landmark_MeV": 938.27208943,
+              "delta_MeV": 10204.047091368911,
+              "absolute_delta_MeV": 10204.047091368911
+            },
+            {
+              "name": "deuteron_per_nucleon",
+              "landmark_MeV": 937.8064725,
+              "delta_MeV": 10204.512708298911,
+              "absolute_delta_MeV": 10204.512708298911
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_z_to_proton_mass",
+        "target": "coordinate_anchor_z_to_proton_mass_love_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 795.1866480114705,
+        "interpreted_value": {
+          "ratio_to_proton": 795.1866480114705,
+          "mass_MeV": 746101.4377165604,
+          "mass_GeV": 746.1014377165604,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 621001.4377165604,
+              "absolute_delta_MeV": 621001.4377165604
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 654913.8377165605,
+              "absolute_delta_MeV": 654913.8377165605
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 665724.4377165604,
+              "absolute_delta_MeV": 665724.4377165604
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_z_to_proton_mass",
+        "target": "coordinate_anchor_z_to_proton_mass_justice_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 23.752770976381495,
+        "interpreted_value": {
+          "ratio_to_proton": 23.752770976381495,
+          "mass_MeV": 22286.56205376173,
+          "mass_GeV": 22.286562053761727,
+          "nearest_landmarks": [
+            {
+              "name": "neutron",
+              "landmark_MeV": 939.56542194,
+              "delta_MeV": 21346.99663182173,
+              "absolute_delta_MeV": 21346.99663182173
+            },
+            {
+              "name": "proton",
+              "landmark_MeV": 938.27208943,
+              "delta_MeV": 21348.28996433173,
+              "absolute_delta_MeV": 21348.28996433173
+            },
+            {
+              "name": "deuteron_per_nucleon",
+              "landmark_MeV": 937.8064725,
+              "delta_MeV": 21348.75558126173,
+              "absolute_delta_MeV": 21348.75558126173
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_z_to_proton_mass",
+        "target": "coordinate_anchor_z_to_proton_mass_justice_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 397.5590052462966,
+        "interpreted_value": {
+          "ratio_to_proton": 397.5590052462966,
+          "mass_MeV": 373018.518524155,
+          "mass_GeV": 373.018518524155,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 247918.51852415502,
+              "absolute_delta_MeV": 247918.51852415502
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 281830.91852415504,
+              "absolute_delta_MeV": 281830.91852415504
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 292641.518524155,
+              "absolute_delta_MeV": 292641.518524155
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_z_to_proton_mass",
+        "target": "coordinate_anchor_z_to_proton_mass_power_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 8.44439582955013,
+        "interpreted_value": {
+          "ratio_to_proton": 8.44439582955013,
+          "mass_MeV": 7923.140918965979,
+          "mass_GeV": 7.923140918965979,
+          "nearest_landmarks": [
+            {
+              "name": "neutron",
+              "landmark_MeV": 939.56542194,
+              "delta_MeV": 6983.575497025979,
+              "absolute_delta_MeV": 6983.575497025979
+            },
+            {
+              "name": "proton",
+              "landmark_MeV": 938.27208943,
+              "delta_MeV": 6984.868829535979,
+              "absolute_delta_MeV": 6984.868829535979
+            },
+            {
+              "name": "deuteron_per_nucleon",
+              "landmark_MeV": 937.8064725,
+              "delta_MeV": 6985.3344464659785,
+              "absolute_delta_MeV": 6985.3344464659785
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_z_to_proton_mass",
+        "target": "coordinate_anchor_z_to_proton_mass_power_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1118.2715959581456,
+        "interpreted_value": {
+          "ratio_to_proton": 1118.2715959581456,
+          "mass_MeV": 1049243.02688987,
+          "mass_GeV": 1049.24302688987,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 924143.02688987,
+              "absolute_delta_MeV": 924143.02688987
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 958055.42688987,
+              "absolute_delta_MeV": 958055.42688987
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 968866.02688987,
+              "absolute_delta_MeV": 968866.02688987
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_z_to_proton_mass",
+        "target": "coordinate_anchor_z_to_proton_mass_wisdom_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 9.198044476229581,
+        "interpreted_value": {
+          "ratio_to_proton": 9.198044476229581,
+          "mass_MeV": 8630.268409381999,
+          "mass_GeV": 8.630268409382,
+          "nearest_landmarks": [
+            {
+              "name": "neutron",
+              "landmark_MeV": 939.56542194,
+              "delta_MeV": 7690.702987441999,
+              "absolute_delta_MeV": 7690.702987441999
+            },
+            {
+              "name": "proton",
+              "landmark_MeV": 938.27208943,
+              "delta_MeV": 7691.996319951999,
+              "absolute_delta_MeV": 7691.996319951999
+            },
+            {
+              "name": "deuteron_per_nucleon",
+              "landmark_MeV": 937.8064725,
+              "delta_MeV": 7692.461936881999,
+              "absolute_delta_MeV": 7692.461936881999
+            }
+          ]
+        }
+      },
+      {
+        "source": "coordinate_anchor_z_to_proton_mass",
+        "target": "coordinate_anchor_z_to_proton_mass_wisdom_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1026.6451772022974,
+        "interpreted_value": {
+          "ratio_to_proton": 1026.6451772022974,
+          "mass_MeV": 963272.5155168322,
+          "mass_GeV": 963.2725155168322,
+          "nearest_landmarks": [
+            {
+              "name": "higgs",
+              "landmark_MeV": 125100.0,
+              "delta_MeV": 838172.5155168322,
+              "absolute_delta_MeV": 838172.5155168322
+            },
+            {
+              "name": "z_boson",
+              "landmark_MeV": 91187.6,
+              "delta_MeV": 872084.9155168323,
+              "absolute_delta_MeV": 872084.9155168323
+            },
+            {
+              "name": "w_boson",
+              "landmark_MeV": 80377.0,
+              "delta_MeV": 882895.5155168322,
+              "absolute_delta_MeV": 882895.5155168322
+            }
+          ]
+        }
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "coordinate_anchor_dark_energy_to_matter",
+        "relation_type": "same_lattice_family",
+        "meaning": "This physical coordinate belongs to the same prime-LJPW coordinate family."
+      },
+      {
+        "source": "coordinate_anchor_dark_energy_to_matter",
+        "target": "coordinate_anchor_dark_energy_to_matter_love_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.2633210820144476,
+        "interpreted_value": {
+          "ratio": 0.2633210820144476
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_energy_to_matter",
+        "target": "coordinate_anchor_dark_energy_to_matter_love_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 17.63225722438625,
+        "interpreted_value": {
+          "ratio": 17.63225722438625
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_energy_to_matter",
+        "target": "coordinate_anchor_dark_energy_to_matter_justice_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.5266876257226265,
+        "interpreted_value": {
+          "ratio": 0.5266876257226265
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_energy_to_matter",
+        "target": "coordinate_anchor_dark_energy_to_matter_justice_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 8.815367637149674,
+        "interpreted_value": {
+          "ratio": 8.815367637149674
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_energy_to_matter",
+        "target": "coordinate_anchor_dark_energy_to_matter_power_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.1872437870322683,
+        "interpreted_value": {
+          "ratio": 0.1872437870322683
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_energy_to_matter",
+        "target": "coordinate_anchor_dark_energy_to_matter_power_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 24.796256924040506,
+        "interpreted_value": {
+          "ratio": 24.796256924040506
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_energy_to_matter",
+        "target": "coordinate_anchor_dark_energy_to_matter_wisdom_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.2039549916636505,
+        "interpreted_value": {
+          "ratio": 0.2039549916636505
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_energy_to_matter",
+        "target": "coordinate_anchor_dark_energy_to_matter_wisdom_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 22.764557085904993,
+        "interpreted_value": {
+          "ratio": 22.764557085904993
+        }
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "coordinate_anchor_dark_matter_to_baryon",
+        "relation_type": "same_lattice_family",
+        "meaning": "This physical coordinate belongs to the same prime-LJPW coordinate family."
+      },
+      {
+        "source": "coordinate_anchor_dark_matter_to_baryon",
+        "target": "coordinate_anchor_dark_matter_to_baryon_love_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.6684153998185921,
+        "interpreted_value": {
+          "ratio": 0.6684153998185921
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_matter_to_baryon",
+        "target": "coordinate_anchor_dark_matter_to_baryon_love_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 44.75779976361996,
+        "interpreted_value": {
+          "ratio": 44.75779976361996
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_matter_to_baryon",
+        "target": "coordinate_anchor_dark_matter_to_baryon_justice_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1.336946199801724,
+        "interpreted_value": {
+          "ratio": 1.336946199801724
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_matter_to_baryon",
+        "target": "coordinate_anchor_dark_matter_to_baryon_justice_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 22.376968219392257,
+        "interpreted_value": {
+          "ratio": 22.376968219392257
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_matter_to_baryon",
+        "target": "coordinate_anchor_dark_matter_to_baryon_power_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.47530045758301254,
+        "interpreted_value": {
+          "ratio": 0.47530045758301254
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_matter_to_baryon",
+        "target": "coordinate_anchor_dark_matter_to_baryon_power_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 62.94292830293661,
+        "interpreted_value": {
+          "ratio": 62.94292830293661
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_matter_to_baryon",
+        "target": "coordinate_anchor_dark_matter_to_baryon_wisdom_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.5177202533687625,
+        "interpreted_value": {
+          "ratio": 0.5177202533687625
+        }
+      },
+      {
+        "source": "coordinate_anchor_dark_matter_to_baryon",
+        "target": "coordinate_anchor_dark_matter_to_baryon_wisdom_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 57.78565244325359,
+        "interpreted_value": {
+          "ratio": 57.78565244325359
+        }
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "coordinate_anchor_hubble_late_to_early",
+        "relation_type": "same_lattice_family",
+        "meaning": "This physical coordinate belongs to the same prime-LJPW coordinate family."
+      },
+      {
+        "source": "coordinate_anchor_hubble_late_to_early",
+        "target": "coordinate_anchor_hubble_late_to_early_love_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.1329799930530267,
+        "interpreted_value": {
+          "late_to_early_ratio": 0.1329799930530267,
+          "implied_late_H0_km_s_Mpc": 8.962851531774001
+        }
+      },
+      {
+        "source": "coordinate_anchor_hubble_late_to_early",
+        "target": "coordinate_anchor_hubble_late_to_early_love_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 8.904480512044286,
+        "interpreted_value": {
+          "late_to_early_ratio": 8.904480512044286,
+          "implied_late_H0_km_s_Mpc": 600.1619865117849
+        }
+      },
+      {
+        "source": "coordinate_anchor_hubble_late_to_early",
+        "target": "coordinate_anchor_hubble_late_to_early_justice_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.2659829447528523,
+        "interpreted_value": {
+          "late_to_early_ratio": 0.2659829447528523,
+          "implied_late_H0_km_s_Mpc": 17.927250476342245
+        }
+      },
+      {
+        "source": "coordinate_anchor_hubble_late_to_early",
+        "target": "coordinate_anchor_hubble_late_to_early_justice_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 4.451855955398673,
+        "interpreted_value": {
+          "late_to_early_ratio": 4.451855955398673,
+          "implied_late_H0_km_s_Mpc": 300.0550913938706
+        }
+      },
+      {
+        "source": "coordinate_anchor_hubble_late_to_early",
+        "target": "coordinate_anchor_hubble_late_to_early_power_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.09456013665251187,
+        "interpreted_value": {
+          "late_to_early_ratio": 0.09456013665251187,
+          "implied_late_H0_km_s_Mpc": 6.3733532103793005
+        }
+      },
+      {
+        "source": "coordinate_anchor_hubble_late_to_early",
+        "target": "coordinate_anchor_hubble_late_to_early_power_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 12.522377806874777,
+        "interpreted_value": {
+          "late_to_early_ratio": 12.522377806874777,
+          "implied_late_H0_km_s_Mpc": 844.0082641833601
+        }
+      },
+      {
+        "source": "coordinate_anchor_hubble_late_to_early",
+        "target": "coordinate_anchor_hubble_late_to_early_wisdom_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.10299947564803899,
+        "interpreted_value": {
+          "late_to_early_ratio": 0.10299947564803899,
+          "implied_late_H0_km_s_Mpc": 6.942164658677829
+        }
+      },
+      {
+        "source": "coordinate_anchor_hubble_late_to_early",
+        "target": "coordinate_anchor_hubble_late_to_early_wisdom_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 11.496347424900762,
+        "interpreted_value": {
+          "late_to_early_ratio": 11.496347424900762,
+          "implied_late_H0_km_s_Mpc": 774.8538164383114
+        }
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "coordinate_anchor_theta12_pmns",
+        "relation_type": "same_lattice_family",
+        "meaning": "This physical coordinate belongs to the same prime-LJPW coordinate family."
+      },
+      {
+        "source": "coordinate_anchor_theta12_pmns",
+        "target": "coordinate_anchor_theta12_pmns_love_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.0721369524274986,
+        "interpreted_value": {
+          "angle_radians": 0.0721369524274986,
+          "angle_degrees": 4.133142921031668
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta12_pmns",
+        "target": "coordinate_anchor_theta12_pmns_love_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 4.830366375735848,
+        "interpreted_value": {
+          "angle_radians": 4.830366375735848,
+          "angle_degrees": 276.75960683156774
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta12_pmns",
+        "target": "coordinate_anchor_theta12_pmns_justice_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.14428635911051224,
+        "interpreted_value": {
+          "angle_radians": 0.14428635911051224,
+          "angle_degrees": 8.266999418341326
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta12_pmns",
+        "target": "coordinate_anchor_theta12_pmns_justice_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 2.414974718344368,
+        "interpreted_value": {
+          "angle_radians": 2.414974718344368,
+          "angle_degrees": 138.367858991927
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta12_pmns",
+        "target": "coordinate_anchor_theta12_pmns_power_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.05129553643847741,
+        "interpreted_value": {
+          "angle_radians": 0.05129553643847741,
+          "angle_degrees": 2.9390177457842817
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta12_pmns",
+        "target": "coordinate_anchor_theta12_pmns_power_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 6.7929479570169695,
+        "interpreted_value": {
+          "angle_radians": 6.7929479570169695,
+          "angle_degrees": 389.2072483890873
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta12_pmns",
+        "target": "coordinate_anchor_theta12_pmns_wisdom_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.05587357995963416,
+        "interpreted_value": {
+          "angle_radians": 0.05587357995963416,
+          "angle_degrees": 3.201320317973774
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta12_pmns",
+        "target": "coordinate_anchor_theta12_pmns_wisdom_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 6.236362690659552,
+        "interpreted_value": {
+          "angle_radians": 6.236362690659552,
+          "angle_degrees": 357.31726168764254
+        }
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "coordinate_anchor_theta23_pmns",
+        "relation_type": "same_lattice_family",
+        "meaning": "This physical coordinate belongs to the same prime-LJPW coordinate family."
+      },
+      {
+        "source": "coordinate_anchor_theta23_pmns",
+        "target": "coordinate_anchor_theta23_pmns_love_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.10302637835470002,
+        "interpreted_value": {
+          "angle_radians": 0.10302637835470002,
+          "angle_degrees": 5.90297665824229
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta23_pmns",
+        "target": "coordinate_anchor_theta23_pmns_love_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 6.898754897062667,
+        "interpreted_value": {
+          "angle_radians": 6.898754897062667,
+          "angle_degrees": 395.2695394968995
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta23_pmns",
+        "target": "coordinate_anchor_theta23_pmns_justice_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.20607054394323324,
+        "interpreted_value": {
+          "angle_radians": 0.20607054394323324,
+          "angle_degrees": 11.806972449912433
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta23_pmns",
+        "target": "coordinate_anchor_theta23_pmns_justice_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 3.4490797112512595,
+        "interpreted_value": {
+          "angle_radians": 3.4490797112512595,
+          "angle_degrees": 197.6177106588978
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta23_pmns",
+        "target": "coordinate_anchor_theta23_pmns_power_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.07326055741444537,
+        "interpreted_value": {
+          "angle_radians": 0.07326055741444537,
+          "angle_degrees": 4.197520744623571
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta23_pmns",
+        "target": "coordinate_anchor_theta23_pmns_power_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 9.701724328690021,
+        "interpreted_value": {
+          "angle_radians": 9.701724328690021,
+          "angle_degrees": 555.8678580333301
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta23_pmns",
+        "target": "coordinate_anchor_theta23_pmns_wisdom_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.07979894347128666,
+        "interpreted_value": {
+          "angle_radians": 0.07979894347128666,
+          "angle_degrees": 4.572142670507761
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta23_pmns",
+        "target": "coordinate_anchor_theta23_pmns_wisdom_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 8.906806296963842,
+        "interpreted_value": {
+          "angle_radians": 8.906806296963842,
+          "angle_degrees": 510.3224097565735
+        }
+      },
+      {
+        "source": "mass_anchor_m_star",
+        "target": "coordinate_anchor_theta13_pmns",
+        "relation_type": "same_lattice_family",
+        "meaning": "This physical coordinate belongs to the same prime-LJPW coordinate family."
+      },
+      {
+        "source": "coordinate_anchor_theta13_pmns",
+        "target": "coordinate_anchor_theta13_pmns_love_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.018366384762069428,
+        "interpreted_value": {
+          "angle_radians": 0.018366384762069428,
+          "angle_degrees": 1.0523163317799649
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta13_pmns",
+        "target": "coordinate_anchor_theta13_pmns_love_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Love",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1.2298324840890942,
+        "interpreted_value": {
+          "angle_radians": 1.2298324840890942,
+          "angle_degrees": 70.46421084639506
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta13_pmns",
+        "target": "coordinate_anchor_theta13_pmns_justice_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.03673594043226604,
+        "interpreted_value": {
+          "angle_radians": 0.03673594043226604,
+          "angle_degrees": 2.104814343212841
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta13_pmns",
+        "target": "coordinate_anchor_theta13_pmns_justice_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Justice",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.614863164788693,
+        "interpreted_value": {
+          "angle_radians": 0.614863164788693,
+          "angle_degrees": 35.229064320448956
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta13_pmns",
+        "target": "coordinate_anchor_theta13_pmns_power_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.013060068759526568,
+        "interpreted_value": {
+          "angle_radians": 0.013060068759526568,
+          "angle_degrees": 0.7482868200715288
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta13_pmns",
+        "target": "coordinate_anchor_theta13_pmns_power_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Power",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1.729514370220723,
+        "interpreted_value": {
+          "angle_radians": 1.729514370220723,
+          "angle_degrees": 99.09387402087397
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta13_pmns",
+        "target": "coordinate_anchor_theta13_pmns_wisdom_minus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "minus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 0.01422565873716765,
+        "interpreted_value": {
+          "angle_radians": 0.01422565873716765,
+          "angle_degrees": 0.8150702064331108
+        }
+      },
+      {
+        "source": "coordinate_anchor_theta13_pmns",
+        "target": "coordinate_anchor_theta13_pmns_wisdom_plus_one",
+        "relation_type": "coordinate_neighbor",
+        "operator": "Wisdom",
+        "direction": "plus_one",
+        "meaning": "One LJPW coordinate step from the anchor.",
+        "raw_value": 1.5878053180522977,
+        "interpreted_value": {
+          "angle_radians": 1.5878053180522977,
+          "angle_degrees": 90.974543412824
+        }
+      }
+    ],
+    "threads": {
+      "nuclear_binding_gate": "cosmological_hierarchy_ratio -> mass_anchor_m_star -> deuteron_binding_gate",
+      "sub_hadronic_inverse_branch": "mass_anchor_m_star -> inverse LJPW steps -> 80-230 MeV generated regime",
+      "multi_gev_resonance_branch": "mass_anchor_m_star -> direct LJPW steps -> 3.8-10.7 GeV generated regime",
+      "coordinate_neighbor_fields": "known coordinates -> one-step LJPW moves -> adjacent physical regimes"
+    }
+  },
+  "frontier_threads": {
+    "nuclear_binding_gate": "Treat m_star - 1u as the deuteron-binding gate and explore light-nuclear binding from there.",
+    "sub_hadronic_inverse_neighbors": "The inverse Love/Justice/Power/Wisdom mass neighbors land in the 80-230 MeV band.",
+    "electroweak_neighbor_ladder": "The W/Z/H coordinates now have explicit adjacent mass-ratio predictions for nearby lattice nodes.",
+    "pmns_rotation_neighbors": "Each PMNS angle has eight adjacent relational rotations in radians/degrees."
+  }
+}

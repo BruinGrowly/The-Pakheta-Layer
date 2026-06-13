@@ -123,6 +123,12 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 - `CHALLENGING_THE_RELATIONAL_FRONTIERS.md`
   Frontier checks predicting neutrino mixing angles, cosmic energy fractions, and relational Bekenstein entropy bounds.
 
+- `PREDICTION_ATLAS.md`
+  Relationship-first atlas generated from the fixed Cosmological Bridge mass anchor and one-step LJPW transition fields.
+
+- `TRANSITION_ATLAS.md`
+  Relationship-first transition atlas organizing the generated bridge outputs into binding, compression, amplification, PMNS, electroweak, and cosmic phase follow threads.
+
 - `EXPERIMENT_MATRIX.md`  
   Research questions, modelable hypotheses, and proposed experiments.
 

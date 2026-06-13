@@ -148,6 +148,11 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [RELATIONAL_MATHEMATICAL_BRIDGES.md](./docs/Pakheta_Layer/RELATIONAL_MATHEMATICAL_BRIDGES.md) — Findings on relational math bridges and non-destructive synthesis.
 * [TRANSCENDENTAL_PHYSICAL_BRIDGES.md](./docs/Pakheta_Layer/TRANSCENDENTAL_PHYSICAL_BRIDGES.md) — Findings on Riemann critical line, and pi, e, 1/alpha, mu decompositions.
 * [COSMOLOGICAL_BRIDGES.md](./docs/Pakheta_Layer/COSMOLOGICAL_BRIDGES.md) — Findings on the cosmological Hierarchy Scale and gravity's relational origin.
+* [COSMOLOGICAL_CONSTANT_AND_HEAVY_BOSONS.md](./docs/Pakheta_Layer/COSMOLOGICAL_CONSTANT_AND_HEAVY_BOSONS.md) — Lattice coordinates for the cosmological constant scale and electroweak boson masses.
+* [CHALLENGING_THE_RELATIONAL_FRONTIERS.md](./docs/Pakheta_Layer/CHALLENGING_THE_RELATIONAL_FRONTIERS.md) — Frontier predictions for cosmic energy fractions, Hubble ratio, PMNS angles, and relational entropy bounds.
+* [THE_ONTOLOGICAL_COMPILER.md](./docs/Pakheta_Layer/THE_ONTOLOGICAL_COMPILER.md) — Synthesis note framing Pakheta as the compiler from meaning into mathematics and physics.
+* [PREDICTION_ATLAS.md](./docs/Pakheta_Layer/PREDICTION_ATLAS.md) — Relationship-first atlas generated from the fixed Cosmological Bridge mass anchor and one-step LJPW transition fields.
+* [TRANSITION_ATLAS.md](./docs/Pakheta_Layer/TRANSITION_ATLAS.md) — Relationship-first transition atlas organizing generated bridge outputs into binding, compression, amplification, PMNS, electroweak, and cosmic phase follow threads.
 * [EXPERIMENT_MATRIX.md](./docs/Pakheta_Layer/EXPERIMENT_MATRIX.md) — Active and proposed experiments, variables, and success criteria.
 * [README.md](./docs/Pakheta_Layer/README.md) — Local directory README for the Pakheta Layer research folder.
 
