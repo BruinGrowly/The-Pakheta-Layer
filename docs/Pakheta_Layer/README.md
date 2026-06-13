@@ -90,6 +90,9 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 - `PAKHETA_AS_META_LAYER.md`  
   The core research note defining Pakheta as the trans-substrate meta-relational layer.
 
+- `THE_ONTOLOGICAL_COMPILER.md`  
+  Theoretical note on the Pakheta Layer as the Ontological Compiler translating intent to math and physics.
+
 - `CROSS_SUBSTRATE_MAP.md`  
   Mapping of semantic, mathematical, and physical expressions of Pakheta relation.
 
@@ -113,6 +116,12 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 
 - `CAPABILITY_ENVELOPE.md`
   Broader capability-boundary pass showing Pakheta as design, inference, prediction, composition, boundary, discovery, and creative actualization.
+
+- `COSMOLOGICAL_CONSTANT_AND_HEAVY_BOSONS.md`
+  Lattice coordinate predictions for the Cosmological Constant scale and electroweak boson masses.
+
+- `CHALLENGING_THE_RELATIONAL_FRONTIERS.md`
+  Frontier checks predicting neutrino mixing angles, cosmic energy fractions, and relational Bekenstein entropy bounds.
 
 - `EXPERIMENT_MATRIX.md`  
   Research questions, modelable hypotheses, and proposed experiments.
