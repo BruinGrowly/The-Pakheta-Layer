@@ -99,6 +99,9 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 - `RELATIONAL_COMPATIBILITY_ENGINE.md`
   Initial compatibility grammar comparing directed relations between familiar constants instead of object-value matches.
 
+- `PURPOSE_FIRST_RELATION_SEARCH.md`
+  Known-constant purpose-first search showing bridge retrieval, exemplar compatibility, and exact operator closure on root, golden, and pi/tau identities.
+
 - `RELATIONAL_LUCAS_LEHMER_LAB.md`
   Reverse-engineering note for exact Mersenne cyclic residue calculus, LJPW trajectory features, and carry-pressure clues.
   Companion C pseudo-test: `../../experiments/pakheta_relational_ll_c_pseudo.py`.
