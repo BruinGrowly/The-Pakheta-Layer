@@ -4,7 +4,7 @@ Pakheta Predictive Relation Families Experiment.
 This experiment moves the purpose-first relation search from descriptive
 labeling to prediction. It derives archetype profiles (centroids) directly
 from cohesive identity families and uses them to:
-1. Retrieve a withheld relation from all 240 database relations.
+1. Retrieve a withheld relation from the non-exemplar candidate pool.
 2. Predict a missing target constant B given source A and the family archetype.
 3. Predict a missing source constant A given target B and the family archetype.
 """
@@ -120,7 +120,13 @@ def profile_compatibility(candidate, archetype):
     strength_similarity = math.exp(
         -abs(candidate["log_strength"] - archetype["log_strength"])
     )
-    direction_similarity = 1.0 if candidate["direction"] == archetype["direction"] else 0.35
+    if "direction_distribution" in archetype:
+        direction_similarity = sum(
+            weight * (1.0 if candidate["direction"] == direction else 0.35)
+            for direction, weight in archetype["direction_distribution"].items()
+        )
+    else:
+        direction_similarity = 1.0 if candidate["direction"] == archetype["direction"] else 0.35
     purpose_similarity = cosine(candidate["purpose_scores"], archetype["purpose_scores"])
     fit_support = min(candidate["fit_quality"], archetype["fit_quality"])
     
@@ -150,7 +156,21 @@ def derive_archetype(exemplars):
     avg_log_strength = statistics.fmean([e["log_strength"] for e in exemplars])
     
     directions = [e["direction"] for e in exemplars]
-    majority_direction = max(set(directions), key=directions.count)
+    direction_counts = {
+        direction: directions.count(direction)
+        for direction in sorted(set(directions))
+    }
+    max_direction_count = max(direction_counts.values())
+    top_directions = [
+        direction
+        for direction, count in direction_counts.items()
+        if count == max_direction_count
+    ]
+    majority_direction = top_directions[0] if len(top_directions) == 1 else "mixed"
+    direction_distribution = {
+        direction: count / len(directions)
+        for direction, count in direction_counts.items()
+    }
     
     avg_purpose = {}
     purposes = list(exemplars[0]["purpose_scores"].keys())
@@ -164,6 +184,7 @@ def derive_archetype(exemplars):
         "signed_operator_vector": avg_signed,
         "log_strength": avg_log_strength,
         "direction": majority_direction,
+        "direction_distribution": direction_distribution,
         "purpose_scores": avg_purpose,
         "fit_quality": avg_fit_quality
     }
@@ -194,7 +215,7 @@ def run_experiments(relations, fit_func, top_n):
                 exemplars = [r for r in family_relations if r["id"] != withheld["id"]]
                 archetype = derive_archetype(exemplars)
 
-                # Rank all relations in the DB against this archetype
+                # Rank all non-exemplar relations in the DB against this archetype.
                 ranked_relations = []
                 for r in relations:
                     # Exclude exemplar relations themselves
@@ -220,6 +241,7 @@ def run_experiments(relations, fit_func, top_n):
                     "withheld_relation": withheld["id"],
                     "score": ranked_relations[withheld_rank - 1]["score"] if withheld_rank else 0.0,
                     "rank": withheld_rank,
+                    "candidate_pool_size": len(ranked_relations),
                     "percentile": withheld_rank / len(ranked_relations) if withheld_rank else None,
                     "in_top_n": withheld_rank <= top_n if withheld_rank else False,
                     "top_retrieved": ranked_relations[:5]
@@ -300,33 +322,39 @@ def run_experiments(relations, fit_func, top_n):
 
 def summarize_metrics(results):
     all_rel_ranks = []
+    all_rel_percentiles = []
     all_target_ranks = []
     all_source_ranks = []
     correct_target_count = 0
     correct_source_count = 0
-    total_predictions = 0
+    total_target_predictions = 0
+    total_source_predictions = 0
 
     for family in results.values():
         for r_pred in family["relation_predictions"]:
             if r_pred["rank"] is not None:
                 all_rel_ranks.append(r_pred["rank"])
+                all_rel_percentiles.append(r_pred["percentile"])
         for t_pred in family["target_predictions"]:
             all_target_ranks.append(t_pred["rank"])
             if t_pred["is_first"]:
                 correct_target_count += 1
-            total_predictions += 1
+            total_target_predictions += 1
         for s_pred in family["source_predictions"]:
             all_source_ranks.append(s_pred["rank"])
             if s_pred["is_first"]:
                 correct_source_count += 1
+            total_source_predictions += 1
 
     return {
         "total_relationships_tested": len(all_rel_ranks),
         "relation_retrieved_median_rank": statistics.median(all_rel_ranks) if all_rel_ranks else None,
+        "relation_retrieved_median_percentile": statistics.median(all_rel_percentiles) if all_rel_percentiles else None,
         "relation_retrieved_mean_rank": statistics.fmean(all_rel_ranks) if all_rel_ranks else None,
         "target_prediction_median_rank": statistics.median(all_target_ranks) if all_target_ranks else None,
-        "target_prediction_accuracy_rank_1": correct_target_count / total_predictions if total_predictions else 0.0,
-        "source_prediction_accuracy_rank_1": correct_source_count / total_predictions if total_predictions else 0.0,
+        "source_prediction_median_rank": statistics.median(all_source_ranks) if all_source_ranks else None,
+        "target_prediction_accuracy_rank_1": correct_target_count / total_target_predictions if total_target_predictions else 0.0,
+        "source_prediction_accuracy_rank_1": correct_source_count / total_source_predictions if total_source_predictions else 0.0,
     }
 
 
@@ -373,6 +401,9 @@ def main():
     print(f"Total Relations: {len(relations)}")
     print(f"Total Relationships Tested: {metrics['total_relationships_tested']}")
     print(f"Median Relation LOO Rank: {metrics['relation_retrieved_median_rank']}")
+    print(f"Median Relation LOO Percentile: {metrics['relation_retrieved_median_percentile']:.2%}")
+    print(f"Target Prediction Median Rank: {metrics['target_prediction_median_rank']}")
+    print(f"Source Prediction Median Rank: {metrics['source_prediction_median_rank']}")
     print(f"Target Prediction Rank 1 Accuracy: {metrics['target_prediction_accuracy_rank_1']:.2%}")
     print(f"Source Prediction Rank 1 Accuracy: {metrics['source_prediction_accuracy_rank_1']:.2%}")
     print(f"Results saved to: {OUTPUT_FILE.name}\n")
