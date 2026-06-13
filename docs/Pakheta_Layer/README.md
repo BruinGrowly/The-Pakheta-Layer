@@ -120,6 +120,9 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 - `COSMOLOGICAL_CONSTANT_AND_HEAVY_BOSONS.md`
   Lattice coordinate predictions for the Cosmological Constant scale and electroweak boson masses.
 
+- `HIGGS_HIERARCHY_BRIDGE.md`
+  Fixed-coordinate Higgs hierarchy pass connecting the Planck/Higgs gap, Higgs/proton coordinate, and cosmological mass anchor.
+
 - `CHALLENGING_THE_RELATIONAL_FRONTIERS.md`
   Frontier checks predicting neutrino mixing angles, cosmic energy fractions, and relational Bekenstein entropy bounds.
 

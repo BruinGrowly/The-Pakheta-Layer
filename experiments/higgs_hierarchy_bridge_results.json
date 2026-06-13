@@ -1,0 +1,160 @@
+{
+  "experiment_name": "pakheta_higgs_hierarchy_bridge",
+  "date_executed": "2026-06-13T07:15:57.985329+00:00",
+  "execution_duration_sec": 6.6e-05,
+  "source": {
+    "constants": "CODATA 2022 values already used by the Pakheta bridge scripts.",
+    "higgs_mass_target": "ATLAS 2023 combined Run 1 + Run 2 mass result: 125.11 +/- 0.11 GeV; repo legacy comparison: 125.10 GeV."
+  },
+  "posture": "relationship_first_higgs_hierarchy",
+  "constants": {
+    "base": 30.0,
+    "L0": 0.6180339887498949,
+    "J0": 0.41421356237309515,
+    "P0": 0.7182818284590451,
+    "W0": 0.6931471805599453,
+    "ljpw_sum": 2.4436765601419803,
+    "full_planck_mass_MeV": 1.2208901282098642e+22,
+    "reduced_planck_mass_MeV": 2.435323459338204e+21,
+    "proton_mass_MeV": 938.27208943,
+    "higgs_targets": {
+      "atlas_2023_combined_MeV": 125110.0,
+      "atlas_2023_uncertainty_MeV": 110.0,
+      "repo_legacy_MeV": 125100.0
+    }
+  },
+  "cosmological_hierarchy_bridge": {
+    "R_LJPW": 1.2475727106749654e+36,
+    "formula": "R_LJPW = 30^(10 * (L0 + J0 + P0 + W0))",
+    "mass_anchor_MeV": 933.7407521670474,
+    "mass_anchor_relation": "m_star = sqrt(alpha * hbar * c / (G * R_LJPW)); this is the same mass anchor used in the nuclear binding ladder."
+  },
+  "predictions": {
+    "higgs_as_proton_relative_coordinate": {
+      "formula": "m_H = m_p * 30^(-5L0 - 3J0 + 9P0 - W0)",
+      "coordinate": {
+        "coefficients": {
+          "c_L": -5,
+          "c_J": -3,
+          "c_P": 9,
+          "c_W": -1
+        },
+        "exponent": 1.4385786447027002,
+        "value": 133.3383549262983
+      },
+      "predicted_mass_MeV": 125107.65687785685,
+      "atlas_2023_overlay": {
+        "predicted_MeV": 125107.65687785685,
+        "observed_MeV": 125110.0,
+        "delta_MeV": -2.3431221431528684,
+        "absolute_delta_MeV": 2.3431221431528684,
+        "relative_delta": -1.872849606865401e-05,
+        "absolute_relative_delta": 1.872849606865401e-05,
+        "sigma_units": -0.021301110392298803
+      },
+      "repo_legacy_overlay": {
+        "predicted_MeV": 125107.65687785685,
+        "observed_MeV": 125100.0,
+        "delta_MeV": 7.656877856847132,
+        "absolute_delta_MeV": 7.656877856847132,
+        "relative_delta": 6.12060580083007e-05,
+        "absolute_relative_delta": 6.12060580083007e-05
+      },
+      "read": "The Higgs sits as a compact electroweak coordinate about 133.338 proton masses above the proton."
+    },
+    "full_planck_to_higgs_direct_coordinate": {
+      "formula": "M_P / m_H = 30^(14L0 - 8J0 - 3P0 + 12W0)",
+      "coordinate": {
+        "coefficients": {
+          "c_L": 14,
+          "c_J": -8,
+          "c_P": -3,
+          "c_W": 12
+        },
+        "exponent": 11.501688024855975,
+        "value": 9.758607410851546e+16
+      },
+      "observed_full_planck_to_higgs_ratio": 9.758533516184672e+16,
+      "ratio_overlay": {
+        "predicted_ratio": 9.758607410851546e+16,
+        "observed_ratio": 9.758533516184672e+16,
+        "delta": 738946668736.0,
+        "relative_delta": 7.572312658465918e-06,
+        "absolute_relative_delta": 7.572312658465918e-06
+      },
+      "predicted_mass_MeV": 125109.05263513702,
+      "atlas_2023_overlay": {
+        "predicted_MeV": 125109.05263513702,
+        "observed_MeV": 125110.0,
+        "delta_MeV": -0.9473648629791569,
+        "absolute_delta_MeV": 0.9473648629791569,
+        "relative_delta": -7.5722553191104325e-06,
+        "absolute_relative_delta": 7.5722553191104325e-06,
+        "sigma_units": -0.008612407845265064
+      },
+      "read": "The full Planck/Higgs hierarchy gap itself lands on a clean prime-LJPW address."
+    },
+    "reduced_planck_to_higgs_secondary_coordinate": {
+      "formula": "M_reduced_P / m_H = 30^(-9L0 + 19J0 + 16P0 - 4W0)",
+      "coordinate": {
+        "coefficients": {
+          "c_L": -9,
+          "c_J": 19,
+          "c_P": 16,
+          "c_W": -4
+        },
+        "exponent": 11.027672319444694,
+        "value": 1.9462972684718468e+16
+      },
+      "observed_reduced_planck_to_higgs_ratio": 1.946545807160262e+16,
+      "ratio_overlay": {
+        "predicted_ratio": 1.9462972684718468e+16,
+        "observed_ratio": 1.946545807160262e+16,
+        "delta": -2485386884152.0,
+        "relative_delta": -0.00012768191095269277,
+        "absolute_relative_delta": 0.00012768191095269277
+      },
+      "predicted_mass_MeV": 125125.97632376684,
+      "atlas_2023_overlay": {
+        "predicted_MeV": 125125.97632376684,
+        "observed_MeV": 125110.0,
+        "delta_MeV": 15.976323766837595,
+        "absolute_delta_MeV": 15.976323766837595,
+        "relative_delta": 0.00012769821570479678,
+        "absolute_relative_delta": 0.00012769821570479678,
+        "sigma_units": 0.14523930697125087
+      },
+      "read": "The reduced Planck convention also has an address, but with larger coefficients."
+    },
+    "two_step_cosmological_bridge_to_higgs": {
+      "formula": "m_H = m_star * 30^(-5L0 - 3J0 + 9P0 - W0)",
+      "predicted_mass_MeV": 124503.45582159852,
+      "atlas_2023_overlay": {
+        "predicted_MeV": 124503.45582159852,
+        "observed_MeV": 125110.0,
+        "delta_MeV": -606.5441784014838,
+        "absolute_delta_MeV": 606.5441784014838,
+        "relative_delta": -0.004848087110554622,
+        "absolute_relative_delta": 0.004848087110554622,
+        "sigma_units": -5.514037985468034
+      },
+      "full_planck_to_predicted_higgs_ratio": 9.806074218207102e+16,
+      "read": "The two-step bridge lands at the electroweak scale but is low because m_star is a bound-nuclear anchor below the free proton. Precision Higgs placement wants the free proton anchor."
+    }
+  },
+  "working_interpretation": {
+    "plain_read": "The Higgs is not appearing as an arbitrary 125 GeV object in this grammar. It appears as a compact electroweak coordinate relative to the proton, while the huge Planck/Higgs separation also has a direct lattice address.",
+    "hierarchy_shape": [
+      "Planck scale",
+      "full Planck/Higgs hierarchy coordinate",
+      "Higgs electroweak coordinate",
+      "proton/free-matter anchor",
+      "cosmological bridge mass anchor"
+    ],
+    "next_tests": [
+      "Carry the same electroweak coordinate posture to the Higgs vacuum expectation value.",
+      "Map the top-quark Yukawa relation against Higgs/proton and Higgs/Planck coordinates.",
+      "Compare W/Z/H ratios as a relational electroweak triangle instead of three independent mass hits."
+    ]
+  }
+}
