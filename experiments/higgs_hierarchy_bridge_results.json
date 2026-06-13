@@ -1,7 +1,7 @@
 {
   "experiment_name": "pakheta_higgs_hierarchy_bridge",
-  "date_executed": "2026-06-13T07:15:57.985329+00:00",
-  "execution_duration_sec": 6.6e-05,
+  "date_executed": "2026-06-13T07:40:06.165097+00:00",
+  "execution_duration_sec": 5.8e-05,
   "source": {
     "constants": "CODATA 2022 values already used by the Pakheta bridge scripts.",
     "higgs_mass_target": "ATLAS 2023 combined Run 1 + Run 2 mass result: 125.11 +/- 0.11 GeV; repo legacy comparison: 125.10 GeV."

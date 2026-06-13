@@ -77,6 +77,16 @@ at a compact electroweak lattice coordinate.
 
 This is the local matter-side address of the Higgs.
 
+### 2.1 Lattice Surprise Audit Verification
+
+To verify if this electroweak fit is statistically significant, we subjected the Higgs-to-proton mass ratio to a log-uniform Monte Carlo surprise audit over 5,000 random samples in the mass ratio range of $[50.0, 150.0]$.
+
+*   **Relative Error**: $0.00612\%$ (relative to the legacy reference mass $125.10$ GeV)
+*   **Null-Surprise Percentile**: $30.84\%$
+*   **Audit Classification**: `dense_lattice_fit`
+
+This classification means that a random target in the electroweak mass range has a $30.84\%$ chance of matching the prime-LJPW lattice within the same coefficient bounds ($|c| \le 10$) just as closely or better. Thus, the proton-relative coordinate in isolation is **not** an anomalous statistical surprise, but rather an expected fit given the grid density.
+
 ---
 
 ## 3. Direct Planck/Higgs Hierarchy Address
