@@ -188,9 +188,9 @@ def main():
     print(f"    C-Batch vs. Standard Python Float: {ratio_py_float_to_c_batch:.2f}x faster")
     print(f"    C-Batch Throughput:                {mops_batch:.2f} Million Operations/Sec (MOPS)")
     
-    # Test C: Supercomputer-level Workload (10,000,000 operations)
-    print("\nRunning Test C: Supercomputer Workload (10,000,000 operations in C)...")
-    large_count = 10000000
+    # Test C: Supercomputer-level Workload (50,000,000 operations)
+    print("\nRunning Test C: Supercomputer Workload (50,000,000 operations in C)...")
+    large_count = 50000000
     
     LargeArrayType = RelationalNumber * large_count
     large_out = LargeArrayType()
@@ -203,7 +203,7 @@ def main():
     duration_large = time.perf_counter() - start
     
     large_mops = (large_count * 2) / (duration_large * 1e6)
-    print(f"  Completed 20 Million operations in C in {duration_large:.6f} seconds.")
+    print(f"  Completed 100 Million operations in C in {duration_large:.6f} seconds.")
     print(f"  Throughput: {large_mops:.2f} MOPS")
     
     report = {
