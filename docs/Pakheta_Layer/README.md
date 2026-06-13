@@ -96,6 +96,10 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 - `RELATIONAL_COORDINATE_MATHEMATICS.md`  
   Formal specification of Relational Coordinate Mathematics, coordinate arithmetic, and hardware execution paradigm.
 
+- `RELATIONAL_LUCAS_LEHMER_LAB.md`
+  Reverse-engineering note for exact Mersenne cyclic residue calculus, LJPW trajectory features, and carry-pressure clues.
+  Companion C pseudo-test: `../../experiments/pakheta_relational_ll_c_pseudo.py`.
+
 - `CROSS_SUBSTRATE_MAP.md`  
   Mapping of semantic, mathematical, and physical expressions of Pakheta relation.
 

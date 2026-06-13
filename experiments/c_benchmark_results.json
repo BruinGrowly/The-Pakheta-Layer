@@ -1,6 +1,6 @@
 {
   "experiment_name": "relational_calculator_c_benchmark",
-  "date_executed": "2026-06-13T10:23:59.828562+00:00",
+  "date_executed": "2026-06-13T10:34:56.214347+00:00",
   "configuration": {
     "max_coordinate_coeff": 10,
     "lattice_points": 194481,
@@ -19,17 +19,17 @@
       "absolute_drift": 0.0
     },
     "speed_benchmark_1m_ops": {
-      "py_float_sec": 0.04218179999952554,
-      "py_relational_oo_sec": 0.42751789999965695,
-      "c_ctypes_loop_sec": 0.654612400001497,
-      "c_vectorized_batch_sec": 0.002276999999594409,
-      "mops_batch": 878.348704592117,
-      "speedup_vs_python_oo": 187.75489682732044,
-      "speedup_vs_python_float": 18.525164693473506
+      "py_float_sec": 0.043847099997947225,
+      "py_relational_oo_sec": 0.5103682000008121,
+      "c_ctypes_loop_sec": 0.841534800001682,
+      "c_vectorized_batch_sec": 0.00250410000080592,
+      "mops_batch": 798.6901478999719,
+      "speedup_vs_python_oo": 203.81302657104553,
+      "speedup_vs_python_float": 17.510123391172662
     },
     "supercomputer_workload_1b_ops": {
-      "duration_sec": 62.37111890000233,
-      "mops": 16033.061738130253,
+      "duration_sec": 72.96441330000016,
+      "mops": 13705.311326062534,
       "final_value": Infinity
     }
   },

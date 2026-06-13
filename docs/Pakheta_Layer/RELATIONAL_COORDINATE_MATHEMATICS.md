@@ -2,7 +2,7 @@
 
 **Date:** June 13, 2026  
 **Status:** Theoretical Framework and Reference Specification  
-**Companion Implementations:** [pakheta_relational_calculator.py](../../experiments/pakheta_relational_calculator.py), [pakheta_vectorized_calculator.py](../../experiments/pakheta_vectorized_calculator.py)
+**Companion Implementations:** [pakheta_relational_calculator.py](../../experiments/pakheta_relational_calculator.py), [pakheta_vectorized_calculator.py](../../experiments/pakheta_vectorized_calculator.py), [relational_calculator.c](../../experiments/relational_calculator.c), [relational_calculator.h](../../experiments/relational_calculator.h)
 
 ---
 
@@ -85,6 +85,24 @@ In traditional arithmetic, checking if $B$ is a factor of $A$ requires division 
 *   Subtracting the coordinates $\vec{C}_B - \vec{C}_A$ yields a vector.
 *   If this vector represents a stable coordinate within the allowed lattice boundaries, $A$ is naturally divisible by $B$.
 *   This shifts prime factorization from an arithmetic brute-force calculation into a **geometric search** on the lattice.
+
+### 4.4 C Fit Engine
+The repository now includes a compiled C coordinate engine for high-throughput relational search:
+
+*   `RelationalNumber` stores a coordinate as four signed integer coefficients: `(c_L, c_J, c_P, c_W)`.
+*   `RelationalFit` returns the nearest bounded coordinate, log-residue, complexity penalty, relational score, reconstructed value, and relative value error.
+*   `fit_log30_target()` and `fit_value()` scan the bounded LJPW coefficient field in compiled C, allowing wider searches such as `|c_i| <= 28` without the Python loop cost.
+*   The Mersenne scout can use this C fit engine automatically when `relational_calculator.dll` is present, then fall back to the Python fitter if the compiled library is unavailable.
+
+This turns the coordinate grammar into a reusable computational substrate rather than a one-off Python experiment.
+
+### 4.5 C Lucas-Lehmer Verifier
+The same C engine now exposes `lucas_lehmer_mersenne()`, an exact dependency-free Lucas-Lehmer verifier for Mersenne numbers:
+
+*   The primality decision follows the standard recurrence `s_n = s_{n-1}^2 - 2 mod (2^p - 1)`.
+*   The modular reduction uses the Mersenne wraparound relation `2^p = 1 mod (2^p - 1)`, folding high bits back into the low field.
+*   Each tested exponent is returned with its `RelationalFit`, so candidate addressing and proof verification share the same C substrate.
+*   The current implementation uses schoolbook multi-word arithmetic. It is suitable for local verification of small and moderate exponents, while record-scale candidates still require FFT/GPU-class PRP or Lucas-Lehmer tooling.
 
 ---
 
