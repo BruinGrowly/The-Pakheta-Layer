@@ -93,6 +93,9 @@ This strengthens LJPW because it gives the constants a ground, explains why coup
 - `THE_ONTOLOGICAL_COMPILER.md`  
   Theoretical note on the Pakheta Layer as the Ontological Compiler translating intent to math and physics.
 
+- `RELATIONAL_COORDINATE_MATHEMATICS.md`  
+  Formal specification of Relational Coordinate Mathematics, coordinate arithmetic, and hardware execution paradigm.
+
 - `CROSS_SUBSTRATE_MAP.md`  
   Mapping of semantic, mathematical, and physical expressions of Pakheta relation.
 
