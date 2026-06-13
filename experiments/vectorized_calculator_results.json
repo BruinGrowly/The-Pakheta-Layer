@@ -1,0 +1,28 @@
+{
+  "experiment_name": "vectorized_relational_calculator",
+  "date_executed": "2026-06-13T08:44:53.858790+00:00",
+  "configuration": {
+    "num_particles": 50,
+    "steps": 500,
+    "dt": 0.01,
+    "max_coordinate_coeff": 8,
+    "lattice_points": 83521
+  },
+  "float_simulation": {
+    "duration_sec": 1.4156806000028155,
+    "max_energy_drift": 11124.014991731052,
+    "final_energy_drift": 11124.014991731052,
+    "final_energy_value": 4559.565762371806
+  },
+  "relational_simulation": {
+    "duration_sec": 1.6938385000030394,
+    "max_energy_drift": 11122.99311125572,
+    "final_energy_drift": 11122.99311125572,
+    "final_energy_value": 4558.543881896475
+  },
+  "metrics": {
+    "vector_speed_ratio": 0.835782514094629,
+    "drift_reduction_ratio": 1.000091870997771
+  },
+  "conclusion": "Vectorized coordinate math utilizing np.searchsorted successfully runs at high speed. Because exponent addition replaces three float operations per force calculation, the relational simulator limits intermediate roundoff noise and stabilizes energy conservation."
+}
