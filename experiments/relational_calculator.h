@@ -25,5 +25,6 @@ EXPORT RelationalNumber relational_mul(RelationalNumber a, RelationalNumber b);
 EXPORT RelationalNumber relational_div(RelationalNumber a, RelationalNumber b);
 EXPORT void batch_mul(RelationalNumber* out, const RelationalNumber* a, const RelationalNumber* b, int count);
 EXPORT void batch_div(RelationalNumber* out, const RelationalNumber* a, const RelationalNumber* b, int count);
+EXPORT double run_internal_benchmark(RelationalNumber a, RelationalNumber b, int iterations);
 
 #endif // RELATIONAL_CALCULATOR_H
