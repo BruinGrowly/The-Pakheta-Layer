@@ -146,6 +146,7 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [DIAGNOSTICS_LOCALITY_AND_CONSERVATION.md](./docs/Pakheta_Layer/DIAGNOSTICS_LOCALITY_AND_CONSERVATION.md) — Findings on Wisdom failure, false partition detection, locality phases, primitive conservation, and recovery loops.
 * [CAPABILITY_ENVELOPE.md](./docs/Pakheta_Layer/CAPABILITY_ENVELOPE.md) — Findings on Pakheta as a broader capability layer beyond audit/governance.
 * [RELATIONAL_MATHEMATICAL_BRIDGES.md](./docs/Pakheta_Layer/RELATIONAL_MATHEMATICAL_BRIDGES.md) — Findings on relational math bridges and non-destructive synthesis.
+* [RELATIONAL_COMPATIBILITY_ENGINE.md](./docs/Pakheta_Layer/RELATIONAL_COMPATIBILITY_ENGINE.md) — Initial compatibility grammar comparing directed relations between constants instead of object-value matches.
 * [RELATIONAL_LUCAS_LEHMER_LAB.md](./docs/Pakheta_Layer/RELATIONAL_LUCAS_LEHMER_LAB.md) — Reverse-engineering note for exact Mersenne cyclic residue calculus and LJPW trajectory features.
 * [TRANSCENDENTAL_PHYSICAL_BRIDGES.md](./docs/Pakheta_Layer/TRANSCENDENTAL_PHYSICAL_BRIDGES.md) — Findings on Riemann critical line, and pi, e, 1/alpha, mu decompositions.
 * [COSMOLOGICAL_BRIDGES.md](./docs/Pakheta_Layer/COSMOLOGICAL_BRIDGES.md) — Findings on the cosmological Hierarchy Scale and gravity's relational origin.
@@ -173,6 +174,8 @@ Love, Justice, Power, and Wisdom act as state-transforming operators on Pakheta 
 * [pakheta_capability_envelope.py](./experiments/pakheta_capability_envelope.py) — Capability-boundary suite for design, inference, prediction, composition, abstention, discovery, and creative actualization.
 * [pakheta_mathematical_bridge.py](./experiments/pakheta_mathematical_bridge.py) — Relational mathematical bridge coordinates.
 * [mathematical_bridge_results.json](./experiments/mathematical_bridge_results.json) — Output results of the relational mathematical bridge experiments.
+* [pakheta_relational_compatibility_engine.py](./experiments/pakheta_relational_compatibility_engine.py) — Numeric relational compatibility engine comparing directed transformations between familiar constants.
+* [relational_compatibility_results.json](./experiments/relational_compatibility_results.json) — Output results of the first relational compatibility sweep.
 * [relational_calculator.c](./experiments/relational_calculator.c) / [relational_calculator.h](./experiments/relational_calculator.h) — C relational coordinate engine with nearest-fit, encode/decode, multiply/divide, batch operations, and benchmark support.
 * [pakheta_mersenne_prime_scout.py](./experiments/pakheta_mersenne_prime_scout.py) — C-backed relational Mersenne exponent scout using bounded LJPW coordinate fits plus small-factor screens.
 * [mersenne_prime_scout_results.json](./experiments/mersenne_prime_scout_results.json) — Output results of the C-backed Mersenne scout.
