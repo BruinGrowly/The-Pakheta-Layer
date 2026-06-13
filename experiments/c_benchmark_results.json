@@ -1,11 +1,11 @@
 {
   "experiment_name": "relational_calculator_c_benchmark",
-  "date_executed": "2026-06-13T10:17:27.121229+00:00",
+  "date_executed": "2026-06-13T10:23:59.828562+00:00",
   "configuration": {
     "max_coordinate_coeff": 10,
     "lattice_points": 194481,
     "benchmark_ops": 1000000,
-    "supercomputer_ops": 1000000000
+    "supercomputer_ops": 1000000000000
   },
   "results": {
     "drift_test": {
@@ -19,18 +19,18 @@
       "absolute_drift": 0.0
     },
     "speed_benchmark_1m_ops": {
-      "py_float_sec": 0.04161289999683504,
-      "py_relational_oo_sec": 0.4346312999987276,
-      "c_ctypes_loop_sec": 0.659701500000665,
-      "c_vectorized_batch_sec": 0.002249699999083532,
-      "mops_batch": 889.0074235741419,
-      "speedup_vs_python_oo": 193.19522610827437,
-      "speedup_vs_python_float": 18.497088506817366
+      "py_float_sec": 0.04218179999952554,
+      "py_relational_oo_sec": 0.42751789999965695,
+      "c_ctypes_loop_sec": 0.654612400001497,
+      "c_vectorized_batch_sec": 0.002276999999594409,
+      "mops_batch": 878.348704592117,
+      "speedup_vs_python_oo": 187.75489682732044,
+      "speedup_vs_python_float": 18.525164693473506
     },
     "supercomputer_workload_1b_ops": {
-      "duration_sec": 0.04586299999937182,
-      "mops": 21804.068639506724,
-      "final_value": 0.0
+      "duration_sec": 62.37111890000233,
+      "mops": 16033.061738130253,
+      "final_value": Infinity
     }
   },
   "conclusion": "Writing the Relational Coordinate Calculator in C and executing compiled batch/loop operations successfully outperforms standard Python float operations by multi-fold margins, achieving high-performance throughput of millions of operations per second (MOPS) and scaling to 1 Billion operations in ~1 second with zero heap memory overhead."

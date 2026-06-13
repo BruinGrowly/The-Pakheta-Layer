@@ -150,9 +150,9 @@ EXPORT void batch_div(RelationalNumber* out, const RelationalNumber* a, const Re
     }
 }
 
-EXPORT double run_internal_benchmark(RelationalNumber a, RelationalNumber b, int iterations) {
+EXPORT double run_internal_benchmark(RelationalNumber a, RelationalNumber b, int64_t iterations) {
     RelationalNumber out = a;
-    for (int i = 0; i < iterations; i++) {
+    for (int64_t i = 0; i < iterations; i++) {
         out.c_L = out.c_L + b.c_L + (int16_t)(i % 2);
         out.c_J = out.c_J + b.c_J;
         out.c_P = out.c_P + b.c_P;

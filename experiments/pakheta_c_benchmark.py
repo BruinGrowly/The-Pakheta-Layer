@@ -74,7 +74,7 @@ lib.batch_div.argtypes = [
 ]
 lib.batch_div.restype = None
 
-lib.run_internal_benchmark.argtypes = [RelationalNumber, RelationalNumber, ctypes.c_int]
+lib.run_internal_benchmark.argtypes = [RelationalNumber, RelationalNumber, ctypes.c_int64]
 lib.run_internal_benchmark.restype = ctypes.c_double
 
 
@@ -191,9 +191,9 @@ def main():
     print(f"    C-Batch vs. Standard Python Float: {ratio_py_float_to_c_batch:.2f}x faster")
     print(f"    C-Batch Throughput:                {mops_batch:.2f} Million Operations/Sec (MOPS)")
     
-    # Test C: Supercomputer-level Workload (1,000,000,000 operations)
-    print("\nRunning Test C: Supercomputer Workload (1,000,000,000 operations in C, 0-allocation)...")
-    large_count = 500000000  # 500 Million iterations = 1 Billion individual operations
+    # Test C: Supercomputer-level Workload (1,000,000,000,000 operations)
+    print("\nRunning Test C: Supercomputer Workload (1,000,000,000,000 operations in C, 0-allocation)...")
+    large_count = 500000000000  # 500 Billion iterations = 1 Trillion individual operations
     
     start = time.perf_counter()
     # Execute the loop internally in C using registers/stack (0 heap memory overhead)
@@ -201,7 +201,7 @@ def main():
     duration_large = time.perf_counter() - start
     
     large_mops = (large_count * 2) / (duration_large * 1e6)
-    print(f"  Completed 1 Billion operations in C in {duration_large:.6f} seconds.")
+    print(f"  Completed 1 Trillion operations in C in {duration_large:.6f} seconds.")
     print(f"  Final value: {final_res:.6f}")
     print(f"  Throughput: {large_mops:.2f} MOPS")
     
