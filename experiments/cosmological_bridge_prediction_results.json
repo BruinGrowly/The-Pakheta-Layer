@@ -1,7 +1,7 @@
 {
   "experiment_name": "cosmological_bridge_predictions",
-  "date_executed": "2026-06-12T15:59:16.944529+00:00",
-  "execution_duration_sec": 0.000743,
+  "date_executed": "2026-06-13T01:44:03.481882+00:00",
+  "execution_duration_sec": 0.000521,
   "source": "NIST CODATA 2022 complete listing, https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
   "frozen_bridge": {
     "formula": "R_LJPW = 30 ** (10 * (L0 + J0 + P0 + W0))",

@@ -1,7 +1,7 @@
 {
   "experiment_name": "wisdom_failure_modes",
-  "date_executed": "2026-06-12T07:09:05.877834+00:00",
-  "execution_duration_sec": 0.008709,
+  "date_executed": "2026-06-13T01:44:06.274919+00:00",
+  "execution_duration_sec": 0.009757,
   "field_count": 180,
   "summary": {
     "correct_context": {

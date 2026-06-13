@@ -1,0 +1,64 @@
+{
+  "experiment_name": "cosmological_constant_and_heavy_bosons",
+  "date_executed": "2026-06-13T02:47:31.810341+00:00",
+  "observed_constants": {
+    "proton_mass_MeV": 938.27208943,
+    "electron_mass_MeV": 0.51099895069,
+    "cosmological_constant_Planck_units": 1.38e-122,
+    "higgs_mass_MeV": 125100.0,
+    "W_boson_mass_MeV": 80377.0,
+    "Z_boson_mass_MeV": 91187.6
+  },
+  "predictions": {
+    "cosmological_constant_Planck": {
+      "coefficients": {
+        "c_L": -30,
+        "c_J": -37,
+        "c_P": -32,
+        "c_W": -37
+      },
+      "calculated_exponent": -82.49838566170878,
+      "calculated_value": 1.3800062681755125e-122,
+      "absolute_error": 6.268175512496699e-128,
+      "relative_error": 4.542156168475869e-06
+    },
+    "bosons": {
+      "Higgs_Boson": {
+        "mass_MeV": 125100.0,
+        "proton_mass_ratio": 133.33019431069104,
+        "calculated_ratio": 133.3383549262981,
+        "coefficients": {
+          "c_L": -5,
+          "c_J": -3,
+          "c_P": 9,
+          "c_W": -1
+        },
+        "relative_error": 6.12060580070223e-05
+      },
+      "W_Boson": {
+        "mass_MeV": 80377.0,
+        "proton_mass_ratio": 85.66491629184983,
+        "calculated_ratio": 85.66922170198858,
+        "coefficients": {
+          "c_L": -4,
+          "c_J": 8,
+          "c_P": -9,
+          "c_W": 10
+        },
+        "relative_error": 5.0258732805775376e-05
+      },
+      "Z_Boson": {
+        "mass_MeV": 91187.6,
+        "proton_mass_ratio": 97.18673402658331,
+        "calculated_ratio": 97.17575830017141,
+        "coefficients": {
+          "c_L": 4,
+          "c_J": -5,
+          "c_P": 10,
+          "c_W": -9
+        },
+        "relative_error": -0.00011293440943182152
+      }
+    }
+  }
+}

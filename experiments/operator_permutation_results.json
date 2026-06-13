@@ -1,7 +1,7 @@
 {
   "experiment_name": "ljpw_operator_permutation_grammar",
-  "date_executed": "2026-06-12T06:47:35.730701+00:00",
-  "execution_duration_sec": 0.054103,
+  "date_executed": "2026-06-13T01:44:05.449761+00:00",
+  "execution_duration_sec": 0.107821,
   "field_count": 160,
   "initial_coherence": {
     "min": 0.291,

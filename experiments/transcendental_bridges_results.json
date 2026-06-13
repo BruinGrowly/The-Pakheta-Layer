@@ -1,6 +1,6 @@
 {
   "experiment_name": "transcendental_physical_bridges",
-  "date_executed": "2026-06-12T09:48:40.266550+00:00",
+  "date_executed": "2026-06-13T01:44:06.172530+00:00",
   "riemann_zeta_sweep": {
     "imaginary_zero_t": 14.134725,
     "sweep": [

@@ -1,7 +1,7 @@
 {
   "experiment_name": "cross_substrate_primitive_conservation",
-  "date_executed": "2026-06-12T07:09:05.139513+00:00",
-  "execution_duration_sec": 0.027476,
+  "date_executed": "2026-06-13T01:44:04.306295+00:00",
+  "execution_duration_sec": 0.077999,
   "trials_per_primitive": 90,
   "dimension_labels": {
     "semantic": [

@@ -1,7 +1,7 @@
 {
   "experiment_name": "false_partition_detector",
-  "date_executed": "2026-06-12T07:09:05.193029+00:00",
-  "execution_duration_sec": 0.00139,
+  "date_executed": "2026-06-13T01:44:04.565949+00:00",
+  "execution_duration_sec": 0.005915,
   "feature_names": [
     "anchor_agreement",
     "facet_coverage",

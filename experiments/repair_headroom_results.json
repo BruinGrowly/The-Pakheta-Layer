@@ -1,6 +1,6 @@
 {
   "experiment_name": "noise_headroom_repair_loop",
-  "date_executed": "2026-06-11T13:38:27.915254+00:00",
+  "date_executed": "2026-06-13T01:44:06.017827+00:00",
   "ticks": 50,
   "noise_sweep": [
     {

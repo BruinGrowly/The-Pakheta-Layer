@@ -1,7 +1,7 @@
 {
   "experiment_name": "hidden_relationship_field_inference",
-  "date_executed": "2026-06-12T06:47:35.625744+00:00",
-  "execution_duration_sec": 0.03059,
+  "date_executed": "2026-06-13T01:44:04.873215+00:00",
+  "execution_duration_sec": 0.109271,
   "node_labels": [
     "crystal_anchor",
     "grave_memory",

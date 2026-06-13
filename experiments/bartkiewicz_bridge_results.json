@@ -1,6 +1,6 @@
 {
   "experiment_name": "bartkiewicz_tomography_bridge",
-  "date_executed": "2026-06-11T13:38:28.165787+00:00",
+  "date_executed": "2026-06-13T01:44:02.705762+00:00",
   "source_data_path": "C:\\Users\\Well\\Crush\\Projects\\LJPW_Blueprints\\Technology_Research\\Quantum_Mechanics\\data\\tomography\\bartkiewicz_srep19610_all_optimal_tomography_2026-05-29.json",
   "audit_results": {
     "bartkiewicz_rhoO07_optimal": {
